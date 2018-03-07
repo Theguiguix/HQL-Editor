@@ -1,0 +1,3086 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="BAS_CATEGORIE_UFM/report.js" type="text/javascript"></script>
+<link href="BAS_CATEGORIE_UFM/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">BAS_CATEGORIE_UFM</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">CUFM_ID_CUFM</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;de&nbsp;la&nbsp;catégorie&nbsp;de&nbsp;l'UF&nbsp;médicale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>CUFM_ID_COUV</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;couverture&nbsp;par&nbsp;défaut</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>CUFM_ID_CAGE_MT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;de&nbsp;l'élément&nbsp;de&nbsp;catalogue&nbsp;des&nbsp;modes&nbsp;de&nbsp;traitement&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;6)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>CUFM_ID_CAGE_DMT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Identifiant&nbsp;de&nbsp;l'élément&nbsp;de&nbsp;catalogue&nbsp;des&nbsp;DMT&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;165)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>CUFM_ID_CAPE_TYP_SEJ</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Identifiant&nbsp;de&nbsp;l'élément&nbsp;de&nbsp;catalogue&nbsp;des&nbsp;types&nbsp;de&nbsp;séjour&nbsp;(catalogue&nbsp;pers&nbsp;:&nbsp;36)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>CUFM_ID_CAGE_TYP_ACTIVITE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Identifiant&nbsp;du&nbsp;type&nbsp;d'activité&nbsp;de&nbsp;la&nbsp;catégorie&nbsp;d'UFM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>CUFM_ID_ETAB</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Identifiant&nbsp;établissement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>CUFM_LIBELLE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>No</td>
+<td>'à&nbsp;traduire'&nbsp;</td>
+<td>8</td>
+<td>Libellé&nbsp;de&nbsp;la&nbsp;catégorie&nbsp;d'UFM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>CUFM_IND_GST_LIT_POSTE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>9</td>
+<td>Indicateur&nbsp;de&nbsp;gestion&nbsp;des&nbsp;lits/postes&nbsp;sur&nbsp;l'UF</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>CUFM_IND_COU_MOUVEMENT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>10</td>
+<td>Indicateur&nbsp;d'accessibilité&nbsp;de&nbsp;la&nbsp;couverture&nbsp;en&nbsp;saisie&nbsp;de&nbsp;mouvement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>CUFM_IND_PER_PRE_OBLIGATOIRE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>11</td>
+<td>Indicateur&nbsp;personne&nbsp;à&nbsp;prévenir&nbsp;obligatoire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>CUFM_MOT_CRE_SEJOUR</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Motif&nbsp;en&nbsp;création&nbsp;de&nbsp;séjour&nbsp;(0&nbsp;:&nbsp;Possible,&nbsp;1&nbsp;:&nbsp;Obligatoire,&nbsp;2&nbsp;:&nbsp;Interdit)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>CUFM_IND_DAT_ENT_EQU_DAT_SOR</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>13</td>
+<td>Date&nbsp;d'entrée&nbsp;et&nbsp;de&nbsp;sortie&nbsp;identiques</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>CUFM_NBR_MAX_NUI_SEJ</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Nombre&nbsp;maximal&nbsp;de&nbsp;nuits&nbsp;du&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>CUFM_NBR_MAX_NUI_AVT_DAT_ENT</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Nombre&nbsp;maximal&nbsp;de&nbsp;nuits&nbsp;avant&nbsp;date&nbsp;système&nbsp;pour&nbsp;date&nbsp;d'entrée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>CUFM_NBR_MAX_NUI_APR_DAT_ENT_A</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Nombre&nbsp;maximal&nbsp;de&nbsp;nuits&nbsp;avant&nbsp;date&nbsp;système&nbsp;pour&nbsp;date&nbsp;d'entrée&nbsp;en&nbsp;admission</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>CUFM_NBR_MAX_NUI_APR_DAT_ENT_P</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Nombre&nbsp;maximal&nbsp;de&nbsp;nuits&nbsp;avant&nbsp;date&nbsp;système&nbsp;pour&nbsp;date&nbsp;d'entrée&nbsp;en&nbsp;pré&nbsp;admission</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>CUFM_HEU_ENT_MIN</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Heure&nbsp;d'entrée&nbsp;minimale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>CUFM_HEU_SOR_MAX</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Heure&nbsp;de&nbsp;sortie&nbsp;maximale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>CUFM_TYP_DAT_SOR</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Type&nbsp;de&nbsp;sortie&nbsp;:&nbsp;Vide&nbsp;(valeur&nbsp;par&nbsp;défaut),&nbsp;&nbsp;1&nbsp;-&nbsp;Sortie&nbsp;proposée&nbsp;à&nbsp;la&nbsp;date&nbsp;d'entrée&nbsp;dès&nbsp;la&nbsp;pré-admission&nbsp;ou&nbsp;l'admission,&nbsp;2&nbsp;-&nbsp;Date&nbsp;de&nbsp;sortie&nbsp;(non&nbsp;anticipée)&nbsp;=&nbsp;date&nbsp;d'entrée,&nbsp;3&nbsp;-&nbsp;Date&nbsp;de&nbsp;sortie&nbsp;(non&nbsp;anticipée)&nbsp;=&nbsp;date&nbsp;système,&nbsp;4&nbsp;-&nbsp;Date&nbsp;de&nbsp;sortie&nbsp;à&nbsp;saisir</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>CUFM_TYP_HEU_SOR</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Type&nbsp;d'heure&nbsp;de&nbsp;sortie&nbsp;:&nbsp;Vide,&nbsp;1&nbsp;-&nbsp;Heure&nbsp;à&nbsp;saisir,&nbsp;2&nbsp;-&nbsp;Heure&nbsp;d'entrée&nbsp;+&nbsp;nombre&nbsp;d'heures,&nbsp;3&nbsp;-&nbsp;Heure&nbsp;de&nbsp;sortie&nbsp;fixe,&nbsp;4&nbsp;-&nbsp;Heure&nbsp;système</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>CUFM_NBR_HEU_SEJ</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Nombre&nbsp;d'heure&nbsp;du&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>CUFM_HEU_SOR_FIXE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Heure&nbsp;de&nbsp;sortie&nbsp;fixe</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>CUFM_IND_ACT_BLOQUE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>24</td>
+<td>Indicateur&nbsp;d'actualisation&nbsp;bloquée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>CUFM_DAT_DEB_VAL</td>
+<td>DATE</td>
+<td>No</td>
+<td>to_date&nbsp;('01/01/1990','DD/MM/YYYY')&nbsp;</td>
+<td>25</td>
+<td>Date&nbsp;début&nbsp;de&nbsp;validité</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>CUFM_DAT_FIN_VAL</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Date&nbsp;fin&nbsp;de&nbsp;validité</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>CUFM_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>27</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>CUFM_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>28</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>CUFM_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>29</td>
+<td>Numéro&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>CUFM_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>30</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>CUFM_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>CUFM_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>CUFM_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>CUFM_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>CUFM_ID_CAPE_GROUPE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Identifiant&nbsp;du&nbsp;groupe&nbsp;de&nbsp;l'UFM&nbsp;(catalogue&nbsp;pers&nbsp;:&nbsp;228)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>CUFM_ID_CAGE_TYP_HS</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Identifiant&nbsp;du&nbsp;type&nbsp;d'honoraire&nbsp;de&nbsp;surveillance&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;296)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>CUFM_ID_CAPE_ENT_MUTATION</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Identifiant&nbsp;du&nbsp;mode&nbsp;d'entrée&nbsp;proposé&nbsp;en&nbsp;mouvement&nbsp;de&nbsp;mutation&nbsp;(Pers&nbsp;:&nbsp;17&nbsp;-&nbsp;Gén&nbsp;:&nbsp;7)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>CUFM_ID_CAPE_ENT_DIRECT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Identifiant&nbsp;du&nbsp;mode&nbsp;d'entrée&nbsp;proposé&nbsp;en&nbsp;entrée&nbsp;directe&nbsp;(Pers&nbsp;:&nbsp;17&nbsp;-&nbsp;Gén&nbsp;:&nbsp;7)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>CUFM_NBR_MAX_NUI_APR_DAT_SOR_M</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Nombre&nbsp;maximal&nbsp;de&nbsp;nuits&nbsp;après&nbsp;date&nbsp;système&nbsp;pour&nbsp;date&nbsp;de&nbsp;sortie&nbsp;réelle&nbsp;ou&nbsp;médicale&nbsp;(champ&nbsp;mal&nbsp;nommé&nbsp;:&nbsp;erreur&nbsp;SFD)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>CUFM_ID_CAGE_ENT_DIRECT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Identifiant&nbsp;générique&nbsp;du&nbsp;mode&nbsp;d'entrée&nbsp;proposé&nbsp;en&nbsp;entrée&nbsp;directe&nbsp;(catalogue&nbsp;gén.&nbsp;:&nbsp;7)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>CUFM_ID_CAGE_ENT_MUTATION</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Identifiant&nbsp;générique&nbsp;du&nbsp;mode&nbsp;d'entrée&nbsp;proposé&nbsp;en&nbsp;mouvement&nbsp;de&nbsp;mutation&nbsp;(catalogue&nbsp;gén.&nbsp;:&nbsp;7)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>CUFM_ID_CAGE_GROUPE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Identifiant&nbsp;générique&nbsp;du&nbsp;groupe&nbsp;de&nbsp;l'UFM&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;227)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>CUFM_ID_CAGE_TYP_SEJ</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Identifiant&nbsp;générique&nbsp;de&nbsp;l'élément&nbsp;de&nbsp;catalogue&nbsp;des&nbsp;types&nbsp;de&nbsp;séjour&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;4)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>CUFM_IND_HOR_BGH</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Colonne&nbsp;obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>CUFM_TYP_NUI_FERIE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Type&nbsp;de&nbsp;majoration&nbsp;nuit&nbsp;et&nbsp;férié&nbsp;(0&nbsp;:&nbsp;Interdite&nbsp;/&nbsp;1&nbsp;:&nbsp;Proposée&nbsp;/&nbsp;2&nbsp;:&nbsp;Non&nbsp;proposée)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>CUFM_ID_CAGE_NAT_PEC</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Identifiant&nbsp;de&nbsp;l'élément&nbsp;du&nbsp;catalogue&nbsp;générique&nbsp;dont&nbsp;le&nbsp;code&nbsp;du&nbsp;type&nbsp;d'information&nbsp;vaut&nbsp;CAT_NATURE_PEC&nbsp;:&nbsp;ce&nbsp;champ&nbsp;spécifie&nbsp;la&nbsp;nature&nbsp;de&nbsp;prise&nbsp;en&nbsp;charge&nbsp;par&nbsp;défaut&nbsp;d'une&nbsp;catégorie&nbsp;d'UFM.&nbsp;C'est&nbsp;le&nbsp;champ&nbsp;Forme&nbsp;d'activité&nbsp;psychiatrique&nbsp;par&nbsp;défaut&nbsp;par&nbsp;l'écran&nbsp;des&nbsp;CUFM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>CUFM_ID_CAGE_SSR_TYP_ACTIVITE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Identifiant&nbsp;du&nbsp;type&nbsp;d'activité&nbsp;de&nbsp;la&nbsp;catégorie&nbsp;d'UFM&nbsp;(CAGE&nbsp;:&nbsp;TYP_ACT_SSR&nbsp;-&nbsp;926)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>CUFM_TYP_BGH</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Type&nbsp;de&nbsp;budget&nbsp;:&nbsp;1&nbsp;-&nbsp;Séjour&nbsp;hors&nbsp;BG,&nbsp;2&nbsp;-&nbsp;Honoraires&nbsp;hors&nbsp;BG,&nbsp;3&nbsp;-&nbsp;Honoraires&nbsp;100%&nbsp;BG,&nbsp;4&nbsp;-&nbsp;Honoraires&nbsp;suivant&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>CUFM_IND_ENT_INT_SAM_DIM_FERIE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Indicateur&nbsp;d'entrée&nbsp;interdite&nbsp;les&nbsp;samedi,&nbsp;dimanche&nbsp;et&nbsp;jours&nbsp;fériés</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>CUFM_IND_BLO_SEH</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Indicateur&nbsp;de&nbsp;blocage&nbsp;des&nbsp;SEH</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>CUFM_IND_BLO_100_31_JOURS</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Indicateur&nbsp;""Pas&nbsp;de&nbsp;passage&nbsp;à&nbsp;100%&nbsp;au&nbsp;31ème&nbsp;jour&nbsp;en&nbsp;HDJ""</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>CUFM_TYP_BTN_FAC_RECUEIL</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Boutons&nbsp;facture&nbsp;du&nbsp;recueil&nbsp;(vide&nbsp;¿&nbsp;utilisation&nbsp;du&nbsp;paramètre&nbsp;BOUTON_FACTURE,&nbsp;1&nbsp;¿&nbsp;Aucun&nbsp;,&nbsp;2&nbsp;-&nbsp;Pré&nbsp;facture,&nbsp;3&nbsp;¿&nbsp;Facture,&nbsp;4&nbsp;-&nbsp;Facture&nbsp;sinon&nbsp;pré&nbsp;facture)
+</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>CUFM_IND_ANP99</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Indicateur&nbsp;ANP&nbsp;99&nbsp;par&nbsp;défaut</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>CUFM_TYP_DAT_FIN_PRR</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Type&nbsp;de&nbsp;date&nbsp;de&nbsp;fin&nbsp;de&nbsp;présence&nbsp;recurrente&nbsp;:&nbsp;Vide(valeur&nbsp;par&nbsp;défaut),&nbsp;1-Saisir&nbsp;la&nbsp;date&nbsp;de&nbsp;fin,&nbsp;2-Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;présence&nbsp;=&nbsp;date&nbsp;de&nbsp;début&nbsp;de&nbsp;présence,&nbsp;3-Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;présence&nbsp;=date&nbsp;de&nbsp;début&nbsp;de&nbsp;présence&nbsp;+&nbsp;1&nbsp;jour,&nbsp;4-Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;présence&nbsp;=&nbsp;date&nbsp;de&nbsp;début&nbsp;de&nbsp;présence&nbsp;+&nbsp;2&nbsp;jours,&nbsp;5-Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;présence&nbsp;=&nbsp;date&nbsp;de&nbsp;début&nbsp;de&nbsp;présence&nbsp;+&nbsp;nombre&nbsp;d'heures</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>CUFM_NBR_HEU_PRR</td>
+<td>NUMBER(2,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Nombre&nbsp;d'heure&nbsp;de&nbsp;présence&nbsp;(on&nbsp;ne&nbsp;peut&nbsp;saisir&nbsp;que&nbsp;de&nbsp;1&nbsp;à&nbsp;48)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>CUFM_HEU_FIN_PRR</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Heure&nbsp;de&nbsp;fin&nbsp;de&nbsp;présence&nbsp;récurrente&nbsp;fixe</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>CUFM_IND_PRR_MATIN</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Autorisation&nbsp;du&nbsp;moment&nbsp;'Matin'&nbsp;sur&nbsp;les&nbsp;présences&nbsp;récurentes&nbsp;liées&nbsp;à&nbsp;cette&nbsp;catégorie&nbsp;d'ufm&nbsp;(1=oui,&nbsp;0=non)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>CUFM_IND_PRR_APRESMIDI</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Autorisation&nbsp;du&nbsp;moment&nbsp;'Apres-midi'&nbsp;sur&nbsp;les&nbsp;présences&nbsp;récurentes&nbsp;liées&nbsp;à&nbsp;cette&nbsp;catégorie&nbsp;d'ufm&nbsp;(1=oui,&nbsp;0=non)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>CUFM_IND_PRR_JOURNEE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Autorisation&nbsp;du&nbsp;moment&nbsp;'Journée'&nbsp;sur&nbsp;les&nbsp;présences&nbsp;récurentes&nbsp;liées&nbsp;à&nbsp;cette&nbsp;catégorie&nbsp;d'ufm&nbsp;(1=oui,&nbsp;0=non)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>CUFM_IND_PRR_NUIT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Autorisation&nbsp;du&nbsp;moment&nbsp;'Nuit'&nbsp;sur&nbsp;les&nbsp;présences&nbsp;récurentes&nbsp;liées&nbsp;à&nbsp;cette&nbsp;catégorie&nbsp;d'ufm&nbsp;(1=oui,&nbsp;0=non)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>CUFM_ID_CAGE_QD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Identifiant&nbsp;de&nbsp;l'Ã©lÃ©ment&nbsp;de&nbsp;catalogue&nbsp;des&nbsp;qualificatif&nbsp;de&nbsp;la&nbsp;dÃ©pense&nbsp;(catalogue&nbsp;gÃ©nÃ©rique&nbsp;:&nbsp;816)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>CUFM_IND_DEM_PEC_SS_OBJET</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Indicateur&nbsp;de&nbsp;demande&nbsp;de&nbsp;PEC&nbsp;AMC&nbsp;sans&nbsp;objet&nbsp;(0=Non,&nbsp;1=Oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>CUFM_IND_NON_FAC_FJ</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>Indicateur&nbsp;de&nbsp;non&nbsp;facturation&nbsp;du&nbsp;FJ&nbsp;ou&nbsp;FJS&nbsp;pour&nbsp;un&nbsp;séjour&nbsp;sur&nbsp;une&nbsp;journée&nbsp;en&nbsp;Privé&nbsp;et&nbsp;PSPH,&nbsp;par&nbsp;contre&nbsp;en&nbsp;PSPH&nbsp;la&nbsp;facturation&nbsp;du&nbsp;PJ&nbsp;est&nbsp;forcée.&nbsp;(0=Non,&nbsp;1=Oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>CUFM_IND_NON_FACTURABLE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>64</td>
+<td>Indicateur&nbsp;de&nbsp;possibilité&nbsp;de&nbsp;séjour&nbsp;non&nbsp;facturable&nbsp;(0 :&nbsp;non,&nbsp;1 :&nbsp;oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 64)">
+<td>CUFM_IND_EPT_FACTURATION</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'</td>
+<td>65</td>
+<td>Indicateur&nbsp;de&nbsp;facturation&nbsp;à&nbsp;l'AMO&nbsp;en&nbsp;cas&nbsp;d'EPT&nbsp;&nbsp;(vide&nbsp;ou&nbsp;0 :&nbsp;non,&nbsp;1 :&nbsp;oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 65)">
+<td>CUFM_IND_AME_REFORME</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>66</td>
+<td>Indicateur&nbsp;de&nbsp;facturation&nbsp;des&nbsp;séjours&nbsp;selon&nbsp;la&nbsp;réforme&nbsp;tarification&nbsp;AME&nbsp;de&nbsp;2012&nbsp;(0&nbsp;:&nbsp;non,&nbsp;1&nbsp;:&nbsp;oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 66)">
+<td>CUFM_IND_EXC_RSFACE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>67</td>
+<td>Indicateur&nbsp;d'exclusion&nbsp;de&nbsp;l'envoi&nbsp;RSF&nbsp;ACE&nbsp;(0 :&nbsp;non&nbsp;exclu,&nbsp;1 :&nbsp;exclu&nbsp;du&nbsp;traitement)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 67)">
+<td>CUFM_ID_CAGE_TYP_CONSULTATION</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>68</td>
+<td>Identifiant&nbsp;generique&nbsp;du&nbsp;catalogue&nbsp;des&nbsp;types&nbsp;de&nbsp;consultations&nbsp;(catalogue&nbsp;generique&nbsp;:&nbsp;1851)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 68)">
+<td>CUFM_IND_FID_ACE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>69</td>
+<td>Indicateur&nbsp;de&nbsp;prise&nbsp;en&nbsp;compte&nbsp;en&nbsp;FIDES_ACE&nbsp;(Valeur&nbsp;NULL&nbsp;ou&nbsp;1&nbsp;si&nbsp;activé)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 69)">
+<td>CUFM_IND_JUS_OBL_ADM</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'&nbsp;</td>
+<td>70</td>
+<td>Vérification&nbsp;du&nbsp;justificatif&nbsp;d'identité&nbsp;obligatoire&nbsp;en&nbsp;admission&nbsp;(1=Oui,&nbsp;0=Non)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 70)">
+<td>CUFM_IND_JUS_OBL_PREAD</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'&nbsp;</td>
+<td>71</td>
+<td>Vérification&nbsp;du&nbsp;justificatif&nbsp;d'identité&nbsp;obligatoire&nbsp;en&nbsp;pré-admission&nbsp;(1=Oui,&nbsp;0&nbsp;=Non)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_BAS_CATEGORIE_UFM_BAS_CAGE</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATALOGUE_GEN</td>
+<td class="currentcell">PK_BAS_CATALOGUE_GEN</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_BAS_CATEGORIE_UFM_BAS_CATAL</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_BAS_CATEGORIE_UFM_BAS_CATA1</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_BAS_CATEGORIE_UFM_BAS_CATA2</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_BAS_CATEGORIE_UFM_BAS_CATA3</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>FK_BAS_CATEGORIE_UFM_BAS_CATA4</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>FK_BAS_CATEGORIE_UFM_PAD_COUVE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_COUVERTURE</td>
+<td>PK_PAD_COUVERTURE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>FK_CUFM_ID_CAGE_ENT_DIRECT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>FK_CUFM_ID_CAGE_ENT_MUTATION</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>FK_CUFM_ID_CAGE_GROUPE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>FK_CUFM_ID_CAGE_NAT_PEC</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>FK_CUFM_ID_CAGE_QD</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>FK_CUFM_ID_CAGE_TYP_CONSULTATI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>FK_CUFM_ID_CAGE_TYP_HS</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>FK_CUFM_ID_CAGE_TYP_SEJ</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>FK_CUFM_ID_CAPE_ENT_DIRECT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>FK_CUFM_ID_CAPE_ENT_MUTATION</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 17)">
+<td>PK_BAS_CATEGORIE_UFM</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_BAS_CATEGORIE_UFM</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 18)">
+<td>SYS_C004645613</td>
+<td>Check</td>
+<td>"CUFM_ID_CUFM"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 19)">
+<td>SYS_C004645614</td>
+<td>Check</td>
+<td>"CUFM_LIBELLE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 20)">
+<td>SYS_C004645615</td>
+<td>Check</td>
+<td>"CUFM_IND_GST_LIT_POSTE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 21)">
+<td>SYS_C004645616</td>
+<td>Check</td>
+<td>"CUFM_IND_COU_MOUVEMENT"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 22)">
+<td>SYS_C004645617</td>
+<td>Check</td>
+<td>"CUFM_IND_PER_PRE_OBLIGATOIRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 23)">
+<td>SYS_C004645618</td>
+<td>Check</td>
+<td>"CUFM_IND_DAT_ENT_EQU_DAT_SOR"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 24)">
+<td>SYS_C004645619</td>
+<td>Check</td>
+<td>"CUFM_IND_ACT_BLOQUE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 25)">
+<td>SYS_C004645620</td>
+<td>Check</td>
+<td>"CUFM_DAT_DEB_VAL"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 26)">
+<td>SYS_C004645621</td>
+<td>Check</td>
+<td>"CUFM_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 27)">
+<td>SYS_C004645622</td>
+<td>Check</td>
+<td>"CUFM_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 28)">
+<td>SYS_C004645623</td>
+<td>Check</td>
+<td>"CUFM_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 29)">
+<td>SYS_C004645624</td>
+<td>Check</td>
+<td>"CUFM_UTI_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_SSR_TYP_ACTIVITE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAPE_GROUPE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_MT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_DMT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAPE_TYP_SEJ</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_TYP_ACTIVITE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">CUFM_ID_COUV</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_ENT_DIRECT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_ENT_MUTATION</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_GROUPE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_NAT_PEC</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_QD</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_TYP_CONSULTATION</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_TYP_HS</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAGE_TYP_SEJ</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAPE_ENT_DIRECT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">CUFM_ID_CAPE_ENT_MUTATION</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.1">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">CUFM_ID_CUFM</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.1">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">CUFM_ID_CUFM</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.1">
+<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">CUFM_LIBELLE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.1">
+<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<td class="currentcell">CUFM_IND_GST_LIT_POSTE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.21.1">
+<div class="childreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 23)" class="currentrow">
+<td class="currentcell">CUFM_IND_COU_MOUVEMENT</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.22.1">
+<div class="childreport"><table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 24)" class="currentrow">
+<td class="currentcell">CUFM_IND_PER_PRE_OBLIGATOIRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.23.1">
+<div class="childreport"><table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 25)" class="currentrow">
+<td class="currentcell">CUFM_IND_DAT_ENT_EQU_DAT_SOR</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.24.1">
+<div class="childreport"><table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 26)" class="currentrow">
+<td class="currentcell">CUFM_IND_ACT_BLOQUE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.25.1">
+<div class="childreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 27)" class="currentrow">
+<td class="currentcell">CUFM_DAT_DEB_VAL</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.26.1">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)" class="currentrow">
+<td class="currentcell">CUFM_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.27.1">
+<div class="childreport"><table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 29)" class="currentrow">
+<td class="currentcell">CUFM_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.28.1">
+<div class="childreport"><table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 30)" class="currentrow">
+<td class="currentcell">CUFM_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.29.1">
+<div class="childreport"><table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 31)" class="currentrow">
+<td class="currentcell">CUFM_UTI_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>279</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>191</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>279</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">T_EVTHM_SEJOUR_COUVSOC_M</td>
+<td class="currentcell">TRIGGER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 1)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_IDE_SEJOUR_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 2)">
+<td>PCAP_XROUGE</td>
+<td>PCKPFIHMM</td>
+<td>PACKAGE&nbsp;BODY</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 3)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ADRESSE_ASSURE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 4)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MODE_LEGAL_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 5)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_SEJOUR_AMC_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 6)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_TELEPHONE_ASSURE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 7)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MVT_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 8)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MVT_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 9)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MVT_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 10)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ASSURE_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 35, 11)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PEC_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATEGORIE_UFM</td>
+<td>TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.5">
+<div class="childreport"><table id="Table.37" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.5">
+<div class="childreport"><table id="Table.38" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.5">
+<div class="childreport"><table id="Table.39" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.5">
+<div class="childreport"><table id="Table.40" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.5">
+<div class="childreport"><table id="Table.41" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.5">
+<div class="childreport"><table id="Table.42" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.5">
+<div class="childreport"><table id="Table.43" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.5">
+<div class="childreport"><table id="Table.44" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.5">
+<div class="childreport"><table id="Table.45" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.5">
+<div class="childreport"><table id="Table.46" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.5">
+<div class="childreport"><table id="Table.47" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.48" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>BAS_CATEGORIE_UFM</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>279</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>191</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>279</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Categorie&nbsp;UF&nbsp;Medicales</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.49" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.50" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_QD</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">CUFM_ID_CAGE_QD</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 1)">
+<td>PCAP_XROUGE</td>
+<td>PK_BAS_CATEGORIE_UFM</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CUFM</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 2)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAGE_GROUPE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_GROUPE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 3)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAGE_TYP_HS</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_TYP_HS</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAGE_NAT_PEC</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_NAT_PEC</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAGE_TYP_SEJ</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_TYP_SEJ</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 6)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAGE_ENT_DIRECT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_ENT_DIRECT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 7)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAPE_ENT_DIRECT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAPE_ENT_DIRECT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 8)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_BAS_CA1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_MT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 9)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_BAS_CA2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_DMT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 10)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_BAS_CA3</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAPE_TYP_SEJ</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 11)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_BAS_CA4</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_TYP_ACTIVITE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 12)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_BAS_CAG</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_SSR_TYP_ACTIVITE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 13)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_BAS_CAT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAPE_GROUPE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 14)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_BAS_ETA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_ETAB</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 15)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_BAS_CATEGORIE_UFM_PAD_COU</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_COUV</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 16)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAGE_ENT_MUTATION</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_ENT_MUTATION</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 17)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAGE_TYP_CONSULTA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAGE_TYP_CONSULTATION</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 50, 18)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CUFM_ID_CAPE_ENT_MUTATION</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CUFM_ID_CAPE_ENT_MUTATION</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.51" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 51)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_QD</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_QD</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.52" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 52)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_BAS_CATEGORIE_UFM</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CUFM</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.53" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 53)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_GROUPE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_GROUPE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.54" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 54)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_TYP_HS</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_TYP_HS</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.55" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 55)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_NAT_PEC</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_NAT_PEC</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.56" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 56)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_TYP_SEJ</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_TYP_SEJ</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.57" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 57)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_ENT_DIRECT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_ENT_DIRECT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.58" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 58)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAPE_ENT_DIRECT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAPE_ENT_DIRECT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.8">
+<div class="childreport"><table id="Table.59" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 59)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_BAS_CA1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_MT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.8">
+<div class="childreport"><table id="Table.60" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 60)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_BAS_CA2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_DMT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.8">
+<div class="childreport"><table id="Table.61" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 61)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_BAS_CA3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAPE_TYP_SEJ</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.8">
+<div class="childreport"><table id="Table.62" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 62)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_BAS_CA4</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_TYP_ACTIVITE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.8">
+<div class="childreport"><table id="Table.63" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 63)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_BAS_CAG</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_SSR_TYP_ACTIVITE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.8">
+<div class="childreport"><table id="Table.64" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 64)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_BAS_CAT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAPE_GROUPE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.8">
+<div class="childreport"><table id="Table.65" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 65)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_BAS_ETA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.8">
+<div class="childreport"><table id="Table.66" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 66)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_BAS_CATEGORIE_UFM_PAD_COU</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_COUV</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.8">
+<div class="childreport"><table id="Table.67" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 67)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_ENT_MUTATION</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_ENT_MUTATION</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.8">
+<div class="childreport"><table id="Table.68" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 68)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAGE_TYP_CONSULTA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAGE_TYP_CONSULTATION</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.8">
+<div class="childreport"><table id="Table.69" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 69)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CUFM_ID_CAPE_ENT_MUTATION</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATEGORIE_UFM</td>
+<td class="currentcell">CUFM_ID_CAPE_ENT_MUTATION</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

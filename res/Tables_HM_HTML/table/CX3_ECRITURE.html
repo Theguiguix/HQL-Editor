@@ -1,0 +1,2353 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="CX3_ECRITURE/report.js" type="text/javascript"></script>
+<link href="CX3_ECRITURE/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">CX3_ECRITURE</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">CCX3_ID_CCX3</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;CX3_ECRITURE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>CCX3_COD_DOSSIER</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>Dossier&nbsp;comptable</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>CCX3_COD_SOCI</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>Société&nbsp;comptable</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>CCX3_COD_ETAC</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Etablissement&nbsp;comptable.&nbsp;Equivalent&nbsp;du&nbsp;site&nbsp;financier&nbsp;Adonix.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>CCX3_COD_JOUR</td>
+<td>VARCHAR2(6&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Journal</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>CCX3_COD_CAIS</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Caisse</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>CCX3_DAT_ECRI</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Date&nbsp;de&nbsp;l'écriture</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>CCX3_COD_LIBE</td>
+<td>VARCHAR2(4&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>Libellé&nbsp;type.&nbsp;Codes&nbsp;Adonix&nbsp;:&nbsp;AVC&nbsp;(avoir&nbsp;client),&nbsp;FAC&nbsp;(facture),&nbsp;CHQ&nbsp;(chèque),&nbsp;ESP&nbsp;(espèces),&nbsp;RCH&nbsp;(remise&nbsp;de&nbsp;chèques),&nbsp;VIR&nbsp;(virement),&nbsp;CBQ&nbsp;(carte&nbsp;bancaire),&nbsp;RCB&nbsp;(remise&nbsp;de&nbsp;carte&nbsp;bancaire),&nbsp;IMP&nbsp;(impayé),&nbsp;ODC&nbsp;(OD&nbsp;client).</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>CCX3_LIB_ECRI</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>Libellé&nbsp;d'écriture.&nbsp;Pour&nbsp;une&nbsp;écriture&nbsp;de&nbsp;vente&nbsp;:&nbsp;1&nbsp;à&nbsp;10&nbsp;:&nbsp;NDA&nbsp;/&nbsp;11&nbsp;à&nbsp;19&nbsp;:&nbsp;N°&nbsp;de&nbsp;facture&nbsp;/&nbsp;&nbsp;22&nbsp;à&nbsp;30&nbsp;:&nbsp;Période&nbsp;de&nbsp;facturation&nbsp;JJMM-JJMMAA.&nbsp;Pour&nbsp;une&nbsp;écriture&nbsp;de&nbsp;règlement&nbsp;:&nbsp;Information&nbsp;saisie.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>CCX3_LIB_LECR</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Libellé&nbsp;de&nbsp;ligne&nbsp;d'écriture</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>CCX3_NUM_COMPTE</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Compte&nbsp;général</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>CCX3_NUM_CPT_AUX</td>
+<td>VARCHAR2(12&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Compte&nbsp;auxiliaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>CCX3_LIB_CPT_AUX</td>
+<td>VARCHAR2(35&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Libellé&nbsp;de&nbsp;compte&nbsp;auxiliaire.&nbsp;Permet&nbsp;la&nbsp;création&nbsp;du&nbsp;compte&nbsp;auxiliaire&nbsp;dans&nbsp;le&nbsp;progiciel&nbsp;comptable.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>CCX3_COD_SANA</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Section&nbsp;analytique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>CCX3_SENS</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>D&nbsp;=&nbsp;Débit,&nbsp;C&nbsp;=&nbsp;Crédit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>CCX3_MONTANT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Montant</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>CCX3_NUM_PIECE</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>N°&nbsp;de&nbsp;facture</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>CCX3_REFERENCE</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Référence.&nbsp;NDA&nbsp;sur&nbsp;vente/règlement&nbsp;client.&nbsp;Identifiant&nbsp;d¿écriture&nbsp;sur&nbsp;compte&nbsp;de&nbsp;remise&nbsp;de&nbsp;chèque&nbsp;ou&nbsp;CB.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>CCX3_REF_LIBRE</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Référence&nbsp;libre.&nbsp;EEEEE/LLLLL&nbsp;ou&nbsp;EEEEE&nbsp;est&nbsp;le&nbsp;n°&nbsp;d¿écriture&nbsp;HM&nbsp;(chrono&nbsp;mensuel&nbsp;par&nbsp;journal)&nbsp;et&nbsp;LLLLL&nbsp;est&nbsp;le&nbsp;numéro&nbsp;de&nbsp;ligne&nbsp;d¿écriture&nbsp;HM&nbsp;(chrono&nbsp;par&nbsp;écriture).</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>CCX3_ECHEANCE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Échéance</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>CCX3_COD_TVA</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Code&nbsp;TVA,&nbsp;alimenté&nbsp;en&nbsp;écritures&nbsp;de&nbsp;ventes,&nbsp;sur&nbsp;les&nbsp;comptes&nbsp;de&nbsp;type&nbsp;«&nbsp;Vente&nbsp;»&nbsp;(montant&nbsp;HT).&nbsp;Codes&nbsp;Adonix&nbsp;:&nbsp;001&nbsp;(Taux&nbsp;normal&nbsp;(19,60&nbsp;%&nbsp;en&nbsp;2007)),&nbsp;002&nbsp;(Taux&nbsp;réduit&nbsp;(5,5&nbsp;%&nbsp;en&nbsp;2007)).</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>CCX3_IDE_ADONIX</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Identifiant&nbsp;Adonix,&nbsp;attribué&nbsp;lors&nbsp;de&nbsp;l'import</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>CCX3_DAT_IMPORT</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Date+Heure&nbsp;d'import</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>CCX3_UTI_IMPORT</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Utilisateur&nbsp;Adonix&nbsp;ayant&nbsp;réalisé&nbsp;l'import</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>CCX3_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>25</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>CCX3_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>26</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>CCX3_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>27</td>
+<td>N°&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>CCX3_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>CCX3_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>CCX3_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>CCX3_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>CCX3_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>CCX3_DAT_EXPORT</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Date&nbsp;d'interface</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>CCX3_ID_ETAB</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Identifiant&nbsp;d'établissement&nbsp;(pour&nbsp;visibilité)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>CCX3_ID_CPTE_CTPARTIE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Identifiant&nbsp;du&nbsp;compte&nbsp;de&nbsp;contrepartie&nbsp;(Spécifique&nbsp;Comptabilité&nbsp;Qualiac)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>CCX3_NUM_CTPARTIE</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Numéro&nbsp;du&nbsp;compte&nbsp;de&nbsp;contrepartie&nbsp;&nbsp;(Spécifique&nbsp;Comptabilité&nbsp;Qualiac)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>CCX3_COD_CTPARTIE</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Code&nbsp;du&nbsp;compte&nbsp;de&nbsp;contrepartie&nbsp;&nbsp;(Spécifique&nbsp;Comptabilité&nbsp;Qualiac)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>CCX3_COD_TRAITEMENT</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Code&nbsp;de&nbsp;traitement&nbsp;&nbsp;(Spécifique&nbsp;Comptabilité&nbsp;Qualiac)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>CCX3_NUM_TRAITEMENT</td>
+<td>NUMBER(5,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Chrono&nbsp;annuel&nbsp;alimenté&nbsp;par&nbsp;l'import&nbsp;comptable&nbsp;(Spécifique&nbsp;Comptabilité&nbsp;Qualiac)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>CCX3_ID_LECR_TEMPORAIRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Donnée&nbsp;temporaire&nbsp;de&nbsp;traitement&nbsp;&nbsp;(Spécifique&nbsp;Comptabilité&nbsp;Qualiac)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>CCX3_ID_SOCI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Identifiant&nbsp;de&nbsp;société&nbsp;comptable</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>CCX3_ID_ETAC</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Identifiant&nbsp;de&nbsp;l'établissement&nbsp;comptable</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>CCX3_ID_JOUR</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Identifiant&nbsp;de&nbsp;journal</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>CCX3_ID_CAIS</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;caisse</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>CCX3_ID_LIBE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Identifiant&nbsp;du&nbsp;libellé&nbsp;type</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>CCX3_ID_CPTE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Identifiant&nbsp;du&nbsp;compte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>CCX3_COD_CPTE</td>
+<td>VARCHAR2(19&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Code&nbsp;du&nbsp;compte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>CCX3_ID_SANA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Identifiant&nbsp;de&nbsp;section&nbsp;analytique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>CCX3_DAT_EXP_TEXTE</td>
+<td>VARCHAR2(19&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Date&nbsp;d'export&nbsp;au&nbsp;format&nbsp;texte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>CCX3_IND_CUMUL</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Indicateur&nbsp;de&nbsp;cumul&nbsp;(Colonne&nbsp;technique)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>CCX3_ID_TTVA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Fk&nbsp;vers&nbsp;PAD_TVA</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>CCX3_TYPE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Type&nbsp;d'interface&nbsp;(¿0¿&nbsp;:&nbsp;Vente,&nbsp;¿1¿&nbsp;:&nbsp;Règlement,&nbsp;¿2¿&nbsp;:&nbsp;Redevance)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>CCX3_ID_PATI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Identifiant&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>CCX3_ID_SEJO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Identifiant&nbsp;du&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>CCX3_NIP_PATI</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>IPP&nbsp;-&nbsp;NIP</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>CCX3_NOM_PATI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Nom&nbsp;usuel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>CCX3_PRE_PATI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Prénom</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>CCX3_IND_CAL_RETENUE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Indicateur&nbsp;"à&nbsp;prendre&nbsp;en&nbsp;compte&nbsp;dans&nbsp;le&nbsp;calcul&nbsp;de&nbsp;la&nbsp;retenue&nbsp;à&nbsp;la&nbsp;source".&nbsp;1&nbsp;&nbsp;si&nbsp;LECR_ID_LFAD&nbsp;non&nbsp;null,&nbsp;0&nbsp;sinon</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>CCX3_TYP_DEBITEUR</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Type&nbsp;de&nbsp;débiteur&nbsp;concerne&nbsp;AMO,&nbsp;AMC,&nbsp;ETX,&nbsp;PAT&nbsp;en&nbsp;fonction&nbsp;de&nbsp;LECR_ID_ORGA_AMO&nbsp;/&nbsp;LECR_ID_ORGA_AMC&nbsp;/&nbsp;LECR_ID_ETEX.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>CCX3_ID_CAGE_SPECIALITE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Spécialité&nbsp;du&nbsp;PS,&nbsp;catalogue&nbsp;specialite&nbsp;medicale&nbsp;(TYIN_ID_TYIN&nbsp;=&nbsp;10)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_CCX3_ID_CAGE_SPECIALITE</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATALOGUE_GEN</td>
+<td class="currentcell">PK_BAS_CATALOGUE_GEN</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_CCX3_ID_CAIS</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_CAISSE</td>
+<td>PK_CCL_CAISSE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_CCX3_ID_CPTE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_COMPTE</td>
+<td>PK_CCL_COMPTE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_CCX3_ID_CPTE_CTPARTIE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_COMPTE</td>
+<td>PK_CCL_COMPTE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_CCX3_ID_ETAC</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_ETABLISSEMENT</td>
+<td>PK_CCL_ETABLISSEMENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>FK_CCX3_ID_JOUR</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_JOURNAL</td>
+<td>PK_CCL_JOURNAL</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>FK_CCX3_ID_LECR_TEMPORAIRE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_LIGNE_ECRITURE</td>
+<td>PK_CCL_LIGNE_ECRITURE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>FK_CCX3_ID_LIBE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_LIBELLE</td>
+<td>PK_CCL_LIBELLE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>FK_CCX3_ID_PATI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>FK_CCX3_ID_SANA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_SECTION_ANALYTIQUE</td>
+<td>PK_CCL_SECTION_ANALYTIQUE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>FK_CCX3_ID_SEJO</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR</td>
+<td>PK_IDE_SEJOUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>FK_CCX3_ID_SOCI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>CCL_SOCIETE</td>
+<td>PK_CCL_SOCIETE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>FK_CCX3_ID_TTVA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_TVA</td>
+<td>PK_PAD_TVA</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>PK_CX3_ECRITURE</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_CX3_ECRITURE</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>SYS_C004647979</td>
+<td>Check</td>
+<td>"CCX3_ID_CCX3"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>SYS_C004647980</td>
+<td>Check</td>
+<td>"CCX3_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>SYS_C004647981</td>
+<td>Check</td>
+<td>"CCX3_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 17)">
+<td>SYS_C004647982</td>
+<td>Check</td>
+<td>"CCX3_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">CCX3_ID_CAGE_SPECIALITE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">CCX3_ID_CAIS</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">CCX3_ID_CPTE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">CCX3_ID_CPTE_CTPARTIE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">CCX3_ID_ETAC</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">CCX3_ID_JOUR</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">CCX3_ID_LECR_TEMPORAIRE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">CCX3_ID_LIBE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">CCX3_ID_PATI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">CCX3_ID_SANA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">CCX3_ID_SEJO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">CCX3_ID_SOCI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">CCX3_ID_TTVA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">CCX3_ID_CCX3</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">CCX3_ID_CCX3</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">CCX3_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">CCX3_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.1">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">CCX3_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>98827</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>3649</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>251</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>98827</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>02/09/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>02/09/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>21/11/17</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>CX3_ECRITURE</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>1048576</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>98827</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>3649</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>251</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>98827</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>02/09/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Table&nbsp;pour&nbsp;export&nbsp;ADONIX&nbsp;des&nbsp;écritures&nbsp;comptables</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_CCX3_I2</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">FUNCTION-BASED&nbsp;NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">SYS_NC00061$</td>
+<td class="currentcell">"PCAP_XROUGE"."SWM_RECHNUMECRIX3"("CCX3_REF_LIBRE")</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 1)">
+<td>PCAP_XROUGE</td>
+<td>IDX_CCX3_I3</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>FUNCTION-BASED&nbsp;NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>ENABLED</td>
+<td>NO</td>
+<td>CCX3_ID_ETAB,&nbsp;CCX3_COD_JOUR,&nbsp;SYS_NC00061$</td>
+<td>"PCAP_XROUGE"."SWM_RECHNUMECRIX3"("CCX3_REF_LIBRE")</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 2)">
+<td>PCAP_XROUGE</td>
+<td>PK_CX3_ECRITURE</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_CCX3</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 3)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_CAIS</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_CAIS</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_CPTE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_CPTE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_ETAB</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_ETAB</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 6)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_ETAC</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_ETAC</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 7)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_JOUR</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_JOUR</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 8)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_LIBE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_LIBE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 9)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_PATI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 10)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_SANA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_SANA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 11)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_SEJO</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_SEJO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 12)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_SOCI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_SOCI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 13)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_TTVA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_TTVA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 14)">
+<td>PCAP_XROUGE</td>
+<td>IDX_CX3_ECRITURE_I1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_DAT_EXPORT,&nbsp;CCX3_UTI_CRE,&nbsp;CCX3_ID_ETAB</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 15)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_CPTE_CTPARTIE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_CPTE_CTPARTIE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 16)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_CAGE_SPECIALITE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_CAGE_SPECIALITE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 26, 17)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_CCX3_ID_LECR_TEMPORAIRE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>CCX3_ID_LECR_TEMPORAIRE</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 27)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_CCX3_I2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">SYS_NC00061$</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_CCX3_I3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_COD_JOUR</td>
+<td class="currentcell">2</td>
+<td class="currentcell">6</td>
+<td class="currentcell">6</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)">
+<td>PCAP_XROUGE</td>
+<td>IDX_CCX3_I3</td>
+<td>PCAP_XROUGE</td>
+<td>CX3_ECRITURE</td>
+<td>SYS_NC00061$</td>
+<td>3</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)">
+<td>PCAP_XROUGE</td>
+<td>IDX_CCX3_I3</td>
+<td>PCAP_XROUGE</td>
+<td>CX3_ECRITURE</td>
+<td>CCX3_ID_ETAB</td>
+<td>1</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 29)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_CX3_ECRITURE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_CCX3</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 30)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_CAIS</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_CAIS</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 31)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_CPTE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_CPTE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 32)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_ETAB</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 33)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_ETAC</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_ETAC</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 34)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_JOUR</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_JOUR</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.8">
+<div class="childreport"><table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 35)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_LIBE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_LIBE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.8">
+<div class="childreport"><table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 36)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_PATI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.8">
+<div class="childreport"><table id="Table.37" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 37)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_SANA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_SANA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.8">
+<div class="childreport"><table id="Table.38" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 38)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_SEJO</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_SEJO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.8">
+<div class="childreport"><table id="Table.39" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 39)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_SOCI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_SOCI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.8">
+<div class="childreport"><table id="Table.40" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 40)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_TTVA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_TTVA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.8">
+<div class="childreport"><table id="Table.41" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 41)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_CX3_ECRITURE_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_DAT_EXPORT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">7</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 41)">
+<td>PCAP_XROUGE</td>
+<td>IDX_CX3_ECRITURE_I1</td>
+<td>PCAP_XROUGE</td>
+<td>CX3_ECRITURE</td>
+<td>CCX3_UTI_CRE</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 41)">
+<td>PCAP_XROUGE</td>
+<td>IDX_CX3_ECRITURE_I1</td>
+<td>PCAP_XROUGE</td>
+<td>CX3_ECRITURE</td>
+<td>CCX3_ID_ETAB</td>
+<td>3</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.8">
+<div class="childreport"><table id="Table.42" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 42)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_CPTE_CTPARTIE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_CPTE_CTPARTIE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.8">
+<div class="childreport"><table id="Table.43" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 43)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_CAGE_SPECIALITE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_CAGE_SPECIALITE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.8">
+<div class="childreport"><table id="Table.44" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 44)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_CCX3_ID_LECR_TEMPORAIRE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">CX3_ECRITURE</td>
+<td class="currentcell">CCX3_ID_LECR_TEMPORAIRE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

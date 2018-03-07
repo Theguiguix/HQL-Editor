@@ -1,0 +1,1491 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="PMS_MODE_LEGAL/report.js" type="text/javascript"></script>
+<link href="PMS_MODE_LEGAL/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">PMS_MODE_LEGAL</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">MLGL_ID_MLGL</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;PMS_MODE_LEGAL</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>MLGL_DAT_DEB_VAL</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>2</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;validité&nbsp;du&nbsp;mode&nbsp;légal</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>MLGL_DAT_DMD_TIERS</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>Obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>MLGL_DAT_FIN_VAL</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;validité&nbsp;du&nbsp;mode&nbsp;légal</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>MLGL_DAT_PRE_CERTIFICAT</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>MLGL_DAT_SEC_CERTIFICAT</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>MLGL_ID_CAGE_TYP_SOR</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>MLGL_ID_CAGE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>Identifiant&nbsp;d'un&nbsp;élément&nbsp;du&nbsp;catalogue&nbsp;générique&nbsp;des&nbsp;types&nbsp;de&nbsp;modes&nbsp;légaux&nbsp;dont&nbsp;le&nbsp;code&nbsp;du&nbsp;type&nbsp;d'information&nbsp;vaut&nbsp;CAT_TYPE_MODE_LEGAL</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>MLGL_ID_ETAB_D</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>9</td>
+<td>Identifiant&nbsp;de&nbsp;l'établissement&nbsp;lié</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>MLGL_IND_PRL_IMMINENT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>MLGL_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>11</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>MLGL_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>12</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>MLGL_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>13</td>
+<td>N°&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>MLGL_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>MLGL_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>MLGL_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>MLGL_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>MLGL_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>MLGL_ID_PATI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Identifiant&nbsp;du&nbsp;patient&nbsp;auquel&nbsp;le&nbsp;mode&nbsp;légal&nbsp;est&nbsp;lié</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>MLGL_ETA_DOSSIER</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Etat&nbsp;dossier&nbsp;HSC&nbsp;(0=Non&nbsp;renseigné,&nbsp;1=En&nbsp;attente&nbsp;de&nbsp;pièce,&nbsp;2=Provisoire,&nbsp;3=Validé)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>MLGL_DAT_DER_TRT</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Date&nbsp;dernier&nbsp;traitement&nbsp;batch</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>MLGL_NUM_LIVRE</td>
+<td>VARCHAR2(8&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Numéro&nbsp;livre&nbsp;de&nbsp;loi</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>MLGL_NUM_FOLIO</td>
+<td>VARCHAR2(8&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Numéro&nbsp;de&nbsp;folio</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>MLGL_NUM_MATRICULE</td>
+<td>VARCHAR2(8&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Numéro&nbsp;de&nbsp;matricule</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>MLGL_COMMENTAIRE</td>
+<td>VARCHAR2(4000&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Commentaire</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_MLGL_ID_CAGE</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATALOGUE_GEN</td>
+<td class="currentcell">PK_BAS_CATALOGUE_GEN</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_MLGL_ID_CAGE_TYP_SOR</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_MLGL_ID_PATI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>PK_PMS_MODE_LEGAL</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_PMS_MODE_LEGAL</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>SYS_C004650431</td>
+<td>Check</td>
+<td>"MLGL_ID_MLGL"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>SYS_C004650432</td>
+<td>Check</td>
+<td>"MLGL_DAT_DEB_VAL"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>SYS_C004650433</td>
+<td>Check</td>
+<td>"MLGL_ID_ETAB_D"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>SYS_C004650434</td>
+<td>Check</td>
+<td>"MLGL_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>SYS_C004650435</td>
+<td>Check</td>
+<td>"MLGL_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>SYS_C004650436</td>
+<td>Check</td>
+<td>"MLGL_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">MLGL_ID_CAGE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">MLGL_ID_CAGE_TYP_SOR</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">MLGL_ID_PATI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">MLGL_ID_MLGL</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">MLGL_ID_MLGL</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">MLGL_DAT_DEB_VAL</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">MLGL_ID_ETAB_D</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">MLGL_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">MLGL_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">MLGL_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>263</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>87</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>263</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 14, 0)" class="currentrow">
+<td class="currentcell">T_EVTHM_MODE_LEGAL_CMS</td>
+<td class="currentcell">AFTER&nbsp;EACH&nbsp;ROW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">INSERT&nbsp;OR&nbsp;UPDATE&nbsp;OR&nbsp;DELETE</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">PMS_MODE_LEGAL</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+<div id="Child.0.0.4">
+<div class="currentchildreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_MODE_LEGAL_CMS
+AFTER INSERT or UPDATE or DELETE
+ON PMS_MODE_LEGAL
+FOR EACH ROW
+BEGIN
+	DECLARE
+		n_CodRet				NUMBER;
+		n_NoSej					NUMBER;
+		PAT						IDE_PATIENT%ROWTYPE;
+		SEJ						IDE_SEJOUR%ROWTYPE;
+		v_TypSejBase 			BAS_CATALOGUE_GEN.CAGE_CODE%TYPE;
+		v_TypSej				BAS_CATALOGUE_PERS.CAPE_CODE%TYPE;
+		v_UfCode				BAS_UF.UNFO_CODE%TYPE;
+		v_UfTypSej				BAS_CATALOGUE_GEN.CAGE_CODE%TYPE;
+		v_LitCode				PAD_LIT_POSTE.LIPO_CODE%TYPE;
+		v_ChambreCode			PAD_CHAMBRE_SALLE.CHAS_CODE%TYPE;
+		n_IdEvnt				SCL_EVT.EVNT_ID_EVNT%TYPE;
+		n_IdEvnd				SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+		v_Xml					SCL_EVT_DATA.EVND_VAL%TYPE;
+		n_idApli				SCL_APPLI.APLI_ID%Type;
+		v_idTrameOrigine		VARCHAR2(19);
+		v_LibEvt				VARCHAR2(30);
+		n_IdEvt					NUMBER;
+
+		-- Recherche du premier séjour de temps plein (Forme activité 01) psy postérieur au mode légal
+		CURSOR C1 (dateModeLegal Date, noPatient Number) IS
+			SELECT /* T_EVTHM_MODE_LEGAL_CMS */ SEJO_ID_SEJO
+			  FROM IDE_SEJOUR, BAS_UF, BAS_CATEGORIE_UFM
+			 WHERE SEJO_ID_PATI = noPatient
+			   AND SEJO_DAT_DEB >= dateModeLegal
+			   AND SEJO_DAT_SUP is Null
+			   AND SEJO_IND_INCOMPLET = '0'
+			   AND SEJO_NUM_SEJ_COMM is not null
+			   AND UNFO_ID_UNFO = SEJO_ID_UNFO
+			   AND CUFM_ID_CUFM = UNFO_ID_CUFM
+			   AND CUFM_ID_CAGE_NAT_PEC = 2587
+		ORDER BY SEJO_DAT_DEB;
+
+		v_evtHL7				SCL_EVT.EVNT_EVTHL7%Type;
+		v_evtIndNoNda			Varchar2(1);
+		v_evtTypMvt				Varchar2(1);
+		v_evtIndRec				Varchar2(1);
+		v_srvNip				scl_appli.APLI_SRVIPP%type;
+		v_sejoStatut			bas_parametre.para_valeur%Type;
+
+	BEGIN
+		-- #Version# 1.16 du 01/03/2016 #Version#
+		v_evtIndNoNda	:= '-';
+		v_evtTypMvt := 'E';
+		v_evtIndRec := '-';
+
+		If Updating Then
+			-- noPerroquet
+			If (:new.MLGL_DAT_DEB_VAL = :old.MLGL_DAT_DEB_VAL or (:new.MLGL_DAT_DEB_VAL is null and :old.MLGL_DAT_DEB_VAL is null)) and
+				 (:new.MLGL_DAT_FIN_VAL = :old.MLGL_DAT_FIN_VAL or (:new.MLGL_DAT_FIN_VAL is null and :old.MLGL_DAT_FIN_VAL is null)) and
+				 (:new.MLGL_ID_CAGE = :old.MLGL_ID_CAGE or (:new.MLGL_ID_CAGE is null and :old.MLGL_ID_CAGE is null)) and
+				 (nvl(substr(:new.MLGL_COL_COM,7,1),'0') = nvl(substr(:old.MLGL_COL_COM,7,1),'0'))
+			Then
+				return;
+			End If;
+		End If;
+
+		-- On détermine sur quel Séjour on va simuler un Update
+		If Deleting Then
+			Open C1 (:old.MLGL_DAT_DEB_VAL, :old.MLGL_ID_PATI);
+		Else
+			Open C1 (:new.MLGL_DAT_DEB_VAL, :new.MLGL_ID_PATI);
+		End if;
+		Fetch C1 Into n_NoSej;
+		If C1%ROWCOUNT = 0 Then
+			Return;
+		End If;
+		Close C1;
+
+		-- Lecture du patient, du séjour, du mouvement et info rattachées
+		If Deleting Then
+			n_CodRet := pckPfiHmM.FUN_LirePAT(:old.MLGL_ID_PATI, PAT);
+		Else
+			n_CodRet := pckPfiHmM.FUN_LirePAT(:new.MLGL_ID_PATI, PAT);
+		End if;
+		n_CodRet := pckPfiHmM.FUN_LireSEJ(n_NoSej, SEJ);
+		v_sejoStatut := pckPfiHmM.FUN_litValParam('NUM_SEJO_STATUT', SEJ.SEJO_ID_ETAB_CON, current_date);
+
+		If v_sejoStatut = 'J' Then
+			v_srvNip := '0';
+		Else
+			Begin
+				Select /* T_EVTHM_MODE_LEGAL_CMS */ Max(APLI_SRVIPP)
+				  Into v_srvNip
+				  From scl_appli
+				 Where APLI_TYPE in ('HM','OM')
+				   And APLI_ID_ETAB = SEJ.SEJO_ID_ETAB_CON;
+
+			Exception
+				When others Then
+					v_srvNip := '0';
+			End;
+		End If;
+
+		If SEJ.SEJO_NUM_SEJ_COMM is null Then
+			-- HM est il serveur d'ipp ?
+			If v_srvNip = '1' Then
+				return;
+			End If;
+		End If;
+
+
+		n_CodRet := pckPfiHmM.FUN_LireUF(SEJ.SEJO_ID_UNFO, v_UfCode, v_UfTypSej);
+		n_codRet := pckPfiHmM.FUN_LireLIT(SEJ.SEJO_ID_LIPO, v_ChambreCode, v_LitCode);
+
+		-- Lecture type du séjour
+		If SEJ.SEJO_ID_CAPE_VEN is not null Then
+			SELECT /* T_EVTHM_MODE_LEGAL_CMS */ CAGE_CODE, CAPE_CODE
+				INTO v_TypSejBase, v_TypSej
+				FROM BAS_CATALOGUE_SPE, BAS_CATALOGUE_GEN, BAS_CATALOGUE_PERS
+			 WHERE CAPE_ID_CAPE = SEJ.SEJO_ID_CAPE_VEN
+				 AND CASP_ID_CAPE = CAPE_ID_CAPE
+				 AND CASP_ID_CAGE = CAGE_ID_CAGE
+				 AND CAGE_ID_TYIN = 4;
+		End If;
+
+
+		v_evtHL7 := 'Z99';
+
+		If v_evtHL7 is not null Then
+			v_evtHL7 := v_evtHL7 || v_evtIndNoNda || v_evtTypMvt || v_evtIndRec;
+		End If;
+
+		-- On stocke l'appli externe qui a généré l'évènement et l'Id de l'évènement Origine reçu, le cas échéant
+		If Deleting Then
+			If :old.MLGL_UTI_MOD = 3 Then
+				pckTrigPfiHmM.PRO_appliExt(:old.MLGL_DAT_MOD, :old.MLGL_COL_COM, n_idApli, v_idTrameOrigine);
+			End If;
+		else
+			If :new.MLGL_UTI_MOD = 3 Then
+				pckTrigPfiHmM.PRO_appliExt(:new.MLGL_DAT_MOD, :new.MLGL_COL_COM, n_idApli, v_idTrameOrigine);
+			End If;
+		End If;
+
+		Select /* T_EVTHM_MODE_LEGAL_CMS */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+		If Deleting Then
+			INSERT /* T_EVTHM_MODE_LEGAL_CMS */
+			INTO SCL_EVT (
+					EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT, EVNT_NIP, EVNT_ID_SEJOUR, EVNT_NUM_SEJ, EVNT_NUM_RSS, EVNT_CODE_EVT, EVNT_ID_OBJ, EVNT_CODE_PERE,
+					EVNT_ID_PERE, EVNT_ACTION, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE, EVNT_EVTHL7,
+					EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+			VALUES (n_IdEvnt, current_date, '0', SEJ.SEJO_ID_ETAB_CON, PAT.PATI_ID_PATI, PAT.PATI_NIP, SEJ.SEJO_ID_SEJO, SEJ.SEJO_NUM_SEJ_COMM, NULL, 'SEJOUR', n_IdEvt, NULL,
+					NULL, 'M', n_IdApli, v_idTrameOrigine, v_evtHl7,
+					current_date, current_date, 0, :old.MLGL_UTI_CRE, :old.MLGL_UTI_MOD, :old.MLGL_PRO_CRE, :old.MLGL_PRO_MOD, :old.MLGL_COL_COM);
+
+		Else
+			INSERT /* T_EVTHM_MODE_LEGAL_CMS */
+			INTO SCL_EVT (
+					EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT, EVNT_NIP, EVNT_ID_SEJOUR, EVNT_NUM_SEJ, EVNT_NUM_RSS, EVNT_CODE_EVT, EVNT_ID_OBJ, EVNT_CODE_PERE,
+					EVNT_ID_PERE, EVNT_ACTION, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE, EVNT_EVTHL7,
+					EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+			VALUES (n_IdEvnt, current_date, '0', SEJ.SEJO_ID_ETAB_CON, PAT.PATI_ID_PATI, PAT.PATI_NIP, SEJ.SEJO_ID_SEJO, SEJ.SEJO_NUM_SEJ_COMM, NULL, 'SEJOUR', n_IdEvt, NULL,
+					NULL, 'M', n_IdApli, v_idTrameOrigine, v_evtHl7,
+					current_date, current_date, 0, :new.MLGL_UTI_CRE, :new.MLGL_UTI_MOD, :new.MLGL_PRO_CRE, :new.MLGL_PRO_MOD, :new.MLGL_COL_COM);
+		End if;
+
+		v_xml := null;
+		v_xml := v_xml || '&lt;PATIENT>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', PAT.PATI_ID_PATI);
+		v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', PAT.PATI_NOM_USU);
+		v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', PAT.PATI_NOM_NAI);
+		v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', PAT.PATI_PRENOM);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', PAT.PATI_DAT_NAI);
+		v_xml := v_xml || pckPfiHmM.val2xml('SEXE', PAT.PATI_SEXE);
+		v_xml := v_xml || pckPfiHmM.val2xml('NIP', PAT.PATI_NIP);
+		v_xml := v_xml || '&lt;/PATIENT>';
+
+		Select /* T_EVTHM_MODE_LEGAL_CMS */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+		INSERT /* T_EVTHM_MODE_LEGAL_CMS */
+		INTO SCL_EVT_DATA (evnd_id_evnd,EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+    					EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		VALUES (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'I', v_Xml,
+    			current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+
+		v_xml := null;
+		v_xml := v_xml || '&lt;SEJOUR>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', SEJ.SEJO_ID_SEJO);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', SEJ.SEJO_ID_UNFO);
+		v_xml := v_xml || pckPfiHmM.val2xml('TYPSEJBASE', v_TypSejBase);
+		v_xml := v_xml || pckPfiHmM.val2xml('TYPSEJ', v_TypSej);
+		v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', v_UfCode);
+		v_xml := v_xml || pckPfiHmM.val2xml('UNFO_TYPSEJ', v_UfTypSej);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', SEJ.SEJO_DAT_DEB);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_FIN', SEJ.SEJO_DAT_FIN);
+		v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', SEJ.SEJO_NUM_SEJ_COMM);
+		v_xml := v_xml || pckPfiHmM.val2xml('STATUT', SEJ.SEJO_STATUT);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_SUP', SEJ.SEJO_DAT_SUP);
+		v_xml := v_xml || '&lt;/SEJOUR>';
+
+		INSERT /* T_EVTHM_MODE_LEGAL_CMS */
+		INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+    					EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		VALUES (n_IdEvnd+1, n_IdEvnt, 2, 'SEJOUR', 'M', v_Xml,
+    			current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	EXCEPTION
+		WHEN OTHERS THEN
+			Begin
+				pckTrigPfiHmM.PRO_traceScl(PAT.PATI_NIP, SEJ.SEJO_NUM_SEJ_COMM, SEJ.SEJO_ID_ETAB_CON, 'Evt Mode Legal', 'T_EVTHM_MODE_LEGAL_CMS', '0', SUBSTR(SQLERRM,1,2000));
+			Exception
+				When Others Then
+					return;
+			End;
+	END;
+END T_EVTHM_MODE_LEGAL_CMS;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 15, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">T_EVTHM_MODE_LEGAL_CMS</td>
+<td class="currentcell">TRIGGER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PMS_MODE_LEGAL</td>
+<td class="currentcell">TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>PMS_MODE_LEGAL</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>263</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>87</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>263</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Table&nbsp;des&nbsp;modes&nbsp;légaux&nbsp;d'un&nbsp;patient</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 19, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_MLGL_ID_CAGE</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">MLGL_ID_CAGE</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 19, 1)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_MLGL_ID_PATI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>MLGL_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 19, 2)">
+<td>PCAP_XROUGE</td>
+<td>PK_PMS_MODE_LEGAL</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>MLGL_ID_MLGL</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 19, 3)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_MLGL_ID_ETAB_D</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>MLGL_ID_ETAB_D</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 19, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_MLGL_ID_CAGE_TYP_SOR</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>MLGL_ID_CAGE_TYP_SOR</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_MLGL_ID_CAGE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PMS_MODE_LEGAL</td>
+<td class="currentcell">MLGL_ID_CAGE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_MLGL_ID_PATI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PMS_MODE_LEGAL</td>
+<td class="currentcell">MLGL_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_PMS_MODE_LEGAL</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PMS_MODE_LEGAL</td>
+<td class="currentcell">MLGL_ID_MLGL</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 23)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_MLGL_ID_ETAB_D</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PMS_MODE_LEGAL</td>
+<td class="currentcell">MLGL_ID_ETAB_D</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 24)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_MLGL_ID_CAGE_TYP_SOR</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PMS_MODE_LEGAL</td>
+<td class="currentcell">MLGL_ID_CAGE_TYP_SOR</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

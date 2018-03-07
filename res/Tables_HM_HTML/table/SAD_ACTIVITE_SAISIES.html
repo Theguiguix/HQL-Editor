@@ -1,0 +1,5207 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="SAD_ACTIVITE_SAISIES/report.js" type="text/javascript"></script>
+<link href="SAD_ACTIVITE_SAISIES/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">SAD_ACTIVITE_SAISIES</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">ACSA_ID_ACSA</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;activité&nbsp;saisie</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>ACSA_ID_MEDE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;exécutant</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>ACSA_ID_ETAB_D</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;établissement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>ACSA_ID_ASAI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Identifiant&nbsp;de&nbsp;l'acte&nbsp;CCAM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>ACSA_PHASE_ID</td>
+<td>NUMBER(13,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;phase&nbsp;(table&nbsp;SAREF_ACTIVITE_PHASE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>ACSA_ASS_NON_PREV</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Numéro&nbsp;association&nbsp;non&nbsp;prévue</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>ACSA_MODIF1</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Modificateur&nbsp;1</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>ACSA_MODIF2</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>Modificateur&nbsp;2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>ACSA_MODIF3</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>Modificateur&nbsp;3</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>ACSA_MODIF4</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Modificateur&nbsp;4</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>ACSA_EXT_DOC</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Extension&nbsp;documentaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>ACSA_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>12</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>ACSA_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>13</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>ACSA_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>14</td>
+<td>Numéro&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>ACSA_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>ACSA_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>ACSA_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>ACSA_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>ACSA_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>ACSA_COD_ACT_D</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Code&nbsp;activité&nbsp;(dénormalisation)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>ACSA_COD_REGROUPEMENT</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Code&nbsp;regroupement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>ACSA_MON_TOT_NON_REMB</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Montant&nbsp;facturé&nbsp;pour&nbsp;acte&nbsp;non&nbsp;remboursable</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>ACSA_BAS_REMB</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Base&nbsp;de&nbsp;remboursement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>ACSA_BAS_REMB_SEUIL</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Base&nbsp;de&nbsp;remboursement&nbsp;hors&nbsp;modificateur&nbsp;forfait&nbsp;et&nbsp;hors&nbsp;supplément&nbsp;de&nbsp;charges&nbsp;en&nbsp;cabinet&nbsp;pour&nbsp;règle&nbsp;du&nbsp;seuil</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>ACSA_COD_EXO_B2</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Code&nbsp;justificatif&nbsp;d'exonération&nbsp;du&nbsp;ticket&nbsp;modérateur&nbsp;(0,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;9&nbsp;ou&nbsp;C)&nbsp;:&nbsp;code&nbsp;exonération&nbsp;calculé&nbsp;télétransmis</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>ACSA_DEP_GLOB_FORMULE</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Colonne&nbsp;obsolète&nbsp;:&nbsp;n'est&nbsp;plus&nbsp;utilisée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>ACSA_DEP_FORMULE</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Formule&nbsp;de&nbsp;calcul&nbsp;du&nbsp;montant&nbsp;total&nbsp;avec&nbsp;le&nbsp;dépassement&nbsp;d'honoraires</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>ACSA_MON_TOT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Montant&nbsp;de&nbsp;l'acte&nbsp;(BR&nbsp;+&nbsp;dépassement)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>ACSA_COD_EXO</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>Code&nbsp;exonération&nbsp;de&nbsp;l'acte&nbsp;CCAM&nbsp;(1,&nbsp;2,&nbsp;3,&nbsp;4&nbsp;ou&nbsp;7)&nbsp;:&nbsp;sert&nbsp;au&nbsp;calcul&nbsp;du&nbsp;champ&nbsp;ACSA_COD_EXO_B2&nbsp;pour&nbsp;la&nbsp;règle&nbsp;du&nbsp;cumul</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>ACSA_MON_DEP_HON</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Montant&nbsp;du&nbsp;dépassement&nbsp;d'honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>ACSA_PRI_UNITAIRE</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Prix&nbsp;unitaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>ACSA_CODE_D</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Code&nbsp;de&nbsp;l'acte&nbsp;saisi&nbsp;pour&nbsp;dénormalisation&nbsp;(CCAM,&nbsp;prestation&nbsp;séjour&nbsp;ou&nbsp;honoraire)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>ACSA_IND_VMD</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Indicateur&nbsp;de&nbsp;ventilation&nbsp;manuelle&nbsp;des&nbsp;débiteurs&nbsp;(1/0)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>ACSA_DAT_EXE_DEB</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Date&nbsp;d'exécution&nbsp;début</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>ACSA_ID_MEDE_PRESC</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;prescripteur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>ACSA_LIBELLE_D</td>
+<td>VARCHAR2(2000&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Libellé&nbsp;de&nbsp;l'acte&nbsp;saisi&nbsp;pour&nbsp;dénormalisation&nbsp;(CCAM,&nbsp;prestation,...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>ACSA_ID_UNFO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Identifiant&nbsp;de&nbsp;l'UF&nbsp;exécuante</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>ACSA_IND_DEP_GLOBAL</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Indicateur&nbsp;de&nbsp;Dh&nbsp;global</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>ACSA_ID_MEDE_REMPLACE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;remplacé</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>ACSA_HEU_MEDICALE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Heure&nbsp;médicale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>ACSA_QTE_COEFFICIENT</td>
+<td>NUMBER(6,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Quantité&nbsp;/&nbsp;Coefficient&nbsp;(1&nbsp;pour&nbsp;l'activié&nbsp;d'un&nbsp;acte&nbsp;CCAM)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>ACSA_ID_UNFO_RES</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Identifiant&nbsp;de&nbsp;l'UF&nbsp;responsable/demandeuse</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>ACSA_IND_REMPLACE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Indicateur&nbsp;médecin&nbsp;remplacé&nbsp;(1)&nbsp;sinon&nbsp;(0)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>ACSA_IND_BLO</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Indicateur&nbsp;de&nbsp;blocage&nbsp;(0&nbsp;:&nbsp;validé&nbsp;-&nbsp;1&nbsp;:&nbsp;bloqué)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>ACSA_ID_RECU</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Identifiant&nbsp;recueil</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>ACSA_ID_PRSE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;prestations&nbsp;de&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>ACSA_ID_FAVO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Identifiant&nbsp;du&nbsp;favori</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>ACSA_LET_CLE</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Lettre&nbsp;clé&nbsp;pour&nbsp;les&nbsp;prestation&nbsp;séjour/honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>ACSA_NUM_ORDRE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>N°&nbsp;d'ordre&nbsp;pour&nbsp;le&nbsp;tri&nbsp;des&nbsp;informations&nbsp;dans&nbsp;les&nbsp;listes</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>ACSA_ID_PATI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Identifiant&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>ACSA_ID_SEJO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Identifiant&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>ACSA_DENOMBREMENT</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Dénombrement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>ACSA_DAT_EXE_FIN</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Date&nbsp;d'exécution&nbsp;fin</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>ACSA_ID_PRHO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Identifiant&nbsp;prestation&nbsp;honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>ACSA_LIB_BLO</td>
+<td>VARCHAR2(2000&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Libellé&nbsp;associé&nbsp;au&nbsp;blocage</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>ACSA_REFERENCE</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Référence&nbsp;de&nbsp;la&nbsp;prestation&nbsp;honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>ACSA_TYP_MAJ_COMPATIBLE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Compatibilité&nbsp;des&nbsp;majoration&nbsp;nuit/férié&nbsp;(0&nbsp;:&nbsp;Non&nbsp;-&nbsp;1&nbsp;:&nbsp;Possible&nbsp;-&nbsp;2&nbsp;:&nbsp;Proposée)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>ACSA_TYP_MAJ_RETENUE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Présence&nbsp;effective&nbsp;des&nbsp;majoration&nbsp;nuit/férié&nbsp;(0&nbsp;:&nbsp;Non&nbsp;-&nbsp;1&nbsp;:&nbsp;Nuit&nbsp;1&nbsp;-&nbsp;2&nbsp;:&nbsp;Nuit&nbsp;2&nbsp;-&nbsp;3&nbsp;:&nbsp;Férié)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>ACSA_IND_DIF_PAT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Indicateur&nbsp;différence&nbsp;au&nbsp;patient&nbsp;(1&nbsp;:&nbsp;la&nbsp;diffrence&nbsp;entre&nbsp;monatnt&nbsp;net&nbsp;et&nbsp;somme&nbsp;des&nbsp;PEC&nbsp;des&nbsp;AMO/AMC&nbsp;est&nbsp;affectée&nbsp;au&nbsp;patient,&nbsp;0&nbsp;sinon)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>ACSA_IND_PRI_UNI_DEVIS</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Indicateur&nbsp;de&nbsp;prix&nbsp;unitaire&nbsp;sur&nbsp;devis&nbsp;(LPP,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>ACSA_MTT_ETI</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Montant&nbsp;total&nbsp;de&nbsp;l'écart&nbsp;indemnisable&nbsp;(LPP,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>ACSA_PRI_ACHAT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Prix&nbsp;d'achat&nbsp;pour&nbsp;les&nbsp;prestations&nbsp;LPP</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>ACSA_DAT_PRESC</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>Date&nbsp;de&nbsp;prescription</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>ACSA_SIRET</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>64</td>
+<td>N°&nbsp;SIRET&nbsp;du&nbsp;fabricant&nbsp;(pour&nbsp;les&nbsp;LPP,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 64)">
+<td>ACSA_CPT_COUPLE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>65</td>
+<td>Compteur&nbsp;de&nbsp;couplage&nbsp;des&nbsp;lignes&nbsp;(utilisé&nbsp;pour&nbsp;les&nbsp;honraires&nbsp;de&nbsp;surveillance,&nbsp;couples&nbsp;LPP/ETI,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 65)">
+<td>ACSA_IND_MAJORATION</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>66</td>
+<td>Indicateur&nbsp;d'acceptation&nbsp;ou&nbsp;non&nbsp;de&nbsp;la&nbsp;majoration&nbsp;proposée&nbsp;(1&nbsp;:&nbsp;acceptée,&nbsp;0&nbsp;sinon)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 66)">
+<td>ACSA_IND_EXTERNE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>67</td>
+<td>Indciateur&nbsp;activité&nbsp;externe&nbsp;(pour&nbsp;les&nbsp;prestations&nbsp;honoraires&nbsp;par&nbsp;exemple)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 67)">
+<td>ACSA_ID_FADE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>68</td>
+<td>Identifiant&nbsp;du&nbsp;détail&nbsp;du&nbsp;favori&nbsp;à&nbsp;l'origine&nbsp;de&nbsp;cette&nbsp;activité</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 68)">
+<td>ACSA_IND_POINTAGE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>69</td>
+<td>Indicateur&nbsp;de&nbsp;pointage&nbsp;de&nbsp;la&nbsp;ligne&nbsp;d'activité&nbsp;pour&nbsp;la&nbsp;facturation&nbsp;(valeur&nbsp;1&nbsp;:&nbsp;ligne&nbsp;pointée)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 69)">
+<td>ACSA_ID_FACT_DERNIER</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>70</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;dernière&nbsp;facture,&nbsp;avoir&nbsp;ou&nbsp;préfacture&nbsp;(à&nbsp;NULL&nbsp;si&nbsp;n'est&nbsp;pas&nbsp;facturé)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 70)">
+<td>ACSA_ID_SEJO_BEBE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>71</td>
+<td>Identifiant&nbsp;du&nbsp;séjour&nbsp;bébé</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 71)">
+<td>ACSA_ACT_CLASSE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>72</td>
+<td>Classe&nbsp;de&nbsp;l'acte&nbsp;(GC&nbsp;:&nbsp;Geste&nbsp;complémentaire,&nbsp;TR&nbsp;:&nbsp;acte&nbsp;transitoire&nbsp;ou&nbsp;P&nbsp;:&nbsp;acte&nbsp;principal</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 72)">
+<td>ACSA_COD_ADM_REM</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>73</td>
+<td>Code&nbsp;admission&nbsp;remboursement&nbsp;(provenance&nbsp;SAREF_HIS_ACTE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 73)">
+<td>ACSA_ID_PRHO_MAJORATION</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>74</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;prestation&nbsp;honoraire&nbsp;retenue&nbsp;pour&nbsp;la&nbsp;majoration&nbsp;nuit1,&nbsp;nuit2&nbsp;ou&nbsp;férié</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 74)">
+<td>ACSA_MTT_MAJORATION</td>
+<td>NUMBER(7,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>75</td>
+<td>Montant&nbsp;de&nbsp;la&nbsp;majoration&nbsp;retenue</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 75)">
+<td>ACSA_IND_VLR_DIRECT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>76</td>
+<td>Indicateur&nbsp;coût&nbsp;direct&nbsp;(valeur&nbsp;1)&nbsp;:&nbsp;ligne&nbsp;non&nbsp;prise&nbsp;en&nbsp;compte&nbsp;dans&nbsp;les&nbsp;totalisations&nbsp;de&nbsp;la&nbsp;facture&nbsp;sinon&nbsp;valeur&nbsp;'0'</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 76)">
+<td>ACSA_VLR_SUP_CAB</td>
+<td>NUMBER(6,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>77</td>
+<td>Valeur&nbsp;du&nbsp;supplément&nbsp;de&nbsp;charge&nbsp;en&nbsp;cabinet</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 77)">
+<td>ACSA_VLR_PS_NON_CONV</td>
+<td>NUMBER(6,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>78</td>
+<td>Valeur&nbsp;de&nbsp;la&nbsp;réduction&nbsp;pour&nbsp;un&nbsp;PS&nbsp;non&nbsp;conventionné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 78)">
+<td>ACSA_VLR_MODIF1</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>79</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;1</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 79)">
+<td>ACSA_COE_MODIF1</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>80</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;1</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 80)">
+<td>ACSA_VLR_MODIF2</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>81</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 81)">
+<td>ACSA_COE_MODIF2</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>82</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 82)">
+<td>ACSA_VLR_MODIF3</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>83</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;3</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 83)">
+<td>ACSA_COE_MODIF3</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>84</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;3</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 84)">
+<td>ACSA_VLR_MODIF4</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>85</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;4</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 85)">
+<td>ACSA_COE_MODIF4</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>86</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;4</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 86)">
+<td>ACSA_COE_ASS_NON_PREV</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>87</td>
+<td>Coefficient&nbsp;réducteur&nbsp;associé&nbsp;au&nbsp;code&nbsp;ANP&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 87)">
+<td>ACSA_COE_MCO_HAD</td>
+<td>NUMBER(5,4)</td>
+<td>Yes</td>
+<td>null</td>
+<td>88</td>
+<td>Valeur&nbsp;du&nbsp;coefficient&nbsp;MCO/HAD&nbsp;en&nbsp;vigueur&nbsp;à&nbsp;la&nbsp;date&nbsp;de&nbsp;fin&nbsp;du&nbsp;RSS</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 88)">
+<td>ACSA_COE_DOM</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>89</td>
+<td>valeur&nbsp;du&nbsp;coefficient&nbsp;DOM&nbsp;en&nbsp;vigueur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 89)">
+<td>ACSA_IND_ACT_PRO_RUM</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>90</td>
+<td>Indicateur&nbsp;notifiant&nbsp;que&nbsp;l'acte&nbsp;a&nbsp;été&nbsp;créé&nbsp;à&nbsp;partir&nbsp;du&nbsp;RUM&nbsp;(valeur&nbsp;1),&nbsp;à&nbsp;partir&nbsp;d'un&nbsp;receuil&nbsp;(valeur&nbsp;0)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 90)">
+<td>ACSA_NUM_GHS</td>
+<td>VARCHAR2(4&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>91</td>
+<td>Numéro&nbsp;de&nbsp;GHS</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 91)">
+<td>ACSA_CPT_FAVORI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>92</td>
+<td>Compteur&nbsp;de&nbsp;groupe&nbsp;de&nbsp;favoris</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 92)">
+<td>ACSA_COD_LPP</td>
+<td>VARCHAR2(13&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>93</td>
+<td>Code&nbsp;de&nbsp;l'article&nbsp;LPP&nbsp;(SAREF.LPP_ARTICLE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 93)">
+<td>ACSA_ID_RPSS</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>94</td>
+<td>Identifiant&nbsp;du&nbsp;RPSS&nbsp;dans&nbsp;le&nbsp;cadre&nbsp;du&nbsp;PMSI&nbsp;HAD&nbsp;pour&nbsp;les&nbsp;prestations&nbsp;GHT</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 94)">
+<td>ACSA_ID_CAGE_QD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>95</td>
+<td>Identifiant&nbsp;du&nbsp;qualificatif&nbsp;de&nbsp;la&nbsp;dépense&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;816&nbsp;-&nbsp;QUALIFICATIF_DEPENSE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 95)">
+<td>ACSA_ID_CAGE_JUS_EXO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>96</td>
+<td>Justificatif&nbsp;d'exonération&nbsp;(TYIN_CODE&nbsp;=&nbsp;"JUSTIF_EXO"&nbsp;-&nbsp;TYIN_ID_TYIN&nbsp;=&nbsp;40)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 96)">
+<td>ACSA_ID_CAGE_EVE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>97</td>
+<td>Identifiant&nbsp;de&nbsp;l'événement&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;41&nbsp;-&nbsp;EVENEMENT))</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 97)">
+<td>ACSA_IND_SPL_CAB</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'</td>
+<td>98</td>
+<td>Indicateur&nbsp;supplément&nbsp;de&nbsp;charge&nbsp;en&nbsp;cabinet</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 98)">
+<td>ACSA_IND_RMB_EXCEPTIONNEL</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'</td>
+<td>99</td>
+<td>Indicateur&nbsp;remboursement&nbsp;exceptionnel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 99)">
+<td>ACSA_IND_VALIDE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>100</td>
+<td>Indicateur&nbsp;de&nbsp;validité&nbsp;de&nbsp;l'activité&nbsp;(valeur&nbsp;1)&nbsp;sinon&nbsp;0&nbsp;:&nbsp;pas&nbsp;de&nbsp;prise&nbsp;dans&nbsp;moteur&nbsp;de&nbsp;facturation,&nbsp;affectation&nbsp;des&nbsp;ANP,&nbsp;incompatibilité,&nbsp;...</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 100)">
+<td>ACSA_IND_EXB</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>101</td>
+<td>Indicateur&nbsp;EXB&nbsp;(valeur&nbsp;0&nbsp;ou&nbsp;null&nbsp;:&nbsp;non&nbsp;concerné,&nbsp;1&nbsp;:&nbsp;EXB)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 101)">
+<td>ACSA_ID_APPA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>102</td>
+<td>Identifiant&nbsp;de&nbsp;l'appareil</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 102)">
+<td>ACSA_NUM_FT</td>
+<td>NUMBER(9,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>103</td>
+<td>Numéro&nbsp;Forfait&nbsp;Technique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 103)">
+<td>ACSA_RAB_PRI_UNITAIRE</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>104</td>
+<td>Prix&nbsp;unitaire&nbsp;saisi</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 104)">
+<td>ACSA_RAB_MTT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>105</td>
+<td>Rabais&nbsp;exprimé&nbsp;sous&nbsp;forme&nbsp;de&nbsp;montant</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 105)">
+<td>ACSA_RAB_POURCENTAGE</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>106</td>
+<td>Rabais&nbsp;exprimé&nbsp;sous&nbsp;forme&nbsp;de&nbsp;pourcentage</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 106)">
+<td>ACSA_RAB_PU_ORI</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>107</td>
+<td>Prix&nbsp;unitaire&nbsp;avant&nbsp;rabais&nbsp;:&nbsp;PU&nbsp;officiel&nbsp;d'origine</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 107)">
+<td>ACSA_ENTENTE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>108</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 108)">
+<td>ACSA_NUM_DENT</td>
+<td>VARCHAR2(64&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>109</td>
+<td>CCAM&nbsp;dentaire&nbsp;-&nbsp;Liste&nbsp;des&nbsp;n°&nbsp;de&nbsp;dents&nbsp;séparés&nbsp;par&nbsp;des&nbsp;";"</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 109)">
+<td>ACSA_IND_FAC_GHS_MINOR</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>110</td>
+<td>Indicateur&nbsp;de&nbsp;facturation&nbsp;du&nbsp;GHS&nbsp;minor&nbsp;(1=on&nbsp;applique&nbsp;la&nbsp;minoration&nbsp;du&nbsp;GSH,&nbsp;0=facturation&nbsp;normal&nbsp;du&nbsp;GHS)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 110)">
+<td>ACSA_ID_SATIN</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>111</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;SAREF_ATIH_ACTE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 111)">
+<td>ACSA_COD_ACT_DESC</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>112</td>
+<td>Code&nbsp;description&nbsp;ATIH&nbsp;sur&nbsp;3&nbsp;caractères&nbsp;de&nbsp;l'acte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 112)">
+<td>ACSA_LIB_DESC_D</td>
+<td>VARCHAR2(2000&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>113</td>
+<td>Libellé&nbsp;de&nbsp;l'acte&nbsp;ATIH</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 113)">
+<td>ACSA_IND_FORFAIT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>114</td>
+<td>Indicateur&nbsp;d'activité&nbsp;saisie&nbsp;au&nbsp;forfait&nbsp;(Tunisie)&nbsp;(1=oui,&nbsp;0=non)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 114)">
+<td>ACSA_IND_PRT_AUT_FAC</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>115</td>
+<td>Indicateur&nbsp;de&nbsp;prestation&nbsp;automatique&nbsp;créée&nbsp;par&nbsp;le&nbsp;moteur&nbsp;de&nbsp;facturation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 115)">
+<td>ACSA_IND_PRT_AUT_MOD</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>116</td>
+<td>Indicateur&nbsp;de&nbsp;prestation&nbsp;automatique&nbsp;modifiée&nbsp;dans&nbsp;le&nbsp;recueil</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 116)">
+<td>ACSA_TYP_PAIEMENT</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>117</td>
+<td>Type&nbsp;de&nbsp;paiement&nbsp;utilisé&nbsp;(0&nbsp;ou&nbsp;null&nbsp;=&nbsp;pas&nbsp;de&nbsp;paiement,&nbsp;1&nbsp;=&nbsp;virement,&nbsp;2&nbsp;=&nbsp;chèque,&nbsp;3&nbsp;=&nbsp;espèce)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 117)">
+<td>ACSA_IND_PU_MAJORE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>118</td>
+<td>Indicateur&nbsp;stipulant&nbsp;que&nbsp;le&nbsp;PU&nbsp;a&nbsp;été&nbsp;majoré</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_ACSA_ID_APPA</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PAD_APPAREIL</td>
+<td class="currentcell">PK_PAD_APPAREIL</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_ACSA_ID_CAGE_EVE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_ACSA_ID_CAGE_JUS_EXO</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_ACSA_ID_CAGE_QD</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_ACSA_ID_FACT_DERNIER</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>FAC_FACTURE</td>
+<td>PK_FAC_FACTURE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>FK_ACSA_ID_PRHO_MAJORATION</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_PRESTATION_HONORAIRE</td>
+<td>PK_PAD_PRESTATION_HONORAIRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>FK_ACSA_ID_RPSS</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PMS_RPSS</td>
+<td>PK_PMS_RPSS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>FK_SAD_ACTIVITE_SAISIES_BAS_UF</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>FK_SAD_ACTIVITE_SAISIES_BAS_U1</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>FK_SAD_ACTIVITE_SAISIES_IDE_ME</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>FK_SAD_ACTIVITE_SAISIES_IDE_M1</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>FK_SAD_ACTIVITE_SAISIES_IDE_M2</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>FK_SAD_ACTIVITE_SAISIES_IDE_PA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>FK_SAD_ACTIVITE_SAISIES_IDE_SE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR</td>
+<td>PK_IDE_SEJOUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>FK_SAD_ACTIVITE_SAISIES_PAD_PR</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_PRESTATION_SEJOUR</td>
+<td>PK_PAD_PRESTATION_SEJOUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>FK_SAD_ACTIVITE_SAISIES_PAD_P1</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_PRESTATION_HONORAIRE</td>
+<td>PK_PAD_PRESTATION_HONORAIRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>FK_SAD_ACTIVITE_SAISIES_SAD_AC</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTES_SAISIS</td>
+<td>PK_SAD_ACTES_SAISIS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 17)">
+<td>FK_SAD_ACTIVITE_SAISIES_SAD_FA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_FAVORIS</td>
+<td>PK_SAD_FAVORIS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 18)">
+<td>FK_SAD_ACTIVITE_SAISIES_SAD_F1</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_FAVORIS_DET</td>
+<td>PK_SAD_FAVORIS_DET</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 19)">
+<td>FK_SAD_ACTIVITE_SAISIES_SAD_RE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_RECUEIL</td>
+<td>PK_SAD_RECUEIL</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 20)">
+<td>FK_SAD_ACTIVITE_SAISIES_SEJBB</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR</td>
+<td>PK_IDE_SEJOUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 21)">
+<td>PK_SAD_ACTIVITE_SAISIES</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_SAD_ACTIVITE_SAISIES</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 22)">
+<td>SYS_C004651443</td>
+<td>Check</td>
+<td>"ACSA_ID_ACSA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 23)">
+<td>SYS_C004651444</td>
+<td>Check</td>
+<td>"ACSA_ID_ETAB_D"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 24)">
+<td>SYS_C004651445</td>
+<td>Check</td>
+<td>"ACSA_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 25)">
+<td>SYS_C004651446</td>
+<td>Check</td>
+<td>"ACSA_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 26)">
+<td>SYS_C004651447</td>
+<td>Check</td>
+<td>"ACSA_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">ACSA_ID_APPA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">ACSA_ID_CAGE_EVE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">ACSA_ID_CAGE_JUS_EXO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">ACSA_ID_CAGE_QD</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">ACSA_ID_FACT_DERNIER</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">ACSA_ID_PRHO_MAJORATION</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">ACSA_ID_RPSS</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">ACSA_ID_UNFO_RES</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">ACSA_ID_UNFO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">ACSA_ID_MEDE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">ACSA_ID_MEDE_REMPLACE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">ACSA_ID_MEDE_PRESC</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">ACSA_ID_PATI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">ACSA_ID_SEJO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">ACSA_ID_PRSE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">ACSA_ID_PRHO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">ACSA_ID_ASAI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.1">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">ACSA_ID_FAVO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.1">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">ACSA_ID_FADE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.1">
+<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">ACSA_ID_RECU</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.1">
+<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<td class="currentcell">ACSA_ID_SEJO_BEBE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.21.1">
+<div class="childreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 23)" class="currentrow">
+<td class="currentcell">ACSA_ID_ACSA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.22.1">
+<div class="childreport"><table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 24)" class="currentrow">
+<td class="currentcell">ACSA_ID_ACSA</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.23.1">
+<div class="childreport"><table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 25)" class="currentrow">
+<td class="currentcell">ACSA_ID_ETAB_D</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.24.1">
+<div class="childreport"><table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 26)" class="currentrow">
+<td class="currentcell">ACSA_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.25.1">
+<div class="childreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 27)" class="currentrow">
+<td class="currentcell">ACSA_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.26.1">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)" class="currentrow">
+<td class="currentcell">ACSA_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>254012</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>15582</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>404</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>254012</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 0)" class="currentrow">
+<td class="currentcell">T_EVT_SAD_ACTIV_SAIS_NGAP_CM</td>
+<td class="currentcell">AFTER&nbsp;EACH&nbsp;ROW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">INSERT&nbsp;OR&nbsp;UPDATE</td>
+<td class="currentcell">DISABLED</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 1)">
+<td>T_EVT_SAD_ACTIVITE_SAISIES_C</td>
+<td>AFTER&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>INSERT</td>
+<td>DISABLED</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 2)">
+<td>T_EVT_SAD_ACTIV_SAIS_NGAP_S</td>
+<td>AFTER&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>DELETE</td>
+<td>DISABLED</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 3)">
+<td>T_EVT_SAD_ACTIVITE_SAISIES_M</td>
+<td>AFTER&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>UPDATE</td>
+<td>DISABLED</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 4)">
+<td>T_EVT_SAD_ACTIVITE_SAISIES_S</td>
+<td>AFTER&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>DELETE</td>
+<td>DISABLED</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+<div id="Child.0.0.4">
+<div class="currentchildreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVT_SAD_ACTIV_SAIS_NGAP_CM
+AFTER INSERT OR UPDATE
+ON SAD_ACTIVITE_SAISIES
+FOR EACH ROW
+WHEN (old.ACSA_ID_ASAI IS NULL And new.ACSA_ID_PRHO IS NOT NULL And new.ACSA_ID_FAVO IS NOT NULL)
+DECLARE
+	RUfExe							BAS_UF%RowType;
+	RUfResp							BAS_UF%RowType;
+	RMedExe							IDE_MEDECIN%RowType;
+	RRecueil						SAD_RECUEIL%RowType;
+	REtatNavigateur					SAD_ETAT_NAVIGATEUR%RowType;
+ 	RDossier                        SAD_DOSSIER_TECHNIQUE%RowType;
+	RPatient						IDE_PATIENT%RowType;
+	RSejour							IDE_SEJOUR%RowType;
+	RUfEntree						BAS_UF%RowType;
+	v_xml							SCL_EVT_DATA.EVND_VAL%Type;
+	n_IdEvnt						SCL_EVT.EVNT_ID_EVNT%TYPE;
+	n_IdEvnd						SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+	v_codeAction					varchar2(1);
+	n_idApli						SCL_APPLI.APLI_ID%Type;
+	v_idTrameOrigine				VARCHAR2(19);
+
+BEGIN
+	-- #Version# 1.16 du 01/03/2016 #Version#
+	If SUBSTR(:new.ACSA_COL_COM, 4, 1) = '1' Then
+		-- Pseudo Update de chargement de l'appli externe. Suppression à suivre. Pas d'évènement Modif à poster.
+		return;
+	End If;
+
+	-- noPerroquet
+	If (:new.ACSA_REFERENCE = :old.ACSA_REFERENCE or (:new.ACSA_REFERENCE is null and :old.ACSA_REFERENCE is null)) and
+	   (:new.ACSA_NUM_ORDRE = :old.ACSA_NUM_ORDRE or (:new.ACSA_NUM_ORDRE is null and :old.ACSA_NUM_ORDRE is null)) and
+	   (:new.ACSA_LET_CLE = :old.ACSA_LET_CLE or (:new.ACSA_LET_CLE is null and :old.ACSA_LET_CLE is null)) and
+	   (:new.ACSA_QTE_COEFFICIENT = :old.ACSA_QTE_COEFFICIENT or (:new.ACSA_QTE_COEFFICIENT is null and :old.ACSA_QTE_COEFFICIENT is null)) and
+	   (:new.ACSA_DENOMBREMENT = :old.ACSA_DENOMBREMENT or (:new.ACSA_DENOMBREMENT is null and :old.ACSA_DENOMBREMENT is null)) and
+	   (nvl(substr(:new.ACSA_COL_COM,7,1),'0') = nvl(substr(:old.ACSA_COL_COM,7,1),'0')) and
+	   (:new.ACSA_CODE_D = :old.ACSA_CODE_D or (:new.ACSA_CODE_D is null and :old.ACSA_CODE_D is null)) and
+	   (:new.ACSA_LIBELLE_D = :old.ACSA_LIBELLE_D or (:new.ACSA_LIBELLE_D is null and :old.ACSA_LIBELLE_D is null)) and
+	   (:new.ACSA_DAT_EXE_DEB = :old.ACSA_DAT_EXE_DEB or (:new.ACSA_DAT_EXE_DEB is null and :old.ACSA_DAT_EXE_DEB is null)) and
+	   (:new.ACSA_TYP_MAJ_RETENUE = :old.ACSA_TYP_MAJ_RETENUE or (:new.ACSA_TYP_MAJ_RETENUE is null and :old.ACSA_TYP_MAJ_RETENUE is null)) and
+	   (:new.ACSA_ID_MEDE = :old.ACSA_ID_MEDE or (:new.ACSA_ID_MEDE is null and :old.ACSA_ID_MEDE is null)) and
+	   (:new.ACSA_ID_MEDE_PRESC = :old.ACSA_ID_MEDE_PRESC or (:new.ACSA_ID_MEDE_PRESC is null and :old.ACSA_ID_MEDE_PRESC is null)) and
+	   (:new.ACSA_ID_CAGE_JUS_EXO = :old.ACSA_ID_CAGE_JUS_EXO or (:new.ACSA_ID_CAGE_JUS_EXO is null and :old.ACSA_ID_CAGE_JUS_EXO is null)) and
+	   (:new.ACSA_ID_CAGE_QD = :old.ACSA_ID_CAGE_QD or (:new.ACSA_ID_CAGE_QD is null and :old.ACSA_ID_CAGE_QD is null)) and
+	   (:new.ACSA_ID_PRHO = :old.ACSA_ID_PRHO or (:new.ACSA_ID_PRHO is null and :old.ACSA_ID_PRHO is null)) and
+	   (:new.ACSA_ID_PRSE = :old.ACSA_ID_PRSE or (:new.ACSA_ID_PRSE is null and :old.ACSA_ID_PRSE is null)) and
+	   (:new.ACSA_ID_RECU = :old.ACSA_ID_RECU or (:new.ACSA_ID_RECU is null and :old.ACSA_ID_RECU is null)) and
+	   (:new.ACSA_MON_TOT = :old.ACSA_MON_TOT or (:new.ACSA_MON_TOT is null and :old.ACSA_MON_TOT is null)) and
+	   (:new.ACSA_MON_DEP_HON = :old.ACSA_MON_DEP_HON or (:new.ACSA_MON_DEP_HON is null and :old.ACSA_MON_DEP_HON is null)) and
+	   (:new.ACSA_ID_UNFO = :old.ACSA_ID_UNFO or (:new.ACSA_ID_UNFO is null and :old.ACSA_ID_UNFO is null)) and
+	   (:new.ACSA_ID_UNFO_RES = :old.ACSA_ID_UNFO_RES or (:new.ACSA_ID_UNFO_RES is null and :old.ACSA_ID_UNFO_RES is null)) and
+	   (:new.ACSA_IND_VALIDE = :old.ACSA_IND_VALIDE or (:new.ACSA_IND_VALIDE is null and :old.ACSA_IND_VALIDE is null))
+	Then
+		return;
+	End If;
+
+	-- Calcul du code action
+	If Updating Then
+		If (:new.ACSA_IND_VALIDE = '1' And :old.ACSA_IND_VALIDE = '0') Then
+			-- L'acte est devenu valide (à prendre en compte) => Création
+			v_codeAction := 'C';
+		Else
+			If (:new.ACSA_IND_VALIDE = '0' And :old.ACSA_IND_VALIDE = '1') Then
+				-- L'acte est devenu invalide (à ne plus prendre en compte) => Suppression
+				v_codeAction := 'S';
+			Else
+				v_codeAction := 'M';
+			End If;
+		End If;
+	Else
+		v_codeAction := 'C';
+	End If;
+
+	-- Tant qu'un Acte est marqué invalide, inutile de poster des événements
+	If (:new.ACSA_IND_VALIDE = '0' And :old.ACSA_IND_VALIDE = '0') Then
+		return;
+	End If;
+
+	If (:new.ACSA_IND_BLO &lt;> '1') and (:new.ACSA_NUM_ORDRE IS NOT NULL)  then
+		-- Lecture du recueil
+		If :new.ACSA_ID_RECU is not null Then
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+			  Into RRecueil
+			  From SAD_RECUEIL
+			 Where RECU_ID_RECU = :new.ACSA_ID_RECU;
+		End if;
+
+		-- Les Hypothèses initiales ne sont émises
+		If nvl(RRecueil.RECU_IND_HYP_INI,'0') = '0' Then
+			-- Lecture de l'UF exécutante
+			If :new.ACSA_ID_UNFO is not null Then
+				Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+				  Into RUfExe
+				  From BAS_UF
+				 Where UNFO_ID_UNFO = :new.ACSA_ID_UNFO;
+			End if;
+
+			-- Lecture de l'UF responsable
+			If :new.ACSA_ID_UNFO_RES is not null Then
+				Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+					Into RUfResp
+					From BAS_UF
+				 Where UNFO_ID_UNFO = :new.ACSA_ID_UNFO_RES;
+			End if;
+
+			-- Lecture du médecin exécutant
+			If :new.ACSA_ID_MEDE is not null Then
+				Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+				  Into RMedExe
+				  From IDE_MEDECIN
+				 Where MEDE_ID_MEDE = :new.ACSA_ID_MEDE;
+			End if;
+
+			-- Lecture du séjour
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+			  Into RSejour
+			  From IDE_SEJOUR
+			 Where SEJO_ID_SEJO = :new.ACSA_ID_SEJO;
+
+			-- Lecture de l'UF d'entrée
+			If RSejour.SEJO_ID_UNFO is not null Then
+				Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+				  Into RUfEntree
+				  From BAS_UF
+				 Where UNFO_ID_UNFO = RSejour.SEJO_ID_UNFO;
+			End if;
+
+			-- Lecture du patient
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+			  Into RPatient
+			  From IDE_PATIENT
+			 Where PATI_ID_PATI = RSejour.SEJO_ID_PATI;
+
+			-- Pour les Actes Issus de rendez vous, Lecture de l'état du Rdv (Etats tracés : Accueil/Entrée Salle/Sortie Salle)
+			Begin
+				Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+				  Into REtatNavigateur
+				  From SAD_ETAT_NAVIGATEUR
+				 Where ETNA_ID_RECU =  RRecueil.RECU_ID_RECU
+				   And Rownum = 1;
+
+			Exception
+				When No_data_found Then
+					REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE := null;
+					REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE := null;
+					REtatNavigateur.ETNA_IND_STT_ACC := null;
+			End;
+
+ 			-- Pour les Actes Issus d'un dossier technique, Lecture de l'état validation
+            Begin
+                Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ *
+                  Into RDossier
+                  From SAD_DOSSIER_TECHNIQUE
+                 Where DOSS_ID_DOSS = RRecueil.RECU_ID_DOSS
+                   And Rownum = 1;
+
+            Exception
+                When No_data_found Then
+                    RDossier.DOSS_IND_DOSSIER_VALIDE := null;
+                    RDossier.DOSS_ID_DOSS:=null;
+            End;
+
+			-- Gestion de l'écho
+			pckTrigPfiHmM.PRO_appliExt(:new.ACSA_DAT_MOD, :new.ACSA_COL_COM, n_idApli, v_idTrameOrigine);
+
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+			Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */
+			Into scl_Evt (evnt_id_evnt, evnt_date, evnt_version, evnt_id_etab,
+								 evnt_code_evt, evnt_id_obj, evnt_code_pere, evnt_id_pere,
+								 evnt_id_patient, evnt_nip, evnt_id_sejour, evnt_num_sej, evnt_num_rss,
+								 evnt_action, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE,
+								 EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+			Values (n_IdEvnt, current_date, '0', :new.ACSA_ID_ETAB_D,
+					'ACTE_NGAP', :new.ACSA_ID_ACSA, 'RECUEIL', :new.ACSA_ID_RECU,
+					RPatient.PATI_ID_PATI, RPAtient.PATI_NIP, :new.ACSA_ID_SEJO, RSejour.SEJO_NUM_SEJ_COMM, null,
+					v_codeAction, n_IdApli, v_idTrameOrigine,
+					current_date, current_date, 0, :new.ACSA_UTI_CRE, :new.ACSA_UTI_MOD, :new.ACSA_PRO_CRE, :new.ACSA_PRO_MOD, :new.ACSA_COL_COM);
+
+			-- Segment Patient
+			v_xml := null;
+			v_xml := v_xml || '&lt;PATIENT>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', RPatient.PATI_ID_PATI);
+			v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', RPatient.PATI_NOM_USU);
+			v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', RPatient.PATI_NOM_NAI);
+			v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', RPatient.PATI_PRENOM);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', RPatient.PATI_DAT_NAI);
+			v_xml := v_xml || pckPfiHmM.val2xml('SEXE', RPatient.PATI_SEXE);
+			v_xml := v_xml || pckPfiHmM.val2xml('NIP', RPatient.PATI_NIP);
+			v_xml := v_xml || '&lt;/PATIENT>';
+
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+			Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL );
+
+			-- Segment Séjour
+			v_xml := null;
+			v_xml := v_xml || '&lt;SEJOUR>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', RSejour.SEJO_ID_SEJO);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RSejour.SEJO_ID_UNFO);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfEntree.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', RSejour.SEJO_DAT_DEB);
+			v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', RSejour.SEJO_NUM_SEJ_COMM);
+			v_xml := v_xml || '&lt;/SEJOUR>';
+
+			Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+1, n_IdEvnt, 2, 'SEJOUR', 'I', v_xml
+			, current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Segment Recueil
+			v_xml := null;
+			v_xml := v_xml || '&lt;RECUEIL>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_RECU', RRecueil.RECU_ID_RECU);
+			v_xml := v_xml || pckPfiHmM.val2xml('DATE', RRecueil.RECU_DATE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI', REtatNavigateur.ETNA_IND_STT_ACC);
+			v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI_OLD', REtatNavigateur.ETNA_IND_STT_ACC);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE_OLD', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE_OLD', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('IDDOSSIER', RDossier.DOSS_ID_DOSS);
+            v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE',RDossier. DOSS_IND_DOSSIER_VALIDE);
+            v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE_OLD', RDossier.DOSS_IND_DOSSIER_VALIDE);
+			v_xml := v_xml || '&lt;/RECUEIL>';
+
+			Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+2, n_IdEvnt, 3, 'RECUEIL', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Acte NGAP
+			v_xml := null;
+			v_xml := v_xml || '&lt;ACTE_NGAP>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_ACSA', :new.ACSA_ID_ACSA);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_MEDE', :new.ACSA_ID_MEDE);
+			v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ADELI', RMedExe.MEDE_ADELI);
+			v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ORDRE', RMedExe.MEDE_ORDRE);
+			v_xml := v_xml || pckPfiHmM.val2xml('PHASE_ID', :new.ACSA_PHASE_ID);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', :new.ACSA_ID_UNFO);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfExe.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO_RES', :new.ACSA_ID_UNFO_RES);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_CODE', RUfResp.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_TYP_PMS', RUfResp.UNFO_TYP_PMS);
+			v_xml := v_xml || pckPfiHmM.val2xml('LET_CLE', :new.ACSA_LET_CLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('QTE_COEFFICIENT', :new.ACSA_QTE_COEFFICIENT);
+			v_xml := v_xml || pckPfiHmM.val2xml('DENOMBREMENT', :new.ACSA_DENOMBREMENT);
+			v_xml := v_xml || pckPfiHmM.val2xml('CODE_D', :new.ACSA_CODE_D);
+			v_xml := v_xml || pckPfiHmM.val2xml('LIBELLE_D', :new.ACSA_LIBELLE_D);
+			v_xml := v_xml || pckPfiHmM.val2xml('TYP_MAJ_RETENUE', :new.ACSA_TYP_MAJ_RETENUE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_EXE', :new.ACSA_DAT_EXE_DEB);
+			v_xml := v_xml || pckPfiHmM.val2xml('COL_COM', :new.ACSA_COL_COM);
+			v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB', :new.ACSA_BAS_REMB);
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_RMB_EXCEPTIONNEL', :new.ACSA_IND_RMB_EXCEPTIONNEL);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT_NON_REMB', :new.ACSA_MON_TOT_NON_REMB);
+			v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB_SEUIL', :new.ACSA_BAS_REMB_SEUIL);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO_B2', :new.ACSA_COD_EXO_B2);
+			v_xml := v_xml || pckPfiHmM.val2xml('DEP_GLOB_FORMULE', :new.ACSA_DEP_GLOB_FORMULE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DEP_FORMULE', :new.ACSA_DEP_FORMULE);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO', :new.ACSA_COD_EXO);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_DEP_HON', :new.ACSA_MON_DEP_HON);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT', :new.ACSA_MON_TOT);
+			v_xml := v_xml || pckPfiHmM.val2xml('PRI_UNITAIRE', :new.ACSA_PRI_UNITAIRE);
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_VALIDE', :new.ACSA_IND_VALIDE);
+			v_xml := v_xml || '&lt;/ACTE_NGAP>';
+
+			Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_CM */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+3, n_IdEvnt, 4, 'ACTE_NGAP', v_codeAction, v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+		End if;
+	End if;
+
+EXCEPTION
+	WHEN OTHERS THEN
+		Begin
+			pckTrigPfiHmM.PRO_traceScl(RPatient.PATI_NIP, RSejour.SEJO_NUM_SEJ_COMM, RSejour.SEJO_ID_ETAB_CON, 'Evt Acte Ngap', 'T_EVT_SAD_ACTIV_SAIS_NGAP_CM', '0', SUBSTR(SQLERRM,1,2000));
+		Exception
+			When Others Then
+				return;
+		End;
+END;</pre>
+</div>
+</div>
+<div id="Child.0.1.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVT_SAD_ACTIVITE_SAISIES_C
+AFTER INSERT
+ON SAD_ACTIVITE_SAISIES
+FOR EACH ROW
+WHEN (new.ACSA_ID_ASAI IS NOT NULL)
+DECLARE
+	RActe					SAD_ACTES_SAISIS%RowType;
+	RUfExe					BAS_UF%RowType;
+	RUfResp					BAS_UF%RowType;
+	RMedExe					IDE_MEDECIN%RowType;
+	RRecueil				SAD_RECUEIL%RowType;
+	REtatNavigateur			SAD_ETAT_NAVIGATEUR%RowType;
+  	RDossier           		SAD_DOSSIER_TECHNIQUE%RowType;
+	RPatient				IDE_PATIENT%RowType;
+	RSejour					IDE_SEJOUR%RowType;
+	RUfEntree				BAS_UF%RowType;
+	v_xml					SCL_EVT_DATA.EVND_VAL%Type;
+	n_IdEvnt				SCL_EVT.EVNT_ID_EVNT%TYPE;
+	n_IdEvnd				SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+	n_idApli				SCL_APPLI.APLI_ID%Type;
+	v_idTrameOrigine		VARCHAR2(19);
+
+BEGIN
+	-- #Version# 1.16 du 01/03/2016 #Version#
+	if :new.ACSA_IND_BLO = '1' then
+		return;
+	end if;
+
+	if :new.ACSA_IND_VALIDE = '0' then
+		return;
+	end if;
+
+	If ((:new.ACSA_MON_TOT_NON_REMB is not null) Or (:new.ACSA_BAS_REMB is not null))
+		 And :new.ACSA_ID_MEDE is not null Then
+
+		-- Lecture du l'acte
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+		  Into RActe
+		  From SAD_ACTES_SAISIS
+		 Where ASAI_ID_ASAI = :new.ACSA_ID_ASAI;
+
+		-- Lecture du recueil
+		If RActe.ASAI_ID_RECU is not null Then
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+			  Into RRecueil
+			  From SAD_RECUEIL
+			 Where RECU_ID_RECU = RActe.ASAI_ID_RECU;
+		End if;
+
+		-- Les Hypothèses initiales ne sont émises
+		If nvl(RRecueil.RECU_IND_HYP_INI,'0') = '0' Then
+			-- Lecture de l'UF exécutante
+			If RActe.ASAI_ID_UNFO is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+				  Into RUfExe
+				  From BAS_UF
+				 Where UNFO_ID_UNFO = RActe.ASAI_ID_UNFO;
+			End if;
+
+			-- Lecture de l'UF responsable
+			If RActe.ASAI_ID_UNFO_RES is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+				  Into RUfResp
+				  From BAS_UF
+				 Where UNFO_ID_UNFO = RActe.ASAI_ID_UNFO_RES;
+			End if;
+
+			-- Lecture du médecin exécutant
+			If :new.ACSA_ID_MEDE is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+				  Into RMedExe
+				  From IDE_MEDECIN
+				 Where MEDE_ID_MEDE = :new.ACSA_ID_MEDE;
+			End if;
+
+			-- Lecture du séjour
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+			  Into RSejour
+			  From IDE_SEJOUR
+			 Where SEJO_ID_SEJO = RActe.ASAI_ID_SEJO;
+
+			-- Lecture de l'UF d'entrée
+			If RSejour.SEJO_ID_UNFO is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+				  Into RUfEntree
+				  From BAS_UF
+				 Where UNFO_ID_UNFO = RSejour.SEJO_ID_UNFO;
+			End if;
+
+			-- Lecture du patient
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+			  Into RPatient
+			  From IDE_PATIENT
+			 Where PATI_ID_PATI = RSejour.SEJO_ID_PATI;
+
+			-- Pour les Actes Issus de rendez vous, Lecture de l'état du Rdv (Etats tracés : Accueil/Entrée Salle/Sortie Salle)
+			Begin
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+				  Into REtatNavigateur
+				  From SAD_ETAT_NAVIGATEUR
+				 Where ETNA_ID_RECU =  RRecueil.RECU_ID_RECU
+				   And Rownum = 1;
+
+			Exception
+				When No_data_found Then
+					REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE := null;
+					REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE := null;
+					REtatNavigateur.ETNA_IND_STT_ACC := null;
+			End;
+
+ 			-- Pour les Actes Issus d'un dossier technique, Lecture de l'état validation
+            Begin
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ *
+				  Into RDossier
+					  From SAD_DOSSIER_TECHNIQUE
+					  Where DOSS_ID_DOSS = RRecueil.RECU_ID_DOSS
+				   And Rownum = 1;
+
+            Exception
+				When No_data_found Then
+					RDossier.DOSS_IND_DOSSIER_VALIDE := null;
+					RDossier.DOSS_ID_DOSS:=null;
+            End;
+
+			-- Gestion de l'écho
+			pckTrigPfiHmM.PRO_appliExt(:new.ACSA_DAT_MOD, :new.ACSA_COL_COM, n_idApli, v_idTrameOrigine);
+
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_C */
+			Into scl_Evt (evnt_id_evnt, evnt_date, evnt_version, evnt_id_etab,
+								 evnt_code_evt, evnt_id_obj, evnt_code_pere, evnt_id_pere,
+								 evnt_id_patient, evnt_nip, evnt_id_sejour, evnt_num_sej, evnt_num_rss,
+								 evnt_action, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE,
+								 EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+			Values (n_IdEvnt, current_date, '0', RSejour.SEJO_ID_ETAB_CON,
+					'ACTE_CCAM', :new.ACSA_ID_ACSA, 'RECUEIL', RActe.ASAI_ID_RECU,
+					RPatient.PATI_ID_PATI, RPAtient.PATI_NIP, RActe.ASAI_ID_SEJO, RSejour.SEJO_NUM_SEJ_COMM, null,
+					'C', n_IdApli, v_idTrameOrigine,
+					current_date, current_date, 0, :new.ACSA_UTI_CRE, :new.ACSA_UTI_MOD, :new.ACSA_PRO_CRE, :new.ACSA_PRO_MOD, :new.ACSA_COL_COM);
+
+			-- Segment Patient
+			v_xml := null;
+			v_xml := v_xml || '&lt;PATIENT>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', RPatient.PATI_ID_PATI);
+			v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', RPatient.PATI_NOM_USU);
+			v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', RPatient.PATI_NOM_NAI);
+			v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', RPatient.PATI_PRENOM);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', RPatient.PATI_DAT_NAI);
+			v_xml := v_xml || pckPfiHmM.val2xml('SEXE', RPatient.PATI_SEXE);
+			v_xml := v_xml || pckPfiHmM.val2xml('NIP', RPatient.PATI_NIP);
+			v_xml := v_xml || '&lt;/PATIENT>';
+
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_C */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_C */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'C', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Séjour
+			v_xml := null;
+			v_xml := v_xml || '&lt;SEJOUR>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', RSejour.SEJO_ID_SEJO);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RSejour.SEJO_ID_UNFO);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfEntree.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', RSejour.SEJO_DAT_DEB);
+			v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', RSejour.SEJO_NUM_SEJ_COMM);
+			v_xml := v_xml || '&lt;/SEJOUR>';
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_C */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+1, n_IdEvnt, 2, 'SEJOUR', 'C', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Segment Recueil/Etat du Rendez Vous
+			v_xml := null;
+			v_xml := v_xml || '&lt;RECUEIL>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_RECU', RRecueil.RECU_ID_RECU);
+			v_xml := v_xml || pckPfiHmM.val2xml('DATE', RRecueil.RECU_DATE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI', REtatNavigateur.ETNA_IND_STT_ACC);
+			v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI_OLD', REtatNavigateur.ETNA_IND_STT_ACC);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE_OLD', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE_OLD', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+ 			v_xml := v_xml || pckPfiHmM.val2xml('IDDOSSIER', RDossier.DOSS_ID_DOSS);
+            v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE',RDossier. DOSS_IND_DOSSIER_VALIDE);
+            v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE_OLD', RDossier.DOSS_IND_DOSSIER_VALIDE);
+			v_xml := v_xml || '&lt;/RECUEIL>';
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_C */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+2, n_IdEvnt, 3, 'RECUEIL', 'C', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Acte CCAM
+			v_xml := null;
+			v_xml := v_xml || '&lt;ACTE_CCAM>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_ACSA', :new.ACSA_ID_ACSA);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_MEDE', :new.ACSA_ID_MEDE);
+			v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ADELI', RMedExe.MEDE_ADELI);
+			v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ORDRE', RMedExe.MEDE_ORDRE);
+			v_xml := v_xml || pckPfiHmM.val2xml('PHASE_ID', :new.ACSA_PHASE_ID);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RActe.ASAI_ID_UNFO);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfExe.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO_RES', RActe.ASAI_ID_UNFO_RES);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_CODE', RUfResp.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_TYP_PMS', RUfResp.UNFO_TYP_PMS);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_TRUM', RActe.ASAI_ID_TRUM);
+			v_xml := v_xml || pckPfiHmM.val2xml('NUM_PHAS', RActe.ASAI_NUM_PHAS);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_EXE', RActe.ASAI_DAT_EXE);
+			v_xml := v_xml || pckPfiHmM.val2xml('CODE_ACT_D', :new.ACSA_COD_ACT_D);
+			v_xml := v_xml || pckPfiHmM.val2xml('CODE_D', RActe.ASAI_CODE_D);
+			v_xml := v_xml || pckPfiHmM.val2xml('COL_COM', :new.ACSA_COL_COM);
+			v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB', :new.ACSA_BAS_REMB);
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_RMB_EXCEPTIONNEL', :new.ACSA_IND_RMB_EXCEPTIONNEL);
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_SPL_CAB', :new.ACSA_IND_SPL_CAB);
+			v_xml := v_xml || pckPfiHmM.val2xml('ASS_NON_PREV', :new.ACSA_ASS_NON_PREV);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF1', :new.ACSA_MODIF1);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF2', :new.ACSA_MODIF2);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF3', :new.ACSA_MODIF3);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF4', :new.ACSA_MODIF4);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_REGROUPEMENT', :new.ACSA_COD_REGROUPEMENT);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT_NON_REMB', :new.ACSA_MON_TOT_NON_REMB);
+			v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB_SEUIL', :new.ACSA_BAS_REMB_SEUIL);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO_B2', :new.ACSA_COD_EXO_B2);
+			v_xml := v_xml || pckPfiHmM.val2xml('DEP_GLOB_FORMULE', :new.ACSA_DEP_GLOB_FORMULE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DEP_FORMULE', :new.ACSA_DEP_FORMULE);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO', :new.ACSA_COD_EXO);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_DEP_HON', :new.ACSA_MON_DEP_HON);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT', :new.ACSA_MON_TOT);
+			v_xml := v_xml || pckPfiHmM.val2xml('PRI_UNITAIRE', :new.ACSA_PRI_UNITAIRE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ANP.OLD',:new.ACSA_ASS_NON_PREV);
+			v_xml := v_xml || pckPfiHmM.val2xml('QD', :new.ACSA_ID_CAGE_QD);
+			v_xml := v_xml || pckPfiHmM.val2xml('DENTS', :new.ACSA_NUM_DENT);
+			v_xml := v_xml || '&lt;/ACTE_CCAM>';
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_C */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+3, n_IdEvnt, 4, 'ACTE_CCAM', 'C', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+		End if;
+ 	End if;
+
+
+EXCEPTION
+	WHEN OTHERS THEN
+		Begin
+			pckTrigPfiHmM.PRO_traceScl(RPatient.PATI_NIP, RSejour.SEJO_NUM_SEJ_COMM, RSejour.SEJO_ID_ETAB_CON, 'Evt Acte CCAM', 'T_EVT_SAD_ACTIVITE_SAISIES_C', '0', SUBSTR(SQLERRM,1,2000));
+		Exception
+			When Others Then
+				return;
+		End;
+END;</pre>
+</div>
+</div>
+<div id="Child.0.2.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVT_SAD_ACTIV_SAIS_NGAP_S
+AFTER DELETE
+ON SAD_ACTIVITE_SAISIES
+FOR EACH ROW
+WHEN (old.ACSA_ID_ASAI IS NULL And old.ACSA_ID_PRHO IS NOT NULL And old.ACSA_ID_FAVO IS NOT NULL)
+DECLARE
+	RUfExe							BAS_UF%RowType;
+	RUfResp							BAS_UF%RowType;
+	RMedExe							IDE_MEDECIN%RowType;
+	RRecueil						SAD_RECUEIL%RowType;
+	REtatNavigateur					SAD_ETAT_NAVIGATEUR%RowType;
+	RDossier                        SAD_DOSSIER_TECHNIQUE%RowType;
+	RPatient						IDE_PATIENT%RowType;
+	RSejour							IDE_SEJOUR%RowType;
+	RUfEntree						BAS_UF%RowType;
+	v_xml							SCL_EVT_DATA.EVND_VAL%Type;
+	n_IdEvnt						SCL_EVT.EVNT_ID_EVNT%TYPE;
+	n_IdEvnd						SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+	v_codeAction					varchar2(1);
+	n_idApli						SCL_APPLI.APLI_ID%Type;
+	v_idTrameOrigine				VARCHAR2(19);
+
+BEGIN
+	-- #Version# 1.16 du 01/03/2016 #Version#
+	v_codeAction := 'S';
+
+	-- Pas la peine de transmettre la suppression d'un Acte Invalide
+	If (:old.ACSA_IND_VALIDE = '0') Then
+		return;
+	End If;
+
+	-- Lecture du recueil
+	If :old.ACSA_ID_RECU is not null Then
+		Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+		  Into RRecueil
+		  From SAD_RECUEIL
+		 Where RECU_ID_RECU = :old.ACSA_ID_RECU;
+	End if;
+
+	-- Les Hypothèses initiales ne sont émises
+	If nvl(RRecueil.RECU_IND_HYP_INI,'0') = '0' Then
+		-- Lecture de l'UF exécutante
+		If :old.ACSA_ID_UNFO is not null Then
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+			  Into RUfExe
+			  From BAS_UF
+			 Where UNFO_ID_UNFO = :old.ACSA_ID_UNFO;
+		End if;
+
+		-- Lecture de l'UF responsable
+		If :old.ACSA_ID_UNFO_RES is not null Then
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+			  Into RUfResp
+			  From BAS_UF
+			 Where UNFO_ID_UNFO = :old.ACSA_ID_UNFO_RES;
+		End if;
+
+		-- Lecture du médecin exécutant
+		If :old.ACSA_ID_MEDE is not null Then
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+			  Into RMedExe
+			  From IDE_MEDECIN
+			 Where MEDE_ID_MEDE = :old.ACSA_ID_MEDE;
+		End if;
+
+		-- Lecture du séjour
+		Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+		  Into RSejour
+		  From IDE_SEJOUR
+		 Where SEJO_ID_SEJO = :old.ACSA_ID_SEJO;
+
+		-- Lecture de l'UF d'entrée
+		If RSejour.SEJO_ID_UNFO is not null Then
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+			  Into RUfEntree
+			  From BAS_UF
+			 Where UNFO_ID_UNFO = RSejour.SEJO_ID_UNFO;
+		End if;
+
+		-- Lecture du patient
+		Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+		  Into RPatient
+		  From IDE_PATIENT
+		 Where PATI_ID_PATI = RSejour.SEJO_ID_PATI;
+
+		Begin
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+			  Into REtatNavigateur
+			  From SAD_ETAT_NAVIGATEUR
+			 Where ETNA_ID_RECU =  RRecueil.RECU_ID_RECU
+			   And Rownum = 1;
+
+		Exception
+			When No_data_found Then
+				REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE := null;
+				REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE := null;
+				REtatNavigateur.ETNA_IND_STT_ACC := null;
+		End;
+
+ 		-- Pour les Actes Issus d'un dossier technique, Lecture de l'état validation (13/11/2014)
+        Begin
+			Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ *
+			  Into RDossier
+			  From SAD_DOSSIER_TECHNIQUE
+			 Where DOSS_ID_DOSS = RRecueil.RECU_ID_DOSS
+			   And Rownum = 1;
+
+        Exception
+			When No_data_found Then
+				RDossier.DOSS_IND_DOSSIER_VALIDE := null;
+				RDossier.DOSS_ID_DOSS:=null;
+        End;
+
+		-- Gestion de l'écho
+		IF SUBSTR(:old.ACSA_COL_COM, 4, 1) = '1' THEN
+			If :old.ACSA_UTI_MOD = 3 Then
+				pckTrigPfiHmM.PRO_appliExt(:old.ACSA_DAT_MOD, :old.ACSA_COL_COM, n_idApli, v_idTrameOrigine);
+			End If;
+		END IF;
+
+		Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+		Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */
+		Into scl_Evt (evnt_id_evnt, evnt_date, evnt_version, evnt_id_etab,
+												 evnt_code_evt, evnt_id_obj, evnt_code_pere, evnt_id_pere,
+												 evnt_id_patient, evnt_nip, evnt_id_sejour, evnt_num_sej, evnt_num_rss,
+												 evnt_action, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE,
+												 EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+		Values (n_IdEvnt, current_date, '0', :old.ACSA_ID_ETAB_D,
+				'ACTE_NGAP', :old.ACSA_ID_ACSA, 'RECUEIL', :old.ACSA_ID_RECU,
+				RPatient.PATI_ID_PATI, RPAtient.PATI_NIP, :old.ACSA_ID_SEJO, RSejour.SEJO_NUM_SEJ_COMM, null,
+				v_codeAction, n_IdApli, v_idTrameOrigine,
+				current_date, current_date, 0, :old.ACSA_UTI_CRE, :old.ACSA_UTI_MOD, :old.ACSA_PRO_CRE, :old.ACSA_PRO_MOD, :old.ACSA_COL_COM);
+
+		-- Segment Patient
+		v_xml := null;
+		v_xml := v_xml || '&lt;PATIENT>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', RPatient.PATI_ID_PATI);
+		v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', RPatient.PATI_NOM_USU);
+		v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', RPatient.PATI_NOM_NAI);
+		v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', RPatient.PATI_PRENOM);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', RPatient.PATI_DAT_NAI);
+		v_xml := v_xml || pckPfiHmM.val2xml('SEXE', RPatient.PATI_SEXE);
+		v_xml := v_xml || pckPfiHmM.val2xml('NIP', RPatient.PATI_NIP);
+		v_xml := v_xml || '&lt;/PATIENT>';
+
+		Select /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+		Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */
+		Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+								, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		Values (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'I', v_xml
+			  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+		-- Segment Séjour
+		v_xml := null;
+		v_xml := v_xml || '&lt;SEJOUR>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', RSejour.SEJO_ID_SEJO);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RSejour.SEJO_ID_UNFO);
+		v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfEntree.UNFO_CODE);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', RSejour.SEJO_DAT_DEB);
+		v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', RSejour.SEJO_NUM_SEJ_COMM);
+		v_xml := v_xml || '&lt;/SEJOUR>';
+
+		Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */
+		Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+								, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		Values (n_IdEvnd+1, n_IdEvnt, 2, 'SEJOUR', 'I', v_xml
+			  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+		-- Segment Segment Recueil
+		v_xml := null;
+		v_xml := v_xml || '&lt;RECUEIL>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_RECU', RRecueil.RECU_ID_RECU);
+		v_xml := v_xml || pckPfiHmM.val2xml('DATE', RRecueil.RECU_DATE);
+		v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI', REtatNavigateur.ETNA_IND_STT_ACC);
+		v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI_OLD', REtatNavigateur.ETNA_IND_STT_ACC);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE_OLD', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE_OLD', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+ 		v_xml := v_xml || pckPfiHmM.val2xml('IDDOSSIER', RDossier.DOSS_ID_DOSS);
+        v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE',RDossier. DOSS_IND_DOSSIER_VALIDE);
+        v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE_OLD', RDossier.DOSS_IND_DOSSIER_VALIDE);
+		v_xml := v_xml || '&lt;/RECUEIL>';
+
+		Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */
+		Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+								, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		Values (n_IdEvnd+2, n_IdEvnt, 3, 'RECUEIL', 'I', v_xml
+			  , current_date, current_date , 0, 3, 3, 2, 2, NULL);
+
+		-- Segment Acte NGAP
+		v_xml := null;
+		v_xml := v_xml || '&lt;ACTE_NGAP>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_ACSA', :old.ACSA_ID_ACSA);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_MEDE', :old.ACSA_ID_MEDE);
+		v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ADELI', RMedExe.MEDE_ADELI);
+		v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ORDRE', RMedExe.MEDE_ORDRE);
+		v_xml := v_xml || pckPfiHmM.val2xml('PHASE_ID', :old.ACSA_PHASE_ID);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', :old.ACSA_ID_UNFO);
+		v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfExe.UNFO_CODE);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO_RES', :old.ACSA_ID_UNFO_RES);
+		v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_CODE', RUfResp.UNFO_CODE);
+		v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_TYP_PMS', RUfResp.UNFO_TYP_PMS);
+		v_xml := v_xml || pckPfiHmM.val2xml('LET_CLE', :old.ACSA_LET_CLE);
+		v_xml := v_xml || pckPfiHmM.val2xml('QTE_COEFFICIENT', :old.ACSA_QTE_COEFFICIENT);
+		v_xml := v_xml || pckPfiHmM.val2xml('DENOMBREMENT', :old.ACSA_DENOMBREMENT);
+		v_xml := v_xml || pckPfiHmM.val2xml('CODE_D', :old.ACSA_CODE_D);
+		v_xml := v_xml || pckPfiHmM.val2xml('LIBELLE_D', :old.ACSA_LIBELLE_D);
+		v_xml := v_xml || pckPfiHmM.val2xml('TYP_MAJ_RETENUE', :old.ACSA_TYP_MAJ_RETENUE);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_EXE', :old.ACSA_DAT_EXE_DEB);
+		v_xml := v_xml || pckPfiHmM.val2xml('COL_COM', :old.ACSA_COL_COM);
+		v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB', :old.ACSA_BAS_REMB);
+		v_xml := v_xml || pckPfiHmM.val2xml('IND_RMB_EXCEPTIONNEL', :old.ACSA_IND_RMB_EXCEPTIONNEL);
+		v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT_NON_REMB', :old.ACSA_MON_TOT_NON_REMB);
+		v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB_SEUIL', :old.ACSA_BAS_REMB_SEUIL);
+		v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO_B2', :old.ACSA_COD_EXO_B2);
+		v_xml := v_xml || pckPfiHmM.val2xml('DEP_GLOB_FORMULE', :old.ACSA_DEP_GLOB_FORMULE);
+		v_xml := v_xml || pckPfiHmM.val2xml('DEP_FORMULE', :old.ACSA_DEP_FORMULE);
+		v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO', :old.ACSA_COD_EXO);
+		v_xml := v_xml || pckPfiHmM.val2xml('MON_DEP_HON', :old.ACSA_MON_DEP_HON);
+		v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT', :old.ACSA_MON_TOT);
+		v_xml := v_xml || pckPfiHmM.val2xml('PRI_UNITAIRE', :old.ACSA_PRI_UNITAIRE);
+		v_xml := v_xml || pckPfiHmM.val2xml('IND_VALIDE', :old.ACSA_IND_VALIDE);
+		v_xml := v_xml || '&lt;/ACTE_NGAP>';
+
+		Insert /* T_EVT_SAD_ACTIV_SAIS_NGAP_S */
+		Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+								, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		Values (n_IdEvnd+3, n_IdEvnt, 4, 'ACTE_NGAP', v_codeAction, v_xml
+			  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+	End if;
+
+EXCEPTION
+	WHEN OTHERS THEN
+		Begin
+			pckTrigPfiHmM.PRO_traceScl(RPatient.PATI_NIP, RSejour.SEJO_NUM_SEJ_COMM, RSejour.SEJO_ID_ETAB_CON, 'Evt Acte Ngap', 'T_EVT_SAD_ACTIV_SAIS_NGAP_S', '0', SUBSTR(SQLERRM,1,2000));
+		Exception
+			When Others Then
+				return;
+		End;
+END;</pre>
+</div>
+</div>
+<div id="Child.0.3.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVT_SAD_ACTIVITE_SAISIES_M
+AFTER UPDATE
+ON SAD_ACTIVITE_SAISIES
+FOR EACH ROW
+WHEN (new.ACSA_ID_ASAI IS NOT NULL)
+DECLARE
+	RActe							SAD_ACTES_SAISIS%RowType;
+	RUfExe							BAS_UF%RowType;
+	RUfResp							BAS_UF%RowType;
+	RMedExe							IDE_MEDECIN%RowType;
+	RRecueil						SAD_RECUEIL%RowType;
+	REtatNavigateur					SAD_ETAT_NAVIGATEUR%RowType;
+ 	RDossier          				SAD_DOSSIER_TECHNIQUE%RowType;
+	RPatient						IDE_PATIENT%RowType;
+	RSejour							IDE_SEJOUR%RowType;
+	RUfEntree						BAS_UF%RowType;
+	v_xml							SCL_EVT_DATA.EVND_VAL%Type;
+	n_IdEvnt						SCL_EVT.EVNT_ID_EVNT%TYPE;
+	n_IdEvnd						SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+	v_codeAction					varchar2(1);
+	n_idApli						SCL_APPLI.APLI_ID%Type;
+	v_idTrameOrigine				VARCHAR2(19);
+
+BEGIN
+	-- #Version# 1.16 du 01/03/2016 #Version#
+	if :new.ACSA_IND_BLO = '1' then
+		return;
+	end if;
+
+	If SUBSTR(:new.ACSA_COL_COM, 4, 1) = '1' Then
+		-- Pseudo Update de chargement de l'appli externe. Suppression à suivre. Pas d'évènement Modif à poster.
+		return;
+	End If;
+
+	-- noPerroquet
+	If (:new.ACSA_ID_MEDE = :old.ACSA_ID_MEDE or (:new.ACSA_ID_MEDE is null and :old.ACSA_ID_MEDE is null)) and
+	   (:new.ACSA_PHASE_ID = :old.ACSA_PHASE_ID or (:new.ACSA_PHASE_ID is null and :old.ACSA_PHASE_ID is null)) and
+	   (:new.ACSA_CODE_D = :old.ACSA_CODE_D or (:new.ACSA_CODE_D is null and :old.ACSA_CODE_D is null)) and
+	   (:new.ACSA_COD_ACT_D = :old.ACSA_COD_ACT_D or (:new.ACSA_COD_ACT_D is null and :old.ACSA_COD_ACT_D is null)) and
+	   (:new.ACSA_BAS_REMB = :old.ACSA_BAS_REMB or (:new.ACSA_BAS_REMB is null and :old.ACSA_BAS_REMB is null)) and
+	   (nvl(substr(:new.ACSA_COL_COM,7,1),'0') = nvl(substr(:old.ACSA_COL_COM,7,1),'0')) and
+	   (:new.ACSA_IND_RMB_EXCEPTIONNEL = :old.ACSA_IND_RMB_EXCEPTIONNEL or (:new.ACSA_IND_RMB_EXCEPTIONNEL is null and :old.ACSA_IND_RMB_EXCEPTIONNEL is null)) and
+	   (:new.ACSA_IND_SPL_CAB = :old.ACSA_IND_SPL_CAB or (:new.ACSA_IND_SPL_CAB is null and :old.ACSA_IND_SPL_CAB is null)) and
+	   (:new.ACSA_DAT_EXE_DEB = :old.ACSA_DAT_EXE_DEB or (:new.ACSA_DAT_EXE_DEB is null and :old.ACSA_DAT_EXE_DEB is null)) and
+	   (:new.ACSA_ID_CAGE_QD = :old.ACSA_ID_CAGE_QD or (:new.ACSA_ID_CAGE_QD is null and :old.ACSA_ID_CAGE_QD is null)) and
+	   (:new.ACSA_ASS_NON_PREV = :old.ACSA_ASS_NON_PREV or (:new.ACSA_ASS_NON_PREV is null and :old.ACSA_ASS_NON_PREV is null)) and
+	   (:new.ACSA_PRI_UNITAIRE = :old.ACSA_PRI_UNITAIRE or (:new.ACSA_PRI_UNITAIRE is null and :old.ACSA_PRI_UNITAIRE is null)) and
+	   (:new.ACSA_MON_TOT = :old.ACSA_MON_TOT or (:new.ACSA_MON_TOT is null and :old.ACSA_MON_TOT is null)) and
+	   (:new.ACSA_MON_DEP_HON = :old.ACSA_MON_DEP_HON or (:new.ACSA_MON_DEP_HON is null and :old.ACSA_MON_DEP_HON is null)) and
+	   (:new.ACSA_COD_EXO = :old.ACSA_COD_EXO or (:new.ACSA_COD_EXO is null and :old.ACSA_COD_EXO is null)) and
+	   (:new.ACSA_DEP_FORMULE = :old.ACSA_DEP_FORMULE or (:new.ACSA_DEP_FORMULE is null and :old.ACSA_DEP_FORMULE is null)) and
+	   (:new.ACSA_DEP_GLOB_FORMULE = :old.ACSA_DEP_GLOB_FORMULE or (:new.ACSA_DEP_GLOB_FORMULE is null and :old.ACSA_DEP_GLOB_FORMULE is null)) and
+	   (:new.ACSA_COD_EXO_B2 = :old.ACSA_COD_EXO_B2 or (:new.ACSA_COD_EXO_B2 is null and :old.ACSA_COD_EXO_B2 is null)) and
+	   (:new.ACSA_BAS_REMB_SEUIL = :old.ACSA_BAS_REMB_SEUIL or (:new.ACSA_BAS_REMB_SEUIL is null and :old.ACSA_BAS_REMB_SEUIL is null)) and
+	   (:new.ACSA_MON_TOT_NON_REMB = :old.ACSA_MON_TOT_NON_REMB or (:new.ACSA_MON_TOT_NON_REMB is null and :old.ACSA_MON_TOT_NON_REMB is null)) and
+	   (:new.ACSA_COD_REGROUPEMENT = :old.ACSA_COD_REGROUPEMENT or (:new.ACSA_COD_REGROUPEMENT is null and :old.ACSA_COD_REGROUPEMENT is null)) and
+	   (:new.ACSA_MODIF4 = :old.ACSA_MODIF4 or (:new.ACSA_MODIF4 is null and :old.ACSA_MODIF4 is null)) and
+	   (:new.ACSA_MODIF3 = :old.ACSA_MODIF3 or (:new.ACSA_MODIF3 is null and :old.ACSA_MODIF3 is null)) and
+	   (:new.ACSA_MODIF2 = :old.ACSA_MODIF2 or (:new.ACSA_MODIF2 is null and :old.ACSA_MODIF2 is null)) and
+	   (:new.ACSA_MODIF1 = :old.ACSA_MODIF1 or (:new.ACSA_MODIF1 is null and :old.ACSA_MODIF1 is null)) and
+	   (:new.ACSA_COE_MODIF1 = :old.ACSA_COE_MODIF1 or (:new.ACSA_COE_MODIF1 is null and :old.ACSA_COE_MODIF1 is null)) and
+	   (:new.ACSA_COE_MODIF2 = :old.ACSA_COE_MODIF2 or (:new.ACSA_COE_MODIF2 is null and :old.ACSA_COE_MODIF2 is null)) and
+	   (:new.ACSA_COE_MODIF3 = :old.ACSA_COE_MODIF3 or (:new.ACSA_COE_MODIF3 is null and :old.ACSA_COE_MODIF3 is null)) and
+	   (:new.ACSA_COE_MODIF4 = :old.ACSA_COE_MODIF4 or (:new.ACSA_COE_MODIF4 is null and :old.ACSA_COE_MODIF4 is null)) and
+	   (:new.ACSA_ASS_NON_PREV = :old.ACSA_ASS_NON_PREV or (:new.ACSA_ASS_NON_PREV is null and :old.ACSA_ASS_NON_PREV is null)) and
+	   (:new.ACSA_ID_UNFO = :old.ACSA_ID_UNFO or (:new.ACSA_ID_UNFO is null and :old.ACSA_ID_UNFO is null)) and
+	   (:new.ACSA_EXT_DOC = :old.ACSA_EXT_DOC or (:new.ACSA_EXT_DOC is null and :old.ACSA_EXT_DOC is null)) and
+	   (:new.ACSA_IND_EXTERNE = :old.ACSA_IND_EXTERNE or (:new.ACSA_IND_EXTERNE is null and :old.ACSA_IND_EXTERNE is null)) and
+	   (:new.ACSA_IND_VALIDE = :old.ACSA_IND_VALIDE or (:new.ACSA_IND_VALIDE is null and :old.ACSA_IND_VALIDE is null)) and
+	   (:new.ACSA_IND_BLO = :old.ACSA_IND_BLO or (:new.ACSA_IND_BLO is null and :old.ACSA_IND_BLO is null)) and
+	   (:new.ACSA_REFERENCE = :old.ACSA_REFERENCE or (:new.ACSA_REFERENCE is null and :old.ACSA_REFERENCE is null)) and
+	   (:new.ACSA_ID_ASAI = :old.ACSA_ID_ASAI or (:new.ACSA_ID_ASAI is null and :old.ACSA_ID_ASAI is null)) and
+	   (:new.ACSA_ID_CAGE_JUS_EXO = :old.ACSA_ID_CAGE_JUS_EXO or (:new.ACSA_ID_CAGE_JUS_EXO is null and :old.ACSA_ID_CAGE_JUS_EXO is null)) and
+	   (:new.ACSA_ID_UNFO_RES = :old.ACSA_ID_UNFO_RES or (:new.ACSA_ID_UNFO_RES is null and :old.ACSA_ID_UNFO_RES is null)) and
+ 	   (:new.ACSA_NUM_DENT = :old.ACSA_NUM_DENT or (:new.ACSA_NUM_DENT is null and :old.ACSA_NUM_DENT is null))
+	Then
+		return;
+	End If;
+
+	-- Calcul du code action
+	If Updating Then
+		If (:new.ACSA_IND_VALIDE = '1' And :old.ACSA_IND_VALIDE = '0') Then
+			-- L'acte est devenu valide (à prendre en compte) => Création
+			v_codeAction := 'C';
+		Else
+			If (:new.ACSA_IND_VALIDE = '0' And :old.ACSA_IND_VALIDE = '1') Then
+				-- L'acte est devenu invalide (à ne plus prendre en compte) => Suppression
+				v_codeAction := 'S';
+			Else
+				v_codeAction := 'M';
+			End If;
+		End If;
+	Else
+		v_codeAction := 'C';
+	End If;
+
+	-- Tant qu'un Acte est marqué invalide, inutile de poster des événements
+	If (:new.ACSA_IND_VALIDE = '0' And :old.ACSA_IND_VALIDE = '0') Then
+		return;
+	End If;
+
+	If (((:new.ACSA_MON_TOT_NON_REMB is not null) Or (:new.ACSA_BAS_REMB is not null))
+			And :new.ACSA_ID_MEDE is not null) then
+
+		-- Lecture du l'acte
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+		  Into RActe
+		  From SAD_ACTES_SAISIS
+		Where ASAI_ID_ASAI = :new.ACSA_ID_ASAI;
+
+		-- Lecture du recueil
+		If RActe.ASAI_ID_RECU is not null Then
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+			  Into RRecueil
+			  From SAD_RECUEIL
+			 Where RECU_ID_RECU = RActe.ASAI_ID_RECU;
+		End if;
+
+		-- Les Hypothèses initiales ne sont pas émises
+		If nvl(RRecueil.RECU_IND_HYP_INI,'0') = '0' Then
+			-- Lecture de l'UF exécutante
+			If RActe.ASAI_ID_UNFO is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+				  Into RUfExe
+				  From BAS_UF
+				Where UNFO_ID_UNFO = RActe.ASAI_ID_UNFO;
+			End if;
+
+			-- Lecture de l'UF responsable
+			If RActe.ASAI_ID_UNFO_RES is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+				  Into RUfResp
+				  From BAS_UF
+				 Where UNFO_ID_UNFO = RActe.ASAI_ID_UNFO_RES;
+			End if;
+
+			-- Lecture du médecin exécutant
+			If :new.ACSA_ID_MEDE is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+				  Into RMedExe
+				  From IDE_MEDECIN
+				 Where MEDE_ID_MEDE = :new.ACSA_ID_MEDE;
+			End if;
+
+			-- Lecture du séjour
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+			  Into RSejour
+			  From IDE_SEJOUR
+			Where SEJO_ID_SEJO = RActe.ASAI_ID_SEJO;
+
+			-- Lecture de l'UF d'entrée
+			If RSejour.SEJO_ID_UNFO is not null Then
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+				  Into RUfEntree
+				  From BAS_UF
+				 Where UNFO_ID_UNFO = RSejour.SEJO_ID_UNFO;
+			End if;
+
+			-- Lecture du patient
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+			  Into RPatient
+			  From IDE_PATIENT
+			 Where PATI_ID_PATI = RSejour.SEJO_ID_PATI;
+
+			-- Pour les Actes Issus de rendez vous, Lecture de l'état du Rdv (Etats tracés : Accueil/Entrée Salle/Sortie Salle)
+			Begin
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+				  Into REtatNavigateur
+				  From SAD_ETAT_NAVIGATEUR
+				 Where ETNA_ID_RECU =  RRecueil.RECU_ID_RECU
+				   And Rownum = 1;
+
+			Exception
+				When No_data_found Then
+					REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE := null;
+					REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE := null;
+					REtatNavigateur.ETNA_IND_STT_ACC := null;
+			End;
+
+			-- Pour les Actes Issus d'un dossier technique, Lecture de l'état validation
+            Begin
+				Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ *
+				  Into RDossier
+					  From SAD_DOSSIER_TECHNIQUE
+					  Where DOSS_ID_DOSS = RRecueil.RECU_ID_DOSS
+				   And Rownum = 1;
+
+            Exception
+				When No_data_found Then
+					RDossier.DOSS_IND_DOSSIER_VALIDE := null;
+					RDossier.DOSS_ID_DOSS:=null;
+            End;
+
+			-- Gestion de l'écho
+			pckTrigPfiHmM.PRO_appliExt(:new.ACSA_DAT_MOD, :new.ACSA_COL_COM, n_idApli, v_idTrameOrigine);
+
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_M */
+			Into scl_Evt (evnt_id_evnt, evnt_date, evnt_version, evnt_id_etab,
+								 evnt_code_evt, evnt_id_obj, evnt_code_pere, evnt_id_pere,
+								 evnt_id_patient, evnt_nip, evnt_id_sejour, evnt_num_sej, evnt_num_rss,
+								 evnt_action, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE,
+								 EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+			Values (n_IdEvnt, current_date, '0', RSejour.SEJO_ID_ETAB_CON,
+					'ACTE_CCAM', :new.ACSA_ID_ACSA, 'RECUEIL', RActe.ASAI_ID_RECU,
+					RPatient.PATI_ID_PATI, RPAtient.PATI_NIP, RActe.ASAI_ID_SEJO, RSejour.SEJO_NUM_SEJ_COMM, null,
+					v_codeAction, n_IdApli, v_idTrameOrigine,
+					current_date, current_date, 0, :new.ACSA_UTI_CRE, :new.ACSA_UTI_MOD, :new.ACSA_PRO_CRE, :new.ACSA_PRO_MOD, :new.ACSA_COL_COM);
+
+			-- Segment Patient
+			v_xml := null;
+			v_xml := v_xml || '&lt;PATIENT>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', RPatient.PATI_ID_PATI);
+			v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', RPatient.PATI_NOM_USU);
+			v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', RPatient.PATI_NOM_NAI);
+			v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', RPatient.PATI_PRENOM);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', RPatient.PATI_DAT_NAI);
+			v_xml := v_xml || pckPfiHmM.val2xml('SEXE', RPatient.PATI_SEXE);
+			v_xml := v_xml || pckPfiHmM.val2xml('NIP', RPatient.PATI_NIP);
+			v_xml := v_xml || '&lt;/PATIENT>';
+
+			Select /* T_EVT_SAD_ACTIVITE_SAISIES_M */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_M */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Sejour
+			v_xml := null;
+			v_xml := v_xml || '&lt;SEJOUR>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', RSejour.SEJO_ID_SEJO);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RSejour.SEJO_ID_UNFO);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfEntree.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', RSejour.SEJO_DAT_DEB);
+			v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', RSejour.SEJO_NUM_SEJ_COMM);
+			v_xml := v_xml || '&lt;/SEJOUR>';
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_M */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+1, n_IdEvnt, 2, 'SEJOUR', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Recueil
+			v_xml := null;
+			v_xml := v_xml || '&lt;RECUEIL>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_RECU', RRecueil.RECU_ID_RECU);
+			v_xml := v_xml || pckPfiHmM.val2xml('DATE', RRecueil.RECU_DATE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI', REtatNavigateur.ETNA_IND_STT_ACC);
+			v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI_OLD', REtatNavigateur.ETNA_IND_STT_ACC);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE_OLD', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE_OLD', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('IDDOSSIER', RDossier.DOSS_ID_DOSS);
+            v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE',RDossier. DOSS_IND_DOSSIER_VALIDE);
+            v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE_OLD', RDossier.DOSS_IND_DOSSIER_VALIDE);
+			v_xml := v_xml || '&lt;/RECUEIL>';
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_M */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+2, n_IdEvnt, 3, 'RECUEIL', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			-- Segment Acte CCAM
+			v_xml := null;
+			v_xml := v_xml || '&lt;ACTE_CCAM>';
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_ACSA', :new.ACSA_ID_ACSA);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_MEDE', :new.ACSA_ID_MEDE);
+			v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ADELI', RMedExe.MEDE_ADELI);
+			v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ORDRE', RMedExe.MEDE_ORDRE);
+			v_xml := v_xml || pckPfiHmM.val2xml('PHASE_ID', :new.ACSA_PHASE_ID);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RActe.ASAI_ID_UNFO);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfExe.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO_RES', RActe.ASAI_ID_UNFO_RES);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_CODE', RUfResp.UNFO_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_TYP_PMS', RUfResp.UNFO_TYP_PMS);
+			v_xml := v_xml || pckPfiHmM.val2xml('ID_TRUM', RActe.ASAI_ID_TRUM);
+			v_xml := v_xml || pckPfiHmM.val2xml('NUM_PHAS', RActe.ASAI_NUM_PHAS);
+			v_xml := v_xml || pckPfiHmM.val2xml('DAT_EXE', RActe.ASAI_DAT_EXE);
+			v_xml := v_xml || pckPfiHmM.val2xml('CODE_ACT_D', :new.ACSA_COD_ACT_D);
+			v_xml := v_xml || pckPfiHmM.val2xml('CODE_D', RActe.ASAI_CODE_D);
+			v_xml := v_xml || pckPfiHmM.val2xml('COL_COM', :new.ACSA_COL_COM);
+			v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB', :new.ACSA_BAS_REMB);
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_RMB_EXCEPTIONNEL', :new.ACSA_IND_RMB_EXCEPTIONNEL);
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_SPL_CAB', :new.ACSA_IND_SPL_CAB);
+			v_xml := v_xml || pckPfiHmM.val2xml('ASS_NON_PREV', :new.ACSA_ASS_NON_PREV);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF1', :new.ACSA_MODIF1);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF2', :new.ACSA_MODIF2);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF3', :new.ACSA_MODIF3);
+			v_xml := v_xml || pckPfiHmM.val2xml('MODIF4', :new.ACSA_MODIF4);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_REGROUPEMENT', :new.ACSA_COD_REGROUPEMENT);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT_NON_REMB', :new.ACSA_MON_TOT_NON_REMB);
+			v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB_SEUIL', :new.ACSA_BAS_REMB_SEUIL);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO_B2', :new.ACSA_COD_EXO_B2);
+			v_xml := v_xml || pckPfiHmM.val2xml('DEP_GLOB_FORMULE', :new.ACSA_DEP_GLOB_FORMULE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DEP_FORMULE', :new.ACSA_DEP_FORMULE);
+			v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO', :new.ACSA_COD_EXO);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_DEP_HON', :new.ACSA_MON_DEP_HON);
+			v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT', :new.ACSA_MON_TOT);
+			v_xml := v_xml || pckPfiHmM.val2xml('PRI_UNITAIRE', :new.ACSA_PRI_UNITAIRE);
+			v_xml := v_xml || pckPfiHmM.val2xml('ANP.OLD',:old.ACSA_ASS_NON_PREV);
+			v_xml := v_xml || pckPfiHmM.val2xml('QD', :new.ACSA_ID_CAGE_QD);
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_VALIDE', :new.ACSA_IND_VALIDE);
+			v_xml := v_xml || pckPfiHmM.val2xml('DENTS', :new.ACSA_NUM_DENT);
+			v_xml := v_xml || '&lt;/ACTE_CCAM>';
+
+			Insert /* T_EVT_SAD_ACTIVITE_SAISIES_M */
+			Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+									, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+3, n_IdEvnt, 4, 'ACTE_CCAM', v_codeAction, v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+		End if;
+	End If;
+
+EXCEPTION
+	WHEN OTHERS THEN
+		Begin
+			pckTrigPfiHmM.PRO_traceScl(RPatient.PATI_NIP, RSejour.SEJO_NUM_SEJ_COMM, RSejour.SEJO_ID_ETAB_CON, 'Evt Acte CCAM', 'T_EVT_SAD_ACTIVITE_SAISIES_M', '0', SUBSTR(SQLERRM,1,2000));
+		Exception
+			When Others Then
+				return;
+		End;
+END;</pre>
+</div>
+</div>
+<div id="Child.0.4.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVT_SAD_ACTIVITE_SAISIES_S
+AFTER DELETE
+ON SAD_ACTIVITE_SAISIES
+FOR EACH ROW
+WHEN (old.ACSA_ID_ASAI IS NOT NULL)
+DECLARE
+	RActe							SAD_ACTES_SAISIS%RowType;
+	RUfExe							BAS_UF%RowType;
+	RUfResp							BAS_UF%RowType;
+	RMedExe							IDE_MEDECIN%RowType;
+	RRecueil						SAD_RECUEIL%RowType;
+	REtatNavigateur					SAD_ETAT_NAVIGATEUR%RowType;
+	RDossier                        SAD_DOSSIER_TECHNIQUE%RowType;
+	RPatient						IDE_PATIENT%RowType;
+	RSejour							IDE_SEJOUR%RowType;
+	RUfEntree						BAS_UF%RowType;
+	v_xml							SCL_EVT_DATA.EVND_VAL%Type;
+	n_IdEvnt						SCL_EVT.EVNT_ID_EVNT%TYPE;
+	n_IdEvnd						SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+	n_idApli						SCL_APPLI.APLI_ID%Type;
+	v_idTrameOrigine				VARCHAR2(19);
+    v_extpmsi                      	SAD_ACTES_SAISIS.ASAI_COD_ACT_DESC%Type;
+
+BEGIN
+	-- #Version# 1.17 du 31/01/2017 #Version#
+
+	-- Pas la peine de transmettre la suppression d'un Acte Invalide
+	If (:old.ACSA_IND_VALIDE = '0') Then
+		return;
+	End If;
+
+	-- Lecture du l'acte
+	Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+	  Into RActe
+	  From SAD_ACTES_SAISIS
+	 Where ASAI_ID_ASAI = :old.ACSA_ID_ASAI;
+
+	-- Lecture du recueil
+	If RActe.ASAI_ID_RECU is not null Then
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+		  Into RRecueil
+		  From SAD_RECUEIL
+		 Where RECU_ID_RECU = RActe.ASAI_ID_RECU;
+	End if;
+
+	-- Lecture de l'UF exécutante
+	If RActe.ASAI_ID_UNFO is not null Then
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+		  Into RUfExe
+		  From BAS_UF
+		 Where UNFO_ID_UNFO = RActe.ASAI_ID_UNFO;
+	End if;
+
+	-- Lecture de l'UF responsable
+	If RActe.ASAI_ID_UNFO_RES is not null Then
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+		  Into RUfResp
+		  From BAS_UF
+		 Where UNFO_ID_UNFO = RActe.ASAI_ID_UNFO_RES;
+	End if;
+
+	-- Lecture du médecin exécutant
+	If :old.ACSA_ID_MEDE is not null Then
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+		  Into RMedExe
+		  From IDE_MEDECIN
+		 Where MEDE_ID_MEDE = :old.ACSA_ID_MEDE;
+	End if;
+
+	-- Lecture du séjour
+	Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+	  Into RSejour
+	  From IDE_SEJOUR
+	 Where SEJO_ID_SEJO = RActe.ASAI_ID_SEJO;
+
+	-- Lecture de l'UF d'entrée
+	If RSejour.SEJO_ID_UNFO is not null Then
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+		  Into RUfEntree
+		  From BAS_UF
+		 Where UNFO_ID_UNFO = RSejour.SEJO_ID_UNFO;
+	End if;
+
+	-- Lecture du patient
+	Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+	  Into RPatient
+	  From IDE_PATIENT
+	 Where PATI_ID_PATI = RSejour.SEJO_ID_PATI;
+
+	-- Pour les Actes Issus de rendez vous, Lecture de l'état du Rdv (Etats tracés : Accueil/Entrée Salle/Sortie Salle)
+	Begin
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+		  Into REtatNavigateur
+		  From SAD_ETAT_NAVIGATEUR
+		 Where ETNA_ID_RECU =  RRecueil.RECU_ID_RECU
+		   And Rownum = 1;
+
+	Exception
+		When No_data_found Then
+			REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE := null;
+			REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE := null;
+			REtatNavigateur.ETNA_IND_STT_ACC := null;
+	End;
+
+	 -- Pour les Actes Issus d'un dossier technique, Lecture de l'état validation
+    Begin
+		Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ *
+		  Into RDossier
+			  From SAD_DOSSIER_TECHNIQUE
+			  Where DOSS_ID_DOSS = RRecueil.RECU_ID_DOSS
+		   And Rownum = 1;
+
+    Exception
+		When No_data_found Then
+			RDossier.DOSS_IND_DOSSIER_VALIDE := null;
+			RDossier.DOSS_ID_DOSS:=null;
+    End;
+
+	-- Gestion de l'écho
+	IF SUBSTR(:old.ACSA_COL_COM, 4, 1) = '1' THEN
+		If :old.ACSA_UTI_MOD = 3 Then
+			pckTrigPfiHmM.PRO_appliExt(:old.ACSA_DAT_MOD, :old.ACSA_COL_COM, n_idApli, v_idTrameOrigine);
+		End If;
+	END IF;
+
+	Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+	Insert /* T_EVT_SAD_ACTIVITE_SAISIES_S */
+	Into scl_Evt (evnt_id_evnt, evnt_date, evnt_version, evnt_id_etab,
+						 evnt_code_evt, evnt_id_obj, evnt_code_pere, evnt_id_pere,
+						 evnt_id_patient, evnt_nip, evnt_id_sejour, evnt_num_sej, evnt_num_rss,
+						 evnt_action, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE,
+						 EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+	Values (n_IdEvnt, current_date, '0', RSejour.SEJO_ID_ETAB_CON,
+			'ACTE_CCAM', :old.ACSA_ID_ACSA, 'RECUEIL', RActe.ASAI_ID_RECU,
+			RPatient.PATI_ID_PATI, RPAtient.PATI_NIP, RActe.ASAI_ID_SEJO, RSejour.SEJO_NUM_SEJ_COMM, null,
+			'S', n_IdApli, v_idTrameOrigine,
+			current_date, current_date, 0, :old.ACSA_UTI_CRE, :old.ACSA_UTI_MOD, :old.ACSA_PRO_CRE, :old.ACSA_PRO_MOD, :old.ACSA_COL_COM);
+
+	-- Segment Patient
+	v_xml := null;
+	v_xml := v_xml || '&lt;PATIENT>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', RPatient.PATI_ID_PATI);
+	v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', RPatient.PATI_NOM_USU);
+	v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', RPatient.PATI_NOM_NAI);
+	v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', RPatient.PATI_PRENOM);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', RPatient.PATI_DAT_NAI);
+	v_xml := v_xml || pckPfiHmM.val2xml('SEXE', RPatient.PATI_SEXE);
+	v_xml := v_xml || pckPfiHmM.val2xml('NIP', RPatient.PATI_NIP);
+	v_xml := v_xml || '&lt;/PATIENT>';
+
+	Select /* T_EVT_SAD_ACTIVITE_SAISIES_S */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+	Insert /* T_EVT_SAD_ACTIVITE_SAISIES_S */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+	Values (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'I', v_xml
+		  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	-- Segment Séjour
+	v_xml := null;
+	v_xml := v_xml || '&lt;SEJOUR>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', RSejour.SEJO_ID_SEJO);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RSejour.SEJO_ID_UNFO);
+	v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfEntree.UNFO_CODE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', RSejour.SEJO_DAT_DEB);
+	v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', RSejour.SEJO_NUM_SEJ_COMM);
+	v_xml := v_xml || '&lt;/SEJOUR>';
+
+	Insert /* T_EVT_SAD_ACTIVITE_SAISIES_S */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+	Values (n_IdEvnd+1, n_IdEvnt, 2, 'SEJOUR', 'I', v_xml
+		  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	-- Segment Recueil
+	v_xml := null;
+	v_xml := v_xml || '&lt;RECUEIL>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_RECU', RRecueil.RECU_ID_RECU);
+	v_xml := v_xml || pckPfiHmM.val2xml('DATE', RRecueil.RECU_DATE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI', REtatNavigateur.ETNA_IND_STT_ACC);
+	v_xml := v_xml || pckPfiHmM.val2xml('ACCUEILLI_OLD', REtatNavigateur.ETNA_IND_STT_ACC);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_ENT_SALLE_OLD', REtatNavigateur.ETNA_DAT_ENT_PAT_SALLE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_SOR_SALLE_OLD', REtatNavigateur.ETNA_DAT_SOR_PAT_SALLE);
+	v_xml := v_xml || pckPfiHmM.val2xml('IDDOSSIER', RDossier.DOSS_ID_DOSS);
+    v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE',RDossier. DOSS_IND_DOSSIER_VALIDE);
+    v_xml := v_xml || pckPfiHmM.val2xml('VALIDE_TECHNIQUE_OLD', RDossier.DOSS_IND_DOSSIER_VALIDE);
+	v_xml := v_xml || '&lt;/RECUEIL>';
+
+	Insert /* T_EVT_SAD_ACTIVITE_SAISIES_S */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+	Values (n_IdEvnd+2, n_IdEvnt, 3, 'RECUEIL', 'I', v_xml
+		  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	-- Segment Acte CCAM
+    v_extpmsi:=null;
+	if RActe.ASAI_COD_ACT_DESC IS NOT NULL THEN
+	    v_extpmsi:= SUBSTR(RActe.ASAI_COD_ACT_DESC, 2, 2);
+    end if;
+
+	v_xml := null;
+	v_xml := v_xml || '&lt;ACTE_CCAM>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_ACSA', :old.ACSA_ID_ACSA);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_MEDE', :old.ACSA_ID_MEDE);
+	v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ADELI', RMedExe.MEDE_ADELI);
+	v_xml := v_xml || pckPfiHmM.val2xml('MEDE_ORDRE', RMedExe.MEDE_ORDRE);
+	v_xml := v_xml || pckPfiHmM.val2xml('PHASE_ID', :old.ACSA_PHASE_ID);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', RActe.ASAI_ID_UNFO);
+	v_xml := v_xml || pckPfiHmM.val2xml('UNFO_CODE', RUfExe.UNFO_CODE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO_RES', RActe.ASAI_ID_UNFO_RES);
+	v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_CODE', RUfResp.UNFO_CODE);
+	v_xml := v_xml || pckPfiHmM.val2xml('UNFO_RES_TYP_PMS', RUfResp.UNFO_TYP_PMS);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_TRUM', RActe.ASAI_ID_TRUM);
+	v_xml := v_xml || pckPfiHmM.val2xml('NUM_PHAS', RActe.ASAI_NUM_PHAS);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_EXE', RActe.ASAI_DAT_EXE);
+	v_xml := v_xml || pckPfiHmM.val2xml('CODE_ACT_D', :old.ACSA_COD_ACT_D);
+	v_xml := v_xml || pckPfiHmM.val2xml('CODE_D', RActe.ASAI_CODE_D);
+	v_xml := v_xml || pckPfiHmM.val2xml('COL_COM', :old.ACSA_COL_COM);
+	v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB', :old.ACSA_BAS_REMB);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_RMB_EXCEPTIONNEL', :old.ACSA_IND_RMB_EXCEPTIONNEL);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_SPL_CAB', :old.ACSA_IND_SPL_CAB);
+	v_xml := v_xml || pckPfiHmM.val2xml('ASS_NON_PREV', :old.ACSA_ASS_NON_PREV);
+	v_xml := v_xml || pckPfiHmM.val2xml('MODIF1', :old.ACSA_MODIF1);
+	v_xml := v_xml || pckPfiHmM.val2xml('MODIF2', :old.ACSA_MODIF2);
+	v_xml := v_xml || pckPfiHmM.val2xml('MODIF3', :old.ACSA_MODIF3);
+	v_xml := v_xml || pckPfiHmM.val2xml('MODIF4', :old.ACSA_MODIF4);
+	v_xml := v_xml || pckPfiHmM.val2xml('COD_REGROUPEMENT', :old.ACSA_COD_REGROUPEMENT);
+	v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT_NON_REMB', :old.ACSA_MON_TOT_NON_REMB);
+	v_xml := v_xml || pckPfiHmM.val2xml('BAS_REMB_SEUIL', :old.ACSA_BAS_REMB_SEUIL);
+	v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO_B2', :old.ACSA_COD_EXO_B2);
+	v_xml := v_xml || pckPfiHmM.val2xml('DEP_GLOB_FORMULE', :old.ACSA_DEP_GLOB_FORMULE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DEP_FORMULE', :old.ACSA_DEP_FORMULE);
+	v_xml := v_xml || pckPfiHmM.val2xml('COD_EXO', :old.ACSA_COD_EXO);
+	v_xml := v_xml || pckPfiHmM.val2xml('MON_DEP_HON', :old.ACSA_MON_DEP_HON);
+	v_xml := v_xml || pckPfiHmM.val2xml('MON_TOT', :old.ACSA_MON_TOT);
+	v_xml := v_xml || pckPfiHmM.val2xml('PRI_UNITAIRE', :old.ACSA_PRI_UNITAIRE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ANP.OLD',:old.ACSA_ASS_NON_PREV);
+	v_xml := v_xml || pckPfiHmM.val2xml('QD', :old.ACSA_ID_CAGE_QD);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_VALIDE', :old.ACSA_IND_VALIDE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DENTS', :old.ACSA_NUM_DENT);
+	v_xml := v_xml || pckPfiHmM.val2xml('EXTPMSI', v_extpmsi);
+	v_xml := v_xml || '&lt;/ACTE_CCAM>';
+
+	Insert /* T_EVT_SAD_ACTIVITE_SAISIES_S */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+	Values (n_IdEvnd+3, n_IdEvnt, 4, 'ACTE_CCAM', 'S', v_xml
+		  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+EXCEPTION
+	WHEN OTHERS THEN
+		Begin
+			pckTrigPfiHmM.PRO_traceScl(RPatient.PATI_NIP, RSejour.SEJO_NUM_SEJ_COMM, RSejour.SEJO_ID_ETAB_CON, 'Evt Acte CCAM', 'T_EVT_SAD_ACTIVITE_SAISIES_S', '0', SUBSTR(SQLERRM,1,2000));
+		Exception
+			When Others Then
+				return;
+		End;
+END;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">VM_CA_HISTO</td>
+<td class="currentcell">MATERIALIZED&nbsp;VIEW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 1)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIVITE_SAISIES_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 2)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIVITE_SAISIES_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 3)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIVITE_SAISIES_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 4)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIV_SAIS_NGAP_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 5)">
+<td>PCAP_XROUGE</td>
+<td>VM_CA_JOUR</td>
+<td>MATERIALIZED&nbsp;VIEW</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 6)">
+<td>PCAP_XROUGE</td>
+<td>MVW_CA_JOUR</td>
+<td>MATERIALIZED&nbsp;VIEW</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 7)">
+<td>PCAP_XROUGE</td>
+<td>MVW_CA_HISTO</td>
+<td>MATERIALIZED&nbsp;VIEW</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 8)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIV_SAIS_NGAP_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 9)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_DOSSIER_TECHNIQUE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 32, 10)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ETAT_NAVIGATEUR_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.5">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.5">
+<div class="childreport"><table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.5">
+<div class="childreport"><table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.5">
+<div class="childreport"><table id="Table.37" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.5">
+<div class="childreport"><table id="Table.38" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.5">
+<div class="childreport"><table id="Table.39" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.5">
+<div class="childreport"><table id="Table.40" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.5">
+<div class="childreport"><table id="Table.41" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.5">
+<div class="childreport"><table id="Table.42" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.5">
+<div class="childreport"><table id="Table.43" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.44" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>254012</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>15582</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>404</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>254012</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Table&nbsp;des&nbsp;activités</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.45" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.46" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_ACSA_I1</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">ACSA_ID_ASAI,&nbsp;ACSA_IND_EXTERNE</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 1)">
+<td>PCAP_XROUGE</td>
+<td>I_ACSA_ID_RPSS</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_RPSS</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 2)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_ACSA_ID_APPA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_APPA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 3)">
+<td>PCAP_XROUGE</td>
+<td>I_ACSA_CODE_ETAB_UF</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_CODE_D,&nbsp;ACSA_ID_ETAB_D,&nbsp;ACSA_ID_UNFO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_ACSA_ID_CAGE_QD</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_CAGE_QD</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_ACSA_ID_CAGE_EVE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_CAGE_EVE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 6)">
+<td>PCAP_XROUGE</td>
+<td>PK_SAD_ACTIVITE_SAISIES</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_ACSA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 7)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_ACSA_ID_CAGE_JUS_EXO</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_CAGE_JUS_EXO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 8)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_ACSA_ID_FACT_DERNIER</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_FACT_DERNIER</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 9)">
+<td>PCAP_XROUGE</td>
+<td>IDX_SAD_ACTIVITE_SAISIES_I1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_ASAI,&nbsp;ACSA_ID_MEDE,&nbsp;ACSA_PHASE_ID</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 10)">
+<td>PCAP_XROUGE</td>
+<td>IDX_SAD_ACTIVITE_SAISIES_I2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_DAT_CRE,&nbsp;ACSA_NUM_ORDRE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 11)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAI_SEJBB</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_SEJO_BEBE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 12)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_ACSA_ID_PRHO_MAJORATION</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_PRHO_MAJORATION</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 13)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAI_SAD_F1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_FADE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 14)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_BAS1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_UNFO_RES</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 15)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_BAS2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_UNFO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 16)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_BAS_</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_ETAB_D</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 17)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_IDE1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_SEJO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 18)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_IDE2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 19)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_IDE3</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_MEDE_REMPLACE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 20)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_IDE4</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_MEDE_PRESC</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 21)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_IDE_</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_MEDE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 22)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_PAD1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_PRHO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 23)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_PAD_</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_PRSE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 24)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_SAD1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_ASAI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 25)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_SAD2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_RECU</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 26)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_SAD_</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_ID_FAVO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 27)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SAD_ACTIVITE_SAISIES_SARE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>ACSA_PHASE_ID</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.47" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 47)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_ACSA_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_ASAI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 47)">
+<td>PCAP_XROUGE</td>
+<td>IDX_ACSA_I1</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>ACSA_IND_EXTERNE</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.48" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 48)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_ACSA_ID_RPSS</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_RPSS</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.49" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 49)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_ACSA_ID_APPA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_APPA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.50" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 50)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_ACSA_CODE_ETAB_UF</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_ETAB_D</td>
+<td class="currentcell">2</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 50)">
+<td>PCAP_XROUGE</td>
+<td>I_ACSA_CODE_ETAB_UF</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>ACSA_ID_UNFO</td>
+<td>3</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 50)">
+<td>PCAP_XROUGE</td>
+<td>I_ACSA_CODE_ETAB_UF</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>ACSA_CODE_D</td>
+<td>1</td>
+<td>16</td>
+<td>16</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.51" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 51)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_ACSA_ID_CAGE_QD</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_CAGE_QD</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.52" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 52)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_ACSA_ID_CAGE_EVE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_CAGE_EVE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.53" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 53)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_ACSA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.54" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 54)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_ACSA_ID_CAGE_JUS_EXO</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_CAGE_JUS_EXO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.8">
+<div class="childreport"><table id="Table.55" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 55)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_ACSA_ID_FACT_DERNIER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_FACT_DERNIER</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.8">
+<div class="childreport"><table id="Table.56" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 56)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_SAD_ACTIVITE_SAISIES_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_ASAI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 56)">
+<td>PCAP_XROUGE</td>
+<td>IDX_SAD_ACTIVITE_SAISIES_I1</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>ACSA_ID_MEDE</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 56)">
+<td>PCAP_XROUGE</td>
+<td>IDX_SAD_ACTIVITE_SAISIES_I1</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>ACSA_PHASE_ID</td>
+<td>3</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.8">
+<div class="childreport"><table id="Table.57" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 57)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_SAD_ACTIVITE_SAISIES_I2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_DAT_CRE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">7</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 57)">
+<td>PCAP_XROUGE</td>
+<td>IDX_SAD_ACTIVITE_SAISIES_I2</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_ACTIVITE_SAISIES</td>
+<td>ACSA_NUM_ORDRE</td>
+<td>2</td>
+<td>60</td>
+<td>60</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.8">
+<div class="childreport"><table id="Table.58" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 58)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAI_SEJBB</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_SEJO_BEBE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.8">
+<div class="childreport"><table id="Table.59" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 59)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_ACSA_ID_PRHO_MAJORATION</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_PRHO_MAJORATION</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.8">
+<div class="childreport"><table id="Table.60" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 60)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAI_SAD_F1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_FADE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.8">
+<div class="childreport"><table id="Table.61" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 61)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_BAS1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_UNFO_RES</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.8">
+<div class="childreport"><table id="Table.62" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 62)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_BAS2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_UNFO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.8">
+<div class="childreport"><table id="Table.63" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 63)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_BAS_</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_ETAB_D</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.8">
+<div class="childreport"><table id="Table.64" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 64)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_IDE1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_SEJO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.8">
+<div class="childreport"><table id="Table.65" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 65)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_IDE2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.8">
+<div class="childreport"><table id="Table.66" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 66)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_IDE3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_MEDE_REMPLACE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.8">
+<div class="childreport"><table id="Table.67" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 67)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_IDE4</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_MEDE_PRESC</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.21.8">
+<div class="childreport"><table id="Table.68" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 68)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_IDE_</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_MEDE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.22.8">
+<div class="childreport"><table id="Table.69" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 69)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_PAD1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_PRHO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.23.8">
+<div class="childreport"><table id="Table.70" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 70)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_PAD_</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_PRSE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.24.8">
+<div class="childreport"><table id="Table.71" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 71)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_SAD1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_ASAI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.25.8">
+<div class="childreport"><table id="Table.72" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 72)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_SAD2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_RECU</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.26.8">
+<div class="childreport"><table id="Table.73" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 73)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_SAD_</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_ID_FAVO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.27.8">
+<div class="childreport"><table id="Table.74" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 74)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SAD_ACTIVITE_SAISIES_SARE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">ACSA_PHASE_ID</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

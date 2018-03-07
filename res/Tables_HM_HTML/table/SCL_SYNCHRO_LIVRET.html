@@ -1,0 +1,1221 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="SCL_SYNCHRO_LIVRET/report.js" type="text/javascript"></script>
+<link href="SCL_SYNCHRO_LIVRET/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">SCL_SYNCHRO_LIVRET</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">SYLI_FINESS</td>
+<td class="currentcell">VARCHAR2(30&nbsp;BYTE)</td>
+<td class="currentcell">Yes</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Etablissement&nbsp;auquel&nbsp;le&nbsp;médicament&nbsp;du&nbsp;livret&nbsp;est&nbsp;rattaché</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>SYLI_NO_INTERNE</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>Code&nbsp;stock&nbsp;logiciel&nbsp;de&nbsp;stocks</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>SYLI_UCD</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>Code&nbsp;UCD</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>SYLI_CIP</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Code&nbsp;CIP&nbsp;ou&nbsp;Code&nbsp;Fiche&nbsp;Produit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>SYLI_REF_FOURNISSEUR</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Code&nbsp;du&nbsp;fournisseur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>SYLI_NOM_FOURNISSEUR</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Nom&nbsp;du&nbsp;fournisseur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>SYLI_PRX_REVIENT</td>
+<td>NUMBER(12,6)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Prix&nbsp;de&nbsp;revient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>SYLI_NOM_PRODUIT</td>
+<td>VARCHAR2(1500&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>Nom&nbsp;du&nbsp;materiel&nbsp;ou&nbsp;du&nbsp;produit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>SYLI_IND_GES_RETOUR</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>9</td>
+<td>Permet&nbsp;de&nbsp;définir&nbsp;si&nbsp;le&nbsp;logiciel&nbsp;de&nbsp;stocks&nbsp;gère&nbsp;la&nbsp;notion&nbsp;de&nbsp;retour&nbsp;en&nbsp;stock&nbsp;pour&nbsp;le&nbsp;médicament&nbsp;ou&nbsp;non&nbsp;(0=Non,&nbsp;1=Oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>SYLI_IND_GES_LOT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>10</td>
+<td>Permet&nbsp;de&nbsp;définir&nbsp;si&nbsp;le&nbsp;logiciel&nbsp;de&nbsp;stocks&nbsp;gère&nbsp;la&nbsp;notion&nbsp;de&nbsp;lot&nbsp;pour&nbsp;le&nbsp;médicament&nbsp;ou&nbsp;non&nbsp;(0=Non,&nbsp;1=Oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>SYLI_QTE_CDT_ACHAT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Quantité&nbsp;par&nbsp;conditionnement&nbsp;d'achat.&nbsp;Concerne&nbsp;les&nbsp;produits&nbsp;hors&nbsp;médicament</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>SYLI_COD_UNT_DISTRIBUTION</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Code&nbsp;de&nbsp;l'unité&nbsp;de&nbsp;distribution.&nbsp;Concerne&nbsp;les&nbsp;produits&nbsp;hors&nbsp;médicament</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>SYLI_LIB_UNT_DISTRIBUTION</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Libellé&nbsp;de&nbsp;l'unité&nbsp;de&nbsp;distribution.&nbsp;Concerne&nbsp;les&nbsp;produits&nbsp;hors&nbsp;médicament</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>SYLI_EMP_STOCK</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Emplacement&nbsp;de&nbsp;stock</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>SYLI_CTG_PRD_HM</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Catégorie&nbsp;de&nbsp;produit&nbsp;HM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>SYLI_IND_LIVRET_STOCK</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Indique&nbsp;si&nbsp;le&nbsp;produit&nbsp;doit&nbsp;être&nbsp;placé&nbsp;dans&nbsp;le&nbsp;livret&nbsp;(L)&nbsp;ou&nbsp;dans&nbsp;le&nbsp;référentiel&nbsp;des&nbsp;articles&nbsp;(S)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>SYLI_DAT_CRE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>SYLI_DAT_MOD</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>SYLI_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>Yes</td>
+<td>0</td>
+<td>19</td>
+<td>N°&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>SYLI_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>SYLI_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>SYLI_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>SYLI_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>SYLI_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>SYLI_TYPE</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Type&nbsp;de&nbsp;livret&nbsp;(Null&nbsp;pour&nbsp;médicaments,&nbsp;MAT&nbsp;pour&nbsp;matériel)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>SYLI_COD_CLASSE</td>
+<td>VARCHAR2(19&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Code&nbsp;de&nbsp;la&nbsp;classe&nbsp;du&nbsp;matériel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>SYLI_LIB_CLASSE</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Libellé&nbsp;de&nbsp;la&nbsp;classe&nbsp;du&nbsp;matériel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>SYLI_COD_SCLASSE</td>
+<td>VARCHAR2(19&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Code&nbsp;de&nbsp;la&nbsp;sous-classe&nbsp;du&nbsp;matériel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>SYLI_LIB_SCLASSE</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>Libellé&nbsp;de&nbsp;la&nbsp;sous-classe&nbsp;du&nbsp;matériel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>SYLI_COD_PRODUIT</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Code&nbsp;du&nbsp;matériel&nbsp;ou&nbsp;du&nbsp;produit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>SYLI_CARACTERISTIQUE</td>
+<td>VARCHAR2(500&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Libellé&nbsp;complémentaire&nbsp;du&nbsp;matériel&nbsp;ou&nbsp;du&nbsp;produit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>SYLI_REFERENCE</td>
+<td>VARCHAR2(35&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Référence&nbsp;fournisseur&nbsp;du&nbsp;matériel&nbsp;ou&nbsp;du&nbsp;produit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>SYLI_COD_UF</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Code&nbsp;UF&nbsp;représentant&nbsp;le&nbsp;lieu&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>SYLI_COD_ZONE</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Code&nbsp;zone&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>SYLI_LIB_ZONE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Libellé&nbsp;zone&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>SYLI_COD_RANGEE</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Code&nbsp;rangée&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>SYLI_LIB_RANGEE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Libellé&nbsp;rangée&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>SYLI_COD_COLONNE</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Code&nbsp;colonne&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>SYLI_LIB_COLONNE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Libellé&nbsp;colonne&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>SYLI_COD_ETAGERE</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Code&nbsp;étagère&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>SYLI_LIB_ETAGERE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Libellé&nbsp;étagère&nbsp;de&nbsp;stockage&nbsp;pharmacie&nbsp;pour&nbsp;le&nbsp;matériel&nbsp;ou&nbsp;produit&nbsp;concerné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>SYLI_UNITE</td>
+<td>VARCHAR2(35&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Unité&nbsp;de&nbsp;stockage&nbsp;utilisée&nbsp;dans&nbsp;les&nbsp;armoires&nbsp;de&nbsp;services&nbsp;des&nbsp;unités&nbsp;de&nbsp;soins</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>SYLI_CONTENANT_FP</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Contenant&nbsp;du&nbsp;produit&nbsp;(BOITE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>SYLI_COD_UNT_FP</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Unite&nbsp;du&nbsp;contenant&nbsp;(de&nbsp;la&nbsp;liste&nbsp;BCB)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>SYLI_CREDATIM</td>
+<td>TIMESTAMP(3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Champ&nbsp;Technique&nbsp;X3.&nbsp;Hors&nbsp;Pojo.&nbsp;Ni&nbsp;Lu&nbsp;ni&nbsp;écrit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>SYLI_UPDDATIM</td>
+<td>TIMESTAMP(3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Champ&nbsp;Technique&nbsp;X3.&nbsp;Hors&nbsp;Pojo.&nbsp;Ni&nbsp;Lu&nbsp;ni&nbsp;écrit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>SYLI_AUUD</td>
+<td>RAW</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Champ&nbsp;Technique&nbsp;X3.&nbsp;Hors&nbsp;Pojo.&nbsp;Ni&nbsp;Lu&nbsp;ni&nbsp;écrit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>SYLI_CREUSR</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Champ&nbsp;Technique&nbsp;X3.&nbsp;Hors&nbsp;Pojo.&nbsp;Ni&nbsp;Lu&nbsp;ni&nbsp;écrit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>SYLI_UPDUSR</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Champ&nbsp;Technique&nbsp;X3.&nbsp;Hors&nbsp;Pojo.&nbsp;Ni&nbsp;Lu&nbsp;ni&nbsp;écrit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>SYLI_UPDTICK</td>
+<td>NUMBER(10,0)</td>
+<td>No</td>
+<td>1&nbsp;</td>
+<td>50</td>
+<td>Champ&nbsp;Technique&nbsp;X3.&nbsp;Hors&nbsp;Pojo.&nbsp;Ni&nbsp;Lu&nbsp;ni&nbsp;écrit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>SYLI_IND_PCK</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Indicateur&nbsp;Conditionnement&nbsp;(Packaging)&nbsp;(0&nbsp;ou&nbsp;null:non,&nbsp;1:oui)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>SYLI_NO_INTERNE_PERE</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Code&nbsp;interne&nbsp;GEF&nbsp;du&nbsp;produit&nbsp;père.&nbsp;(Si&nbsp;hiérarchie.&nbsp;Ex:&nbsp;Conditionnements)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>SYLI_NBR_UNITE</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Nombre&nbsp;d'unités&nbsp;contenues&nbsp;dans&nbsp;un&nbsp;packaging&nbsp;(conditionnement)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>SYLI_NOM_PRODUIT_TRAD1</td>
+<td>VARCHAR2(1500&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Nom&nbsp;du&nbsp;materiel&nbsp;ou&nbsp;du&nbsp;produit.&nbsp;Langue&nbsp;1.&nbsp;(Le&nbsp;libellé&nbsp;est&nbsp;préfixé&nbsp;par&nbsp;[xxx]&nbsp;avec&nbsp;xxx&nbsp;qui&nbsp;vaut&nbsp;FRA,&nbsp;ENG,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>SYLI_NOM_PRODUIT_TRAD2</td>
+<td>VARCHAR2(1500&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Nom&nbsp;du&nbsp;materiel&nbsp;ou&nbsp;du&nbsp;produit.&nbsp;Langue&nbsp;2.&nbsp;(Le&nbsp;libellé&nbsp;est&nbsp;préfixé&nbsp;par&nbsp;[xxx]&nbsp;avec&nbsp;xxx&nbsp;qui&nbsp;vaut&nbsp;FRA,&nbsp;ENG,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>SYLI_ID_SYLI</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>56</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;SCL_SYNCHRO_LIVRET</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">PK_SCL_SYNCHRO_LIVRET</td>
+<td class="currentcell">Primary_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">17/07/17</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_SCL_SYNCHRO_LIVRET</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>SYS_C004651916</td>
+<td>Check</td>
+<td>"SYLI_IND_GES_RETOUR"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>SYS_C004651917</td>
+<td>Check</td>
+<td>"SYLI_IND_GES_LOT"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>SYS_C004651918</td>
+<td>Check</td>
+<td>"SYLI_UPDTICK"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>SYS_C004651919</td>
+<td>Check</td>
+<td>"SYLI_ID_SYLI"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">SYLI_ID_SYLI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">SYLI_IND_GES_RETOUR</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">SYLI_IND_GES_LOT</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">SYLI_UPDTICK</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">SYLI_ID_SYLI</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 9, 0)" class="currentrow">
+<td class="currentcell">SWM_SCL_SYNCHRO_LIVRET_C</td>
+<td class="currentcell">BEFORE&nbsp;EACH&nbsp;ROW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">INSERT</td>
+<td class="currentcell">DISABLED</td>
+<td class="currentcell">SCL_SYNCHRO_LIVRET</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+<div id="Child.0.0.4">
+<div class="currentchildreport"><pre>
+TRIGGER "PCAP_XROUGE".SWM_SCL_SYNCHRO_LIVRET_C
+BEFORE INSERT
+ON SCL_SYNCHRO_LIVRET FOR EACH ROW
+BEGIN
+    Declare
+        dateCourante        SCL_SYNCHRO_LIVRET.SYLI_DAT_CRE%Type;
+    Begin
+        -- #Version# 1.16 du 17/11/2016 #Version#
+		Select current_date into dateCourante From dual;
+
+		Select SEQ_SCL_SYNCHRO_LIVRET.nextval into :new.SYLI_ID_SYLI From dual;
+		:new.SYLI_DAT_CRE := dateCourante;
+		:new.SYLI_DAT_MOD := dateCourante;
+		:new.SYLI_UTI_CRE := 3;
+		:new.SYLI_PRO_CRE := 2;
+		:new.SYLI_UTI_MOD := 3;
+		:new.SYLI_PRO_MOD := 2;
+		:new.SYLI_NMAJ := 0;
+    End;
+END;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 10, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SWM_SCL_SYNCHRO_LIVRET_C</td>
+<td class="currentcell">TRIGGER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SCL_SYNCHRO_LIVRET</td>
+<td class="currentcell">TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>SCL_SYNCHRO_LIVRET</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Table&nbsp;de&nbsp;synchronisation&nbsp;du&nbsp;livret&nbsp;thérapeutique/Matériel</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 14, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_SCL_SYNCHRO_LIVRET</td>
+<td class="currentcell">UNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">SYLI_ID_SYLI</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_SCL_SYNCHRO_LIVRET</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SCL_SYNCHRO_LIVRET</td>
+<td class="currentcell">SYLI_ID_SYLI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

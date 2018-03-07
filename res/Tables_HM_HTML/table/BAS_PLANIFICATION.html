@@ -1,0 +1,1278 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="BAS_PLANIFICATION/report.js" type="text/javascript"></script>
+<link href="BAS_PLANIFICATION/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">BAS_PLANIFICATION</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">PLAN_ID_PLAN</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;BAS_PLANIFICATION</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>PLAN_ID_ETRO</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>2</td>
+<td>Identifiant&nbsp;de&nbsp;l'association&nbsp;étape/rôle</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>PLAN_ID_TYIN</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;du&nbsp;type&nbsp;d'information&nbsp;géré</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>PLAN_DUREE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Durée&nbsp;de&nbsp;la&nbsp;planification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>PLAN_IDOBJECT</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>5</td>
+<td>Identifiant&nbsp;de&nbsp;l'objet&nbsp;(personnel&nbsp;de&nbsp;santé,&nbsp;salle,&nbsp;appareil)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>PLAN_IND_RESTREINT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>6</td>
+<td>Indicateur&nbsp;précisant&nbsp;si&nbsp;la&nbsp;restriction&nbsp;sur&nbsp;la&nbsp;liste&nbsp;de&nbsp;ressources&nbsp;est&nbsp;activée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>PLAN_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>7</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>PLAN_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>8</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>PLAN_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>9</td>
+<td>N°&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>PLAN_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>PLAN_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>PLAN_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>PLAN_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>PLAN_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_PLAN_ID_ETRO</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_ETAPE_ROLE</td>
+<td class="currentcell">PK_BAS_ETAPE_ROLE</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_PLAN_ID_TYIN</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_TYPE_INFO</td>
+<td>PK_BAS_TYPE_INFO</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>PK_BAS_PLANIFICATION</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_BAS_PLANIFICATION</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>SYS_C004646774</td>
+<td>Check</td>
+<td>"PLAN_ID_PLAN"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>SYS_C004646775</td>
+<td>Check</td>
+<td>"PLAN_ID_ETRO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>SYS_C004646776</td>
+<td>Check</td>
+<td>"PLAN_ID_TYIN"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>SYS_C004646777</td>
+<td>Check</td>
+<td>"PLAN_IDOBJECT"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>SYS_C004646778</td>
+<td>Check</td>
+<td>"PLAN_IND_RESTREINT"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>SYS_C004646779</td>
+<td>Check</td>
+<td>"PLAN_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>SYS_C004646780</td>
+<td>Check</td>
+<td>"PLAN_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>SYS_C004646781</td>
+<td>Check</td>
+<td>"PLAN_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">PLAN_ID_ETRO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">PLAN_ID_TYIN</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">PLAN_ID_PLAN</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">PLAN_ID_PLAN</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">PLAN_ID_ETRO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">PLAN_ID_TYIN</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">PLAN_IDOBJECT</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">PLAN_IND_RESTREINT</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">PLAN_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">PLAN_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">PLAN_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>17</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>74</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 15, 0)" class="currentrow">
+<td class="currentcell">T_EVTHM_PLANIFICATION_CMS</td>
+<td class="currentcell">AFTER&nbsp;EACH&nbsp;ROW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">INSERT&nbsp;OR&nbsp;UPDATE&nbsp;OR&nbsp;DELETE</td>
+<td class="currentcell">DISABLED</td>
+<td class="currentcell">BAS_PLANIFICATION</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+<div id="Child.0.0.4">
+<div class="currentchildreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_PLANIFICATION_CMS
+AFTER DELETE OR INSERT OR UPDATE
+ON BAS_PLANIFICATION FOR EACH ROW
+DECLARE
+	n_idApli 						SCL_APPLI.APLI_ID%Type;
+	v_idTrameOrigine				VARCHAR2(19);
+	v_Action						VARCHAR2(1);
+	n_utiCre						BAS_PLANIFICATION.PLAN_UTI_CRE%Type;
+	n_utiMod						BAS_PLANIFICATION.PLAN_UTI_MOD%Type;
+	n_proCre						BAS_PLANIFICATION.PLAN_PRO_CRE%Type;
+	n_proMod						BAS_PLANIFICATION.PLAN_PRO_MOD%Type;
+	v_colCom						BAS_PLANIFICATION.PLAN_COL_COM%Type;
+	n_idEtro						BAS_PLANIFICATION.PLAN_ID_ETRO%Type;
+	n_idPlan						BAS_PLANIFICATION.PLAN_ID_PLAN%Type;
+	n_idTyin						BAS_PLANIFICATION.PLAN_ID_TYIN%Type;
+	n_idobject						BAS_PLANIFICATION.PLAN_IDOBJECT%Type;
+	n_idMoth						RGU_MOTIF.MOTH_ID_MOTH%Type;
+	v_codeMoth						RGU_MOTIF.MOTH_CODE%Type;
+	v_libelleMoth					RGU_MOTIF.MOTH_LIBELLE%Type;
+	n_idEtab						RGU_MOTIF.MOTH_ID_ETAB%Type;
+	n_IdEvnt						SCL_EVT.EVNT_ID_EVNT%TYPE;
+	n_IdEvnd						SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+	v_Xml							SCL_EVT_DATA.EVND_VAL%TYPE;
+
+	CURSOR c_moth(idEtro number, idMede number)
+		IS SELECT /* T_EVTHM_PLANIFICATION_CMS */ moth_id_moth, moth_id_etab, moth_code, moth_libelle
+			 FROM rgu_motif
+			WHERE moth_id_moth In (SELECT lmam_id_moth
+									 FROM bas_etape_role
+										  JOIN bas_param_etape
+										    On paet_id_paet = etro_id_paet
+										  JOIN bas_param_acte_medical
+										    On paam_id_paam = paet_id_paam
+										  JOIN bas_lien_motif_acte
+										    On lmam_id_paam = paam_id_paam
+										  JOIN rgu_motif
+										    On moth_id_moth = lmam_id_moth
+										  JOIN rgu_moth_med
+										    On motm_id_moth = moth_id_moth
+										  JOIN ide_medecin
+										    On mede_id_mede = motm_id_mede
+									WHERE etro_id_etro = idEtro
+									  AND mede_id_mede = idMede );
+BEGIN
+	-- #Version# 1.16 du 01/03/2016 #Version#
+
+	-- On ne crée un événement que sur modification de la durée de la planification
+	IF UPDATING THEN
+		IF (:new.PLAN_DUREE = :old.PLAN_DUREE OR (:new.PLAN_DUREE IS NULL AND :old.PLAN_DUREE IS NULL))
+			AND (NVL(SUBSTR(:new.PLAN_COL_COM,7,1),'0') = NVL(SUBSTR(:old.PLAN_COL_COM,7,1),'0')) THEN
+			RETURN;
+		END IF;
+	END IF;
+
+	IF DELETING THEN
+		IF SUBSTR(:old.PLAN_COL_COM, 4, 1) = '1' THEN
+			pckTrigPfiHmM.PRO_appliExt(:old.PLAN_DAT_MOD, :old.PLAN_COL_COM, n_idApli, v_idTrameOrigine);
+		END IF;
+		n_utiCre := :old.PLAN_UTI_CRE;
+		n_utiMod := :old.PLAN_UTI_MOD;
+		n_proCre := :old.PLAN_PRO_CRE;
+		n_proMod := :old.PLAN_PRO_MOD;
+		v_colCom := :old.PLAN_COL_COM;
+		n_idEtro := :old.PLAN_ID_ETRO;
+		n_idPlan := :old.PLAN_ID_PLAN;
+		n_idTyin := :old.PLAN_ID_TYIN;
+		n_idObject := :old.PLAN_IDOBJECT;
+	ELSE
+		pckTrigPfiHmM.PRO_appliExt(:new.PLAN_DAT_MOD, :new.PLAN_COL_COM, n_idApli, v_idTrameOrigine);
+		n_utiCre := :new.PLAN_UTI_CRE;
+		n_utiMod := :new.PLAN_UTI_MOD;
+		n_proCre := :new.PLAN_PRO_CRE;
+		n_proMod := :new.PLAN_PRO_MOD;
+		v_colCom := :new.PLAN_COL_COM;
+		n_idEtro := :new.PLAN_ID_ETRO;
+		n_idPlan := :new.PLAN_ID_PLAN;
+		n_idTyin := :new.PLAN_ID_TYIN;
+		n_idObject := :new.PLAN_IDOBJECT;
+	END IF;
+
+	IF n_idTyin &lt;> 12 OR n_idObject IS NULL THEN
+		RETURN;
+	END IF;
+
+	v_action := 'M';
+
+	OPEN c_moth(n_idEtro,n_idObject);
+	LOOP
+		FETCH c_moth INTO n_idMoth, n_idEtab, v_codeMoth, v_libelleMoth;
+		EXIT WHEN c_moth%NOTFOUND;
+
+		Select /* T_EVTHM_PLANIFICATION_CMS */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+		INSERT /* T_EVTHM_PLANIFICATION_CMS */
+		INTO SCL_EVT (EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT,
+							 EVNT_NIP, EVNT_ID_SEJOUR, EVNT_NUM_SEJ, EVNT_NUM_RSS, EVNT_CODE_EVT,
+							 EVNT_ID_OBJ, EVNT_CODE_PERE, EVNT_ID_PERE, EVNT_ACTION, EVNT_ID_APLI,
+							 EVNT_ID_EVT_EXTERNE, EVNT_EVTHL7, EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ,
+							 EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM  )
+		VALUES (n_IdEvnt, current_date, '0', n_idEtab, NULL,
+				NULL, NULL, NULL, NULL, 'MOTIF_HOSPI',
+				n_idMoth, NULL, NULL, v_Action, n_IdApli,
+				v_idTrameOrigine, NULL, current_date, current_date, 0,
+				n_utiCre, n_utiMod, n_proCre, n_proMod, v_colCom);
+
+		-- Segment data evenement
+		v_xml := null;
+		v_xml := v_xml || '&lt;MOTIF_HOSPI>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_MOTH', n_idMoth);
+		v_xml := v_xml || pckPfiHmM.val2xml('CODE', v_codeMoth);
+		v_xml := v_xml || pckPfiHmM.val2xml('LIBELLE',v_libelleMoth);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PLAN', n_idPlan);
+		v_xml := v_xml || '&lt;/MOTIF_HOSPI>';
+
+		Select /* T_EVTHM_REASSORT_ARMOIRE_C */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+		INSERT /* T_EVTHM_PLANIFICATION_CMS */
+		INTO SCL_EVT_DATA (EVND_ID_EVND, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION,
+								  EVND_VAL, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE,
+								  EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM )
+		VALUES (n_IdEvnd, n_IdEvnt, 1, 'MOTIF_HOSPI', 'I',
+				v_Xml, current_date, current_date, 0, 3,
+				3, 2, 2, NULL);
+	END LOOP;
+	CLOSE c_moth;
+
+EXCEPTION
+	WHEN OTHERS THEN
+		Begin
+			pckTrigPfiHmM.PRO_traceScl(NULL, NULL, n_idEtab, 'Evt Motif d hospitalisation', 'T_EVTHM_PLANIFICATION_CMS', '0', SUBSTR(SQLERRM,1,2000));
+		Exception
+			When Others Then
+				return;
+		End;
+END T_EVTHM_PLANIFICATION_CMS;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 16, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">T_EVTHM_PLANIFICATION_CMS</td>
+<td class="currentcell">TRIGGER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_PLANIFICATION</td>
+<td class="currentcell">TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>BAS_PLANIFICATION</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>17</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>74</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Planification&nbsp;des&nbsp;actes&nbsp;médicaux</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 20, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLAN_ID_ETRO</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">PLAN_ID_ETRO</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 20, 1)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PLAN_ID_TYIN</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLAN_ID_TYIN</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 20, 2)">
+<td>PCAP_XROUGE</td>
+<td>PK_BAS_PLANIFICATION</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLAN_ID_PLAN</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLAN_ID_ETRO</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_PLANIFICATION</td>
+<td class="currentcell">PLAN_ID_ETRO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLAN_ID_TYIN</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_PLANIFICATION</td>
+<td class="currentcell">PLAN_ID_TYIN</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 23)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_BAS_PLANIFICATION</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_PLANIFICATION</td>
+<td class="currentcell">PLAN_ID_PLAN</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

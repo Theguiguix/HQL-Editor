@@ -1,0 +1,3697 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="FAC_LIGNE_FACTURE/report.js" type="text/javascript"></script>
+<link href="FAC_LIGNE_FACTURE/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">FAC_LIGNE_FACTURE</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">LFAC_ID_LFAC</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;FAC_LIGNE_FACTURE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>LFAC_ID_FACT</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>2</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;facture</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>LFAC_ID_ACSA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;ligne&nbsp;d'activité&nbsp;saisie&nbsp;(à&nbsp;vide&nbsp;pour&nbsp;les&nbsp;lignes&nbsp;de&nbsp;facture&nbsp;issues&nbsp;d'un&nbsp;calcul&nbsp;:&nbsp;PJ,&nbsp;¿)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>LFAC_ID_SEJO_D</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>4</td>
+<td>Identifiant&nbsp;du&nbsp;séjour&nbsp;(dénormalisation)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>LFAC_ID_PATI_D</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>5</td>
+<td>Identifiant&nbsp;du&nbsp;patient&nbsp;(dénormalisation)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>LFAC_ID_ETAB_D</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>6</td>
+<td>Identifiant&nbsp;de&nbsp;l'établissement&nbsp;(dénormalisation)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>LFAC_ID_FAVO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Identifiant&nbsp;du&nbsp;favori&nbsp;à&nbsp;l'origine&nbsp;de&nbsp;la&nbsp;création&nbsp;de&nbsp;la&nbsp;cette&nbsp;ligne&nbsp;d'acte/de&nbsp;prestation&nbsp;(utilisé&nbsp;pour&nbsp;statistiques)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>LFAC_ID_MEDE_EXE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;exécutant</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>LFAC_ID_MEDE_PRESC</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;prescripteur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>LFAC_ID_MEDE_REMPLACE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;remplacé</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>LFAC_ID_PRHO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Identifiant&nbsp;prestation&nbsp;honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>LFAC_ID_PRSE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;prestations&nbsp;de&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>LFAC_ID_UNFO_EXE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Identifiant&nbsp;de&nbsp;l'UF&nbsp;exécuante</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>LFAC_ID_UNFO_RES</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Identifiant&nbsp;de&nbsp;l'UF&nbsp;responsable/demandeuse</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>LFAC_NUM_ORDRE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>N°&nbsp;d'ordre&nbsp;pour&nbsp;le&nbsp;tri&nbsp;des&nbsp;lignes&nbsp;de&nbsp;facture</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>LFAC_CODE</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Code&nbsp;de&nbsp;l'acte&nbsp;ou&nbsp;de&nbsp;la&nbsp;prestation&nbsp;saisi&nbsp;pour&nbsp;dénormalisation&nbsp;(CCAM,&nbsp;prestation&nbsp;séjour&nbsp;ou&nbsp;honoraire)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>LFAC_LIBELLE</td>
+<td>VARCHAR2(2000&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Libellé&nbsp;de&nbsp;l'acte&nbsp;saisi&nbsp;pour&nbsp;dénormalisation&nbsp;(CCAM,&nbsp;prestation,...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>LFAC_COD_ACTIVITE</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Code&nbsp;activité&nbsp;CCAM&nbsp;-&nbsp;correspondance&nbsp;ACSA_COD_ACT_D&nbsp;(réservé&nbsp;uniquement&nbsp;aux&nbsp;actes&nbsp;CCAM)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>LFAC_ASS_NON_PREV</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Code&nbsp;de&nbsp;l'association&nbsp;non&nbsp;prévue</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>LFAC_COD_REGROUPEMENT</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Code&nbsp;regroupement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>LFAC_LET_CLE</td>
+<td>VARCHAR2(5&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Lettre&nbsp;clé&nbsp;pour&nbsp;les&nbsp;prestation&nbsp;séjour/honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>LFAC_PHASE_ID</td>
+<td>NUMBER(13,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;phase&nbsp;au&nbsp;sens&nbsp;SAREF</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>LFAC_MODIF1</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Code&nbsp;du&nbsp;modificateur&nbsp;1</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>LFAC_MODIF2</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Code&nbsp;du&nbsp;modificateur&nbsp;2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>LFAC_MODIF3</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Code&nbsp;du&nbsp;modificateur&nbsp;3</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>LFAC_MODIF4</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Code&nbsp;du&nbsp;modificateur&nbsp;4</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>LFAC_COD_EXO</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Code&nbsp;exonération&nbsp;de&nbsp;l'acte&nbsp;CCAM&nbsp;(1,&nbsp;2,&nbsp;3,&nbsp;4&nbsp;ou&nbsp;7)&nbsp;:&nbsp;sert&nbsp;au&nbsp;calcul&nbsp;du&nbsp;champ&nbsp;ACSA_COD_EXO_B2&nbsp;pour&nbsp;la&nbsp;règle&nbsp;du&nbsp;cumul</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>LFAC_COD_EXO_B2</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Colonne&nbsp;devenue&nbsp;obsolète&nbsp;voir&nbsp;LFAC_ID_CAGE_JUS_EXO&nbsp;portant&nbsp;l'identifiant&nbsp;du&nbsp;code&nbsp;exo&nbsp;--&nbsp;Code&nbsp;justificatif&nbsp;d'exonération&nbsp;du&nbsp;ticket&nbsp;modérateur&nbsp;(0,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5,&nbsp;6,&nbsp;7,&nbsp;8,&nbsp;9&nbsp;ou&nbsp;C)&nbsp;:&nbsp;code&nbsp;exonération&nbsp;calculé&nbsp;télétransmis</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>LFAC_DAT_EXE_DEB</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>Date&nbsp;début&nbsp;d'exécution&nbsp;de&nbsp;l'acte&nbsp;ou&nbsp;de&nbsp;la&nbsp;prestation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>LFAC_DAT_EXE_FIN</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Date&nbsp;fin&nbsp;d'exécution&nbsp;de&nbsp;l'acte&nbsp;ou&nbsp;de&nbsp;la&nbsp;prestation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>LFAC_DAT_PRESC</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Date&nbsp;de&nbsp;prescription</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>LFAC_HEU_MEDICALE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Heure&nbsp;médicale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>LFAC_EXT_DOC</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Extension&nbsp;documentaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>LFAC_IND_DIF_PAT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Indicateur&nbsp;différence&nbsp;au&nbsp;patient&nbsp;(1&nbsp;:&nbsp;la&nbsp;diffrence&nbsp;entre&nbsp;monatnt&nbsp;net&nbsp;et&nbsp;somme&nbsp;des&nbsp;PEC&nbsp;des&nbsp;AMO/AMC&nbsp;est&nbsp;affectée&nbsp;au&nbsp;patient,&nbsp;0&nbsp;sinon)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>LFAC_IND_EXTERNE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Indicateur&nbsp;acte&nbsp;réalisé&nbsp;dans&nbsp;un&nbsp;établissement&nbsp;externe</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>LFAC_IND_PRI_UNI_DEVIS</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Indicateur&nbsp;de&nbsp;prix&nbsp;unitaire&nbsp;sur&nbsp;devis&nbsp;(LPP,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>LFAC_IND_REMPLACE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Indicateur&nbsp;médecin&nbsp;remplacé&nbsp;(1)&nbsp;sinon&nbsp;(0)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>LFAC_IND_VMD</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Indicateur&nbsp;de&nbsp;ventilation&nbsp;manuelle&nbsp;des&nbsp;débiteurs&nbsp;(1/0)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>LFAC_MTT_BAS_RMB</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Base&nbsp;de&nbsp;remboursement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>LFAC_MTT_BAS_RMB_SEUIL</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Base&nbsp;de&nbsp;remboursement&nbsp;hors&nbsp;modificateur&nbsp;forfait&nbsp;et&nbsp;hors&nbsp;supplément&nbsp;de&nbsp;charges&nbsp;en&nbsp;cabinet&nbsp;pour&nbsp;règle&nbsp;du&nbsp;seuil</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>LFAC_MTT_DEH</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Montant&nbsp;du&nbsp;dépassement&nbsp;d'honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>LFAC_MTT_TOT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Montant&nbsp;total&nbsp;de&nbsp;de&nbsp;l'acte&nbsp;ou&nbsp;de&nbsp;la&nbsp;prestation&nbsp;(BR&nbsp;+&nbsp;dépassement)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>LFAC_MTT_TOT_NON_REMB</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Montant&nbsp;facturé&nbsp;pour&nbsp;acte&nbsp;ou&nbsp;la&nbsp;prestation&nbsp;non&nbsp;remboursable</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>LFAC_MTT_ETI</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Montant&nbsp;total&nbsp;de&nbsp;l'écart&nbsp;indemnisable&nbsp;(LPP,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>LFAC_PRI_ACHAT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Prix&nbsp;d'achat&nbsp;pour&nbsp;les&nbsp;prestations&nbsp;LPP</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>LFAC_PRI_UNITAIRE</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Prix&nbsp;unitaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>LFAC_QTE_COEFFICIENT</td>
+<td>NUMBER(6,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Quantité&nbsp;/&nbsp;Coefficient&nbsp;(1&nbsp;pour&nbsp;l'activié&nbsp;d'un&nbsp;acte&nbsp;CCAM)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>LFAC_DENOMBREMENT</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Dénombrement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>LFAC_REFERENCE</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Référence&nbsp;de&nbsp;la&nbsp;prestation&nbsp;honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>LFAC_SIRET</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>N°&nbsp;SIRET&nbsp;du&nbsp;fabricant&nbsp;(pour&nbsp;les&nbsp;LPP,&nbsp;...)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>LFAC_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>51</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>LFAC_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>52</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>LFAC_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>53</td>
+<td>N°&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>LFAC_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>LFAC_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>LFAC_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>LFAC_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>LFAC_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>LFAC_ACT_CLASSE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Classe&nbsp;de&nbsp;l'acte&nbsp;(GC&nbsp;:&nbsp;Geste&nbsp;complémentaire,&nbsp;TR&nbsp;:&nbsp;acte&nbsp;transitoire&nbsp;ou&nbsp;P&nbsp;:&nbsp;acte&nbsp;principal</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>LFAC_COD_ADM_REM</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Code&nbsp;admission&nbsp;remboursement&nbsp;(provenance&nbsp;SAREF_HIS_ACTE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>LFAC_ID_UNFO_MED</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Identifiant&nbsp;de&nbsp;l'UF&nbsp;médicale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>LFAC_ID_UNFO_HEB</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Identifiant&nbsp;de&nbsp;l'UF&nbsp;d'hébergement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>LFAC_ID_PRHO_MAJORATION</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;prestation&nbsp;honoraire&nbsp;retenue&nbsp;pour&nbsp;la&nbsp;majoration&nbsp;nuit1,&nbsp;nuit2&nbsp;ou&nbsp;férié</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>LFAC_MTT_MAJORATION</td>
+<td>NUMBER(7,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>64</td>
+<td>Montant&nbsp;de&nbsp;la&nbsp;majoration&nbsp;retenue</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 64)">
+<td>LFAC_IND_VLR_DIRECT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>65</td>
+<td>Indicateur&nbsp;coût&nbsp;direct&nbsp;(valeur&nbsp;1)&nbsp;:&nbsp;ligne&nbsp;non&nbsp;prise&nbsp;en&nbsp;compte&nbsp;dans&nbsp;les&nbsp;totalisations&nbsp;de&nbsp;la&nbsp;facture&nbsp;sinon&nbsp;valeur&nbsp;""0""</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 65)">
+<td>LFAC_VLR_SUP_CAB</td>
+<td>NUMBER(6,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>66</td>
+<td>Valeur&nbsp;du&nbsp;supplément&nbsp;de&nbsp;charge&nbsp;en&nbsp;cabinet</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 66)">
+<td>LFAC_VLR_PS_NON_CONV</td>
+<td>NUMBER(6,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>67</td>
+<td>Valeur&nbsp;de&nbsp;la&nbsp;réduction&nbsp;pour&nbsp;un&nbsp;PS&nbsp;non&nbsp;conventionné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 67)">
+<td>LFAC_VLR_MODIF1</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>68</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;1</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 68)">
+<td>LFAC_COE_MODIF1</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>69</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;1</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 69)">
+<td>LFAC_VLR_MODIF2</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>70</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 70)">
+<td>LFAC_COE_MODIF2</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>71</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 71)">
+<td>LFAC_VLR_MODIF3</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>72</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;3</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 72)">
+<td>LFAC_COE_MODIF3</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>73</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;3</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 73)">
+<td>LFAC_VLR_MODIF4</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>74</td>
+<td>Valeur&nbsp;forfaitaire&nbsp;du&nbsp;modificateur&nbsp;4</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 74)">
+<td>LFAC_COE_MODIF4</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>75</td>
+<td>Coefficient&nbsp;du&nbsp;modificateur&nbsp;4</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 75)">
+<td>LFAC_COE_ASS_NON_PREV</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>76</td>
+<td>Coefficient&nbsp;réducteur&nbsp;associé&nbsp;au&nbsp;code&nbsp;ANP</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 76)">
+<td>LFAC_COE_MCO_HAD</td>
+<td>NUMBER(5,4)</td>
+<td>Yes</td>
+<td>null</td>
+<td>77</td>
+<td>Valeur&nbsp;du&nbsp;coefficient&nbsp;MCO/HAD&nbsp;en&nbsp;vigueur&nbsp;à&nbsp;la&nbsp;date&nbsp;de&nbsp;fin&nbsp;du&nbsp;RSS</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 77)">
+<td>LFAC_COE_DOM</td>
+<td>NUMBER(5,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>78</td>
+<td>Valeur&nbsp;du&nbsp;coefficient&nbsp;DOM&nbsp;en&nbsp;vigueur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 78)">
+<td>LFAC_MTT_HOR_DEH</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>79</td>
+<td>Montant&nbsp;hors&nbsp;dépassement&nbsp;d'honoraire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 79)">
+<td>LFAC_TYP_LIGNE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>80</td>
+<td>Type&nbsp;de&nbsp;la&nbsp;ligne&nbsp;de&nbsp;facture&nbsp;(G&nbsp;:&nbsp;Générée&nbsp;par&nbsp;moteur&nbsp;de&nbsp;facturation,&nbsp;C&nbsp;:&nbsp;Communication)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 80)">
+<td>LFAC_ID_LIPO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>81</td>
+<td>Nombre&nbsp;total&nbsp;de&nbsp;suppléments&nbsp;soins&nbsp;intensifs,&nbsp;y&nbsp;compris&nbsp;les&nbsp;suppléments</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 81)">
+<td>LFAC_NUM_GHS</td>
+<td>VARCHAR2(4&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>82</td>
+<td>Numéro&nbsp;de&nbsp;GHS</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 82)">
+<td>LFAC_MTT_CAISSE</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>83</td>
+<td>Montant&nbsp;de&nbsp;la&nbsp;part&nbsp;caisse</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 83)">
+<td>LFAC_MTT_MUTUELLE</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>84</td>
+<td>Montant&nbsp;de&nbsp;la&nbsp;part&nbsp;mutuelle&nbsp;(toutes&nbsp;les&nbsp;AMC)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 84)">
+<td>LFAC_MTT_PATIENT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>85</td>
+<td>Montant&nbsp;de&nbsp;la&nbsp;part&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 85)">
+<td>LFAC_IND_GRATUIT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>86</td>
+<td>Indicateur&nbsp;de&nbsp;gratuité&nbsp;de&nbsp;la&nbsp;prestation&nbsp;facturée&nbsp;(valeur&nbsp;1&nbsp;sinon&nbsp;0)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 86)">
+<td>LFAC_COD_LPP</td>
+<td>VARCHAR2(13&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>87</td>
+<td>Code&nbsp;de&nbsp;l'article&nbsp;LPP&nbsp;(SAREF.LPP_ARTICLE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 87)">
+<td>LFAC_ID_CAGE_QD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>88</td>
+<td>Identifiant&nbsp;du&nbsp;qualificatif&nbsp;de&nbsp;la&nbsp;dépense&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;816&nbsp;-&nbsp;QUALIFICATIF_DEPENSE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 88)">
+<td>LFAC_ID_CAGE_JUS_EXO</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>89</td>
+<td>Identifiant&nbsp;du&nbsp;justificatif&nbsp;d'exonération&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;40)&nbsp;-&nbsp;Pour&nbsp;le&nbsp;code&nbsp;exo,&nbsp;voir&nbsp;le&nbsp;CAGE_CODE&nbsp;de&nbsp;l'élément&nbsp;générique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 89)">
+<td>LFAC_ID_CAGE_EVE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>90</td>
+<td>Colonne&nbsp;obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 90)">
+<td>LFAC_IND_SPL_CAB</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'</td>
+<td>91</td>
+<td>Indicateur&nbsp;supplément&nbsp;de&nbsp;charge&nbsp;en&nbsp;cabinet</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 91)">
+<td>LFAC_IND_RMB_EXCEPTIONNEL</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'</td>
+<td>92</td>
+<td>Indicateur&nbsp;remboursement&nbsp;exceptionnel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 92)">
+<td>LFAC_CDT_EXC</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>93</td>
+<td>Condition&nbsp;d'exercice&nbsp;du&nbsp;PS&nbsp;:&nbsp;L&nbsp;-&nbsp;Libéral,&nbsp;S&nbsp;-&nbsp;Salarié,&nbsp;M&nbsp;-&nbsp;Mixte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 93)">
+<td>LFAC_TYP_MAJORATION</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>94</td>
+<td>Type&nbsp;de&nbsp;majoration&nbsp;:&nbsp;N&nbsp;pour&nbsp;Nuit,&nbsp;F&nbsp;pour&nbsp;férié</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 94)">
+<td>LFAC_ID_TTVA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>95</td>
+<td>Lien&nbsp;vers&nbsp;le&nbsp;code&nbsp;TVA&nbsp;(issu&nbsp;de&nbsp;PSTA_ID_TTVA&nbsp;en&nbsp;fonction&nbsp;de&nbsp;la&nbsp;date&nbsp;d'acte)&nbsp;(Fk&nbsp;vers&nbsp;PAD_TVA)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 95)">
+<td>LFAC_TVA_TAUX</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>96</td>
+<td>Taux&nbsp;de&nbsp;TVA&nbsp;appliqué&nbsp;(issu&nbsp;de&nbsp;TVAT_TAUX&nbsp;en&nbsp;fonction&nbsp;de&nbsp;la&nbsp;date&nbsp;d'acte)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 96)">
+<td>LFAC_LPP_TAU_FINANCEMENT</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>97</td>
+<td>Taux&nbsp;de&nbsp;financement&nbsp;des&nbsp;LPP&nbsp;valide&nbsp;à&nbsp;la&nbsp;date&nbsp;de&nbsp;la&nbsp;prestation&nbsp;facturée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 97)">
+<td>LFAC_PAS_LET_B2</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>98</td>
+<td>Lettre&nbsp;utilisée&nbsp;en&nbsp;envoi&nbsp;CETELIC&nbsp;B2&nbsp;dans&nbsp;le&nbsp;cadre&nbsp;de&nbsp;la&nbsp;déduction&nbsp;du&nbsp;PAS</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 98)">
+<td>LFAC_IND_EXB</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>99</td>
+<td>Indicateur&nbsp;EXB&nbsp;(valeur&nbsp;0&nbsp;ou&nbsp;null&nbsp;:&nbsp;non&nbsp;concerné,&nbsp;1&nbsp;:&nbsp;EXB)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 99)">
+<td>LFAC_ID_APPA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>100</td>
+<td>Identifiant&nbsp;de&nbsp;l'appareil</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 100)">
+<td>LFAC_NUM_FT</td>
+<td>NUMBER(9,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>101</td>
+<td>Numéro&nbsp;Forfait&nbsp;Technique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 101)">
+<td>LFAC_RAB_PRI_UNITAIRE</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>102</td>
+<td>Prix&nbsp;unitaire&nbsp;saisi</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 102)">
+<td>LFAC_RAB_MTT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>103</td>
+<td>Rabais&nbsp;exprimé&nbsp;sous&nbsp;forme&nbsp;de&nbsp;montant</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 103)">
+<td>LFAC_RAB_POURCENTAGE</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>104</td>
+<td>Rabais&nbsp;exprimé&nbsp;sous&nbsp;forme&nbsp;de&nbsp;pourcentage</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 104)">
+<td>LFAC_RAB_PU_ORI</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>105</td>
+<td>Prix&nbsp;unitaire&nbsp;avant&nbsp;rabais&nbsp;:&nbsp;PU&nbsp;officiel&nbsp;d'origine</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 105)">
+<td>LFAC_TYP_FORFAIT</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>106</td>
+<td>Type&nbsp;de&nbsp;forfait&nbsp;technique&nbsp;:&nbsp;0&nbsp;-&nbsp;FTN,&nbsp;1&nbsp;-&nbsp;FTR,&nbsp;2&nbsp;-&nbsp;FTR1,&nbsp;3&nbsp;-&nbsp;FTR3</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 106)">
+<td>LFAC_IND_MIN_FORFAIT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>107</td>
+<td>Indicateur&nbsp;de&nbsp;minoration&nbsp;du&nbsp;prix&nbsp;du&nbsp;forfait&nbsp;technique :&nbsp;0&nbsp;pour&nbsp;non,&nbsp;1&nbsp;pour&nbsp;oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 107)">
+<td>LFAC_ID_FTSA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>108</td>
+<td>Identifiant&nbsp;du&nbsp;forfait&nbsp;technique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 108)">
+<td>LFAC_ENTENTE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>109</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 109)">
+<td>LFAC_COE_AME</td>
+<td>NUMBER(5,4)</td>
+<td>Yes</td>
+<td>null</td>
+<td>110</td>
+<td>Valeur&nbsp;du&nbsp;coefficient&nbsp;AME&nbsp;appliqué&nbsp;sur&nbsp;la&nbsp;ligne&nbsp;(null&nbsp;si&nbsp;non&nbsp;concerné)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 110)">
+<td>LFAC_ID_CUFA</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>111</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;condition&nbsp;appliqué&nbsp;pour&nbsp;la&nbsp;détermination&nbsp;de&nbsp;la&nbsp;CUFM&nbsp;utilisé&nbsp;dans&nbsp;le&nbsp;calcul.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 111)">
+<td>LFAC_ID_PAAM</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>112</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;BAS_PARAM_ACTE_MEDICAL&nbsp;permettant&nbsp;de&nbsp;désigner&nbsp;les&nbsp;actes&nbsp;pratiqués</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 112)">
+<td>LFAC_NUM_DENT</td>
+<td>VARCHAR2(64&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>113</td>
+<td>CCAM&nbsp;dentaire&nbsp;-&nbsp;Liste&nbsp;des&nbsp;n°&nbsp;de&nbsp;dents&nbsp;séparés&nbsp;par&nbsp;des&nbsp;";"</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 113)">
+<td>LFAC_IND_FAC_GHS_MINOR</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>114</td>
+<td>Indicateur&nbsp;de&nbsp;facturation&nbsp;du&nbsp;GHS&nbsp;minor&nbsp;(1=on&nbsp;applique&nbsp;la&nbsp;minoration&nbsp;du&nbsp;GSH,&nbsp;0=facturation&nbsp;normal&nbsp;du&nbsp;GHS)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 114)">
+<td>LFAC_IND_FORFAIT</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>115</td>
+<td>Indicateur&nbsp;d'activité&nbsp;saisie&nbsp;au&nbsp;forfait&nbsp;(Tunisie)&nbsp;(1=oui,&nbsp;0=non)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 115)">
+<td>LFAC_MTT_AJUSTEMENT</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>116</td>
+<td>Montant&nbsp;d'ajustement&nbsp;au&nbsp;forfait&nbsp;(Tunisie)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 116)">
+<td>LFAC_MTT_TVA</td>
+<td>NUMBER(10,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>117</td>
+<td>Montant&nbsp;de&nbsp;la&nbsp;TVA&nbsp;(Tunisie)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_LFAC_ID_ACSA</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">PK_SAD_ACTIVITE_SAISIES</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_LFAC_ID_APPA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_APPAREIL</td>
+<td>PK_PAD_APPAREIL</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_LFAC_ID_CAGE_EVE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_LFAC_ID_CAGE_JUS_EXO</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_LFAC_ID_CAGE_QD</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>FK_LFAC_ID_CUFA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CONDITION_UFA</td>
+<td>PK_BAS_CONDITION_UFA</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>FK_LFAC_ID_FACT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>FAC_FACTURE</td>
+<td>PK_FAC_FACTURE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>FK_LFAC_ID_FAVO</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_FAVORIS</td>
+<td>PK_SAD_FAVORIS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>FK_LFAC_ID_FTSA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>SAD_FT_SAISIS</td>
+<td>PK_SAD_FT_SAISIS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>FK_LFAC_ID_LIPO</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_LIT_POSTE</td>
+<td>PK_PAD_LIT_POSTE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>FK_LFAC_ID_MEDE_EXE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>FK_LFAC_ID_MEDE_PRESC</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>FK_LFAC_ID_MEDE_REMPLACE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>FK_LFAC_ID_PAAM</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_PARAM_ACTE_MEDICAL</td>
+<td>PK_BAS_PARAM_ACTE_MEDICAL</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>FK_LFAC_ID_PATI_D</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>FK_LFAC_ID_PRHO</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_PRESTATION_HONORAIRE</td>
+<td>PK_PAD_PRESTATION_HONORAIRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>FK_LFAC_ID_PRHO_MAJORATION</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_PRESTATION_HONORAIRE</td>
+<td>PK_PAD_PRESTATION_HONORAIRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 17)">
+<td>FK_LFAC_ID_PRSE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_PRESTATION_SEJOUR</td>
+<td>PK_PAD_PRESTATION_SEJOUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 18)">
+<td>FK_LFAC_ID_SEJO_D</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR</td>
+<td>PK_IDE_SEJOUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 19)">
+<td>FK_LFAC_ID_TTVA</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PAD_TVA</td>
+<td>PK_PAD_TVA</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 20)">
+<td>FK_LFAC_ID_UNFO_EXE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 21)">
+<td>FK_LFAC_ID_UNFO_HEB</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 22)">
+<td>FK_LFAC_ID_UNFO_MED</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 23)">
+<td>FK_LFAC_ID_UNFO_RES</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 24)">
+<td>PK_FAC_LIGNE_FACTURE</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_FAC_LIGNE_FACTURE</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 25)">
+<td>SYS_C004648474</td>
+<td>Check</td>
+<td>"LFAC_ID_LFAC"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 26)">
+<td>SYS_C004648475</td>
+<td>Check</td>
+<td>"LFAC_ID_FACT"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 27)">
+<td>SYS_C004648476</td>
+<td>Check</td>
+<td>"LFAC_ID_SEJO_D"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 28)">
+<td>SYS_C004648477</td>
+<td>Check</td>
+<td>"LFAC_ID_PATI_D"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 29)">
+<td>SYS_C004648478</td>
+<td>Check</td>
+<td>"LFAC_ID_ETAB_D"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 30)">
+<td>SYS_C004648479</td>
+<td>Check</td>
+<td>"LFAC_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 31)">
+<td>SYS_C004648480</td>
+<td>Check</td>
+<td>"LFAC_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 32)">
+<td>SYS_C004648481</td>
+<td>Check</td>
+<td>"LFAC_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 33)">
+<td>SYS_C004648482</td>
+<td>Check</td>
+<td>"LFAC_IND_VLR_DIRECT"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">LFAC_ID_ACSA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">LFAC_ID_APPA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">LFAC_ID_CAGE_EVE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">LFAC_ID_CAGE_JUS_EXO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">LFAC_ID_CAGE_QD</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">LFAC_ID_CUFA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">LFAC_ID_FACT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">LFAC_ID_FAVO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">LFAC_ID_FTSA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">LFAC_ID_LIPO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">LFAC_ID_MEDE_EXE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">LFAC_ID_MEDE_PRESC</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">LFAC_ID_MEDE_REMPLACE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">LFAC_ID_PAAM</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">LFAC_ID_PATI_D</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">LFAC_ID_PRHO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">LFAC_ID_PRHO_MAJORATION</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.1">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">LFAC_ID_PRSE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.1">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">LFAC_ID_SEJO_D</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.1">
+<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">LFAC_ID_TTVA</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.1">
+<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<td class="currentcell">LFAC_ID_UNFO_EXE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.21.1">
+<div class="childreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 23)" class="currentrow">
+<td class="currentcell">LFAC_ID_UNFO_HEB</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.22.1">
+<div class="childreport"><table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 24)" class="currentrow">
+<td class="currentcell">LFAC_ID_UNFO_MED</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.23.1">
+<div class="childreport"><table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 25)" class="currentrow">
+<td class="currentcell">LFAC_ID_UNFO_RES</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.24.1">
+<div class="childreport"><table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 26)" class="currentrow">
+<td class="currentcell">LFAC_ID_LFAC</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.25.1">
+<div class="childreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 27)" class="currentrow">
+<td class="currentcell">LFAC_ID_LFAC</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.26.1">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)" class="currentrow">
+<td class="currentcell">LFAC_ID_FACT</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.27.1">
+<div class="childreport"><table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 29)" class="currentrow">
+<td class="currentcell">LFAC_ID_SEJO_D</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.28.1">
+<div class="childreport"><table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 30)" class="currentrow">
+<td class="currentcell">LFAC_ID_PATI_D</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.29.1">
+<div class="childreport"><table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 31)" class="currentrow">
+<td class="currentcell">LFAC_ID_ETAB_D</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.30.1">
+<div class="childreport"><table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 32)" class="currentrow">
+<td class="currentcell">LFAC_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.31.1">
+<div class="childreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 33)" class="currentrow">
+<td class="currentcell">LFAC_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.32.1">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 34)" class="currentrow">
+<td class="currentcell">LFAC_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.33.1">
+<div class="childreport"><table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 35)" class="currentrow">
+<td class="currentcell">LFAC_IND_VLR_DIRECT</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.37" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>1219856</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>51105</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>282</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>1219856</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.38" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.39" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 39, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">VM_CA_HISTO</td>
+<td class="currentcell">MATERIALIZED&nbsp;VIEW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 39, 1)">
+<td>PCAP_XROUGE</td>
+<td>VM_CA_JOUR</td>
+<td>MATERIALIZED&nbsp;VIEW</td>
+<td>PCAP_XROUGE</td>
+<td>FAC_LIGNE_FACTURE</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 39, 2)">
+<td>PCAP_XROUGE</td>
+<td>MVW_CA_JOUR</td>
+<td>MATERIALIZED&nbsp;VIEW</td>
+<td>PCAP_XROUGE</td>
+<td>FAC_LIGNE_FACTURE</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 39, 3)">
+<td>PCAP_XROUGE</td>
+<td>MVW_CA_HISTO</td>
+<td>MATERIALIZED&nbsp;VIEW</td>
+<td>PCAP_XROUGE</td>
+<td>FAC_LIGNE_FACTURE</td>
+<td>TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.40" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.5">
+<div class="childreport"><table id="Table.41" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.5">
+<div class="childreport"><table id="Table.42" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.5">
+<div class="childreport"><table id="Table.43" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.44" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>FAC_LIGNE_FACTURE</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>1219856</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>51105</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>282</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>1219856</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>ligne&nbsp;de&nbsp;facture</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.45" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.46" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_ACSA</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">LFAC_ID_ACSA</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 1)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_APPA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_APPA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 2)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_CUFA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_CUFA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 3)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_FACT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_FACT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_FAVO</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_FAVO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_FTSA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_FTSA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 6)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_LIPO</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_LIPO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 7)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_PAAM</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_PAAM</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 8)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_PRHO</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_PRHO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 9)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_PRSE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_PRSE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 10)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_TTVA</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_TTVA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 11)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_ETAB_D</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_ETAB_D</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 12)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_PATI_D</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_PATI_D</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 13)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_SEJO_D</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_SEJO_D</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 14)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_CAGE_QD</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_CAGE_QD</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 15)">
+<td>PCAP_XROUGE</td>
+<td>PK_FAC_LIGNE_FACTURE</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_LFAC</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 16)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_CAGE_EVE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_CAGE_EVE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 17)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_MEDE_EXE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_MEDE_EXE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 18)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_UNFO_EXE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_UNFO_EXE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 19)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_UNFO_HEB</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_UNFO_HEB</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 20)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_UNFO_MED</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_UNFO_MED</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 21)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_UNFO_RES</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_UNFO_RES</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 22)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_MEDE_PRESC</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_MEDE_PRESC</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 23)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_CAGE_JUS_EXO</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_CAGE_JUS_EXO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 24)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_MEDE_REMPLACE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_MEDE_REMPLACE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 46, 25)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_LFAC_ID_PRHO_MAJORATION</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>LFAC_ID_PRHO_MAJORATION</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.47" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 47)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_ACSA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_ACSA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.48" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 48)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_APPA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_APPA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.49" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 49)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_CUFA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_CUFA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.50" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 50)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_FACT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_FACT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.51" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 51)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_FAVO</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_FAVO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.52" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 52)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_FTSA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_FTSA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.53" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 53)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_LIPO</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_LIPO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.54" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 54)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_PAAM</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_PAAM</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.8">
+<div class="childreport"><table id="Table.55" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 55)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_PRHO</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_PRHO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.8">
+<div class="childreport"><table id="Table.56" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 56)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_PRSE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_PRSE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.8">
+<div class="childreport"><table id="Table.57" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 57)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_TTVA</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_TTVA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.8">
+<div class="childreport"><table id="Table.58" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 58)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_ETAB_D</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_ETAB_D</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.8">
+<div class="childreport"><table id="Table.59" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 59)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_PATI_D</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_PATI_D</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.8">
+<div class="childreport"><table id="Table.60" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 60)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_SEJO_D</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_SEJO_D</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.8">
+<div class="childreport"><table id="Table.61" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 61)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_CAGE_QD</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_CAGE_QD</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.8">
+<div class="childreport"><table id="Table.62" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 62)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_FAC_LIGNE_FACTURE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_LFAC</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.8">
+<div class="childreport"><table id="Table.63" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 63)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_CAGE_EVE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_CAGE_EVE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.8">
+<div class="childreport"><table id="Table.64" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 64)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_MEDE_EXE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_MEDE_EXE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.8">
+<div class="childreport"><table id="Table.65" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 65)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_UNFO_EXE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_UNFO_EXE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.8">
+<div class="childreport"><table id="Table.66" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 66)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_UNFO_HEB</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_UNFO_HEB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.8">
+<div class="childreport"><table id="Table.67" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 67)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_UNFO_MED</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_UNFO_MED</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.21.8">
+<div class="childreport"><table id="Table.68" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 68)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_UNFO_RES</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_UNFO_RES</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.22.8">
+<div class="childreport"><table id="Table.69" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 69)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_MEDE_PRESC</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_MEDE_PRESC</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.23.8">
+<div class="childreport"><table id="Table.70" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 70)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_CAGE_JUS_EXO</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_CAGE_JUS_EXO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.24.8">
+<div class="childreport"><table id="Table.71" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 71)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_MEDE_REMPLACE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_MEDE_REMPLACE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.25.8">
+<div class="childreport"><table id="Table.72" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 72)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_LFAC_ID_PRHO_MAJORATION</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">FAC_LIGNE_FACTURE</td>
+<td class="currentcell">LFAC_ID_PRHO_MAJORATION</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

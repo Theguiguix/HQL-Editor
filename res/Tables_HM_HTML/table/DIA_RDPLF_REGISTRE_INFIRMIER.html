@@ -1,0 +1,1982 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="DIA_RDPLF_REGISTRE_INFIRMIER/report.js" type="text/javascript"></script>
+<link href="DIA_RDPLF_REGISTRE_INFIRMIER/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">DIA_RDPLF_REGISTRE_INFIRMIER</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">REGI_ID_REGI</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;resgidtre&nbsp;infirmier</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>REGI_ID_ETEX</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>2</td>
+<td>Identifiant&nbsp;Etablissements&nbsp;externes</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>REGI_ID_UNFO</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;UF</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>REGI_ID_MEDE</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>4</td>
+<td>Identifiant&nbsp;médecin</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>REGI_ID_MEDE_INFIRMIER</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>5</td>
+<td>Identifiant&nbsp;infirmier&nbsp;(FK)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>REGI_ID_MEDE_VALIDE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Idetifiant&nbsp;du&nbsp;professionnel&nbsp;de&nbsp;santé&nbsp;ayant&nbsp;validé</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>REGI_ID_PATI</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>7</td>
+<td>Identifiant&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>REGI_ID_ETAB_D</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>8</td>
+<td>Identifiant&nbsp;établissement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>REGI_DAT_VALIDATION</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>Date&nbsp;validation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>REGI_IND_VALIDE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>10</td>
+<td>Indicateur&nbsp;de&nbsp;validation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>REGI_DATE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>11</td>
+<td>Date&nbsp;de&nbsp;calcul&nbsp;de&nbsp;l'index</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>REGI_Q01_TAILLE</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Taille&nbsp;en&nbsp;cm</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>REGI_Q02_POIDS</td>
+<td>NUMBER(6,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Poids&nbsp;en&nbsp;Kg</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>REGI_Q03_ETA_GENERAL</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Etat&nbsp;général,0&nbsp;=&nbsp;Bon,1&nbsp;=&nbsp;Moyen,2&nbsp;=&nbsp;Mauvais</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>REGI_Q04_HAN_AUD_VISUEL</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Handicap&nbsp;auditif&nbsp;ou&nbsp;visuel,0&nbsp;=&nbsp;Aucun,1&nbsp;=&nbsp;Auditif,2&nbsp;=&nbsp;Visuel,3&nbsp;=&nbsp;Auditif&nbsp;et&nbsp;visuel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>REGI_Q05_HAN_MANUEL</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Handicap&nbsp;manuel,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>REGI_Q06_VIT_SEUL</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Patient&nbsp;vit&nbsp;seul,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>REGI_Q07_RET_INTELLECTUEL</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Retard&nbsp;intellectuel,0&nbsp;=&nbsp;Non,1&nbsp;=&nbsp;Modéré,2&nbsp;=&nbsp;Sévère</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>REGI_Q08_ACV_AVT_DP</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Activité&nbsp;avant&nbsp;DP,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Plein&nbsp;temps,2&nbsp;=&nbsp;Mi-temps,3&nbsp;=&nbsp;Quasi&nbsp;nulle</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>REGI_Q09_PROFESSION</td>
+<td>VARCHAR2(100&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Profession</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>REGI_Q10_LIT_ECRIT</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Sait&nbsp;lire&nbsp;ou&nbsp;écrire,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>REGI_Q11_DIABETE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Diabète,0&nbsp;=&nbsp;Diabétique,1&nbsp;=&nbsp;Insuline&nbsp;sous&nbsp;cutanée&nbsp;envisagée,2&nbsp;=&nbsp;Insuline&nbsp;intrapéritonéale&nbsp;par&nbsp;le&nbsp;patient,3&nbsp;=&nbsp;Insuline&nbsp;intrapéritonéale&nbsp;avec&nbsp;aide</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>REGI_Q12_METHODE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Méthode&nbsp;DP,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;DPCA&nbsp;standard,2&nbsp;=&nbsp;Y&nbsp;ou&nbsp;O&nbsp;réutilisable,3&nbsp;=&nbsp;Double&nbsp;poche&nbsp;ou&nbsp;Y&nbsp;usage&nbsp;unique,4&nbsp;=&nbsp;DP&nbsp;machine</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>REGI_Q13_MNP_SEUL</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Manipule&nbsp;seul,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>REGI_Q14_AUT_MET_DIALYSE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Autres&nbsp;méthodes&nbsp;dialyse&nbsp;exposées,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>REGI_Q15_DP_SUI_ECH_HD</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>DP&nbsp;suite&nbsp;échec&nbsp;HD,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>REGI_Q16_PAT_OPPOSE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Avant&nbsp;DP,&nbsp;patient&nbsp;opposé,0&nbsp;=&nbsp;Opposé,1&nbsp;=&nbsp;Favorable,2&nbsp;=&nbsp;Indifférent</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>REGI_Q17_CHX_MET_DIALYSE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Choix&nbsp;méthode&nbsp;dialyse,0&nbsp;=&nbsp;Laissé&nbsp;au&nbsp;libre&nbsp;choix&nbsp;du&nbsp;patient,1&nbsp;=&nbsp;Fortement&nbsp;influencé,2&nbsp;=&nbsp;Imposé&nbsp;après&nbsp;exposé&nbsp;neutre&nbsp;des&nbsp;autres&nbsp;méthodes,3&nbsp;=&nbsp;Imposé&nbsp;sans&nbsp;exposé&nbsp;des&nbsp;autres&nbsp;méthodes</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>REGI_Q18_DAT_CATHETER</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>Date&nbsp;implantation&nbsp;cathéter</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>REGI_Q19_DAT_DEB_EDUCATION</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Date&nbsp;début&nbsp;éducation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>REGI_Q20_QUI_A_ETE_EDUQUE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Qui&nbsp;a&nbsp;été&nbsp;éduqué,0&nbsp;=&nbsp;Le&nbsp;patient&nbsp;seul,1&nbsp;=&nbsp;Le&nbsp;patient&nbsp;et&nbsp;une&nbsp;aide&nbsp;(famille,&nbsp;ami,&nbsp;etc&nbsp;¿),2&nbsp;=&nbsp;L'aide&nbsp;seuls&nbsp;(famille,&nbsp;ami,&nbsp;etc&nbsp;¿),3&nbsp;=&nbsp;Une&nbsp;infirmière&nbsp;uniquement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>REGI_Q21_QUI_A_EDUQUE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Qui&nbsp;a&nbsp;éduqué,0&nbsp;=&nbsp;Une&nbsp;infirmière&nbsp;spécialisée&nbsp;en&nbsp;DPCA,1&nbsp;=&nbsp;Plusieurs&nbsp;infirmières&nbsp;spécialisées&nbsp;en&nbsp;DPCA,2&nbsp;=&nbsp;Une&nbsp;infirmière&nbsp;non&nbsp;spécialisée,3&nbsp;=&nbsp;Plusieurs&nbsp;infirmières&nbsp;non&nbsp;spécialisées,4&nbsp;=&nbsp;Plusieurs&nbsp;infirmières&nbsp;spécialisées&nbsp;ou&nbsp;non</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>REGI_Q22_CAH_EDUCATION</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Cahier&nbsp;d'éducation&nbsp;utilisé,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>REGI_Q23_GRI_EVALUATION</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Grille&nbsp;d'évaluation&nbsp;utilisée,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>REGI_Q24_LIV_FORMATION</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Livret&nbsp;de&nbsp;formation,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>REGI_Q25_DON_LIVRET</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Don&nbsp;du&nbsp;livret,0&nbsp;=&nbsp;En&nbsp;début&nbsp;de&nbsp;formation,1&nbsp;=&nbsp;En&nbsp;cours&nbsp;de&nbsp;formation,2&nbsp;=&nbsp;En&nbsp;fin&nbsp;de&nbsp;formation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>REGI_Q26_SPT_AUDIOVISUEL</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Support&nbsp;audiovisuel,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>REGI_Q27_FOR_PDN_HOSPITALISATI</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Formation&nbsp;pendant&nbsp;hospitalisation,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>REGI_Q28_NBR_JOU_ENT_EDU_CHG_P</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Nombre&nbsp;de&nbsp;jours&nbsp;entre&nbsp;l'éducation&nbsp;et&nbsp;le&nbsp;1°&nbsp;changement&nbsp;de&nbsp;poche</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>REGI_Q29_EDU_EN_PARTICULIER</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Patient&nbsp;éduqué&nbsp;en&nbsp;particulier,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>REGI_Q30_DEB_EDUCATION</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Début&nbsp;éducation,0&nbsp;=&nbsp;Par&nbsp;la&nbsp;théorie,1&nbsp;=&nbsp;Par&nbsp;les&nbsp;manipulations,2&nbsp;=&nbsp;Par&nbsp;les&nbsp;deux&nbsp;en&nbsp;même&nbsp;temps</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>REGI_Q31_PERITONITE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>A-t-on&nbsp;appris&nbsp;au&nbsp;patient&nbsp;à&nbsp;reconnaître&nbsp;une&nbsp;péritonite,0&nbsp;=&nbsp;Non,1&nbsp;=&nbsp;Oui,&nbsp;par&nbsp;des&nbsp;explications&nbsp;théoriques,2&nbsp;=&nbsp;Oui,&nbsp;par&nbsp;des&nbsp;exemples&nbsp;pratiques,3&nbsp;=&nbsp;Oui,&nbsp;par&nbsp;des&nbsp;exemples&nbsp;pratiques&nbsp;et&nbsp;théoriques</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>REGI_Q32_THE_DIALYSE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>A-t-on&nbsp;enseigné&nbsp;la&nbsp;théorie&nbsp;de&nbsp;la&nbsp;dialyse,0&nbsp;=&nbsp;Non,1&nbsp;=&nbsp;Oui,&nbsp;adaptée&nbsp;au&nbsp;patient,2&nbsp;=&nbsp;Oui,&nbsp;sous&nbsp;forme&nbsp;standardisée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>REGI_Q33_TEC_INJ_POCHE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Technique&nbsp;d'injection&nbsp;dans&nbsp;les&nbsp;poches&nbsp;a-t-elle&nbsp;été&nbsp;enseignée,0&nbsp;=&nbsp;Au&nbsp;patient&nbsp;seul,1&nbsp;=&nbsp;A&nbsp;un&nbsp;proche,2&nbsp;=&nbsp;Au&nbsp;patient&nbsp;et&nbsp;à&nbsp;un&nbsp;proche,3&nbsp;=&nbsp;N'a&nbsp;pas&nbsp;été&nbsp;enseignée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>REGI_Q34_CHG_PROLONGATEUR</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>A-t-on&nbsp;enseigné&nbsp;au&nbsp;patient&nbsp;à&nbsp;changer&nbsp;le&nbsp;prolongateur,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>REGI_Q35_TEN_ARTERIELLE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>A-t-on&nbsp;enseigné&nbsp;au&nbsp;patient&nbsp;à&nbsp;prendre&nbsp;sa&nbsp;tension&nbsp;artérielle,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>REGI_Q36_ITG_ALIMENTAIRE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>A-t-il&nbsp;été&nbsp;fait&nbsp;un&nbsp;interrogatoire&nbsp;alimentaire&nbsp;témoin,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>REGI_Q37_PRS_DIE_AVT_DP</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Prescription&nbsp;diététique&nbsp;avant&nbsp;DP,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>REGI_Q38_RGM_NA_PRESCRIT</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Régime&nbsp;sodé&nbsp;prescrit,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Sans,2&nbsp;=&nbsp;Modérément&nbsp;salé,3&nbsp;=&nbsp;Normal&nbsp;ou&nbsp;libre</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>REGI_Q39_K_PRESCRIT</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Potassium&nbsp;prescrit,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Sans&nbsp;potassium,2&nbsp;=&nbsp;Modéré,3&nbsp;=&nbsp;Normal&nbsp;ou&nbsp;libre</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>REGI_Q40_PAT_A_DOMICILE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Patient&nbsp;à&nbsp;domicile,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>REGI_Q41_CAU_ABANDON</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Cause&nbsp;abandon,0&nbsp;=&nbsp;Refus&nbsp;du&nbsp;patient,1&nbsp;=&nbsp;Inaptitude&nbsp;du&nbsp;patient,2&nbsp;=&nbsp;péritonite&nbsp;d'emblée,3&nbsp;=&nbsp;Mauvaise&nbsp;Ultra-filtration&nbsp;ou&nbsp;dialyse&nbsp;inadéquate</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>REGI_Q42_DAT_ABANDON</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Date&nbsp;d'abandon&nbsp;de&nbsp;la&nbsp;mise&nbsp;à&nbsp;domicile</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>REGI_Q43_MNP_PAT_DOMICILE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Lors&nbsp;de&nbsp;la&nbsp;mise&nbsp;à&nbsp;domicile,&nbsp;la&nbsp;patient:,0&nbsp;=&nbsp;manipulait&nbsp;paraitement,1&nbsp;=&nbsp;faisait&nbsp;quelques&nbsp;fautes&nbsp;mineures,2&nbsp;=&nbsp;faisait&nbsp;des&nbsp;erreurs&nbsp;dans&nbsp;l'ordre&nbsp;des&nbsp;manipulations,3&nbsp;=&nbsp;faisait&nbsp;des&nbsp;fautes&nbsp;graves</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>REGI_Q44_PAT_POCHES</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Le&nbsp;patient&nbsp;savait&nbsp;adapter&nbsp;des&nbsp;poches,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>REGI_Q45_PAT_THEORIE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Le&nbsp;patient&nbsp;avait&nbsp;assimilé&nbsp;la&nbsp;théorie,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>REGI_Q46_PAT_EDU_SUR_SYSTEME</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>patient&nbsp;éduqué&nbsp;sur&nbsp;système,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>REGI_Q47_CAU_CHG_SYSTEME</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Cause&nbsp;du&nbsp;changement&nbsp;de&nbsp;système,0&nbsp;=&nbsp;Préférence&nbsp;du&nbsp;patient,1&nbsp;=&nbsp;N'a&nbsp;pas&nbsp;pu&nbsp;apprendre&nbsp;avec&nbsp;le&nbsp;système&nbsp;prévu,2&nbsp;=&nbsp;Risque&nbsp;d'infection&nbsp;trop&nbsp;grand,3&nbsp;=&nbsp;Autre&nbsp;raison&nbsp;sans&nbsp;rapport&nbsp;avec&nbsp;le&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>REGI_Q48_SYSTEME</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Système&nbsp;finalement&nbsp;adapté,0&nbsp;=&nbsp;CAPD&nbsp;standard,1&nbsp;=&nbsp;CAPD&nbsp;déconnectable,2&nbsp;=&nbsp;DP&nbsp;machine&nbsp;quotidienne,3&nbsp;=&nbsp;DPI</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>REGI_Q49_PAT_TEN_ARTERIELLE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Le&nbsp;patient&nbsp;sait&nbsp;prendre&nbsp;sa&nbsp;tension,0&nbsp;=&nbsp;?,1&nbsp;=&nbsp;Non,2&nbsp;=&nbsp;Oui</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>REGI_Q50_MDE_INJ_INSULINE</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Mode&nbsp;d'injection&nbsp;de&nbsp;l'insuline,0&nbsp;=&nbsp;En&nbsp;sous&nbsp;cutanée,1&nbsp;=&nbsp;Dans&nbsp;les&nbsp;poches&nbsp;par&nbsp;le&nbsp;patient,2&nbsp;=&nbsp;Dans&nbsp;les&nbsp;poches&nbsp;par&nbsp;une&nbsp;aide</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>REGI_Q51_TPS_FOR_IFR</td>
+<td>NUMBER(2,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Temps&nbsp;en&nbsp;heure&nbsp;consacré&nbsp;à&nbsp;la&nbsp;formation&nbsp;de&nbsp;l'infirmière</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>REGI_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>63</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>REGI_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>64</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 64)">
+<td>REGI_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>65</td>
+<td>Numéro&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 65)">
+<td>REGI_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>66</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 66)">
+<td>REGI_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>67</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 67)">
+<td>REGI_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>68</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 68)">
+<td>REGI_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>69</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 69)">
+<td>REGI_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>70</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_DIA_RDPLF_REGISTRE_INFIRMIE</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_ETABLISSEMENT_EXTERIEUR</td>
+<td class="currentcell">PK_IDE_ETABLISSEMENT_EXTERIEUR</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_DIA_RDPLF_REGISTRE_INFIRMI1</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_DIA_RDPLF_REGISTRE_INFIRMI2</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_DIA_RDPLF_REGISTRE_INFIRMI4</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_DIA_RDPLF_REGISTRE_INFIRMI5</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>PK_DIA_RDPLF_REGISTRE_INFIRMIE</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_DIA_RDPLF_REGISTRE_INFIRMIE</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>SYS_C004648244</td>
+<td>Check</td>
+<td>"REGI_ID_REGI"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>SYS_C004648245</td>
+<td>Check</td>
+<td>"REGI_ID_ETEX"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>SYS_C004648246</td>
+<td>Check</td>
+<td>"REGI_ID_UNFO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>SYS_C004648247</td>
+<td>Check</td>
+<td>"REGI_ID_MEDE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>SYS_C004648248</td>
+<td>Check</td>
+<td>"REGI_ID_MEDE_INFIRMIER"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>SYS_C004648249</td>
+<td>Check</td>
+<td>"REGI_ID_PATI"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>SYS_C004648250</td>
+<td>Check</td>
+<td>"REGI_ID_ETAB_D"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>SYS_C004648251</td>
+<td>Check</td>
+<td>"REGI_IND_VALIDE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>SYS_C004648252</td>
+<td>Check</td>
+<td>"REGI_DATE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>SYS_C004648253</td>
+<td>Check</td>
+<td>"REGI_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>SYS_C004648254</td>
+<td>Check</td>
+<td>"REGI_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 17)">
+<td>SYS_C004648255</td>
+<td>Check</td>
+<td>"REGI_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 18)">
+<td>SYS_C004648256</td>
+<td>Check</td>
+<td>"REGI_UTI_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">REGI_ID_ETEX</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">REGI_ID_UNFO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">REGI_ID_MEDE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">REGI_ID_MEDE_VALIDE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">REGI_ID_PATI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">REGI_ID_REGI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">REGI_ID_REGI</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">REGI_ID_ETEX</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">REGI_ID_UNFO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">REGI_ID_MEDE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">REGI_ID_MEDE_INFIRMIER</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">REGI_ID_PATI</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">REGI_ID_ETAB_D</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">REGI_IND_VALIDE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">REGI_DATE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">REGI_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">REGI_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.1">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">REGI_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.1">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">REGI_UTI_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>0</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>DIA_RDPLF_REGISTRE_INFIRMIER</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Registre&nbsp;infirmier</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 27, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_DIA_RDPLF_REGISTRE_INFIR1</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">REGI_ID_UNFO</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 27, 1)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_DIA_RDPLF_REGISTRE_INFIR2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>REGI_ID_MEDE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 27, 2)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_DIA_RDPLF_REGISTRE_INFIR4</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>REGI_ID_MEDE_VALIDE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 27, 3)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_DIA_RDPLF_REGISTRE_INFIR5</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>REGI_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 27, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_DIA_RDPLF_REGISTRE_INFIR6</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>REGI_ID_ETAB_D</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 27, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_DIA_RDPLF_REGISTRE_INFIRM</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>REGI_ID_ETEX</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 27, 6)">
+<td>PCAP_XROUGE</td>
+<td>PK_DIA_RDPLF_REGISTRE_INFIRMIE</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>REGI_ID_REGI</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_DIA_RDPLF_REGISTRE_INFIR1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">DIA_RDPLF_REGISTRE_INFIRMIER</td>
+<td class="currentcell">REGI_ID_UNFO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 29)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_DIA_RDPLF_REGISTRE_INFIR2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">DIA_RDPLF_REGISTRE_INFIRMIER</td>
+<td class="currentcell">REGI_ID_MEDE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 30)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_DIA_RDPLF_REGISTRE_INFIR4</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">DIA_RDPLF_REGISTRE_INFIRMIER</td>
+<td class="currentcell">REGI_ID_MEDE_VALIDE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 31)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_DIA_RDPLF_REGISTRE_INFIR5</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">DIA_RDPLF_REGISTRE_INFIRMIER</td>
+<td class="currentcell">REGI_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 32)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_DIA_RDPLF_REGISTRE_INFIR6</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">DIA_RDPLF_REGISTRE_INFIRMIER</td>
+<td class="currentcell">REGI_ID_ETAB_D</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 33)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_DIA_RDPLF_REGISTRE_INFIRM</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">DIA_RDPLF_REGISTRE_INFIRMIER</td>
+<td class="currentcell">REGI_ID_ETEX</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 34)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_DIA_RDPLF_REGISTRE_INFIRMIE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">DIA_RDPLF_REGISTRE_INFIRMIER</td>
+<td class="currentcell">REGI_ID_REGI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

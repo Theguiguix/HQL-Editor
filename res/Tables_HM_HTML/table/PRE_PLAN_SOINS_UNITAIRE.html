@@ -1,0 +1,3130 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="PRE_PLAN_SOINS_UNITAIRE/report.js" type="text/javascript"></script>
+<link href="PRE_PLAN_SOINS_UNITAIRE/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">PRE_PLAN_SOINS_UNITAIRE</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">PLSO_ID_PLSO</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Clef&nbsp;primaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>PLSO_ID_CAPE_REP</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>Précision&nbsp;du&nbsp;report&nbsp;ou&nbsp;de&nbsp;la&nbsp;non&nbsp;réalisation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>PLSO_ID_PATI</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>PLSO_ID_UNFO</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>4</td>
+<td>Identifiant&nbsp;UF</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>PLSO_ID_UTIL</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Identifiant&nbsp;utilisateur&nbsp;ayant&nbsp;validé&nbsp;l'administration</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>PLSO_ID_CAPE_EFF</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>lien&nbsp;vers&nbsp;les&nbsp;effets&nbsp;du&nbsp;produit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>PLSO_DAT_HEU_GEN</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;de&nbsp;génération&nbsp;du&nbsp;planning</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>PLSO_ETA_REA</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'</td>
+<td>8</td>
+<td>Etat&nbsp;de&nbsp;réalisation,&nbsp;0&nbsp;=&nbsp;prévu,&nbsp;1&nbsp;=&nbsp;effectué,&nbsp;2&nbsp;=&nbsp;non&nbsp;effectué,&nbsp;3&nbsp;=&nbsp;supprimé,&nbsp;4&nbsp;=&nbsp;partiellement&nbsp;effectué</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>PLSO_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>9</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>PLSO_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>10</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>PLSO_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>11</td>
+<td>Numéro&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>PLSO_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>12</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>PLSO_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>PLSO_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>PLSO_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>PLSO_NB_UNI_ADM</td>
+<td>NUMBER(10,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Nb&nbsp;unité&nbsp;administrées</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>PLSO_NO_LOT_PRD</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>N°&nbsp;de&nbsp;lot&nbsp;du&nbsp;produit</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>PLSO_DAT_HEU_ADM</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;effective&nbsp;d'administration</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>PLSO_DAT_HEU_ADM_PRE_DEB</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;prévue&nbsp;de&nbsp;début&nbsp;d'administration</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>PLSO_DAT_HEU_ADM_PRE_FIN</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;prévue&nbsp;de&nbsp;fin&nbsp;d'administration</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>PLSO_COM_REA</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Commentaire&nbsp;concernant&nbsp;la&nbsp;réalisation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>PLSO_ALE_INF</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>'0'</td>
+<td>22</td>
+<td>Positionne&nbsp;le&nbsp;niveau&nbsp;d'alerte&nbsp;0=pas&nbsp;d'alerte,&nbsp;1=bas,&nbsp;2=moyen,&nbsp;3=haut</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>PLSO_FORME</td>
+<td>VARCHAR2(300&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Forme&nbsp;du&nbsp;produit&nbsp;(ex&nbsp;:&nbsp;comprimés,&nbsp;sachet,&nbsp;ml).&nbsp;RQUE&nbsp;:&nbsp;Cette&nbsp;donnée&nbsp;est&nbsp;duppliquée&nbsp;ici,&nbsp;mais&nbsp;est&nbsp;en&nbsp;vérité&nbsp;une&nbsp;donnée&nbsp;fournie&nbsp;par&nbsp;la&nbsp;base&nbsp;médicamenteuse</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>PLSO_NB_REP</td>
+<td>NUMBER(2,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Nb&nbsp;de&nbsp;répétition&nbsp;de&nbsp;la&nbsp;dispensation.&nbsp;Ex&nbsp;:&nbsp;si&nbsp;&lt;1>&nbsp;&lt;fois&nbsp;tous&nbsp;les>&nbsp;&lt;3>&nbsp;&lt;jours>&nbsp;ici&nbsp;on&nbsp;trouvera&nbsp;le&nbsp;"1"</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>PLSO_TYP_DAT</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Type&nbsp;de&nbsp;la&nbsp;donnée&nbsp;de&nbsp;la&nbsp;ligne&nbsp;:&nbsp;1=ligne&nbsp;appartenant&nbsp;au&nbsp;plan&nbsp;d''administration&nbsp;des&nbsp;médicaments</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>PLSO_NB_UNI_ADM_PRESCR</td>
+<td>NUMBER(10,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Quantité&nbsp;à&nbsp;administrer&nbsp;prescrite,&nbsp;sera&nbsp;dans&nbsp;la&nbsp;majorité&nbsp;des&nbsp;cas&nbsp;identique&nbsp;à&nbsp;NB_UNI_ADM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>PLSO_TXT_REP</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Champ&nbsp;libre&nbsp;de&nbsp;saisie&nbsp;complémentaire&nbsp;au&nbsp;catalogue&nbsp;utilisateur&nbsp;ci-dessus.&nbsp;Si&nbsp;le&nbsp;paramétrage&nbsp;existant,&nbsp;fermée,&nbsp;&nbsp;n¿est&nbsp;pas&nbsp;exhaustif&nbsp;on&nbsp;peut&nbsp;via&nbsp;cette&nbsp;zone&nbsp;affiner&nbsp;la&nbsp;description&nbsp;de&nbsp;la&nbsp;non&nbsp;administration&nbsp;ou&nbsp;du&nbsp;report.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>PLSO_TXT_ALE_INF</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Expression,&nbsp;sous&nbsp;forme&nbsp;de&nbsp;texte&nbsp;libre,&nbsp;&nbsp;des&nbsp;alertes&nbsp;suite&nbsp;à&nbsp;un&nbsp;ou&nbsp;des&nbsp;problèmes&nbsp;constatés&nbsp;par&nbsp;l¿infirmier(ière)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>PLSO_IND_PROD_ONEREUX</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>indicateur&nbsp;de&nbsp;produits&nbsp;onéreux&nbsp;T2A</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>PLSO_NB_UNI_PERDU</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Nombre&nbsp;d'unités&nbsp;perdues</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>PLSO_NB_UNI_ADM_MAX_PRESCR</td>
+<td>NUMBER(10,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Quantité&nbsp;maximum&nbsp;à&nbsp;administrer&nbsp;prescrite.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>PLSO_ID_PRPE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;période&nbsp;de&nbsp;la&nbsp;ligne&nbsp;de&nbsp;prescription</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>PLSO_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>PLSO_DAT_HEU_FIN_PERF</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;de&nbsp;fin&nbsp;de&nbsp;perfusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>PLSO_DAT_ARR_PERF</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;d'arrêt&nbsp;de&nbsp;la&nbsp;perfusion.&nbsp;Si&nbsp;cette&nbsp;date&nbsp;est&nbsp;nulle,&nbsp;alors&nbsp;la&nbsp;perfusion&nbsp;aura&nbsp;été&nbsp;administrée&nbsp;pendant&nbsp;la&nbsp;durée&nbsp;totale&nbsp;enregistrée.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>PLSO_ETA_CUEILLETTE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Etat&nbsp;cueillette&nbsp;(vide,0=rien,&nbsp;1=ramassé&nbsp;batch,&nbsp;2=terminé,&nbsp;9=géré&nbsp;par&nbsp;UF)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>PLSO_DEBIT</td>
+<td>NUMBER(10,3)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Débit&nbsp;d'administartion&nbsp;d'une&nbsp;perfusion&nbsp;en&nbsp;gouttes&nbsp;par&nbsp;minute</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>PLSO_IND_NON_HORAIRE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Indicateur&nbsp;de&nbsp;donnée&nbsp;non&nbsp;horaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>PLSO_DAT_HEU_ADM_INI_DEB</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;de&nbsp;début&nbsp;prévue&nbsp;d'administration&nbsp;initiale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>PLSO_DAT_HEU_ADM_INI_FIN</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Date&nbsp;et&nbsp;heure&nbsp;de&nbsp;fin&nbsp;prévue&nbsp;d'administration&nbsp;initiale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>PLSO_ID_PLSO_REPORT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;ligne&nbsp;du&nbsp;plan&nbsp;de&nbsp;soin&nbsp;d'origine&nbsp;à&nbsp;laquelle&nbsp;le&nbsp;report&nbsp;est&nbsp;relié</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>PLSO_ID_PRQH</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>FK&nbsp;vers&nbsp;la&nbsp;quantité&nbsp;horaire&nbsp;(utilité&nbsp;pour&nbsp;la&nbsp;cueillette&nbsp;DJIN)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>PLSO_PSE_VOL_PASSE</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Volume&nbsp;passé&nbsp;pour&nbsp;les&nbsp;PSE/PCA</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>PLSO_PSE_QTE_PASSEE</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Quantité&nbsp;passé&nbsp;pour&nbsp;les&nbsp;PSE/PCA</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>PLSO_PSE_VOL_RESTANT</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Volume&nbsp;restant&nbsp;pour&nbsp;les&nbsp;PSE/PCA</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>PLSO_PSE_QTE_RESTANTE</td>
+<td>NUMBER(5,2)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Volume&nbsp;quantité&nbsp;restante&nbsp;pour&nbsp;les&nbsp;PSE/PCA</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>PLSO_IND_SIBESOIN</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Indique&nbsp;si&nbsp;l'administration&nbsp;du&nbsp;médicament&nbsp;est&nbsp;selon&nbsp;les&nbsp;besoins&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>PLSO_IND_PCE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Indique&nbsp;qu'une&nbsp;PCE&nbsp;est&nbsp;connectée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>PLSO_ID_PROT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Fk&nbsp;vers&nbsp;le&nbsp;protocole&nbsp;dont&nbsp;la&nbsp;ligne&nbsp;de&nbsp;plan&nbsp;de&nbsp;soin&nbsp;dépend</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>PLSO_IND_FIC_INFORMATION</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Indicateur&nbsp;de&nbsp;présence&nbsp;d'une&nbsp;ou&nbsp;plusieurs&nbsp;fiches&nbsp;informations.&nbsp;Ce&nbsp;Flag&nbsp;ne&nbsp;sera&nbsp;jamais&nbsp;positionné&nbsp;à&nbsp;""1""&nbsp;si&nbsp;l'Id&nbsp;du&nbsp;protocole&nbsp;est&nbsp;NULL</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>PLSO_NBR_POCHES</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Nombre&nbsp;de&nbsp;poches&nbsp;cumulé&nbsp;pour&nbsp;tous&nbsp;les&nbsp;groupes&nbsp;de&nbsp;poches</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>PLSO_IND_HOR_PERIODE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Indicateur&nbsp;d'administration&nbsp;en&nbsp;dehors&nbsp;de&nbsp;la&nbsp;période&nbsp;de&nbsp;prescription&nbsp;(Valeur&nbsp;1&nbsp;sinon&nbsp;0&nbsp;ou&nbsp;null)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>PLSO_IND_NON_DISPENSE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Indicateur&nbsp;qui,&nbsp;si&nbsp;positionné&nbsp;provoque&nbsp;la&nbsp;non&nbsp;dispensation&nbsp;du&nbsp;plso</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>PLSO_ID_PLSO_RELIQUAT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Dans&nbsp;le&nbsp;cas&nbsp;d'un&nbsp;report,&nbsp;pointe&nbsp;directement&nbsp;sur&nbsp;le&nbsp;PLSO&nbsp;totalisant&nbsp;le&nbsp;reste&nbsp;à&nbsp;administrer.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>PLSO_ID_CAGE_TYPE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Fk&nbsp;vers&nbsp;le&nbsp;type&nbsp;de&nbsp;produit&nbsp;(catalogue&nbsp;générique&nbsp;-&nbsp;225&nbsp;-&nbsp;CAT_TYPE_ELEM_PRESCRIPTION)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>PLSO_IND_BIO_REA_LAB_EXTERNE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Biologie&nbsp;uniquement&nbsp;:&nbsp;Indique&nbsp;que&nbsp;le&nbsp;prélèvement&nbsp;a&nbsp;été&nbsp;effectué&nbsp;par&nbsp;un&nbsp;laboratoire&nbsp;externe</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>PLSO_BIO_NOM_LAB_EXT_PRELEVEUR</td>
+<td>VARCHAR2(200&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Biologie&nbsp;uniquement&nbsp;:&nbsp;Donne&nbsp;le&nbsp;nom&nbsp;du&nbsp;préleveur&nbsp;externe</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>PLSO_BIO_NBR_ECHANTILLONS</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Biologie&nbsp;uniquement&nbsp;:&nbsp;Donne&nbsp;le&nbsp;nombre&nbsp;d'échantillons&nbsp;prélevés</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>PLSO_BIO_NUM_DEMANDE</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Numéro&nbsp;de&nbsp;demande&nbsp;:&nbsp;concaténation&nbsp;du&nbsp;numéro&nbsp;de&nbsp;prescription&nbsp;et&nbsp;du&nbsp;numéro&nbsp;d'itération.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>PLSO_ID_MEDE_INT_PRELEVEUR</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Fk&nbsp;vers&nbsp;le&nbsp;professionnel&nbsp;de&nbsp;santé&nbsp;ayant&nbsp;effectué&nbsp;le&nbsp;prélèvement&nbsp;au&nbsp;sein&nbsp;de&nbsp;l'établissement&nbsp;&nbsp;(biologie&nbsp;uniquement)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>PLSO_BIO_NUM_ITERATION</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Numéro&nbsp;d'itération&nbsp;de&nbsp;la&nbsp;prescription&nbsp;de&nbsp;biologie&nbsp;:&nbsp;permet&nbsp;d'identifier&nbsp;la&nbsp;répétition&nbsp;au&nbsp;sein&nbsp;de&nbsp;la&nbsp;prescription.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>PLSO_BIO_NUM_PRELEVEMENT</td>
+<td>VARCHAR2(50&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Numéro&nbsp;de&nbsp;prélèvement&nbsp;:&nbsp;numéro&nbsp;de&nbsp;demande&nbsp;suffixé&nbsp;d'un&nbsp;compteur.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>PLSO_ACT_NUM_DEMANDE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>Prescription&nbsp;d'actes&nbsp;-&nbsp;numéro&nbsp;de&nbsp;demande&nbsp;(numéro&nbsp;de&nbsp;prescription&nbsp;+&nbsp;compteur)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>PLSO_IND_DISTRIBUE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>64</td>
+<td>Indicateur&nbsp;"Distribué&nbsp;au&nbsp;patient"</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_PLSO_ID_CAGE_TYPE</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_CATALOGUE_GEN</td>
+<td class="currentcell">PK_BAS_CATALOGUE_GEN</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_PLSO_ID_MEDE_INT_PRELEVEUR</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_PLSO_ID_PLSO_RELIQUAT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>PK_PRE_PLAN_SOINS_UNITAIRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_PLSO_ID_PLSO_REPORT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>PK_PRE_PLAN_SOINS_UNITAIRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_PLSO_ID_PROT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PRO_PROT_TYPE</td>
+<td>PK_PRO_PROT_TYPE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>FK_PLSO_ID_PRQH</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PRESCRIPTION_QTE_HORAIRE</td>
+<td>PK_PRE_PRESCRIPTION_QTE_HORAIR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>FK_PRE_PLAN_SOINS_UNITAIRE_BAS</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>FK_PRE_PLAN_SOINS_UNITAIRE_BA1</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UF</td>
+<td>PK_BAS_UF</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>FK_PRE_PLAN_SOINS_UNITAIRE_BA2</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_UTILISATEUR</td>
+<td>PK_BAS_UTILISATEUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>FK_PRE_PLAN_SOINS_UNITAIRE_BA3</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>FK_PRE_PLAN_SOINS_UNITAIRE_IDE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>FK_PRE_PLAN_SOINS_UNITAIRE_PER</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PRESCRIPTION_PERIODE</td>
+<td>PK_PRE_PRESCRIPTION_PERIODE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>PK_PRE_PLAN_SOINS_UNITAIRE</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_PRE_PLAN_SOINS_UNITAIRE</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>SYS_C004650944</td>
+<td>Check</td>
+<td>"PLSO_ID_PLSO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>SYS_C004650945</td>
+<td>Check</td>
+<td>"PLSO_ID_PATI"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>SYS_C004650946</td>
+<td>Check</td>
+<td>"PLSO_ID_UNFO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>SYS_C004650947</td>
+<td>Check</td>
+<td>"PLSO_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 17)">
+<td>SYS_C004650948</td>
+<td>Check</td>
+<td>"PLSO_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 18)">
+<td>SYS_C004650949</td>
+<td>Check</td>
+<td>"PLSO_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 19)">
+<td>SYS_C004650950</td>
+<td>Check</td>
+<td>"PLSO_UTI_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">PLSO_ID_CAGE_TYPE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">PLSO_ID_MEDE_INT_PRELEVEUR</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">PLSO_ID_PLSO_RELIQUAT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">PLSO_ID_PLSO_REPORT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">PLSO_ID_PROT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">PLSO_ID_PRQH</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">PLSO_ID_CAPE_REP</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">PLSO_ID_UNFO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">PLSO_ID_UTIL</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">PLSO_ID_CAPE_EFF</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">PLSO_ID_PRPE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">PLSO_ID_PLSO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">PLSO_ID_PLSO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">PLSO_ID_UNFO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">PLSO_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.1">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">PLSO_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.1">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">PLSO_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.1">
+<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">PLSO_UTI_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>33595288</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>862900</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>187</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>33595288</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>02/09/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>02/09/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 24, 0)" class="currentrow">
+<td class="currentcell">T_EVTHM_PLAN_SOINS_ACTE_CS</td>
+<td class="currentcell">AFTER&nbsp;EACH&nbsp;ROW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">INSERT&nbsp;OR&nbsp;DELETE</td>
+<td class="currentcell">DISABLED</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 24, 1)">
+<td>T_EVTHM_PLAN_SOINS_BIO_CMS</td>
+<td>AFTER&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>INSERT&nbsp;OR&nbsp;UPDATE&nbsp;OR&nbsp;DELETE</td>
+<td>DISABLED</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+<div id="Child.0.0.4">
+<div class="currentchildreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_PLAN_SOINS_ACTE_CS
+AFTER DELETE OR INSERT
+ON PRE_PLAN_SOINS_UNITAIRE
+FOR EACH ROW
+BEGIN
+    DECLARE
+        n_IdPat             IDE_PATIENT.PATI_ID_PATI%Type;
+        Pat                 IDE_PATIENT%ROWTYPE;
+        n_IdEtab            BAS_ETABLISSEMENT.ETAB_ID_ETAB%Type;
+        n_IdSej             IDE_SEJOUR.SEJO_ID_SEJO%Type;
+        Sej                 IDE_SEJOUR%ROWTYPE;
+        n_IdPlso            PRE_PLAN_SOINS_UNITAIRE.PLSO_ID_PLSO%Type;
+        Plso                PRE_PLAN_SOINS_UNITAIRE%ROWTYPE;
+        n_IdPrme            PRE_PRESCRIPTION_LISTE.PRME_ID_PRME%Type;
+        n_IdPaam            BAS_PARAM_ACTE_MEDICAL.PAAM_ID_PAAM%Type;
+        Paam                BAS_PARAM_ACTE_MEDICAL%ROWTYPE;
+        n_IdPrpl            PRE_PRESCRIPTION_LIGNE.PRPL_ID_PRPL%Type;
+        n_ufReal            PRE_PRESCRIPTION_LIGNE.PRPL_ID_UNFO_REAL%Type;
+        n_idApli            SCL_APPLI.APLI_ID%Type;
+        v_idTrameOrigine    VARCHAR2(19);
+        v_action            SCL_EVT.EVNT_ACTION%Type;
+        n_CodRet            Number;
+		n_IdEvnt			SCL_EVT.EVNT_ID_EVNT%TYPE;
+		n_IdEvnd			SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+        v_Xml               SCL_EVT_DATA.EVND_VAL%Type;
+        v_evtHL7            VARCHAR2(10);
+
+    BEGIN
+		-- #Version# 1.16 du 01/03/2016 #Version#
+
+        -- Limitation aux lignes du plan de soins des prescriptions
+        --    Séances (CAGE_ID_CAGE = 9860)
+        --    Interventions (CAGE_ID_CAGE = 9861)
+        --    Consultations (CAGE_ID_CAGE = 9864)
+        --    Explorations fonctionnelles (CAGE_ID_CAGE = 9863)
+        --    Imagerie (CAGE_ID_CAGE = 9862)
+
+        If deleting Then
+            Plso.PLSO_ID_PLSO := :old.PLSO_ID_PLSO;
+            Plso.PLSO_ID_PATI := :old.PLSO_ID_PATI;
+            Plso.PLSO_ETA_REA := :old.PLSO_ETA_REA;
+            Plso.PLSO_DAT_HEU_ADM := :old.PLSO_DAT_HEU_ADM;
+            Plso.PLSO_DAT_HEU_ADM_PRE_DEB := :old.PLSO_DAT_HEU_ADM_PRE_DEB;
+            Plso.PLSO_ID_PRPE := :old.PLSO_ID_PRPE;
+            Plso.PLSO_ID_CAGE_TYPE := :old.PLSO_ID_CAGE_TYPE;
+            Plso.PLSO_ACT_NUM_DEMANDE := :old.PLSO_ACT_NUM_DEMANDE;
+            Plso.PLSO_UTI_CRE := :old.PLSO_UTI_CRE;
+            Plso.PLSO_UTI_MOD := :old.PLSO_UTI_MOD;
+            Plso.PLSO_PRO_CRE := :old.PLSO_PRO_CRE;
+            Plso.PLSO_PRO_MOD := :old.PLSO_PRO_MOD;
+            Plso.PLSO_DAT_MOD := :old.PLSO_DAT_MOD;
+            Plso.PLSO_COL_COM := :old.PLSO_COL_COM;
+
+              SELECT /* T_EVTHM_PLAN_SOINS_ACTE_CS */ PRPL_ID_UNFO_REAL
+                  INTO n_ufReal
+                  FROM PRE_PRESCRIPTION_PERIODE, PRE_PRESCRIPTION_LIGNE
+                  WHERE  PRPE_ID_PRPE = Plso.PLSO_ID_PRPE
+                  AND PRPL_ID_PRPL = PRPE_ID_PRPL  ;
+
+            -- Création d'un événement
+            -- Order Cancelled
+            v_action := 'ARRET';
+
+        Else
+            Plso.PLSO_ID_PLSO := :new.PLSO_ID_PLSO;
+            Plso.PLSO_ID_PATI := :new.PLSO_ID_PATI;
+            Plso.PLSO_ETA_REA := :new.PLSO_ETA_REA;
+            Plso.PLSO_DAT_HEU_ADM := :new.PLSO_DAT_HEU_ADM;
+            Plso.PLSO_DAT_HEU_ADM_PRE_DEB := :new.PLSO_DAT_HEU_ADM_PRE_DEB;
+            Plso.PLSO_ID_PRPE := :new.PLSO_ID_PRPE;
+            Plso.PLSO_ID_CAGE_TYPE := :new.PLSO_ID_CAGE_TYPE;
+            Plso.PLSO_ACT_NUM_DEMANDE := :new.PLSO_ACT_NUM_DEMANDE;
+            Plso.PLSO_UTI_CRE := :new.PLSO_UTI_CRE;
+            Plso.PLSO_UTI_MOD := :new.PLSO_UTI_MOD;
+            Plso.PLSO_PRO_CRE := :new.PLSO_PRO_CRE;
+            Plso.PLSO_PRO_MOD := :new.PLSO_PRO_MOD;
+            Plso.PLSO_DAT_MOD := :new.PLSO_DAT_MOD;
+            Plso.PLSO_COL_COM := :new.PLSO_COL_COM;
+
+            -- New Order
+           v_action := 'CREATION';
+        End if;
+
+		v_evtHL7 := 'O01';
+		n_IdPlso := Plso.PLSO_ID_PLSO;
+		n_IdPat := Plso.PLSO_ID_PATI;
+
+        If (Plso.PLSO_ID_CAGE_TYPE not in (9860,9861,9862,9863,9864)) Then
+			return;
+        End If;
+
+		if (Plso.PLSO_ACT_NUM_DEMANDE is null) Then
+			return;
+		End If;
+
+        -- Lecture du patient
+        n_CodRet := pckPfiHmM.FUN_LirePAT(n_IdPat, Pat);
+
+        -- Lecture des identifiants établissement, séjour, ligne de prescription, examen , prescription , et uf realisation
+        SELECT /* T_EVTHM_PLAN_SOINS_ACTE_CS */ PRME_ID_ETAB, PRME_ID_SEJO, PRPL_ID_PRPL,PAAM_ID_PAAM, PRME_ID_PRME, PRPL_ID_UNFO_REAL
+          INTO n_IdEtab, n_IdSej, n_IdPrpl, n_IdPaam, n_IdPrme , n_ufReal
+          FROM PRE_PRESCRIPTION_PERIODE, PRE_PRESCRIPTION_LIGNE, BAS_PARAM_ACTE_MEDICAL, PRE_PRESCRIPTION_LISTE
+          WHERE  PRPE_ID_PRPL = PRPL_ID_PRPL
+           AND PAAM_ID_PAAM = PRPL_ID_OBJET
+           AND PRME_ID_PRME = PRPL_ID_PRME
+           AND PRPE_ID_PRPE = Plso.PLSO_ID_PRPE;
+
+        -- Lecture du séjour
+        If n_IdSej is not null Then
+            n_CodRet := pckPfiHmM.FUN_LireSEJ(n_IdSej, Sej);
+        End If;
+
+        -- Lecture de l'élément prescrit
+        If n_IdPaam is not null Then
+            SELECT /* T_EVTHM_PLAN_SOINS_ACTE_CS */ * INTO Paam FROM BAS_PARAM_ACTE_MEDICAL
+            WHERE PAAM_ID_PAAM = n_IdPaam;
+        End If;
+
+		-- Gestion de l'écho
+		pckTrigPfiHmM.PRO_appliExt(Plso.PLSO_DAT_MOD, Plso.PLSO_COL_COM, n_idApli, v_idTrameOrigine);
+
+		Select /* T_EVTHM_PLAN_SOINS_ACTE_CS */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+        INSERT /* T_EVTHM_PLAN_SOINS_ACTE_CS */
+        INTO SCL_EVT (EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT, EVNT_NIP, EVNT_ID_SEJOUR, EVNT_NUM_SEJ,
+                             EVNT_NUM_RSS, EVNT_CODE_EVT, EVNT_ID_OBJ, EVNT_CODE_PERE, EVNT_ID_PERE, EVNT_ACTION,EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE, EVNT_EVTHL7,
+                             EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+        VALUES (n_IdEvnt, current_date, '0', n_IdEtab, Pat.PATI_ID_PATI, Pat.PATI_NIP, Sej.SEJO_ID_SEJO, Sej.SEJO_NUM_SEJ_COMM,
+                NULL, 'DEMANDEACTE', Plso.PLSO_ID_PLSO, null, null, v_action, n_IdApli, v_idTrameOrigine,  v_evtHL7,
+                current_date, current_date, 0, Plso.PLSO_UTI_CRE, Plso.PLSO_UTI_MOD, Plso.PLSO_PRO_CRE, Plso.PLSO_PRO_MOD, Plso.PLSO_COL_COM);
+
+        v_xml := null;
+        v_xml := v_xml || '&lt;PATIENT>';
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', Pat.PATI_ID_PATI);
+        v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', Pat.PATI_NOM_USU);
+        v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', Pat.PATI_NOM_NAI);
+        v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', Pat.PATI_PRENOM);
+        v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', Pat.PATI_DAT_NAI);
+        v_xml := v_xml || pckPfiHmM.val2xml('SEXE', Pat.PATI_SEXE);
+        v_xml := v_xml || pckPfiHmM.val2xml('NIP', Pat.PATI_NIP);
+        v_xml := v_xml || '&lt;/PATIENT>';
+
+		Select /* T_EVTHM_PLAN_SOINS_ACTE_CS */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+        INSERT /* T_EVTHM_PLAN_SOINS_ACTE_CS */
+        INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+                                  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+        VALUES (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'I', v_Xml,
+                current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+        v_xml := null;
+        v_xml := v_xml || '&lt;SEJOUR>';
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', Sej.SEJO_ID_SEJO);
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', Sej.SEJO_ID_UNFO);
+        v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', Sej.SEJO_DAT_DEB);
+        v_xml := v_xml || pckPfiHmM.val2xml('DAT_FIN', Sej.SEJO_DAT_FIN);
+        v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', Sej.SEJO_NUM_SEJ_COMM);
+        v_xml := v_xml || pckPfiHmM.val2xml('STATUT', Sej.SEJO_STATUT);
+        v_xml := v_xml || pckPfiHmM.val2xml('DAT_SUP', Sej.SEJO_DAT_SUP);
+        v_xml := v_xml || '&lt;/SEJOUR>';
+
+        INSERT /* T_EVTHM_PLAN_SOINS_ACTE_CS */
+        INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL
+								, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+        VALUES (n_IdEvnd+1, n_IdEvnt, 2, 'SEJOUR', 'I', v_Xml
+              , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+        v_xml := null;
+        v_xml := v_xml || '&lt;PRESCRIPTION>';
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_PRME', n_IdPrme);
+        v_xml := v_xml || pckPfiHmM.val2xml('PAAM_CODE', Paam.PAAM_CODE);
+        v_xml := v_xml || pckPfiHmM.val2xml('PAAM_LIBELLE', Paam.PAAM_LIBELLE);
+        v_xml := v_xml || pckPfiHmM.val2xml('TYPEACTE',  Plso.PLSO_ID_CAGE_TYPE);
+        v_xml := v_xml || pckPfiHmM.val2xml('IDUF',  n_ufReal );
+        v_xml := v_xml || '&lt;/PRESCRIPTION>';
+
+        INSERT /* T_EVTHM_PLAN_SOINS_ACTE_CS */
+        INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+                                  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+        VALUES (n_IdEvnd+2, n_IdEvnt, 3, 'PRESCRIPTION', 'I', v_Xml,
+                current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+    	v_xml := null;
+        v_xml := v_xml || '&lt;LIGNEPRESC>';
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL', n_IdPrpl);
+        v_xml := v_xml || '&lt;/LIGNEPRESC>';
+
+        INSERT /* T_EVTHM_PLAN_SOINS_ACTE_CS */
+        INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+                                  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+        VALUES (n_IdEvnd+3, n_IdEvnt, 4, 'LIGNEPRESC', 'I', v_Xml,
+                current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+        v_xml := null;
+        v_xml := v_xml || '&lt;PLANSOINS>';
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_PLSO', Plso.PLSO_ID_PLSO);
+        v_xml := v_xml || pckPfiHmM.val2xml('NUMDEMANDE', Plso.PLSO_ACT_NUM_DEMANDE);
+        v_xml := v_xml || pckPfiHmM.val2xml('ETA_REA', Plso.PLSO_ETA_REA);
+        v_xml := v_xml || pckPfiHmM.val2xml('DAT_HEU_ADM', Plso.PLSO_DAT_HEU_ADM);
+        v_xml := v_xml || pckPfiHmM.val2xml('DAT_HEU_ADM_PRE_DEB', Plso.PLSO_DAT_HEU_ADM_PRE_DEB);
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPE', Plso.PLSO_ID_PRPE);
+        v_xml := v_xml || '&lt;/PLANSOINS>';
+
+        INSERT /* T_EVTHM_PLAN_SOINS_ACTE_CS */
+        INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+                                  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+        VALUES (n_IdEvnd+4, n_IdEvnt, 5, 'PLANSOINS', 'I', v_Xml,
+        		current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+    EXCEPTION
+        WHEN OTHERS THEN
+            Begin
+                pckTrigPfiHmM.PRO_traceScl(Pat.PATI_NIP, Sej.SEJO_NUM_SEJ_COMM, n_IdEtab, 'Evt Plan de soins demande acte', 'T_EVTHM_PLAN_SOINS_ACTE_CS', '0', SUBSTR(SQLERRM,1,2000));
+            Exception
+                When Others Then
+                    return;
+            End;
+    END;
+
+END T_EVTHM_PLAN_SOINS_ACTE_CS;</pre>
+</div>
+</div>
+<div id="Child.0.1.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_PLAN_SOINS_BIO_CMS
+AFTER INSERT or UPDATE or DELETE
+ON PRE_PLAN_SOINS_UNITAIRE
+FOR EACH ROW
+BEGIN
+	DECLARE
+		n_IdPat				IDE_PATIENT.PATI_ID_PATI%Type;
+		Pat					IDE_PATIENT%ROWTYPE;
+		n_IdEtab    		BAS_ETABLISSEMENT.ETAB_ID_ETAB%Type;
+		n_IdSej				IDE_SEJOUR.SEJO_ID_SEJO%Type;
+		Sej					IDE_SEJOUR%ROWTYPE;
+		n_IdPlso    		PRE_PLAN_SOINS_UNITAIRE.PLSO_ID_PLSO%Type;
+		Plso  				PRE_PLAN_SOINS_UNITAIRE%ROWTYPE;
+		n_IdLabo    		IDE_PLATEAU_TECHNIQUE.PLTE_ID_PLTE%Type;
+		Labo  				IDE_PLATEAU_TECHNIQUE%ROWTYPE;
+		n_IdPaam    		BAS_PARAM_ACTE_MEDICAL.PAAM_ID_PAAM%Type;
+		Paam  				BAS_PARAM_ACTE_MEDICAL%ROWTYPE;
+		v_CodePlac   		BAS_PARAM_ACTE_PLATEAU.PLAC_CODE%Type;
+		n_IdPrpl    		PRE_PRESCRIPTION_LIGNE.PRPL_ID_PRPL%Type;
+		Examen				BAS_PARAM_ACTE_MEDICAL%ROWTYPE;
+		n_IdPrme    		PRE_PRESCRIPTION_LISTE.PRME_ID_PRME%Type;
+		n_idApli			SCL_APPLI.APLI_ID%Type;
+		v_idTrameOrigine	VARCHAR2(19);
+		v_action        	SCL_EVT.EVNT_ACTION%Type;
+		n_CodRet			Number;
+		n_IdEvnt			SCL_EVT.EVNT_ID_EVNT%TYPE;
+		n_IdEvnd			SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+		v_Xml				SCL_EVT_DATA.EVND_VAL%Type;
+		n_Cpt				Number;
+
+	Cursor CExamens(idPrplBilan Number) Is
+		SELECT /* T_EVTHM_PLAN_SOINS_BIO_CMS */ *
+		  FROM BAS_PARAM_ACTE_MEDICAL
+		 WHERE PAAM_ID_PAAM IN (SELECT PRDE_FK_PROD_THE
+								  FROM PRE_PRESCRIPTION_DETAIL
+								 WHERE PRDE_ID_PRPL = idPrplBilan);
+
+	BEGIN
+		-- #Version# 1.16 du 01/03/2016 #Version#
+
+		-- Limitation aux lignes du plan de soins des prescriptions de biologie
+		If deleting Then
+			If (:old.PLSO_ID_CAGE_TYPE &lt;> 2710) Then
+				return;
+			End If;
+		Else
+			If (:new.PLSO_ID_CAGE_TYPE &lt;> 2710) Then
+				return;
+			End If;
+		End If;
+
+		If deleting Then
+			-- Pas d'événement si pas de numéro de demande
+			If (:old.PLSO_BIO_NUM_DEMANDE is null) Then
+				return;
+			End If;
+
+			Plso.PLSO_ID_PLSO := :old.PLSO_ID_PLSO;
+			Plso.PLSO_ID_PATI := :old.PLSO_ID_PATI;
+			Plso.PLSO_ETA_REA := :old.PLSO_ETA_REA;
+			Plso.PLSO_DAT_HEU_ADM := :old.PLSO_DAT_HEU_ADM;
+			Plso.PLSO_DAT_HEU_ADM_PRE_DEB := :old.PLSO_DAT_HEU_ADM_PRE_DEB;
+			Plso.PLSO_ID_PRPE := :old.PLSO_ID_PRPE;
+			Plso.PLSO_ID_CAGE_TYPE := :old.PLSO_ID_CAGE_TYPE;
+			Plso.PLSO_BIO_NUM_DEMANDE := :old.PLSO_BIO_NUM_DEMANDE;
+			Plso.PLSO_BIO_NUM_ITERATION := :old.PLSO_BIO_NUM_ITERATION;
+			Plso.PLSO_ID_MEDE_INT_PRELEVEUR := :old.PLSO_ID_MEDE_INT_PRELEVEUR;
+			Plso.PLSO_BIO_NUM_PRELEVEMENT := :old.PLSO_BIO_NUM_PRELEVEMENT;
+			Plso.PLSO_UTI_CRE := :old.PLSO_UTI_CRE;
+			Plso.PLSO_UTI_MOD := :old.PLSO_UTI_MOD;
+			Plso.PLSO_PRO_CRE := :old.PLSO_PRO_CRE;
+			Plso.PLSO_PRO_MOD := :old.PLSO_PRO_MOD;
+			Plso.PLSO_DAT_MOD := :old.PLSO_DAT_MOD;
+			Plso.PLSO_COL_COM := :old.PLSO_COL_COM;
+
+			n_IdPlso := :old.PLSO_ID_PLSO;
+			n_IdPat := :old.PLSO_ID_PATI;
+
+			-- Création d'un événement S à la suppression
+			v_action := 'S';
+		Else
+			-- Pas d'événement si pas de numéro de demande
+			If (:new.PLSO_BIO_NUM_DEMANDE is null) Then
+				return;
+			End If;
+
+			Plso.PLSO_ID_PLSO := :new.PLSO_ID_PLSO;
+			Plso.PLSO_ID_PATI := :new.PLSO_ID_PATI;
+			Plso.PLSO_ETA_REA := :new.PLSO_ETA_REA;
+			Plso.PLSO_DAT_HEU_ADM := :new.PLSO_DAT_HEU_ADM;
+			Plso.PLSO_DAT_HEU_ADM_PRE_DEB := :new.PLSO_DAT_HEU_ADM_PRE_DEB;
+			Plso.PLSO_ID_PRPE := :new.PLSO_ID_PRPE;
+			Plso.PLSO_ID_CAGE_TYPE := :new.PLSO_ID_CAGE_TYPE;
+			Plso.PLSO_BIO_NUM_DEMANDE := :new.PLSO_BIO_NUM_DEMANDE;
+			Plso.PLSO_BIO_NUM_ITERATION := :new.PLSO_BIO_NUM_ITERATION;
+			Plso.PLSO_ID_MEDE_INT_PRELEVEUR := :new.PLSO_ID_MEDE_INT_PRELEVEUR;
+			Plso.PLSO_BIO_NUM_PRELEVEMENT := :new.PLSO_BIO_NUM_PRELEVEMENT;
+			Plso.PLSO_UTI_CRE := :new.PLSO_UTI_CRE;
+			Plso.PLSO_UTI_MOD := :new.PLSO_UTI_MOD;
+			Plso.PLSO_PRO_CRE := :new.PLSO_PRO_CRE;
+			Plso.PLSO_PRO_MOD := :new.PLSO_PRO_MOD;
+			Plso.PLSO_DAT_MOD := :new.PLSO_DAT_MOD;
+			Plso.PLSO_COL_COM := :new.PLSO_COL_COM;
+
+			n_IdPlso := :new.PLSO_ID_PLSO;
+			n_IdPat := :new.PLSO_ID_PATI;
+
+			-- Création d'un événement INIT à l'attribution du numéro de demande
+			If (:old.PLSO_BIO_NUM_DEMANDE is null) And (:new.PLSO_BIO_NUM_DEMANDE is not null) Then
+				v_action := 'INIT';
+			-- Création d'un événement PRELEVE si l'état de réalisation a changé et est passé à 1
+			Elsif (:old.PLSO_ETA_REA &lt;> '1' Or :old.PLSO_ETA_REA is null) And (:new.PLSO_ETA_REA = '1') Then
+				v_action := 'PRELEVE';
+			End If;
+		End if;
+
+		-- Si pas d'action remarquable, on ne poste pas d'évènement et on quitte
+		If v_action is null Then
+			return;
+		End If;
+
+		-- Lecture du patient
+		n_CodRet := pckPfiHmM.FUN_LirePAT(n_IdPat, Pat);
+
+		-- Lecture des identifiants établissement, séjour, ligne de prescription, plateau technique et élément prescrit
+		SELECT /* T_EVTHM_PLAN_SOINS_BIO_CMS */ PRME_ID_ETAB, PRME_ID_SEJO, PRPL_ID_PRPL, PRPL_ID_PLTE, PAAM_ID_PAAM, PRME_ID_PRME
+		  INTO n_IdEtab, n_IdSej, n_IdPrpl, n_IdLabo, n_IdPaam, n_IdPrme
+          FROM PRE_PRESCRIPTION_PERIODE, PRE_PRESCRIPTION_LIGNE, BAS_PARAM_ACTE_MEDICAL, PRE_PRESCRIPTION_LISTE
+          WHERE  PRPE_ID_PRPL = PRPL_ID_PRPL
+		   AND PAAM_ID_PAAM = PRPL_ID_OBJET
+		   AND PRME_ID_PRME = PRPL_ID_PRME
+		   AND PRPE_ID_PRPE = Plso.PLSO_ID_PRPE;
+
+		-- Lecture du séjour
+		If n_IdSej is not null Then
+			n_CodRet := pckPfiHmM.FUN_LireSEJ(n_IdSej, Sej);
+		End If;
+
+		-- Lecture du plateau technique
+		If n_IdLabo is not null Then
+			SELECT /* T_EVTHM_PLAN_SOINS_BIO_CMS */ * INTO Labo FROM IDE_PLATEAU_TECHNIQUE
+			WHERE PLTE_ID_PLTE = n_IdLabo;
+		End If;
+
+		-- Lecture de l'élément prescrit (examen ou bilan)
+		If n_IdPaam is not null Then
+			SELECT /* T_EVTHM_PLAN_SOINS_BIO_CMS */ * INTO Paam FROM BAS_PARAM_ACTE_MEDICAL
+			WHERE PAAM_ID_PAAM = n_IdPaam;
+		End If;
+
+		-- On stocke l'appli externe qui a généré l'évènement et l'Id de l'évènement Origine reçu, le cas échéant
+		If Plso.PLSO_UTI_MOD = 3 Then
+			pckTrigPfiHmM.PRO_appliExt(Plso.PLSO_DAT_MOD, Plso.PLSO_COL_COM, n_idApli, v_idTrameOrigine);
+		End If;
+
+		Select /* T_EVTHM_PLAN_SOINS_BIO_CMS */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+		INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+		INTO SCL_EVT (EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT, EVNT_NIP, EVNT_ID_SEJOUR, EVNT_NUM_SEJ,
+							 EVNT_NUM_RSS, EVNT_CODE_EVT, EVNT_ID_OBJ, EVNT_CODE_PERE, EVNT_ID_PERE, EVNT_ACTION,EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE, EVNT_EVTHL7,
+							 EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+		VALUES (n_IdEvnt, current_date, '0', n_IdEtab, Pat.PATI_ID_PATI, Pat.PATI_NIP, Sej.SEJO_ID_SEJO, Sej.SEJO_NUM_SEJ_COMM,
+				NULL, 'PLANSOINSBIO', Plso.PLSO_ID_PLSO,'PLATEAUTECH', Labo.PLTE_ID_PLTE, v_action, n_IdApli, v_idTrameOrigine, NULL,
+				current_date, current_date, 0, Plso.PLSO_UTI_CRE, Plso.PLSO_UTI_MOD, Plso.PLSO_PRO_CRE, Plso.PLSO_PRO_MOD, Plso.PLSO_COL_COM);
+
+		-- Insert SCL_EVT_DATA pour PATIENT
+		v_xml := null;
+		v_xml := v_xml || '&lt;PATIENT>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', Pat.PATI_ID_PATI);
+		v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', Pat.PATI_NOM_USU);
+		v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', Pat.PATI_NOM_NAI);
+		v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', Pat.PATI_PRENOM);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', Pat.PATI_DAT_NAI);
+		v_xml := v_xml || pckPfiHmM.val2xml('SEXE', Pat.PATI_SEXE);
+		v_xml := v_xml || pckPfiHmM.val2xml('NIP', Pat.PATI_NIP);
+		v_xml := v_xml || '&lt;/PATIENT>';
+
+		Select /* T_EVTHM_PLAN_SOINS_BIO_CMS */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+		INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+		INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+								  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		VALUES (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', 'I', v_Xml,
+				current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+		-- Insert SCL_EVT_DATA pour LABO
+		v_xml := null;
+		v_xml := v_xml || '&lt;LABO>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PLTE', Labo.PLTE_ID_PLTE);
+		v_xml := v_xml || pckPfiHmM.val2xml('CODE', Labo.PLTE_COD_PLATEAU);
+		v_xml := v_xml || pckPfiHmM.val2xml('LIBELLE', Labo.PLTE_LIB_PLATEAU);
+		v_xml := v_xml || '&lt;/LABO>';
+
+		INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+		INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+								  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		VALUES (n_IdEvnd+1, n_IdEvnt, 2, 'LABO', 'I', v_Xml,
+				current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+		-- Insert SCL_EVT_DATA pour PRESCRIPTION
+		v_xml := null;
+		v_xml := v_xml || '&lt;PRESCRIPTION>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PRME', n_IdPrme);
+		v_xml := v_xml || '&lt;/PRESCRIPTION>';
+
+		INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+		INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+								  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		VALUES (n_IdEvnd+2, n_IdEvnt, 3, 'PRESCRIPTION', 'I', v_Xml,
+				current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+		-- Insert SCL_EVT_DATA pour PLANSOINS
+		v_xml := null;
+		v_xml := v_xml || '&lt;PLANSOINS>';
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PLSO', Plso.PLSO_ID_PLSO);
+		v_xml := v_xml || pckPfiHmM.val2xml('ETA_REA', Plso.PLSO_ETA_REA);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_HEU_ADM', Plso.PLSO_DAT_HEU_ADM);
+		v_xml := v_xml || pckPfiHmM.val2xml('DAT_HEU_ADM_PRE_DEB', Plso.PLSO_DAT_HEU_ADM_PRE_DEB);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPE', Plso.PLSO_ID_PRPE);
+		v_xml := v_xml || pckPfiHmM.val2xml('BIO_NUM_DEMANDE', Plso.PLSO_BIO_NUM_DEMANDE);
+		v_xml := v_xml || pckPfiHmM.val2xml('BIO_NUM_ITERATION', Plso.PLSO_BIO_NUM_ITERATION);
+		v_xml := v_xml || pckPfiHmM.val2xml('BIO_NUM_PRELEVEMENT', Plso.PLSO_BIO_NUM_PRELEVEMENT);
+		v_xml := v_xml || pckPfiHmM.val2xml('ID_MEDE_INT_PRELEVEUR', Plso.PLSO_ID_MEDE_INT_PRELEVEUR);
+		v_xml := v_xml || '&lt;/PLANSOINS>';
+
+		INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+		INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+								  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		VALUES (n_IdEvnd+3, n_IdEvnt, 4, 'PLANSOINS', 'I', v_Xml,
+		current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+
+		-- Insert SCL_EVT_DATA pour l'élément prescrit :
+		-- Si l'élément prescrit est un bilan
+		If Paam.PAAM_TYP_EXAMEN = '1' Then
+			-- 1 segment BILAN
+			v_xml := null;
+			v_xml := v_xml || '&lt;BILAN>';
+			v_xml := v_xml || pckPfiHmM.val2xml('CODEHM', Paam.PAAM_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('LIBELLEHM', Paam.PAAM_LIBELLE);
+			v_xml := v_xml || '&lt;/BILAN>';
+
+			INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+			INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+									  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			VALUES (n_IdEvnd+4, n_IdEvnt, 5, 'BILAN', 'I', v_Xml,
+			current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			n_Cpt := 5;
+
+		    -- 1 segment EXAMEN par examen qui compose le bilan
+			-- Lecture des examens du bilan dans PRE_PRESCRIPTION_DETAIL
+			Open CExamens(n_IdPrpl);
+			Loop
+				Fetch CExamens Into Examen;
+				Exit When CExamens%NOTFOUND;
+
+				n_Cpt := n_Cpt + 1;
+
+				-- Lecture de la transco de l'examen pour le plateau technique
+				v_CodePlac := null;
+				If n_IdLabo is not null Then
+					SELECT MAX(PLAC_CODE) INTO v_CodePlac
+					FROM BAS_PARAM_ACTE_PLATEAU
+					WHERE PLAC_ID_PLTE = n_IdLabo
+					AND PLAC_ID_PAAM = Examen.PAAM_ID_PAAM
+					AND PLAC_DAT_FIN_VAL IS NULL;
+				End If;
+
+				v_xml := null;
+				v_xml := v_xml || '&lt;EXAMEN>';
+				v_xml := v_xml || pckPfiHmM.val2xml('CODEHM', Examen.PAAM_CODE);
+				v_xml := v_xml || pckPfiHmM.val2xml('LIBELLEHM', Examen.PAAM_LIBELLE);
+				v_xml := v_xml || pckPfiHmM.val2xml('CODELABO', v_CodePlac);
+				v_xml := v_xml || '&lt;/EXAMEN>';
+
+				Select /* T_EVTHM_PLAN_SOINS_BIO_CMS */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+				INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+				INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+										  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+				VALUES (n_IdEvnd, n_IdEvnt, n_Cpt, 'EXAMEN', 'I', v_Xml,
+				current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			End Loop;
+			close CExamens;
+
+		-- Si examen prescrit : 1 segment EXAMEN
+		Else
+			-- Lecture de la transco de l'examen pour le plateau technique
+			SELECT /* T_EVTHM_PLAN_SOINS_BIO_CMS */ MAX(PLAC_CODE) INTO v_CodePlac
+			FROM BAS_PARAM_ACTE_PLATEAU
+			WHERE PLAC_ID_PLTE = n_IdLabo
+			AND PLAC_ID_PAAM = n_IdPaam
+			AND PLAC_DAT_FIN_VAL IS NULL;
+
+			v_xml := null;
+			v_xml := v_xml || '&lt;EXAMEN>';
+			v_xml := v_xml || pckPfiHmM.val2xml('CODEHM', Paam.PAAM_CODE);
+			v_xml := v_xml || pckPfiHmM.val2xml('LIBELLEHM', Paam.PAAM_LIBELLE);
+			v_xml := v_xml || pckPfiHmM.val2xml('CODELABO', v_CodePlac);
+			v_xml := v_xml || '&lt;/EXAMEN>';
+
+			INSERT /* T_EVTHM_PLAN_SOINS_BIO_CMS */
+			INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+									  EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			VALUES (n_IdEvnd+4, n_IdEvnt, 5, 'EXAMEN', 'I', v_Xml,
+			current_date, current_date, 0, 3, 3, 2, 2, NULL);
+		End If;
+
+	EXCEPTION
+		WHEN OTHERS THEN
+			Begin
+				pckTrigPfiHmM.PRO_traceScl(Pat.PATI_NIP, Sej.SEJO_NUM_SEJ_COMM, n_IdEtab, 'Evt Plan de soins Biologie', 'T_EVTHM_PLAN_SOINS_BIO_CMS', '0', SUBSTR(SQLERRM,1,2000));
+			Exception
+				When Others Then
+					return;
+			End;
+	END;
+
+END T_EVTHM_PLAN_SOINS_BIO_CMS;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">T_EVTHM_PLAN_SOINS_ACTE_CS</td>
+<td class="currentcell">TRIGGER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 1)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PLAN_SOINS_BIO_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 2)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCLISTE_BIO_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.5">
+<div class="childreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.5">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>33595288</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>862900</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>187</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>33595288</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>02/09/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Planification&nbsp;unitaire&nbsp;des&nbsp;soins</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PLSI_I3</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 1)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PLSO_I6</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>FUNCTION-BASED&nbsp;NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>ENABLED</td>
+<td>NO</td>
+<td>PLSO_ID_PATI,&nbsp;SYS_NC00065$</td>
+<td>"PCAP_XROUGE"."SWM_PLSO_DAT_HEU_ADM_PRE_FIN"("PLSO_DAT_HEU_ADM_PRE_FIN")</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 2)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PLSO_IDX6</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PATI,&nbsp;PLSO_DAT_HEU_ADM_PRE_FIN</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 3)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PLSO_IDX7</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PATI,&nbsp;PLSO_ID_CAGE_TYPE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 4)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PLSO_IDX8</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ACT_NUM_DEMANDE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PLSO_ID_PROT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PROT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 6)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PLSO_ID_PRQH</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PRQH</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 7)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PLSO_ID_CAGE_TYPE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_CAGE_TYPE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 8)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PLSO_ID_PLSO_REPORT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PLSO_REPORT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 9)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PLSO_ID_PLSO_RELIQUAT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PLSO_RELIQUAT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 10)">
+<td>PCAP_XROUGE</td>
+<td>PK_PRE_PLAN_SOINS_UNITAIRE</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PLSO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 11)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PRE_PLAN_SOINS_UNITAIRE_I1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PATI,&nbsp;PLSO_ETA_REA</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 12)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PRE_PLAN_SOINS_UNITAIRE_I5</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PATI,&nbsp;PLSO_DAT_HEU_ADM_PRE_DEB</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 13)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PLSO_ID_MEDE_INT_PRELEVEU</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_MEDE_INT_PRELEVEUR</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 14)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PRE_PLAN_SOINS_UNITAIRE_1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_UNFO</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 15)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PRE_PLAN_SOINS_UNITAIRE_2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_UTIL</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 16)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PRE_PLAN_SOINS_UNITAIRE_3</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_CAPE_EFF</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 17)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PRE_PLAN_SOINS_UNITAIRE_4</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_PRPE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 31, 18)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PRE_PLAN_SOINS_UNITAIRE_B</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PLSO_ID_CAPE_REP</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 32)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PLSI_I3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 33)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PLSO_I6</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 33)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PLSO_I6</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>SYS_NC00065$</td>
+<td>2</td>
+<td>7</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 34)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PLSO_IDX6</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 34)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PLSO_IDX6</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>PLSO_DAT_HEU_ADM_PRE_FIN</td>
+<td>2</td>
+<td>7</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 35)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PLSO_IDX7</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 35)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PLSO_IDX7</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>PLSO_ID_CAGE_TYPE</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 36)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PLSO_IDX8</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ACT_NUM_DEMANDE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">60</td>
+<td class="currentcell">60</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.37" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 37)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLSO_ID_PROT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PROT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.38" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 38)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLSO_ID_PRQH</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PRQH</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.39" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 39)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLSO_ID_CAGE_TYPE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_CAGE_TYPE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.8">
+<div class="childreport"><table id="Table.40" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 40)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLSO_ID_PLSO_REPORT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PLSO_REPORT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.8">
+<div class="childreport"><table id="Table.41" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 41)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLSO_ID_PLSO_RELIQUAT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PLSO_RELIQUAT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.8">
+<div class="childreport"><table id="Table.42" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 42)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PLSO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.8">
+<div class="childreport"><table id="Table.43" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 43)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PRE_PLAN_SOINS_UNITAIRE_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 43)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PRE_PLAN_SOINS_UNITAIRE_I1</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>PLSO_ETA_REA</td>
+<td>2</td>
+<td>1</td>
+<td>1</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.8">
+<div class="childreport"><table id="Table.44" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 44)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PRE_PLAN_SOINS_UNITAIRE_I5</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 44)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PRE_PLAN_SOINS_UNITAIRE_I5</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PLAN_SOINS_UNITAIRE</td>
+<td>PLSO_DAT_HEU_ADM_PRE_DEB</td>
+<td>2</td>
+<td>7</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.8">
+<div class="childreport"><table id="Table.45" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 45)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PLSO_ID_MEDE_INT_PRELEVEU</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_MEDE_INT_PRELEVEUR</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.8">
+<div class="childreport"><table id="Table.46" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 46)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PRE_PLAN_SOINS_UNITAIRE_1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_UNFO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.8">
+<div class="childreport"><table id="Table.47" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 47)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PRE_PLAN_SOINS_UNITAIRE_2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_UTIL</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.8">
+<div class="childreport"><table id="Table.48" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 48)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PRE_PLAN_SOINS_UNITAIRE_3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_CAPE_EFF</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.8">
+<div class="childreport"><table id="Table.49" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 49)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PRE_PLAN_SOINS_UNITAIRE_4</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_PRPE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.8">
+<div class="childreport"><table id="Table.50" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 50)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PRE_PLAN_SOINS_UNITAIRE_B</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PLAN_SOINS_UNITAIRE</td>
+<td class="currentcell">PLSO_ID_CAPE_REP</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

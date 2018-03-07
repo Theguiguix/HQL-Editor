@@ -1,0 +1,5162 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="IDE_PATIENT/report.js" type="text/javascript"></script>
+<link href="IDE_PATIENT/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">IDE_PATIENT</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">PATI_ID_PATI</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>PATI_ID_PATI_MAI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>Identifiant&nbsp;du&nbsp;patient&nbsp;maître</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>PATI_ID_ETAB</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;établissement</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>PATI_NOM_USU</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>nom&nbsp;usuel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>PATI_NOM_NAI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>nom&nbsp;de&nbsp;naissance</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>PATI_PRENOM</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>prénom</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>PATI_NOM_USU_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>nom&nbsp;usuel&nbsp;MAJ</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>PATI_NOM_NAI_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>nom&nbsp;de&nbsp;naissance&nbsp;MAJ</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>PATI_PRE_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>prénom&nbsp;MAJ</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>PATI_DAT_NAI</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>date&nbsp;de&nbsp;naissance</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>PATI_SEXE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Sexe&nbsp;du&nbsp;patient&nbsp;(F&nbsp;:&nbsp;Femme,&nbsp;H&nbsp;:&nbsp;Homme,&nbsp;I&nbsp;:&nbsp;Indéterminé)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>PATI_NIP</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>IPP&nbsp;-&nbsp;NIP</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>PATI_POIDS</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Poids&nbsp;du&nbsp;patient&nbsp;(cas&nbsp;du&nbsp;bébé)&nbsp;:&nbsp;utilisé&nbsp;pour&nbsp;initialiser&nbsp;le&nbsp;RUM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>PATI_DAT_DEC</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Date&nbsp;de&nbsp;décès</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>PATI_DAT_SUP</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Date&nbsp;de&nbsp;suppression</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>PATI_IND_DEC</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Indicateur&nbsp;de&nbsp;décès</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>PATI_DAT_NAI_LIB</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Date&nbsp;de&nbsp;naissance&nbsp;libre.La&nbsp;saise&nbsp;doit&nbsp;être&nbsp;contrôlée&nbsp;xx/xx/xxxx&nbsp;x=nombre&nbsp;de&nbsp;0&nbsp;à&nbsp;9</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>PATI_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>18</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>PATI_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>19</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>PATI_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>20</td>
+<td>Numéro&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>PATI_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>PATI_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>PATI_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>PATI_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>PATI_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>PATI_PRE_CFD</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Prénom&nbsp;usuel&nbsp;confidentiel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>PATI_NIP_ANC</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>NIP&nbsp;ancien&nbsp;système</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>PATI_NOM_USU_CFD_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Nom&nbsp;usuel&nbsp;confidentiel&nbsp;Majuscule</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>PATI_RGN_NAI</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>Rang&nbsp;de&nbsp;naissance&nbsp;:&nbsp;1&nbsp;Pas&nbsp;de&nbsp;jumeau&nbsp;ou&nbsp;premier&nbsp;jumeau&nbsp;2&nbsp;Deuxième&nbsp;jumeau&nbsp;ou&nbsp;triplet&nbsp;3&nbsp;Troisième&nbsp;triplet&nbsp;4&nbsp;à&nbsp;9&nbsp;Valeurs&nbsp;possibles</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>PATI_COMMENTA</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Commentaire&nbsp;libre</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>PATI_COD_CFD</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Confidentialité&nbsp;souhaitée&nbsp;:&nbsp;I&nbsp;Identité&nbsp;confidentielle&nbsp;P&nbsp;Présence&nbsp;confidentielle&nbsp;X&nbsp;Accouchement&nbsp;sous&nbsp;X</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>PATI_NOM_USU_CFD</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Nom&nbsp;usuel&nbsp;confidentiel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>PATI_NOM_NAI_CFD</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;confidentiel</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>PATI_PRE_CFD_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>34</td>
+<td>Prénom&nbsp;usuel&nbsp;confidentiel&nbsp;Majuscule</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>PATI_NOM_NAI_CFD_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>35</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;confidentiel&nbsp;majuscule</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>PATI_TYPE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>36</td>
+<td>Type&nbsp;de&nbsp;patient&nbsp;(E=Externe)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>PATI_DAT_DIALYSE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Date&nbsp;1°&nbsp;dialyse</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>PATI_ID_ETEX</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Identifiant&nbsp;Etablissements&nbsp;externes</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>PATI_HEU_NAI</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Heure&nbsp;de&nbsp;naissance&nbsp;(colonne&nbsp;obsolète&nbsp;voir&nbsp;PATI_DAT_NAI)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>PATI_IND_DAT_NAI_INCERTAINE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Indicateur&nbsp;date&nbsp;de&nbsp;naissance&nbsp;incertaine</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>PATI_EMAIL</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Adresse&nbsp;de&nbsp;messagerie&nbsp;électronique&nbsp;(e-mail)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>PATI_PDS_NAI</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Poids&nbsp;de&nbsp;naissance&nbsp;en&nbsp;gramme</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>PATI_ID_CAGE_MATRIMONIALE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Situation&nbsp;matrimoniale&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>PATI_NBR_ENFANT</td>
+<td>NUMBER(2,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Nombre&nbsp;d'enfant&nbsp;(plafonné&nbsp;à&nbsp;99)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>PATI_NOT_COMPLEMENT</td>
+<td>VARCHAR2(1024&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Note&nbsp;sur&nbsp;les&nbsp;compléments&nbsp;d'identité</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>PATI_NOT_DECES</td>
+<td>VARCHAR2(1024&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Note&nbsp;sur&nbsp;le&nbsp;décès&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>PATI_IND_AUTOPSIE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Indicateur&nbsp;pour&nbsp;savoir&nbsp;si&nbsp;l'autopsie&nbsp;a&nbsp;été&nbsp;faite&nbsp;ou&nbsp;non</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>PATI_ID_CAPE_CAUSEDECES</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Catalogue&nbsp;personnalisé&nbsp;des&nbsp;causes&nbsp;de&nbsp;décès</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>PATI_ID_CAGE_CIVILITE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;civilité&nbsp;du&nbsp;patient&nbsp;(catalogue&nbsp;générique&nbsp;:&nbsp;33)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>PATI_NOM_NAI_PHO</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;en&nbsp;phonétique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>PATI_NOM_USU_PHO</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Nom&nbsp;usuel&nbsp;en&nbsp;phonétique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>PATI_NOM_NAI_CFD_PHO</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;confidentiel&nbsp;en&nbsp;phonétique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>PATI_NOM_USU_CFD_PHO</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Nom&nbsp;usuel&nbsp;confidentiel&nbsp;en&nbsp;phonétique</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>PATI_ID_MEDE_REF</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>OBSOLETE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>PATI_ID_MEDE_TRT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>OBSOLETE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>PATI_NIS</td>
+<td>VARCHAR2(22&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Colonne&nbsp;obsolète</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>PATI_IND_IDE_VALIDE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Indicateur&nbsp;Identité&nbsp;Validée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>PATI_ID_TITR</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Titre&nbsp;du&nbsp;patient&nbsp;(fk&nbsp;vers&nbsp;IDE_TITRE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>PATI_DST_LIE_TRAITEMENT</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Distance&nbsp;en&nbsp;Km&nbsp;du&nbsp;lieu&nbsp;de&nbsp;traitement&nbsp;habituel&nbsp;au&nbsp;domicile</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>PATI_TYP_DIA_ISF_RENAL</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Dialyse&nbsp;-&nbsp;type&nbsp;d'insuffisance&nbsp;rénale&nbsp;du&nbsp;patient&nbsp;(1&nbsp;=&nbsp;Pré-dialysé,&nbsp;2&nbsp;=&nbsp;Dialysé&nbsp;chronique,&nbsp;3&nbsp;=&nbsp;Dialysé&nbsp;aigu,&nbsp;4&nbsp;=&nbsp;Greffé)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>PATI_ID_PAYS</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Identifiant&nbsp;BAS_PAYS&nbsp;de&nbsp;la&nbsp;nationalité&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>PATI_INSEE</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Numéro&nbsp;INSEE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>PATI_ID_CAPE_JUS_IDENTITE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>Justificatif&nbsp;d'identité&nbsp;(générique&nbsp;:&nbsp;1137&nbsp;-&nbsp;personnalisé&nbsp;:&nbsp;1138&nbsp;-&nbsp;code&nbsp;TYIN&nbsp;=&nbsp;JUSTIFICATIF_IDENTITE)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>PATI_TYP_DCR_MT</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>64</td>
+<td>OBSOLETE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 64)">
+<td>PATI_INS</td>
+<td>VARCHAR2(22&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>65</td>
+<td>INS-A&nbsp;s'il&nbsp;existe,&nbsp;ou&nbsp;INS-C&nbsp;valide</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 65)">
+<td>PATI_ID_SEJO_HOSP_COURANT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>66</td>
+<td>Identifiant&nbsp;du&nbsp;séjour&nbsp;d'hospitalisation&nbsp;courant</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 66)">
+<td>PATI_DAT_OBS_HOSP_COURANT</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>67</td>
+<td>date&nbsp;d'obsolescence&nbsp;du&nbsp;séjour&nbsp;courant&nbsp;dématérialisé</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 67)">
+<td>PATI_NOM_ALIAS</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>68</td>
+<td>Nom&nbsp;alias</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 68)">
+<td>PATI_PRE_ALIAS</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>69</td>
+<td>Prénom&nbsp;alias</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_IDE_PATIENT_BAS_ETABLISSEME</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">BAS_ETABLISSEMENT</td>
+<td class="currentcell">PK_BAS_ETABLISSEMENT</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_IDE_PATIENT_BAS_PAYS</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_PAYS</td>
+<td>PK_BAS_PAYS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_IDE_PATIENT_IDE_ETABLISSEME</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_ETABLISSEMENT_EXTERIEUR</td>
+<td>PK_IDE_ETABLISSEMENT_EXTERIEUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_IDE_PATIENT_IDE_PATIENT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_PATI_ID_CAGE_CIVILITE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>FK_PATI_ID_CAGE_MATRIMONIALE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>FK_PATI_ID_CAPE_CAUSEDECES</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>FK_PATI_ID_CAPE_JUS_IDENTITE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_PERS</td>
+<td>PK_BAS_CATALOGUE_PERS</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>FK_PATI_ID_MEDE_REF</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>FK_PATI_ID_MEDE_TRT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>FK_PATI_ID_SEJO_HOSP_COURANT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR</td>
+<td>PK_IDE_SEJOUR</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>FK_PATI_ID_TITR</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_TITRE</td>
+<td>PK_IDE_TITRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>PK_IDE_PATIENT</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_IDE_PATIENT</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>SYS_C004649176</td>
+<td>Check</td>
+<td>"PATI_ID_PATI"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>SYS_C004649177</td>
+<td>Check</td>
+<td>"PATI_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>SYS_C004649178</td>
+<td>Check</td>
+<td>"PATI_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>SYS_C004649179</td>
+<td>Check</td>
+<td>"PATI_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">PATI_ID_PAYS</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">PATI_ID_ETEX</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">PATI_ID_PATI_MAI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">PATI_ID_CAGE_CIVILITE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">PATI_ID_CAGE_MATRIMONIALE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">PATI_ID_CAPE_CAUSEDECES</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">PATI_ID_CAPE_JUS_IDENTITE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">PATI_ID_MEDE_REF</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">PATI_ID_MEDE_TRT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">PATI_ID_SEJO_HOSP_COURANT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">PATI_ID_TITR</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">PATI_ID_PATI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">PATI_ID_PATI</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">PATI_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">PATI_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">PATI_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>258204</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>8123</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>224</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>258204</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 21, 0)" class="currentrow">
+<td class="currentcell">T_EVTHM_PATIENT_C</td>
+<td class="currentcell">BEFORE&nbsp;EACH&nbsp;ROW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">INSERT</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">IDE_PATIENT</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 21, 1)">
+<td>T_EVTHM_PATIENT_DIALYSE_M</td>
+<td>AFTER&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>UPDATE</td>
+<td>DISABLED</td>
+<td>IDE_PATIENT</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 21, 2)">
+<td>T_EVTHM_PATIENT_M</td>
+<td>BEFORE&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>UPDATE</td>
+<td>ENABLED</td>
+<td>IDE_PATIENT</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 21, 3)">
+<td>T_EVTHM_PAT_CONFIDENTIALITE_M</td>
+<td>AFTER&nbsp;EACH&nbsp;ROW</td>
+<td>PCAP_XROUGE</td>
+<td>UPDATE</td>
+<td>ENABLED</td>
+<td>IDE_PATIENT</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+<div id="Child.0.0.4">
+<div class="currentchildreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_PATIENT_C
+BEFORE INSERT
+ON IDE_PATIENT
+FOR EACH ROW
+BEGIN
+	DECLARE
+		n_IdEvnt				SCL_EVT.EVNT_ID_EVNT%TYPE;
+		n_IdEvnd				SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+		v_Xml					SCL_EVT_DATA.EVND_VAL%TYPE;
+		n_idApli				SCL_APPLI.APLI_ID%Type;
+		v_idTrameOrigine		VARCHAR2(19);
+		v_action				scl_evt.EVNT_ACTION%Type;
+		v_evtHL7				SCL_EVT.EVNT_EVTHL7%Type;
+		v_evtIndNoIpp			Varchar2(1);
+		v_srvNip				scl_appli.APLI_SRVIPP%type;
+		v_patiStatut			bas_parametre.para_valeur%Type;
+
+	BEGIN
+		-- #Version# 1.16 du 01/03/2016 #Version#
+		v_evtIndNoIpp := '-';
+
+		-- On stocke l'appli externe qui a généré l'évènement et l'Id de l'évènement Origine reçu, le cas échéant
+		pckTrigPfiHmM.PRO_appliExt(:new.PATI_DAT_MOD, :new.PATI_COL_COM, n_idApli, v_idTrameOrigine);
+
+		v_patiStatut := pckPfiHmM.FUN_litValParam('NUM_PATI_STATUT', :new.PATI_ID_ETAB, current_date);
+
+		If v_patiStatut = 'J' Then
+			v_srvNip := '0';
+		Else
+			Begin
+				Select /* T_EVTHM_PATIENT_C */ max(APLI_SRVIPP)
+				  Into v_srvNip
+				  From scl_appli
+				 Where APLI_TYPE in ('HM','OM')
+				   And APLI_ID_ETAB = :new.PATI_ID_ETAB;
+
+			Exception
+				When others Then
+					v_srvNip := '0';
+			End;
+		End If;
+
+		-- HM est serveur d'IPP
+		If v_srvNip = '1' Then
+			If :new.pati_nip is not null Then
+				v_action := 'C'	;
+				v_evtHL7 := 'A28';
+			Else
+				return;
+			End If;
+		-- HM n'est pas serveur d'IPP
+		Else
+			If :new.pati_nip is not null Then
+				v_action := 'C'	;
+				v_evtHL7 := 'A28';
+			Else
+				v_evtIndNoIpp := 'D';
+				v_Action := 'D';
+				v_evtHL7 := 'A28';
+				:new.PATI_COL_COM := SUBSTR( SUBSTR(:new.PATI_COL_COM, 1, 5)  || '     ', 1, 5) || 'D' || SUBSTR(:new.PATI_COL_COM, 7);
+			End If;
+		End If;
+
+		If v_evtHL7 is not null Then
+			v_evtHL7 := v_evtHL7 || v_evtIndNoIpp || '--';
+		End If;
+
+		Select /* T_EVTHM_PATIENT_C */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+		INSERT /* T_EVTHM_PATIENT_C */
+		INTO SCL_EVT (EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT, EVNT_NIP, EVNT_ID_SEJOUR, EVNT_NUM_SEJ,
+				EVNT_NUM_RSS, EVNT_CODE_EVT, EVNT_ID_OBJ, EVNT_CODE_PERE, EVNT_ID_PERE, EVNT_ACTION, EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE, EVNT_EVTHL7,
+      			EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+		VALUES (n_IdEvnt, current_date, '0', :new.PATI_ID_ETAB, :new.PATI_ID_PATI, :new.PATI_NIP, NULL, NULL,
+				NULL, 'PATIENT', :new.PATI_ID_PATI, NULL, NULL, v_action, n_IdApli, v_idTrameOrigine, v_evtHl7,
+      			current_date, current_date, 0, :new.PATI_UTI_CRE, :new.PATI_UTI_MOD, :new.PATI_PRO_CRE, :new.PATI_PRO_MOD, :new.PATI_COL_COM);
+
+		v_Xml := null;
+		v_Xml := v_Xml || '&lt;PATIENT>';
+		v_Xml := v_Xml || pckPfiHmM.val2xml('ID_PATI', :new.PATI_ID_PATI);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('NOM_USU', :new.PATI_NOM_USU);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('NOM_NAI', :new.PATI_NOM_NAI);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('PRENOM', :new.PATI_PRENOM);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('DAT_NAI', :new.PATI_DAT_NAI);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('SEXE', :new.PATI_SEXE);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('NIP', :new.PATI_NIP);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('NIP_OLD', :new.PATI_NIP);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('ID_PATI_MAI', :new.PATI_ID_PATI_MAI);
+		v_Xml := v_Xml || pckPfiHmM.val2xml('DATE_SUP', :new.PATI_DAT_SUP);
+		v_Xml := v_Xml || '&lt;/PATIENT>';
+
+		Select /* T_EVTHM_PATIENT_C */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+		INSERT /* T_EVTHM_PATIENT_C */
+		INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+    			EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+		VALUES (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', v_action, v_Xml,
+      		current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	EXCEPTION
+		WHEN OTHERS THEN
+			Begin
+				pckTrigPfiHmM.PRO_traceScl(:new.PATI_NIP, null, :new.PATI_ID_ETAB, 'Evt Patient', 'T_EVTHM_PATIENT_C', '0', SUBSTR(SQLERRM,1,2000));
+			Exception
+				When Others Then
+					return;
+			End;
+	END;
+
+END T_EVTHM_PATIENT_C;</pre>
+</div>
+</div>
+<div id="Child.0.1.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_PATIENT_DIALYSE_M
+AFTER UPDATE
+ON IDE_PATIENT
+FOR EACH ROW
+BEGIN
+    DECLARE
+        v_patiStatut                	BAS_PARAMETRE.PARA_VALEUR%Type;
+        v_srvNip                    	SCL_APPLI.APLI_SRVIPP%type;
+        n_idApli                    	SCL_APPLI.APLI_ID%Type;
+        v_action                    	SCL_EVT.EVNT_ACTION%Type;
+		n_IdEvnt						SCL_EVT.EVNT_ID_EVNT%TYPE;
+		n_IdEvnd						SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+        v_codeEvt						SCL_EVT.EVNT_CODE_EVT%TYPE;
+        v_evtHL7                   	 	SCL_EVT.EVNT_EVTHL7%Type;
+        v_Xml                        	SCL_EVT_DATA.EVND_VAL%TYPE;
+		v_idTrameOrigine            	VARCHAR2(19);
+
+    BEGIN
+		-- #Version# 1.16 du 01/03/2016 #Version#
+
+        -- noPerroquet
+		If (:new.PATI_DAT_DIALYSE = :old.PATI_DAT_DIALYSE or (:new.PATI_DAT_DIALYSE is null and :old.PATI_DAT_DIALYSE is null)) And
+		   (:new.PATI_TYP_DIA_ISF_RENAL = :old.PATI_TYP_DIA_ISF_RENAL or (:new.PATI_TYP_DIA_ISF_RENAL is null and :old.PATI_TYP_DIA_ISF_RENAL is null))
+		Then
+			return;
+		End If;
+
+        -- Chargement des variables
+		v_Action := 'M';									-- Action
+        v_evtHL7 := 'A31' || '---';							-- Evénement HL7
+		v_codeEvt := 'PATIENT_DIALYSE';						-- Code événement
+
+        -- Vérifie que le nip est renseigné quand HM est serveur d'IPP. Si ce n'est pas le cas on s'arrête là.
+        v_patiStatut := pckPfiHmM.FUN_litValParam('NUM_PATI_STATUT', :new.PATI_ID_ETAB, current_date);
+        If v_patiStatut = 'J' Then
+            v_srvNip := '0';
+        Else
+            Begin
+                Select /* T_EVTHM_PATIENT_DIALYSE_M */ max(APLI_SRVIPP)
+                  Into v_srvNip
+                  From scl_appli
+                 Where APLI_TYPE in ('HM','OM')
+                   And APLI_ID_ETAB = :new.PATI_ID_ETAB;
+
+				Exception
+					When others Then
+						v_srvNip := '0';
+            End;
+        End If;
+        -- Teste si HM est serveur d'IPP
+        If v_srvNip = '1' Then
+            -- Teste si le NIP est renseigné
+            If :new.PATI_NIP is null Then
+                -- HM est serveur d'ipp et le NIP n'est pas renseigné. On s'arrête là.
+                return;
+            End If;
+        End If;
+
+        -- On stocke l'appli externe qui a généré l'évènement et l'Id de l'évènement Origine reçu, le cas échéant
+        pckTrigPfiHmM.PRO_appliExt(:new.PATI_DAT_MOD, :new.PATI_COL_COM, n_idApli, v_idTrameOrigine);
+
+		Select /* T_EVTHM_PATIENT_DIALYSE_M */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+		Insert /* T_EVTHM_PATIENT_DIALYSE_M */
+		Into SCL_EVT (EVNT_ID_EVNT,EVNT_DATE,EVNT_VERSION,EVNT_ID_ETAB,EVNT_ID_PATIENT,
+							 EVNT_NIP,EVNT_ID_SEJOUR,EVNT_NUM_SEJ,EVNT_NUM_RSS,EVNT_CODE_EVT,
+							 EVNT_ID_OBJ,EVNT_CODE_PERE,EVNT_ID_PERE,EVNT_ACTION,EVNT_ID_APLI,
+							 EVNT_ID_EVT_EXTERNE,EVNT_EVTHL7,EVNT_DAT_CRE,EVNT_DAT_MOD,EVNT_NMAJ,
+							 EVNT_UTI_CRE,EVNT_UTI_MOD,EVNT_PRO_CRE,EVNT_PRO_MOD,EVNT_COL_COM
+							)
+		Values (n_IdEvnt,current_date,'0',:new.PATI_ID_ETAB,:new.PATI_ID_PATI,
+				:new.PATI_NIP,NULL,NULL,NULL, v_codeEvt,
+				:new.PATI_ID_PATI,NULL,NULL,v_action,n_IdApli,
+				v_idTrameOrigine,v_evtHl7,current_date,current_date,0,
+				:new.PATI_UTI_CRE,:new.PATI_UTI_MOD,:new.PATI_PRO_CRE,:new.PATI_PRO_MOD,:new.PATI_COL_COM
+			   );
+
+        v_xml := null;
+        v_xml := v_xml || '&lt;PATIENT>';
+        v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', :new.PATI_ID_PATI);
+        v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', :new.PATI_NOM_USU);
+        v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', :new.PATI_NOM_NAI);
+        v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', :new.PATI_PRENOM);
+        v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', :new.PATI_DAT_NAI);
+        v_xml := v_xml || pckPfiHmM.val2xml('SEXE', :new.PATI_SEXE);
+        v_xml := v_xml || pckPfiHmM.val2xml('NIP', :new.PATI_NIP);
+        v_xml := v_xml || '&lt;/PATIENT>';
+
+		Select /* T_EVTHM_PATIENT_DIALYSE_M */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+        INSERT /* T_EVTHM_PATIENT_DIALYSE_M */
+        INTO SCL_EVT_DATA (EVND_ID_EVND,EVND_ID_EVNT,EVND_INDEX,EVND_TYPE,EVND_ACTION,
+                                  EVND_VAL,EVND_DAT_CRE,EVND_DAT_MOD,EVND_NMAJ,EVND_UTI_CRE,
+                                  EVND_UTI_MOD,EVND_PRO_CRE,EVND_PRO_MOD,EVND_COL_COM
+                                )
+        VALUES (n_IdEvnd,n_IdEvnt,1,'PATIENT',v_action,
+                v_Xml,current_date,current_date,0,3,
+                3,2,2,NULL
+               );
+
+	EXCEPTION
+		WHEN OTHERS THEN
+			Begin
+                pckTrigPfiHmM.PRO_traceScl(:new.PATI_NIP, null, :new.PATI_ID_ETAB, 'Evt constantes', 'T_EVTHM_PATIENT_DIALYSE_M', '0', SUBSTR(SQLERRM,1,2000));
+			Exception
+				When Others Then
+					return;
+			End;
+    END;
+
+END T_EVTHM_PATIENT_DIALYSE_M;</pre>
+</div>
+</div>
+<div id="Child.0.2.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_PATIENT_M
+BEFORE UPDATE
+ON IDE_PATIENT
+FOR EACH ROW
+BEGIN
+	DECLARE
+		n_IdEvnt			SCL_EVT.EVNT_ID_EVNT%TYPE;
+		n_IdEvnd			SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+		v_Xml				SCL_EVT_DATA.EVND_VAL%TYPE;
+		v_Action			VARCHAR2(1);
+		n_idApli			SCL_APPLI.APLI_ID%Type;
+		v_idTrameOrigine	VARCHAR2(19);
+		n_IdCageADR			BAS_CATALOGUE_GEN.CAGE_ID_CAGE%TYPE;
+		n_IdCageTEL			BAS_CATALOGUE_GEN.CAGE_ID_CAGE%TYPE;
+		n_IdTyInPAT			BAS_TYPE_INFO.TYIN_ID_TYIN%TYPE;
+		TEL					IDE_TELEPHONE%ROWTYPE;
+		ADR					IDE_ADRESSE%ROWTYPE;
+		v_evtHL7			SCL_EVT.EVNT_EVTHL7%Type;
+		v_evtIndNoIpp		Varchar2(1);
+		v_srvNip			scl_appli.APLI_SRVIPP%type;
+		v_patiStatut		bas_parametre.para_valeur%Type;
+
+		v_LibereMsgAttente	varchar2(1);
+		nb_for_loop 		number;
+
+	BEGIN
+		-- #Version# 1.16 du 01/03/2016 #Version#
+		v_evtIndNoIpp := '-';
+		v_LibereMsgAttente := '0';
+
+		-- noPerroquet
+		If (:new.PATI_ID_PATI_MAI = :old.PATI_ID_PATI_MAI or (:new.PATI_ID_PATI_MAI is null and :old.PATI_ID_PATI_MAI is null)) and
+			 (:new.PATI_NOM_USU = :old.PATI_NOM_USU or (:new.PATI_NOM_USU is null and :old.PATI_NOM_USU is null)) and
+			 (:new.PATI_NOM_NAI = :old.PATI_NOM_NAI or (:new.PATI_NOM_NAI is null and :old.PATI_NOM_NAI is null)) and
+			 (:new.PATI_PRENOM = :old.PATI_PRENOM or (:new.PATI_PRENOM is null and :old.PATI_PRENOM is null)) and
+			 (:new.PATI_DAT_NAI = :old.PATI_DAT_NAI or (:new.PATI_DAT_NAI is null and :old.PATI_DAT_NAI is null)) and
+			 (:new.PATI_SEXE = :old.PATI_SEXE or (:new.PATI_SEXE is null and :old.PATI_SEXE is null)) and
+			 (:new.PATI_NIP = :old.PATI_NIP or (:new.PATI_NIP is null and :old.PATI_NIP is null)) and
+			 (:new.PATI_POIDS = :old.PATI_POIDS or (:new.PATI_POIDS is null and :old.PATI_POIDS is null)) and
+			 (:new.PATI_DAT_DEC = :old.PATI_DAT_DEC or (:new.PATI_DAT_DEC is null and :old.PATI_DAT_DEC is null)) and
+			 (:new.PATI_DAT_SUP = :old.PATI_DAT_SUP or (:new.PATI_DAT_SUP is null and :old.PATI_DAT_SUP is null)) and
+			 (:new.PATI_IND_DEC = :old.PATI_IND_DEC or (:new.PATI_IND_DEC is null and :old.PATI_IND_DEC is null)) and
+			 (:new.PATI_DAT_NAI_LIB = :old.PATI_DAT_NAI_LIB or (:new.PATI_DAT_NAI_LIB is null and :old.PATI_DAT_NAI_LIB is null)) and
+			 (nvl(substr(:new.PATI_COL_COM,7,1),'0') = nvl(substr(:old.PATI_COL_COM,7,1),'0')) and
+			 (:new.PATI_RGN_NAI = :old.PATI_RGN_NAI or (:new.PATI_RGN_NAI is null and :old.PATI_RGN_NAI is null)) and
+			 (:new.PATI_COMMENTA = :old.PATI_COMMENTA or (:new.PATI_COMMENTA is null and :old.PATI_COMMENTA is null)) and
+			 (:new.PATI_TYPE = :old.PATI_TYPE or (:new.PATI_TYPE is null and :old.PATI_TYPE is null)) and
+			 (:new.PATI_IND_DAT_NAI_INCERTAINE = :old.PATI_IND_DAT_NAI_INCERTAINE or (:new.PATI_IND_DAT_NAI_INCERTAINE is null and :old.PATI_IND_DAT_NAI_INCERTAINE is null)) and
+			 (:new.PATI_EMAIL = :old.PATI_EMAIL or (:new.PATI_EMAIL is null and :old.PATI_EMAIL is null)) and
+			 (:new.PATI_PDS_NAI = :old.PATI_PDS_NAI or (:new.PATI_PDS_NAI is null and :old.PATI_PDS_NAI is null)) and
+			 (:new.PATI_ID_CAGE_MATRIMONIALE = :old.PATI_ID_CAGE_MATRIMONIALE or (:new.PATI_ID_CAGE_MATRIMONIALE is null and :old.PATI_ID_CAGE_MATRIMONIALE is null)) and
+			 (:new.PATI_NBR_ENFANT = :old.PATI_NBR_ENFANT or (:new.PATI_NBR_ENFANT is null and :old.PATI_NBR_ENFANT is null)) and
+			 (:new.PATI_ID_TITR = :old.PATI_ID_TITR or (:new.PATI_ID_TITR is null and :old.PATI_ID_TITR is null)) and
+			 (:new.PATI_INSEE = :old.PATI_INSEE or (:new.PATI_INSEE is null and :old.PATI_INSEE is null)) and
+			 (:new.PATI_ID_PAYS = :old.PATI_ID_PAYS or (:new.PATI_ID_PAYS is null and :old.PATI_ID_PAYS is null)) and
+			 (:new.PATI_PRE_CFD = :old.PATI_PRE_CFD or (:new.PATI_PRE_CFD is null and :old.PATI_PRE_CFD is null)) and
+			 (:new.PATI_NOM_USU_CFD = :old.PATI_NOM_USU_CFD or (:new.PATI_NOM_USU_CFD is null and :old.PATI_NOM_USU_CFD is null)) and
+			 (:new.PATI_NOM_NAI_CFD = :old.PATI_NOM_NAI_CFD or (:new.PATI_NOM_NAI_CFD is null and :old.PATI_NOM_NAI_CFD is null)) and
+			 (:new.PATI_COD_CFD = :old.PATI_COD_CFD or (:new.PATI_COD_CFD is null and :old.PATI_COD_CFD is null))
+		Then
+			return;
+		End If;
+
+		-- --------------------------
+		-- On ignore l'évènement si :
+		-- --------------------------
+
+		-- Si il intervient sur un patient fusionné
+		If :old.PATI_ID_PATI_MAI Is Not Null and :new.PATI_ID_PATI_MAI Is Not Null Then
+			return;
+		End If;
+
+		-- Si il intervient sur un patient supprimé
+		If :old.PATI_DAT_SUP Is Not Null And :new.PATI_DAT_SUP Is Not Null Then
+			return;
+		End If;
+
+
+
+		-- On stocke l'appli externe qui a généré l'évènement et l'Id de l'évènement Origine reçu, le cas échéant
+		If :new.PATI_UTI_MOD = 3 Then
+			pckTrigPfiHmM.PRO_appliExt(:new.PATI_DAT_MOD, :new.PATI_COL_COM, n_idApli, v_idTrameOrigine);
+		End If;
+
+		v_patiStatut := pckPfiHmM.FUN_litValParam('NUM_PATI_STATUT', :new.PATI_ID_ETAB, current_date);
+
+		If v_patiStatut = 'J' Then
+			v_srvNip := '0';
+		Else
+			Begin
+				Select /* T_EVTHM_PATIENT_M */ max(APLI_SRVIPP)
+				  Into v_srvNip
+				  From scl_appli
+				 Where APLI_TYPE in ('HM','OM')
+				   And APLI_ID_ETAB = :new.PATI_ID_ETAB;
+
+			Exception
+				When others Then
+					v_srvNip := '0';
+			End;
+		End If;
+
+		-- HM est serveur d'IPP
+		If v_srvNip = '1' Then
+			If :new.pati_nip is null Then
+				return;
+
+			ElsIf :old.pati_nip is null and :new.pati_nip is not null Then
+				-- Création
+				v_action := 'C'	;
+				v_evtHL7 := 'A28';
+
+				v_LibereMsgAttente := '1';
+
+			ElsIf ((:old.PATI_ID_PATI_MAI Is Null) And (:new.PATI_ID_PATI_MAI Is Not Null)) Then
+				-- Fusion
+				v_Action := 'F';
+				v_evtHl7 := 'A40';
+
+			ElsIf :old.pati_nip &lt;> :new.pati_nip Then
+				-- Mise à jour de l'IPP (rénumérotation des patients par script sur un site)
+				v_action := 'M'	;
+				v_evtHL7 := 'A47';
+
+			Else
+				-- Modification
+				v_Action := 'M';
+				v_evtHl7 := 'A31';
+			End If;
+
+		-- HM n'est pas serveur d'IPP
+		Else
+			-- pas d'IPP
+			If :new.pati_nip is null Then
+				v_evtIndNoIpp := 'D';
+
+				If ((:old.PATI_ID_PATI_MAI Is Null) And (:new.PATI_ID_PATI_MAI Is Not Null)) Then
+					-- Fusion
+					v_Action := 'F';
+					v_evtHl7 := 'A40';
+
+				Else
+					-- Modification
+					v_Action := 'M';
+					v_evtHl7 := 'A31';
+				End If;
+
+			-- affectation d'IPP
+			ElsIf :old.pati_nip is null and :new.pati_nip is not null Then
+				v_evtIndNoIpp := 'N';
+				v_Action := 'N';
+				v_evtHl7 := 'A46';
+
+				v_LibereMsgAttente := '1';
+
+			-- IPP connu
+			Else
+				If ((:old.PATI_ID_PATI_MAI Is Null) And (:new.PATI_ID_PATI_MAI Is Not Null)) Then
+					-- Fusion
+					v_Action := 'F';
+					v_evtHl7 := 'A40';
+
+				ElsIf :old.pati_nip &lt;> :new.pati_nip Then
+					-- Mise à jour de l'IPP (rénumérotation des patients par script sur un site)
+					v_action := 'M'	;
+					v_evtHL7 := 'A47';
+
+				Else
+					-- Modification
+					v_Action := 'M';
+					v_evtHl7 := 'A31';
+				End If;
+			End If;
+		End If;
+
+
+		-- Type info Patient
+		SELECT /* T_EVTHM_PATIENT_M */ TYIN_ID_TYIN INTO n_IdTyInPAT FROM BAS_TYPE_INFO WHERE TYIN_CODE = 'PATIENT';
+
+		-- Lecture des adresses
+		BEGIN
+			n_IdCageADR := pckPfiHmM.FUN_litIdCatGen('TYPE_ADR_PERS', 'ADR_PERSO');
+
+			SELECT /* T_EVTHM_PATIENT_M */ * INTO ADR FROM IDE_ADRESSE
+			WHERE ADRE_ID_OBJ = :new.PATI_ID_PATI
+			AND ADRE_ID_TYIN = n_IdTyInPAT
+			AND ADRE_ID_CAGE = n_IdCageADR;
+
+		EXCEPTION
+			WHEN OTHERS THEN ADR.ADRE_ID_ADRE := NULL;
+		END;
+
+		-- Lecture du téléphonne principal
+		BEGIN
+			n_IdCageTEL := pckPfiHmM.FUN_litIdCatGen('TYPE_TEL', 'TELEPHONE');
+
+			SELECT /* T_EVTHM_PATIENT_M */ * INTO TEL FROM IDE_TELEPHONE
+			WHERE TELE_ID_OBJ = :new.PATI_ID_PATI
+			AND TELE_ID_TYIN = n_IdTyInPAT
+			AND TELE_ID_CAGE = n_IdCageTEL;
+
+		EXCEPTION
+			WHEN OTHERS THEN TEL.TELE_ID_TELE := NULL;
+		END;
+
+		If v_evtHL7 is not null Then
+			v_evtHL7 := v_evtHL7 || v_evtIndNoIpp || '--';
+		End If;
+
+
+		-- Libération des messages en attente
+		If v_LibereMsgAttente = '1' Then
+			UPDATE /* T_EVTHM_PATIENT_M */ SCL_EVT_ATTENTE SET EVNA_READY_TO_GO = '1'
+			WHERE EVNA_ID_EVNT IN (
+									 SELECT EVNT_ID_EVNT
+									 FROM SCL_EVT
+									 WHERE EVNT_ID_PATIENT = :new.PATI_ID_PATI
+									)
+			  AND EVNA_READY_TO_GO = '0'
+			  AND EVNA_CAUSE = 'NOIPP';
+		End If;
+
+		-- Modif AD le 21/05/2013 : Après un A46, créer un événement A31
+		nb_for_loop := 1;
+		If SUBSTR(v_evtHl7, 1, 3) = 'A46' Then
+			nb_for_loop := nb_for_loop + 1;
+		End If;
+
+		For i in 1..nb_for_loop Loop
+			Select /* T_EVTHM_PATIENT_M */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+			INSERT /* T_EVTHM_PATIENT_M */
+			INTO SCL_EVT (EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT, EVNT_NIP, EVNT_ID_SEJOUR,
+						EVNT_NUM_SEJ, EVNT_NUM_RSS, EVNT_CODE_EVT, EVNT_ID_OBJ, EVNT_CODE_PERE, EVNT_ID_PERE, EVNT_ACTION,
+						EVNT_ID_APLI, EVNT_ID_EVT_EXTERNE,	EVNT_EVTHL7, EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE,
+						EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM)
+			VALUES (n_IdEvnt, current_date, '0', :new.PATI_ID_ETAB, :new.PATI_ID_PATI, :new.PATI_NIP, NULL,
+					NULL, NULL, 'PATIENT', :new.PATI_ID_PATI, NULL, :new.PATI_ID_PATI_MAI, v_Action,
+					n_IdApli, v_idTrameOrigine, v_evtHl7, current_date, current_date, 0, :new.PATI_UTI_CRE,
+					:new.PATI_UTI_MOD, :new.PATI_PRO_CRE, :new.PATI_PRO_MOD, :new.PATI_COL_COM);
+
+			v_Xml := null;
+			v_Xml := v_Xml || '&lt;PATIENT>';
+			v_Xml := v_Xml || pckPfiHmM.val2xml('ID_PATI', :new.PATI_ID_PATI);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('NOM_USU', :new.PATI_NOM_USU);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('NOM_NAI', :new.PATI_NOM_NAI);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('PRENOM', :new.PATI_PRENOM);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('DAT_NAI', :new.PATI_DAT_NAI);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('SEXE', :new.PATI_SEXE);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('NIP', :new.PATI_NIP);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('NIP_OLD', :old.PATI_NIP);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('ID_PATI_MAI', :new.PATI_ID_PATI_MAI);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('DATE_SUP', :new.PATI_DAT_SUP);
+			v_Xml := v_Xml || '&lt;/PATIENT>';
+
+			Select /* T_EVTHM_PATIENT_M */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+			INSERT /* T_EVTHM_PATIENT_M */
+			INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+							EVND_DAT_CRE,EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			VALUES (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', v_Action, v_Xml, current_date,
+					current_date, 0, 3, 3, 2, 2, NULL);
+
+			v_Xml := null;
+			v_Xml := v_Xml || '&lt;ADRESSE>';
+			v_Xml := v_Xml || pckPfiHmM.val2xml('RUE1', ADR.ADRE_LIGNE1);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('RUE2', ADR.ADRE_LIGNE2);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('CP', ADR.ADRE_COD_POS);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('VILLE', ADR.ADRE_VILLE);
+			v_Xml := v_Xml || pckPfiHmM.val2xml('PAYS', ADR.ADRE_PAYS);
+			v_Xml := v_Xml || '&lt;/ADRESSE>';
+
+			INSERT /* T_EVTHM_PATIENT_M */
+			INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+							EVND_DAT_CRE,EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			VALUES (n_IdEvnd+1, n_IdEvnt, 2, 'ADRESSE', 'I', v_Xml,
+					current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			v_Xml := null;
+			v_Xml := v_Xml || '&lt;TEL>';
+			v_Xml := v_Xml || pckPfiHmM.val2xml('NUM', TEL.TELE_NUM_TEL);
+			v_Xml := v_Xml || '&lt;/TEL>';
+
+			INSERT /* T_EVTHM_PATIENT_M */
+			INTO SCL_EVT_DATA (evnd_id_evnd, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION, EVND_VAL,
+							EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			VALUES (n_IdEvnd+2, n_IdEvnt, 3, 'TEL', 'I', v_Xml,
+					current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+			If SUBSTR(v_evtHl7, 1, 3) = 'A46' Then
+				-- Modification
+				v_Action := 'M';
+				v_evtHL7 := 'A31' || '-' || '--';
+			End If;
+		End Loop;
+
+	EXCEPTION
+		WHEN OTHERS THEN
+			Begin
+				pckTrigPfiHmM.PRO_traceScl(:new.PATI_NIP, null, :new.PATI_ID_ETAB, 'Evt Patient', 'T_EVTHM_PATIENT_M', '0', SUBSTR(SQLERRM,1,2000));
+			Exception
+				When Others Then
+					return;
+			End;
+	END;
+
+END T_EVTHM_PATIENT_M;</pre>
+</div>
+</div>
+<div id="Child.0.3.4">
+<div class="childreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVTHM_PAT_CONFIDENTIALITE_M
+AFTER UPDATE
+ON IDE_PATIENT
+FOR EACH ROW
+BEGIN
+	DECLARE
+		n_IdEvnt					SCL_EVT.EVNT_ID_EVNT%TYPE;
+		n_IdEvnd					SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+		v_Xml						SCL_EVT_DATA.EVND_VAL%TYPE;
+		n_idApli					SCL_APPLI.APLI_ID%Type;
+		v_idTrameOrigine			VARCHAR2(19);
+		v_action					scl_evt.EVNT_ACTION%Type;
+		v_evtHL7					SCL_EVT.EVNT_EVTHL7%Type;
+		v_srvNip					scl_appli.APLI_SRVIPP%type;
+		v_patiStatut				bas_parametre.para_valeur%Type;
+
+	BEGIN
+		-- #Version# 1.16 du 01/03/2016 #Version#
+
+		-- noPerroquet
+		If (:new.PATI_COD_CFD = :old.PATI_COD_CFD or (:new.PATI_COD_CFD is null and :old.PATI_COD_CFD is null))
+		Then
+			return;
+		End If;
+
+		-- Vérifier si nip renseigné
+		v_patiStatut := pckPfiHmM.FUN_litValParam('NUM_PATI_STATUT', :new.PATI_ID_ETAB, current_date);
+		If v_patiStatut = 'J' Then
+			v_srvNip := '0';
+		Else
+			Begin
+				Select /* T_EVTHM_PAT_CONFIDENTIALITE_M */ max(APLI_SRVIPP)
+				  Into v_srvNip
+				  From scl_appli
+				 Where APLI_TYPE in ('HM','OM')
+				   And APLI_ID_ETAB = :new.PATI_ID_ETAB;
+
+			Exception
+				When others Then
+					v_srvNip := '0';
+			End;
+		End If;
+		If v_srvNip = '1' Then
+			-- HM est serveur d'IPP
+			If :new.PATI_NIP is null Then
+				return;
+			End If;
+		End If;
+
+		-- Action
+		v_action := 'M'	;
+
+		-- Evénement HL7
+		-- L'information confidentialite est transmise par le biais d'un message Séjour
+		-- C'est ScLite, lorsqu'il traitera l'évènement, qui déterminera le séjour à transmettre.
+		-- Le séjour élu sera déterminé comme suit :
+		-- 	-> Séjour ouvert le plus récent
+		-- 	-> A défaut, la pré admission la plus récente
+		--	-> A défaut, le séjour le plus récent
+		v_evtHL7 := 'Z99' || '---';
+
+		-- On stocke l'appli externe qui a généré l'évènement et l'Id de l'évènement Origine reçu, le cas échéant
+		pckTrigPfiHmM.PRO_appliExt(:new.PATI_DAT_MOD, :new.PATI_COL_COM, n_idApli, v_idTrameOrigine);
+
+		Select /* T_EVTHM_PAT_CONFIDENTIALITE_M */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+		INSERT /* T_EVTHM_PAT_CONFIDENTIALITE_M */
+		INTO SCL_EVT (EVNT_ID_EVNT, EVNT_DATE, EVNT_VERSION, EVNT_ID_ETAB, EVNT_ID_PATIENT,
+					EVNT_NIP, EVNT_ID_SEJOUR, EVNT_NUM_SEJ, EVNT_NUM_RSS, EVNT_CODE_EVT,
+					EVNT_ID_OBJ, EVNT_CODE_PERE, EVNT_ID_PERE, EVNT_ACTION,	EVNT_ID_APLI,
+					EVNT_ID_EVT_EXTERNE, EVNT_EVTHL7, EVNT_DAT_CRE,	EVNT_DAT_MOD, EVNT_NMAJ,
+      				EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM )
+		VALUES (n_IdEvnt, current_date, '0', :new.PATI_ID_ETAB, :new.PATI_ID_PATI,
+				:new.PATI_NIP, NULL, NULL, NULL, 'CONFIDENTIALITE',
+				:new.PATI_ID_PATI, NULL, NULL, v_action, n_IdApli,
+				v_idTrameOrigine, v_evtHl7,  current_date, current_date, 0,
+      			:new.PATI_UTI_CRE, :new.PATI_UTI_MOD, :new.PATI_PRO_CRE, :new.PATI_PRO_MOD, :new.PATI_COL_COM );
+
+		-- Segment Patient
+		v_xml := null;
+	    v_xml := v_xml || '&lt;PATIENT>';
+	    v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', :new.PATI_ID_PATI);
+	    v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', :new.PATI_NOM_USU);
+	    v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', :new.PATI_NOM_NAI);
+	    v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', :new.PATI_PRENOM);
+	    v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', :new.PATI_DAT_NAI);
+	    v_xml := v_xml || pckPfiHmM.val2xml('SEXE', :new.PATI_SEXE);
+	    v_xml := v_xml || pckPfiHmM.val2xml('NIP', :new.PATI_NIP);
+	    v_xml := v_xml || '&lt;/PATIENT>';
+
+		Select /* T_EVTHM_PAT_CONFIDENTIALITE_M */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+		INSERT /* T_EVTHM_PAT_CONFIDENTIALITE_M */
+		INTO SCL_EVT_DATA (EVND_ID_EVND, EVND_ID_EVNT, EVND_INDEX, EVND_TYPE, EVND_ACTION,
+						EVND_VAL, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE,
+					    EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM )
+		VALUES (n_IdEvnd, n_IdEvnt, 1, 'PATIENT', v_action, v_Xml,
+				current_date, current_date, 0, 3, 3, 2, 2, NULL );
+
+	EXCEPTION
+		WHEN OTHERS THEN
+			Begin
+				pckTrigPfiHmM.PRO_traceScl(:new.PATI_NIP, null, :new.PATI_ID_ETAB, 'Evt Patient', 'T_EVTHM_PAT_CONFIDENTIALITE_M', '0', SUBSTR(SQLERRM,1,2000));
+			Exception
+				When Others Then
+					return;
+			End;
+	END;
+
+END T_EVTHM_PAT_CONFIDENTIALITE_M;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">T_EVTHM_PLAN_SOINS_ACTE_CS</td>
+<td class="currentcell">TRIGGER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 1)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PLAN_SOINS_BIO_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 2)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PRESTATION_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 3)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_SCHG_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 4)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_SEJOUR_AMC_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 5)">
+<td>PCAP_XROUGE</td>
+<td>SWM_MAJ_SPE_RDEP</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 6)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_IDE_SEJOUR_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 7)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MED_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 8)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MED_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 9)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PATIENT_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 10)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PAT_CONFIDENTIALITE_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 11)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ADRESSE_PAP_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 12)">
+<td>PCAP_XROUGE</td>
+<td>PCKPFIHMM</td>
+<td>PACKAGE&nbsp;BODY</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 13)">
+<td>PCAP_XROUGE</td>
+<td>SWM_MAJ_SPE_ALRG</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 14)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCRIPTION_LIGNE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 15)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIVITE_SAISIES_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 16)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCRIPTION_LISTE_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 17)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCRIPTION_PERIODE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 18)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIVITE_SAISIES_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 19)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIVITE_SAISIES_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 20)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIV_SAIS_NGAP_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 21)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ADRESSE_ASSURE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 22)">
+<td>PCAP_XROUGE</td>
+<td>SWM_MAJ_SPE_ATCD</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 23)">
+<td>PCAP_XROUGE</td>
+<td>SWM_MAJ_SPE_DENU</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 24)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_GREFFE_INSCRIPT_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 25)">
+<td>PCAP_XROUGE</td>
+<td>PCKPFISCLM</td>
+<td>PACKAGE&nbsp;BODY</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 26)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MODE_LEGAL_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 27)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_APPROVISIONNEMENT_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 28)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ADRESSE_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 29)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_AUTONOMIE_PATIENT_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 30)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_TELEPHONE_ASSURE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 31)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_TELEPHONE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 32)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_TELEPHONE_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 33)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_DIAG_ANTECED_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 34)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MVT_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 35)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PAP_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 36)">
+<td>PCAP_XROUGE</td>
+<td>SID_PSY_PATIENT</td>
+<td>VIEW</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 37)">
+<td>PCAP_XROUGE</td>
+<td>SWM_MAJ_SPE_INCL</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 38)">
+<td>PCAP_XROUGE</td>
+<td>SWM_MAJ_SPE_SOIP</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 39)">
+<td>PCAP_XROUGE</td>
+<td>FUN_GETFRM_SWMALRG</td>
+<td>FUNCTION</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 40)">
+<td>PCAP_XROUGE</td>
+<td>FUN_GETFRM_SWMDATE</td>
+<td>FUNCTION</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 41)">
+<td>PCAP_XROUGE</td>
+<td>FUN_GETFRM_SWMDDIA</td>
+<td>FUNCTION</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 42)">
+<td>PCAP_XROUGE</td>
+<td>FUN_GETFRM_SWMDIAG</td>
+<td>FUNCTION</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 43)">
+<td>PCAP_XROUGE</td>
+<td>FUN_GETFRM_SWMDPAT</td>
+<td>FUNCTION</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 44)">
+<td>PCAP_XROUGE</td>
+<td>SWM_MAJ_ISOL_SWM</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 45)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PATIENT_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 46)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ADRESSE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 47)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_IDE_SEJOUR_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 48)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_SEJOUR_COUVSOC_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 49)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PMS_RSS2_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 50)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCLISTE_BIO_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 51)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PMS_RSS_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 52)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCLISTE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 53)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PMS_RSS_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 54)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_CONSTANTES_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 55)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_DONNEE_MED_HLA_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 56)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_DONNEE_MED_UNIQUE_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 57)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ETAP_SAISIE_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 58)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_EVTS_MEDIC_PATIENT_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 59)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_FRM_INSTANCE_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 60)">
+<td>PCAP_XROUGE</td>
+<td>PRO_RAZ_SMS</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 61)">
+<td>PCAP_XROUGE</td>
+<td>PRO_ANONYM_HM</td>
+<td>PROCEDURE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 62)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_DIAG_SAISIS_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 63)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ACTIV_SAIS_NGAP_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 64)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_DIAG_SAISIS_S</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 65)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_FT_SAISIS_CMS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 66)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_DOSSIER_TECHNIQUE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 67)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_SAD_ETAT_NAVIGATEUR_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 68)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PATIENT_DIALYSE_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 69)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PATIENT_LIEN_DOMAINE_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 70)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PATIENT_LIEN_ETEX_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 71)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MVT_C</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 72)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PATIENT_ARCHIVE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 73)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_MVT_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 74)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_ASSURE_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 75)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PEC_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 76)">
+<td>PCAP_XROUGE</td>
+<td>PCKPFIHMM</td>
+<td>PACKAGE</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.5">
+<div class="childreport"><table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.5">
+<div class="childreport"><table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.5">
+<div class="childreport"><table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.5">
+<div class="childreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.5">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.5">
+<div class="childreport"><table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.5">
+<div class="childreport"><table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.5">
+<div class="childreport"><table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.5">
+<div class="childreport"><table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.5">
+<div class="childreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.5">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.5">
+<div class="childreport"><table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.5">
+<div class="childreport"><table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.5">
+<div class="childreport"><table id="Table.37" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.5">
+<div class="childreport"><table id="Table.38" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.5">
+<div class="childreport"><table id="Table.39" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.5">
+<div class="childreport"><table id="Table.40" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.5">
+<div class="childreport"><table id="Table.41" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.5">
+<div class="childreport"><table id="Table.42" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.5">
+<div class="childreport"><table id="Table.43" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.21.5">
+<div class="childreport"><table id="Table.44" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.22.5">
+<div class="childreport"><table id="Table.45" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.23.5">
+<div class="childreport"><table id="Table.46" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.24.5">
+<div class="childreport"><table id="Table.47" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.25.5">
+<div class="childreport"><table id="Table.48" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.26.5">
+<div class="childreport"><table id="Table.49" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.27.5">
+<div class="childreport"><table id="Table.50" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.28.5">
+<div class="childreport"><table id="Table.51" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.29.5">
+<div class="childreport"><table id="Table.52" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.30.5">
+<div class="childreport"><table id="Table.53" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.31.5">
+<div class="childreport"><table id="Table.54" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.32.5">
+<div class="childreport"><table id="Table.55" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.33.5">
+<div class="childreport"><table id="Table.56" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.34.5">
+<div class="childreport"><table id="Table.57" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.35.5">
+<div class="childreport"><table id="Table.58" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.36.5">
+<div class="childreport"><table id="Table.59" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.37.5">
+<div class="childreport"><table id="Table.60" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.38.5">
+<div class="childreport"><table id="Table.61" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.39.5">
+<div class="childreport"><table id="Table.62" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.40.5">
+<div class="childreport"><table id="Table.63" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.41.5">
+<div class="childreport"><table id="Table.64" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.42.5">
+<div class="childreport"><table id="Table.65" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.43.5">
+<div class="childreport"><table id="Table.66" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.44.5">
+<div class="childreport"><table id="Table.67" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.45.5">
+<div class="childreport"><table id="Table.68" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.46.5">
+<div class="childreport"><table id="Table.69" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.47.5">
+<div class="childreport"><table id="Table.70" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.48.5">
+<div class="childreport"><table id="Table.71" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.49.5">
+<div class="childreport"><table id="Table.72" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.50.5">
+<div class="childreport"><table id="Table.73" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.51.5">
+<div class="childreport"><table id="Table.74" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.52.5">
+<div class="childreport"><table id="Table.75" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.53.5">
+<div class="childreport"><table id="Table.76" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.54.5">
+<div class="childreport"><table id="Table.77" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.55.5">
+<div class="childreport"><table id="Table.78" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.56.5">
+<div class="childreport"><table id="Table.79" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.57.5">
+<div class="childreport"><table id="Table.80" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.58.5">
+<div class="childreport"><table id="Table.81" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.59.5">
+<div class="childreport"><table id="Table.82" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.60.5">
+<div class="childreport"><table id="Table.83" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.61.5">
+<div class="childreport"><table id="Table.84" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.62.5">
+<div class="childreport"><table id="Table.85" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.63.5">
+<div class="childreport"><table id="Table.86" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.64.5">
+<div class="childreport"><table id="Table.87" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.65.5">
+<div class="childreport"><table id="Table.88" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.66.5">
+<div class="childreport"><table id="Table.89" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.67.5">
+<div class="childreport"><table id="Table.90" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.68.5">
+<div class="childreport"><table id="Table.91" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.69.5">
+<div class="childreport"><table id="Table.92" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.70.5">
+<div class="childreport"><table id="Table.93" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.71.5">
+<div class="childreport"><table id="Table.94" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.72.5">
+<div class="childreport"><table id="Table.95" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.73.5">
+<div class="childreport"><table id="Table.96" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.74.5">
+<div class="childreport"><table id="Table.97" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.75.5">
+<div class="childreport"><table id="Table.98" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.76.5">
+<div class="childreport"><table id="Table.99" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.100" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>IDE_PATIENT</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>258204</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>8123</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>224</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>258204</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Table&nbsp;des&nbsp;Patients</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.101" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.102" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PATI_I1</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">PATI_ID_ETAB,&nbsp;PATI_INS</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 1)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>FUNCTION-BASED&nbsp;NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>ENABLED</td>
+<td>NO</td>
+<td>PATI_ID_ETAB,&nbsp;SYS_NC00070$,&nbsp;SYS_NC00071$</td>
+<td>TRIM("PATI_NOM_USU_MAJ")</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 2)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>FUNCTION-BASED&nbsp;NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>ENABLED</td>
+<td>NO</td>
+<td>PATI_ID_ETAB,&nbsp;SYS_NC00070$,&nbsp;SYS_NC00071$</td>
+<td>TRIM("PATI_PRE_MAJ")</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 3)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I3</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_ETAB,&nbsp;PATI_NIP,&nbsp;PATI_NIP_ANC</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 4)">
+<td>PCAP_XROUGE</td>
+<td>IDX_I_PAT_NIP</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_NIP</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 5)">
+<td>PCAP_XROUGE</td>
+<td>PK_IDE_PATIENT</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 6)">
+<td>PCAP_XROUGE</td>
+<td>I_UN_IDE_PATIENT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_ETAB,&nbsp;PATI_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 7)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PATI_ID_TITR</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_TITR</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 8)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_NOM_NAI_MAJ,&nbsp;PATI_ID_PATI_MAI,&nbsp;PATI_DAT_SUP,&nbsp;PATI_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 9)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I2</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_NOM_USU_MAJ,&nbsp;PATI_ID_PATI_MAI,&nbsp;PATI_DAT_SUP,&nbsp;PATI_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 10)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I3</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_ETAB,&nbsp;PATI_ID_PATI,&nbsp;PATI_ID_PATI_MAI,&nbsp;PATI_DAT_SUP</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 11)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I5</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_NOM_USU,&nbsp;PATI_PRENOM,&nbsp;PATI_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 12)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I6</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_NOM_USU,&nbsp;PATI_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 13)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I10</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_DAT_NAI,&nbsp;PATI_DAT_NAI_LIB</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 14)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PATI_ID_MEDE_REF</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_MEDE_REF</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 15)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PATI_ID_MEDE_TRT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_MEDE_TRT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 16)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IDE_PATIENT_BAS_PAYS</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_PAYS</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 17)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_ID_CAGE_CIVILITE_I1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_CAGE_CIVILITE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 18)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IDE_PATIENT_IDE_PATIENT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_PATI_MAI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 19)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PATI_ID_CAPE_CAUSEDECES</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_CAPE_CAUSEDECES</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 20)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IDE_PATIENT_BAS_ETABLISSE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_ETAB</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 21)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IDE_PATIENT_IDE_ETABLISSE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_ETEX</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 22)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PATI_ID_CAGE_MATRIMONIALE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_CAGE_MATRIMONIALE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 23)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PATI_ID_CAPE_JUS_IDENTITE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_CAPE_JUS_IDENTITE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 102, 24)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PATI_ID_SEJO_HOSP_COURANT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PATI_ID_SEJO_HOSP_COURANT</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.103" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 103)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PATI_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 103)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I1</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_INS</td>
+<td>2</td>
+<td>22</td>
+<td>22</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.104" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 104)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PATI_I2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 104)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I2</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>SYS_NC00070$</td>
+<td>2</td>
+<td>60</td>
+<td>60</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 104)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I2</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>SYS_NC00071$</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.105" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 105)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PATI_I2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 105)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I2</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>SYS_NC00070$</td>
+<td>2</td>
+<td>60</td>
+<td>60</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 105)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I2</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>SYS_NC00071$</td>
+<td>3</td>
+<td>60</td>
+<td>60</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.106" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 106)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PATI_I3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 106)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I3</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_NIP</td>
+<td>2</td>
+<td>15</td>
+<td>15</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 106)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PATI_I3</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_NIP_ANC</td>
+<td>3</td>
+<td>15</td>
+<td>15</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.107" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 107)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_I_PAT_NIP</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_NIP</td>
+<td class="currentcell">1</td>
+<td class="currentcell">15</td>
+<td class="currentcell">15</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.108" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 108)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_IDE_PATIENT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.109" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 109)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_UN_IDE_PATIENT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 109)">
+<td>PCAP_XROUGE</td>
+<td>I_UN_IDE_PATIENT</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.110" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 110)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PATI_ID_TITR</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_TITR</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.8">
+<div class="childreport"><table id="Table.111" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 111)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_PATIENT_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_NOM_NAI_MAJ</td>
+<td class="currentcell">1</td>
+<td class="currentcell">60</td>
+<td class="currentcell">60</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 111)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I1</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI_MAI</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 111)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I1</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_DAT_SUP</td>
+<td>3</td>
+<td>7</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 111)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I1</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI</td>
+<td>4</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.8">
+<div class="childreport"><table id="Table.112" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 112)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_PATIENT_I2</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_NOM_USU_MAJ</td>
+<td class="currentcell">1</td>
+<td class="currentcell">60</td>
+<td class="currentcell">60</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 112)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I2</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI_MAI</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 112)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I2</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_DAT_SUP</td>
+<td>3</td>
+<td>7</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 112)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I2</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI</td>
+<td>4</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.8">
+<div class="childreport"><table id="Table.113" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 113)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_PATIENT_I3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 113)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I3</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 113)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I3</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI_MAI</td>
+<td>3</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 113)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I3</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_DAT_SUP</td>
+<td>4</td>
+<td>7</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.8">
+<div class="childreport"><table id="Table.114" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 114)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_PATIENT_I5</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_NOM_USU</td>
+<td class="currentcell">1</td>
+<td class="currentcell">60</td>
+<td class="currentcell">60</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 114)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I5</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_PRENOM</td>
+<td>2</td>
+<td>60</td>
+<td>60</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 114)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I5</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI</td>
+<td>3</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.8">
+<div class="childreport"><table id="Table.115" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 115)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_PATIENT_I6</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_NOM_USU</td>
+<td class="currentcell">1</td>
+<td class="currentcell">60</td>
+<td class="currentcell">60</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 115)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I6</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_ID_PATI</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.8">
+<div class="childreport"><table id="Table.116" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 116)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_PATIENT_I10</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_DAT_NAI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">7</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 116)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_PATIENT_I10</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PATI_DAT_NAI_LIB</td>
+<td>2</td>
+<td>10</td>
+<td>10</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.8">
+<div class="childreport"><table id="Table.117" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 117)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PATI_ID_MEDE_REF</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_MEDE_REF</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.8">
+<div class="childreport"><table id="Table.118" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 118)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PATI_ID_MEDE_TRT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_MEDE_TRT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.8">
+<div class="childreport"><table id="Table.119" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 119)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IDE_PATIENT_BAS_PAYS</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_PAYS</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.8">
+<div class="childreport"><table id="Table.120" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 120)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PATI_ID_CAGE_CIVILITE_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_CAGE_CIVILITE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.8">
+<div class="childreport"><table id="Table.121" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 121)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IDE_PATIENT_IDE_PATIENT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_PATI_MAI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.8">
+<div class="childreport"><table id="Table.122" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 122)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PATI_ID_CAPE_CAUSEDECES</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_CAPE_CAUSEDECES</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.8">
+<div class="childreport"><table id="Table.123" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 123)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IDE_PATIENT_BAS_ETABLISSE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETAB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.21.8">
+<div class="childreport"><table id="Table.124" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 124)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IDE_PATIENT_IDE_ETABLISSE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_ETEX</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.22.8">
+<div class="childreport"><table id="Table.125" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 125)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PATI_ID_CAGE_MATRIMONIALE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_CAGE_MATRIMONIALE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.23.8">
+<div class="childreport"><table id="Table.126" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 126)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PATI_ID_CAPE_JUS_IDENTITE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_CAPE_JUS_IDENTITE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.24.8">
+<div class="childreport"><table id="Table.127" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 127)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PATI_ID_SEJO_HOSP_COURANT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_PATIENT</td>
+<td class="currentcell">PATI_ID_SEJO_HOSP_COURANT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

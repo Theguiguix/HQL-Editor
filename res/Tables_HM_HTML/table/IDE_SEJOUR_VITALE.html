@@ -1,0 +1,1961 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="IDE_SEJOUR_VITALE/report.js" type="text/javascript"></script>
+<link href="IDE_SEJOUR_VITALE/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">IDE_SEJOUR_VITALE</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">SEJV_ID_SEJO</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">Yes</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;séjour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>SEJV_ADR_LG2_ASS</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>2</td>
+<td>Ass&nbsp;Résidence,&nbsp;bâtiment,&nbsp;immeubl</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>SEJV_ADR_LG3_ASS</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>3</td>
+<td>Ass&nbsp;N°&nbsp;et&nbsp;libellé&nbsp;de&nbsp;la&nbsp;voie</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>SEJV_ADR_LG4_ASS</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Ass&nbsp;Lieu-dit&nbsp;ou&nbsp;service&nbsp;particu</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>SEJV_NOM_NAI_ASS</td>
+<td>VARCHAR2(27&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;de&nbsp;l'assure</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>SEJV_PRE_ASS</td>
+<td>VARCHAR2(27&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Prénom&nbsp;de&nbsp;l'assure</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>SEJV_ID_SEJV</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>7</td>
+<td>Identification&nbsp;de&nbsp;la&nbsp;table</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>SEJV_DAT_FIN_VAL</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;validité&nbsp;de&nbsp;la&nbsp;carte&nbsp;Vitale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>SEJV_NUM_SEC_SOC</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>NIR&nbsp;(N°&nbsp;d'identification&nbsp;au&nbsp;répertoire&nbsp;ou&nbsp;n°&nbsp;de&nbsp;sécurité&nbsp;sociale)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>SEJV_GRD_RGM</td>
+<td>NUMBER(2,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Grand&nbsp;régime</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>SEJV_ORG_GST</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Organisme&nbsp;gestionnaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>SEJV_CTR_GST</td>
+<td>NUMBER(4,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Centre&nbsp;gestionnaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>SEJV_COD_GST</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Code&nbsp;gestion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>SEJV_NOM_USU_PAT</td>
+<td>VARCHAR2(35&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Nom&nbsp;usuel&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>SEJV_NOM_NAI_PAT</td>
+<td>VARCHAR2(27&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>SEJV_PRE_PAT</td>
+<td>VARCHAR2(35&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Prénom&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>SEJV_NOM_USU_ASS</td>
+<td>VARCHAR2(27&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Nom&nbsp;usuel&nbsp;de&nbsp;l'assure</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>SEJV_ADR_LG1_PAT</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>N°&nbsp;d'appartement,&nbsp;escalier,&nbsp;couloir,&nbsp;étage</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>SEJV_ADR_LG2_PAT</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Résidence,&nbsp;bâtiment,&nbsp;immeuble,&nbsp;tour,&nbsp;entrée</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>SEJV_ADR_LG3_PAT</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>N°&nbsp;et&nbsp;libellé&nbsp;de&nbsp;la&nbsp;voie</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>SEJV_ADR_LG4_PAT</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Lieu-dit&nbsp;ou&nbsp;service&nbsp;particulier&nbsp;de&nbsp;distribution</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>SEJV_ADR_LG1_ASS</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Ass&nbsp;N°&nbsp;d'appartement,&nbsp;escalier</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>SEJV_DAT_NAI_LIB</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Date&nbsp;de&nbsp;naissance&nbsp;sécu&nbsp;au&nbsp;format&nbsp;jj/mm/aaaa</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>SEJV_RGN_NAI</td>
+<td>NUMBER(1,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Rang&nbsp;de&nbsp;naissance&nbsp;du&nbsp;bénéficiaire&nbsp;:&nbsp;1&nbsp;Pas&nbsp;de&nbsp;jumeau&nbsp;ou&nbsp;premier&nbsp;jumeau&nbsp;2&nbsp;Deuxième&nbsp;jumeau&nbsp;ou&nbsp;triplet&nbsp;3&nbsp;Troisième&nbsp;triplet&nbsp;4&nbsp;à&nbsp;9&nbsp;Valeurs&nbsp;possibles&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>SEJV_QUALITE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Qualité&nbsp;du&nbsp;bénéficiaire&nbsp;:&nbsp;00&nbsp;Assuré&nbsp;01&nbsp;Ascendant,&nbsp;descendant&nbsp;02&nbsp;Conjoint&nbsp;03&nbsp;Conjoint&nbsp;divorcé&nbsp;04&nbsp;Concubin&nbsp;05&nbsp;Conjoint&nbsp;séparé&nbsp;06&nbsp;Enfant&nbsp;08&nbsp;Conjoint&nbsp;veuf&nbsp;09&nbsp;Autre&nbsp;ayant&nbsp;droit&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>SEJV_COD_SER_AMO</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Code&nbsp;service&nbsp;AMO&nbsp;bénéficiaire&nbsp;:&nbsp;00&nbsp;Bénéficiaire&nbsp;sans&nbsp;complémentaire&nbsp;01&nbsp;CMU&nbsp;gérée&nbsp;par&nbsp;AMO&nbsp;02&nbsp;CMU&nbsp;gérée&nbsp;par&nbsp;AMC&nbsp;en&nbsp;convention&nbsp;ou&nbsp;délégation&nbsp;avec&nbsp;AMO&nbsp;03&nbsp;CMU&nbsp;gérée&nbsp;par&nbsp;AMC&nbsp;10&nbsp;Sortant&nbsp;de&nbsp;CMU&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>SEJV_DAT_DEB_AMO</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;droits&nbsp;service&nbsp;AMO&nbsp;bénéf.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>SEJV_DAT_FIN_AMO</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;droits&nbsp;service&nbsp;AMO&nbsp;bénéf.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>SEJV_MUT_IDE</td>
+<td>NUMBER(8,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>Identification&nbsp;mutuelle.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>SEJV_MUT_GAR</td>
+<td>VARCHAR2(8&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Garanties&nbsp;effectives</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>SEJV_MUT_IND_TRT</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Indicateur&nbsp;de&nbsp;traitement&nbsp;mutuelle&nbsp;:&nbsp;00&nbsp;Pas&nbsp;de&nbsp;tiers&nbsp;payant&nbsp;compl.&nbsp;autorisé&nbsp;01&nbsp;TP&nbsp;autorisé&nbsp;selon&nbsp;accord&nbsp;PS&nbsp;/&nbsp;AMC&nbsp;02&nbsp;TP&nbsp;autorisé&nbsp;selon&nbsp;réglementation&nbsp;71&nbsp;Bénéficiaire&nbsp;sortant&nbsp;de&nbsp;CMU&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>SEJV_MUT_SER_ASC</td>
+<td>VARCHAR2(17&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Services&nbsp;associés</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>SEJV_MUT_COD_STS</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Code&nbsp;aiguillage&nbsp;STS&nbsp;:&nbsp;4&nbsp;Service&nbsp;tarification&nbsp;FFSA&nbsp;5&nbsp;Service&nbsp;tarification&nbsp;CTIP&nbsp;M&nbsp;Service&nbsp;tarification&nbsp;FNMF&nbsp;R&nbsp;Service&nbsp;tarification&nbsp;A8&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>SEJV_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>34</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>SEJV_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>35</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>SEJV_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>36</td>
+<td>Numéro&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>SEJV_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>37</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>SEJV_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>SEJV_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>SEJV_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>SEJV_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>SEJV_NUM_SESSION</td>
+<td>VARCHAR2(128&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Numéro&nbsp;de&nbsp;session.&nbsp;Cette&nbsp;colonne&nbsp;n'est&nbsp;renseignée&nbsp;que&nbsp;pendant&nbsp;la&nbsp;lecture&nbsp;de&nbsp;la&nbsp;carte&nbsp;avant&nbsp;l'affectation&nbsp;à&nbsp;un&nbsp;séjour.&nbsp;Cette&nbsp;colonne&nbsp;doit&nbsp;être&nbsp;nulle&nbsp;dans&nbsp;tous&nbsp;les&nbsp;enregistrements&nbsp;de&nbsp;prod</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>SEJV_ID_PATI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Fk&nbsp;vers&nbsp;le&nbsp;patient&nbsp;(IDE_PATIENT),&nbsp;utile&nbsp;avant&nbsp;de&nbsp;lier&nbsp;les&nbsp;infos&nbsp;vitales&nbsp;à&nbsp;un&nbsp;séjour&nbsp;via&nbsp;SEJV_ID_SEJO</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>SEJV_DAT_LECTURE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Date&nbsp;utilisée&nbsp;lors&nbsp;de&nbsp;la&nbsp;lecture&nbsp;des&nbsp;informations&nbsp;vitales</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>SEJV_TYP_CARTE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Type&nbsp;de&nbsp;carte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>SEJV_NUM_SERIE</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Numéro&nbsp;de&nbsp;série&nbsp;de&nbsp;la&nbsp;carte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>SEJV_TYP_RUF</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Type&nbsp;RUF&nbsp;d'identification&nbsp;du&nbsp;porteur&nbsp;de&nbsp;la&nbsp;carte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>SEJV_ADM_RUF1</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Données&nbsp;administration&nbsp;carte&nbsp;RUF1</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>SEJV_ADM_RUF2</td>
+<td>VARCHAR2(24&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Données&nbsp;administration&nbsp;carte&nbsp;RUF2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>SEJV_ADM</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Données&nbsp;administration</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>SEJV_RUF_FAMILLE</td>
+<td>VARCHAR2(55&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Données&nbsp;RUF&nbsp;Famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>SEJV_ADR_LG5_PAT</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Adresse&nbsp;ligne&nbsp;5&nbsp;pour&nbsp;le&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>SEJV_ADR_LG5_ASS</td>
+<td>VARCHAR2(32&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Adresse&nbsp;ligne&nbsp;5&nbsp;pour&nbsp;l'assuré</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>SEJV_COD_SER_AMO_FAMILLE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Code&nbsp;service&nbsp;AMO&nbsp;Famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>SEJV_DAT_DEB_AMO_FAMILLE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;du&nbsp;service&nbsp;AMO&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>SEJV_DAT_FIN_AMO_FAMILLE</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;du&nbsp;service&nbsp;AMO&nbsp;famillle</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>SEJV_AMC_NUM_B2</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Numéro&nbsp;complémentaire&nbsp;B2</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>SEJV_AMC_NUM_EDI</td>
+<td>VARCHAR2(19&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Numéro&nbsp;complémentaire&nbsp;EDI</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>SEJV_AMC_NUM_ADH</td>
+<td>VARCHAR2(8&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Numéro&nbsp;adhérent&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>SEJV_AMC_IND_TRT</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Indicateur&nbsp;de&nbsp;traitement&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>SEJV_AMC_DAT_DEB</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Date&nbsp;début&nbsp;validité&nbsp;présence&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>SEJV_AMC_DAT_FIN</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Date&nbsp;fin&nbsp;validité&nbsp;présence&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>SEJV_AMC_COD_ROUTAGE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>Code&nbsp;routage&nbsp;flux&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 63)">
+<td>SEJV_AMC_HOTE</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>64</td>
+<td>Id&nbsp;Hôte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 64)">
+<td>SEJV_AMC_NOM_DOM</td>
+<td>VARCHAR2(20&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>65</td>
+<td>Nom&nbsp;de&nbsp;domaine</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 65)">
+<td>SEJV_AMC_COD_STS</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>66</td>
+<td>Code&nbsp;aiguillage&nbsp;STS&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 66)">
+<td>SEJV_AMC_SER_ASC</td>
+<td>VARCHAR2(17&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>67</td>
+<td>Services&nbsp;associés&nbsp;au&nbsp;contrat&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 67)">
+<td>SEJV_AMC_RUF</td>
+<td>VARCHAR2(115&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>68</td>
+<td>Données&nbsp;RUF&nbsp;pour&nbsp;bénéficiaire&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 68)">
+<td>SEJV_NIR</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>69</td>
+<td>NIR&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 69)">
+<td>SEJV_DAT_NIR</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>70</td>
+<td>Date&nbsp;de&nbsp;certification&nbsp;du&nbsp;NIR&nbsp;du&nbsp;patient</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 70)">
+<td>SEJV_LIB_EXO</td>
+<td>VARCHAR2(2000&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>71</td>
+<td>Libellé&nbsp;de&nbsp;l'exonération</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 71)">
+<td>SEJV_INF_CPL</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>72</td>
+<td>Information&nbsp;complémentaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 72)">
+<td>SEJV_CTR_CRT</td>
+<td>VARCHAR2(4&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>73</td>
+<td>Centre&nbsp;d'émission&nbsp;de&nbsp;la&nbsp;carte</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 73)">
+<td>SEJV_MED_TRT</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>74</td>
+<td>Déclaration&nbsp;de&nbsp;médecin&nbsp;traitant.&nbsp;En&nbsp;API&nbsp;Hospitalière,&nbsp;libellé.&nbsp;En&nbsp;API&nbsp;SESAM-Vitale&nbsp;:&nbsp;0&nbsp;pour'&nbsp;Oui',&nbsp;1&nbsp;pour&nbsp;'Non',&nbsp;'&nbsp;'&nbsp;pour&nbsp;'Ne&nbsp;sait&nbsp;pas'</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 74)">
+<td>SEJV_AMO_RUF</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>75</td>
+<td>Données&nbsp;RUF&nbsp;AMO&nbsp;bénéficiaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 75)">
+<td>SEJV_MUT_DON_COMPL</td>
+<td>VARCHAR2(115&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>76</td>
+<td>Données&nbsp;complémentaires&nbsp;mutuelle</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 76)">
+<td>SEJV_AMC_DON_COMPL</td>
+<td>VARCHAR2(115&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>77</td>
+<td>Données&nbsp;complémentaires&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 77)">
+<td>SEJV_CMU_TYP</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>78</td>
+<td>Type&nbsp;de&nbsp;CMU</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 78)">
+<td>SEJV_CMU_LIB</td>
+<td>VARCHAR2(128&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>79</td>
+<td>Libellé&nbsp;de&nbsp;la&nbsp;CMU</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 79)">
+<td>SEJV_DAT_DEB_CMU</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>80</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;CMU</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 80)">
+<td>SEJV_DAT_FIN_CMU</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>81</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;CMU</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 81)">
+<td>SEJV_FRM_E112</td>
+<td>VARCHAR2(4&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>82</td>
+<td>Formulaire&nbsp;E112</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 82)">
+<td>SEJV_TYP_EXP_E112</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>83</td>
+<td>Type&nbsp;d'expérimentation&nbsp;E112</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 83)">
+<td>SEJV_ART_E112</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>84</td>
+<td>Article&nbsp;du&nbsp;code&nbsp;européen&nbsp;E112</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 84)">
+<td>SEJV_ACT_E112</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>85</td>
+<td>Activité&nbsp;du&nbsp;bénéficiaire&nbsp;E112</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 85)">
+<td>SEJV_DAT_FRM_E112</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>86</td>
+<td>Date&nbsp;du&nbsp;formulaire&nbsp;E112</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 86)">
+<td>SEJV_DAT_DEB_E112</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>87</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;validité&nbsp;E112</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 87)">
+<td>SEJV_DAT_FIN_E112</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>88</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;validité&nbsp;E112</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 88)">
+<td>SEJV_FAM_FRM_E112</td>
+<td>VARCHAR2(4&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>89</td>
+<td>Formulaire&nbsp;E112&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 89)">
+<td>SEJV_TYP_EXP_FAM_E112</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>90</td>
+<td>Type&nbsp;d'expérimentation&nbsp;E112&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 90)">
+<td>SEJV_FAM_ART_E112</td>
+<td>VARCHAR2(3&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>91</td>
+<td>Article&nbsp;du&nbsp;code&nbsp;européen&nbsp;E112&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 91)">
+<td>SEJV_FAM_ACT_E112</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>92</td>
+<td>Activité&nbsp;du&nbsp;bénéficiaire&nbsp;E112&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 92)">
+<td>SEJV_DAT_FRM_FAM_E112</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>93</td>
+<td>Date&nbsp;du&nbsp;formulaire&nbsp;E112&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 93)">
+<td>SEJV_DAT_DEB_FAM_E112</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>94</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;validité&nbsp;E112&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 94)">
+<td>SEJV_DAT_FIN_FAM_E112</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>95</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;validité&nbsp;E112&nbsp;famille</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 95)">
+<td>SEJV_ACC_COMPL</td>
+<td>VARCHAR2(19&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>96</td>
+<td>Accès&nbsp;aux&nbsp;données&nbsp;complémentaires&nbsp;saisies</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 96)">
+<td>SEJV_TYP_API</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>97</td>
+<td>Pour&nbsp;indiquer&nbsp;avec&nbsp;quel&nbsp;type&nbsp;d'API&nbsp;la&nbsp;carte&nbsp;a&nbsp;été&nbsp;lue&nbsp;:&nbsp;H&nbsp;pour&nbsp;Hospitalière,&nbsp;P&nbsp;pour&nbsp;SESAM-Vitale</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 97)">
+<td>SEJV_GRD_RGM_LIB</td>
+<td>VARCHAR2(128&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>98</td>
+<td>Libellé&nbsp;du&nbsp;régime</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 98)">
+<td>SEJV_COD_GST_LIB</td>
+<td>VARCHAR2(128&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>99</td>
+<td>Libellé&nbsp;du&nbsp;code&nbsp;gestion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 99)">
+<td>SEJV_INF_CPL_LIB</td>
+<td>VARCHAR2(64&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>100</td>
+<td>Libellé&nbsp;de&nbsp;l'information&nbsp;complémentaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 100)">
+<td>SEJV_CTR_CRT_LIB</td>
+<td>VARCHAR2(128&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>101</td>
+<td>Libellé&nbsp;du&nbsp;centre&nbsp;payeur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 101)">
+<td>SEJV_COD_SER_AMO_LIB</td>
+<td>VARCHAR2(64&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>102</td>
+<td>Libellé&nbsp;du&nbsp;code&nbsp;service&nbsp;AMO</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 102)">
+<td>SEJV_ACT_LIB_E112</td>
+<td>VARCHAR2(16&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>103</td>
+<td>Libellé&nbsp;de&nbsp;l'activité&nbsp;du&nbsp;bénéficiaire</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 103)">
+<td>SEJV_LIB_QUALITE</td>
+<td>VARCHAR2(64&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>104</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 104)">
+<td>SEJV_MUT_SER</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>105</td>
+<td>Type&nbsp;de&nbsp;services&nbsp;associés&nbsp;:&nbsp;1&nbsp;Numéro&nbsp;téléphonique&nbsp;2&nbsp;Code&nbsp;minitel&nbsp;3&nbsp;Adresse&nbsp;Transpac&nbsp;4&nbsp;Adresse&nbsp;Internet&nbsp;5&nbsp;Texte&nbsp;libre&nbsp;6&nbsp;Informations&nbsp;structurées&nbsp;à&nbsp;afficher&nbsp;7&nbsp;Informations&nbsp;structurées&nbsp;à&nbsp;traiter&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 105)">
+<td>SEJV_SER_MUT_LIB</td>
+<td>VARCHAR2(64&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>106</td>
+<td>Libellé&nbsp;du&nbsp;service&nbsp;mutuelle</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 106)">
+<td>SEJV_TRT_MUT_LIB</td>
+<td>VARCHAR2(128&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>107</td>
+<td>Libellé&nbsp;de&nbsp;l'indicateur&nbsp;de&nbsp;traitement&nbsp;de&nbsp;la&nbsp;mutuelle</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 107)">
+<td>SEJV_TRT_AMC_LIB</td>
+<td>VARCHAR2(128&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>108</td>
+<td>Libellé&nbsp;de&nbsp;l'indicateur&nbsp;de&nbsp;traitement&nbsp;de&nbsp;l'AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 108)">
+<td>SEJV_AMC_SER</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>109</td>
+<td>Type&nbsp;de&nbsp;services&nbsp;associés&nbsp;AMC</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 109)">
+<td>SEJV_NUM_ORDRE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>110</td>
+<td>Numéro&nbsp;d¿ordre&nbsp;du&nbsp;patient&nbsp;sur&nbsp;la&nbsp;carte&nbsp;Vitale.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 110)">
+<td>SEJV_INSA</td>
+<td>VARCHAR2(30&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>111</td>
+<td>Identifiant&nbsp;National&nbsp;de&nbsp;Santé&nbsp;Aléatoire</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_IDE_SEJOUR_VITALE_IDE_SEJOU</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR</td>
+<td class="currentcell">PK_IDE_SEJOUR</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_SEJV_ID_PATI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>PK_IDE_SEJOUR_VITALE</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_IDE_SEJOUR_VITALE</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>SYS_C004649372</td>
+<td>Check</td>
+<td>"SEJV_ID_SEJV"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>SYS_C004649373</td>
+<td>Check</td>
+<td>"SEJV_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>SYS_C004649374</td>
+<td>Check</td>
+<td>"SEJV_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>SYS_C004649375</td>
+<td>Check</td>
+<td>"SEJV_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>SYS_C004649376</td>
+<td>Check</td>
+<td>"SEJV_UTI_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">SEJV_ID_SEJO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">SEJV_ID_PATI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">SEJV_ID_SEJV</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">SEJV_ID_SEJV</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">SEJV_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">SEJV_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">SEJV_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">SEJV_UTI_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>50420</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>3397</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>440</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>50420</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 13, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRO_ANONYM_HM</td>
+<td class="currentcell">PROCEDURE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR_VITALE</td>
+<td class="currentcell">TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>IDE_SEJOUR_VITALE</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>50420</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>3397</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>440</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>50420</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Données&nbsp;Vitale</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 17, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_SEJV_I1</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">SEJV_ID_SEJO,&nbsp;SEJV_ID_PATI,&nbsp;SEJV_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 17, 1)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_SEJV_ID_PATI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>SEJV_ID_PATI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 17, 2)">
+<td>PCAP_XROUGE</td>
+<td>PK_IDE_SEJOUR_VITALE</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>SEJV_ID_SEJV</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 17, 3)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_SEJOUR_VITALE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>SEJV_NUM_SESSION</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 17, 4)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_SEJOUR_VITALE_I1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>SEJV_DAT_NAI_LIB,&nbsp;SEJV_PRE_PAT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 17, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IDE_SEJOUR_VITALE_IDE_SEJ</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>SEJV_ID_SEJO</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_SEJV_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR_VITALE</td>
+<td class="currentcell">SEJV_ID_SEJO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)">
+<td>PCAP_XROUGE</td>
+<td>IDX_SEJV_I1</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR_VITALE</td>
+<td>SEJV_ID_PATI</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)">
+<td>PCAP_XROUGE</td>
+<td>IDX_SEJV_I1</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR_VITALE</td>
+<td>SEJV_DAT_CRE</td>
+<td>3</td>
+<td>7</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_SEJV_ID_PATI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR_VITALE</td>
+<td class="currentcell">SEJV_ID_PATI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_IDE_SEJOUR_VITALE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR_VITALE</td>
+<td class="currentcell">SEJV_ID_SEJV</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_SEJOUR_VITALE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR_VITALE</td>
+<td class="currentcell">SEJV_NUM_SESSION</td>
+<td class="currentcell">1</td>
+<td class="currentcell">128</td>
+<td class="currentcell">128</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_IDE_SEJOUR_VITALE_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR_VITALE</td>
+<td class="currentcell">SEJV_DAT_NAI_LIB</td>
+<td class="currentcell">1</td>
+<td class="currentcell">10</td>
+<td class="currentcell">10</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)">
+<td>PCAP_XROUGE</td>
+<td>IDX_IDE_SEJOUR_VITALE_I1</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_SEJOUR_VITALE</td>
+<td>SEJV_PRE_PAT</td>
+<td>2</td>
+<td>35</td>
+<td>35</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 23)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IDE_SEJOUR_VITALE_IDE_SEJ</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_SEJOUR_VITALE</td>
+<td class="currentcell">SEJV_ID_SEJO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

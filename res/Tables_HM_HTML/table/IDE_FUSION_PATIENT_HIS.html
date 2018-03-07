@@ -1,0 +1,2020 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="IDE_FUSION_PATIENT_HIS/report.js" type="text/javascript"></script>
+<link href="IDE_FUSION_PATIENT_HIS/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">IDE_FUSION_PATIENT_HIS</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">IFPH_ID_IFPH</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;de&nbsp;la&nbsp;table&nbsp;IDE_FUSION_PATIENT_HIS</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>IFPH_ID_PATI_MAI</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>2</td>
+<td>Identifiant&nbsp;du&nbsp;patient&nbsp;maître</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>IFPH_ID_PATI_FUS</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>3</td>
+<td>Identifiant&nbsp;du&nbsp;patient&nbsp;fusionné</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>IFPH_NOM_USU</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Nom&nbsp;usuel&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>IFPH_NOM_USU_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Nom&nbsp;usuel&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>IFPH_NOM_NAI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>6</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>IFPH_NOM_NAI_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>7</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>IFPH_PRENOM</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>8</td>
+<td>Prénom&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>IFPH_PRENOM_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
+<td>Prénom&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>IFPH_NOM_USU_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Nom&nbsp;usuel&nbsp;MAJ&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>IFPH_NOM_USU_MAJ_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Nom&nbsp;usuel&nbsp;MAJ&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>IFPH_NOM_NAI_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;MAJ&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>IFPH_NOM_NAI_MAJ_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;MAJ&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>IFPH_PRE_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Prénom&nbsp;MAJ&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>IFPH_PRE_MAJ_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Prénom&nbsp;MAJ&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>IFPH_NOM_NAI_PHO</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;en&nbsp;phonétique&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>IFPH_NOM_NAI_PHO_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Nom&nbsp;de&nbsp;naissance&nbsp;en&nbsp;phonétique&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>IFPH_NOM_USU_PHO</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Nom&nbsp;usuel&nbsp;en&nbsp;phonétique&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>IFPH_NOM_USU_PHO_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Nom&nbsp;usuel&nbsp;en&nbsp;phonétique&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>IFPH_DAT_NAI</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Date&nbsp;de&nbsp;naissance&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>IFPH_DAT_NAI_ORI</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Date&nbsp;de&nbsp;naissance&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>IFPH_DAT_NAI_LIB</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Date&nbsp;de&nbsp;naissance&nbsp;libre&nbsp;(AMO)&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>IFPH_DAT_NAI_LIB_ORI</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Date&nbsp;de&nbsp;naissance&nbsp;libre&nbsp;(AMO)&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>IFPH_SEXE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Sexe&nbsp;(F&nbsp;:&nbsp;Femme,&nbsp;H&nbsp;:&nbsp;Homme,&nbsp;I&nbsp;:&nbsp;Indéterminé)&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>IFPH_SEXE_ORI</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Sexe&nbsp;(F&nbsp;:&nbsp;Femme,&nbsp;H&nbsp;:&nbsp;Homme,&nbsp;I&nbsp;:&nbsp;Indéterminé)&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>IFPH_ID_TITR</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Identifiant&nbsp;du&nbsp;titre&nbsp;du&nbsp;patient&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>IFPH_ID_TITR_ORI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Identifiant&nbsp;du&nbsp;titre&nbsp;du&nbsp;patient&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>IFPH_NIP</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>IPP&nbsp;-&nbsp;NIP&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 28)">
+<td>IFPH_NIP_ORI</td>
+<td>VARCHAR2(15&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>29</td>
+<td>IPP&nbsp;-&nbsp;NIP&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 29)">
+<td>IFPH_ID_MEDE_REF</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>30</td>
+<td>Identifiant&nbsp;du&nbsp;praticien&nbsp;référent&nbsp;du&nbsp;patient&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 30)">
+<td>IFPH_ID_MEDE_REF_ORI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>31</td>
+<td>Identifiant&nbsp;du&nbsp;praticien&nbsp;référent&nbsp;du&nbsp;patient&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 31)">
+<td>IFPH_ID_MEDE_TRT</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>32</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;traitant&nbsp;du&nbsp;patient&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 32)">
+<td>IFPH_ID_MEDE_TRT_ORI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>33</td>
+<td>Identifiant&nbsp;du&nbsp;médecin&nbsp;traitant&nbsp;du&nbsp;patient&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 33)">
+<td>IFPH_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>34</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 34)">
+<td>IFPH_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>35</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 35)">
+<td>IFPH_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>36</td>
+<td>N°&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 36)">
+<td>IFPH_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>37</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 37)">
+<td>IFPH_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>38</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 38)">
+<td>IFPH_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>39</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 39)">
+<td>IFPH_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>40</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 40)">
+<td>IFPH_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>41</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 41)">
+<td>IFPH_ID_VILL</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>42</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;ville&nbsp;(Fk&nbsp;vers&nbsp;BAS_VILL)&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 42)">
+<td>IFPH_ID_VILL_ORI</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>43</td>
+<td>Identifiant&nbsp;de&nbsp;la&nbsp;ville&nbsp;(Fk&nbsp;vers&nbsp;BAS_VILL)&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 43)">
+<td>IFPH_ADR_LG1</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>44</td>
+<td>Ligne&nbsp;1&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 44)">
+<td>IFPH_ADR_LG1_ORI</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>45</td>
+<td>Ligne&nbsp;1&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 45)">
+<td>IFPH_ADR_LG2</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>46</td>
+<td>Ligne&nbsp;2&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 46)">
+<td>IFPH_ADR_LG2_ORI</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>47</td>
+<td>Ligne&nbsp;2&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 47)">
+<td>IFPH_ADR_LG3</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>48</td>
+<td>Ligne&nbsp;3&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 48)">
+<td>IFPH_ADR_LG3_ORI</td>
+<td>VARCHAR2(255&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>49</td>
+<td>Ligne&nbsp;3&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 49)">
+<td>IFPH_ADR_COD_POSTAL</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>50</td>
+<td>Code&nbsp;postal&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 50)">
+<td>IFPH_ADR_COD_POS_ORI</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>51</td>
+<td>Code&nbsp;postal&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 51)">
+<td>IFPH_ADR_VILLE</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>52</td>
+<td>Ville&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 52)">
+<td>IFPH_ADR_VIL_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>53</td>
+<td>Ville&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 53)">
+<td>IFPH_ADR_PAYS</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>54</td>
+<td>Pays&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 54)">
+<td>IFPH_ADR_PAY_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>55</td>
+<td>Pays&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 55)">
+<td>IFPH_ADR_COD_POS_REEL</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>56</td>
+<td>Code&nbsp;postal&nbsp;réel&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 56)">
+<td>IFPH_ADR_COD_POS_REE_ORI</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>57</td>
+<td>Code&nbsp;postal&nbsp;réel&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 57)">
+<td>IFPH_ADR_VIL_MAJ</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>58</td>
+<td>Ville&nbsp;normalisée&nbsp;en&nbsp;majuscules&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 58)">
+<td>IFPH_ADR_VIL_MAJ_ORI</td>
+<td>VARCHAR2(60&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>59</td>
+<td>Ville&nbsp;normalisée&nbsp;en&nbsp;majuscules&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 59)">
+<td>IFPH_TEL_NUM</td>
+<td>VARCHAR2(40&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>60</td>
+<td>Numéro&nbsp;de&nbsp;téléphone&nbsp;principal&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;après&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 60)">
+<td>IFPH_TEL_NUM_ORI</td>
+<td>VARCHAR2(40&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>61</td>
+<td>Numéro&nbsp;de&nbsp;téléphone&nbsp;principal&nbsp;de&nbsp;l'adresse&nbsp;principale&nbsp;du&nbsp;patient&nbsp;maître&nbsp;avant&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 61)">
+<td>IFPH_EMAIL</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>62</td>
+<td>Email&nbsp;du&nbsp;patient&nbsp;maitre&nbsp;apres&nbsp;fusion</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 62)">
+<td>IFPH_EMAILORI</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>63</td>
+<td>Email&nbsp;du&nbsp;patient&nbsp;maitre&nbsp;avant&nbsp;fusion</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_IFPH_ID_MEDE_REF</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_MEDECIN</td>
+<td class="currentcell">PK_IDE_MEDECIN</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_IFPH_ID_MEDE_REF_ORI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>FK_IFPH_ID_MEDE_TRT</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>FK_IFPH_ID_MEDE_TRT_ORI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_MEDECIN</td>
+<td>PK_IDE_MEDECIN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>FK_IFPH_ID_PATI_FUS</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>FK_IFPH_ID_PATI_MAI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_PATIENT</td>
+<td>PK_IDE_PATIENT</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>FK_IFPH_ID_TITR</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_TITRE</td>
+<td>PK_IDE_TITRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>FK_IFPH_ID_TITR_ORI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>IDE_TITRE</td>
+<td>PK_IDE_TITRE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>18/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>FK_IFPH_ID_VILL</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_VILLE</td>
+<td>PK_BAS_VILLE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>10/01/18</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>FK_IFPH_ID_VILL_ORI</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_VILLE</td>
+<td>PK_BAS_VILLE</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>10/01/18</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>PK_IDE_FUSION_PATIENT_HIS</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_IDE_FUSION_PATIENT_HIS</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>SYS_C004649003</td>
+<td>Check</td>
+<td>"IFPH_ID_IFPH"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>SYS_C004649004</td>
+<td>Check</td>
+<td>"IFPH_ID_PATI_MAI"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>SYS_C004649005</td>
+<td>Check</td>
+<td>"IFPH_ID_PATI_FUS"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>SYS_C004649006</td>
+<td>Check</td>
+<td>"IFPH_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>SYS_C004649007</td>
+<td>Check</td>
+<td>"IFPH_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>SYS_C004649008</td>
+<td>Check</td>
+<td>"IFPH_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">IFPH_ID_MEDE_REF</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">IFPH_ID_MEDE_REF_ORI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">IFPH_ID_MEDE_TRT</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">IFPH_ID_MEDE_TRT_ORI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">IFPH_ID_PATI_FUS</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">IFPH_ID_PATI_MAI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">IFPH_ID_TITR</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">IFPH_ID_TITR_ORI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">IFPH_ID_VILL</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">IFPH_ID_VILL_ORI</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">IFPH_ID_IFPH</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">IFPH_ID_IFPH</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">IFPH_ID_PATI_MAI</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">IFPH_ID_PATI_FUS</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">IFPH_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">IFPH_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">IFPH_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>791</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>42</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>269</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>791</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>18/07/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>IDE_FUSION_PATIENT_HIS</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>791</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>42</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>269</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>791</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>18/07/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Table&nbsp;historique&nbsp;des&nbsp;fusions&nbsp;champ&nbsp;à&nbsp;champ&nbsp;de&nbsp;patients</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_TITR</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">null</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">IFPH_ID_TITR</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 1)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_VILL</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_VILL</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 2)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_MEDE_REF</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_MEDE_REF</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 3)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_MEDE_TRT</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_MEDE_TRT</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_PATI_FUS</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_PATI_FUS</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 5)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_PATI_MAI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_PATI_MAI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 6)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_TITR_ORI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_TITR_ORI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 7)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_VILL_ORI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_VILL_ORI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 8)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_MEDE_REF_ORI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_MEDE_REF_ORI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 9)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_IFPH_ID_MEDE_TRT_ORI</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_MEDE_TRT_ORI</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 25, 10)">
+<td>PCAP_XROUGE</td>
+<td>PK_IDE_FUSION_PATIENT_HIS</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>IFPH_ID_IFPH</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 26)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_TITR</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_TITR</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 27)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_VILL</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_VILL</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_MEDE_REF</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_MEDE_REF</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.29" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 29)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_MEDE_TRT</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_MEDE_TRT</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.30" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 30)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_PATI_FUS</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_PATI_FUS</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.31" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 31)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_PATI_MAI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_PATI_MAI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 32)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_TITR_ORI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_TITR_ORI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 33)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_VILL_ORI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_VILL_ORI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.8">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 34)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_MEDE_REF_ORI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_MEDE_REF_ORI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.8">
+<div class="childreport"><table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 35)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_IFPH_ID_MEDE_TRT_ORI</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_MEDE_TRT_ORI</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.8">
+<div class="childreport"><table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 36)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDE_FUSION_PATIENT_HIS</td>
+<td class="currentcell">IFPH_ID_IFPH</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

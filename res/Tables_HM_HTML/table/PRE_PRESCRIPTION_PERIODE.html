@@ -1,0 +1,1883 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=Cp1252" />
+<script src="PRE_PRESCRIPTION_PERIODE/report.js" type="text/javascript"></script>
+<link href="PRE_PRESCRIPTION_PERIODE/report.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="banner">
+<table width="98%"><tr>
+<td><h2 class="banner">PRE_PRESCRIPTION_PERIODE</h2></td>
+</tr></table></div>
+<div id="maintabs">
+<div class="currentmaintab" onclick="onSelectMainTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 1)">
+<div>
+<p>Contraintes</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 2)">
+<div>
+<p>Droits</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 3)">
+<div>
+<p>Statistiques</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 4)">
+<div>
+<p>Déclencheurs</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 5)">
+<div>
+<p>Dépendances</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 6)">
+<div>
+<p>Détails</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 7)">
+<div>
+<p>Partitions</p>
+</div>
+</div>
+<div class="maintab" onclick="onSelectMainTab(this, 8)">
+<div>
+<p>Index</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="masterreports">
+<div id="Master.0">
+<div class="currentmasterreport">
+<table id="Table.0" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>DATA_TYPE</th>
+<th>NULLABLE</th>
+<th>DATA_DEFAULT</th>
+<th>COLUMN_ID</th>
+<th>COMMENTS</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
+<td class="currentcell">PRPE_ID_PRPE</td>
+<td class="currentcell">NUMBER(19,0)</td>
+<td class="currentcell">No</td>
+<td class="currentcell">null</td>
+<td class="currentcell">1</td>
+<td class="currentcell">Identifiant&nbsp;période&nbsp;de&nbsp;prescription</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 1)">
+<td>PRPE_ID_PRPL</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>2</td>
+<td>Fk&nbsp;vers&nbsp;la&nbsp;ligne&nbsp;de&nbsp;prescription</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>PRPE_DAT_DEB_POS</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>3</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;posologie.&nbsp;Si&nbsp;modifiée&nbsp;avant&nbsp;validation&nbsp;de&nbsp;la&nbsp;prescription,&nbsp;peut&nbsp;nécessiter&nbsp;la&nbsp;mise&nbsp;à&nbsp;jour&nbsp;de&nbsp;prpe_dat_fin_generation&nbsp;(WI&nbsp;109473&nbsp;-&nbsp;1.1505)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>PRPE_DAT_FIN_POS</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>4</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;posologie</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>PRPE_DAT_FIN_GENERATION</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>5</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;dernière&nbsp;génération.&nbsp;Doit&nbsp;être&nbsp;initialisée&nbsp;par&nbsp;défaut&nbsp;à&nbsp;prpe_dat_deb_pos.&nbsp;NB&nbsp;:&nbsp;si&nbsp;ce&nbsp;champ&nbsp;est&nbsp;null,&nbsp;la&nbsp;ligne&nbsp;n'apparaitra&nbsp;pas&nbsp;dans&nbsp;le&nbsp;plan&nbsp;de&nbsp;soins&nbsp;(WI&nbsp;109473&nbsp;-&nbsp;1.1505)&nbsp;</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>PRPE_DAT_CRE</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>6</td>
+<td>Date&nbsp;de&nbsp;création</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>PRPE_DAT_MOD</td>
+<td>DATE</td>
+<td>No</td>
+<td>null</td>
+<td>7</td>
+<td>Date&nbsp;de&nbsp;modification</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>PRPE_NMAJ</td>
+<td>NUMBER(13,0)</td>
+<td>No</td>
+<td>null</td>
+<td>8</td>
+<td>Numéro&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>PRPE_UTI_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>No</td>
+<td>null</td>
+<td>9</td>
+<td>Utilisateur&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>PRPE_UTI_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>10</td>
+<td>Utilisateur&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 10)">
+<td>PRPE_PRO_CRE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>11</td>
+<td>Profil&nbsp;créateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 11)">
+<td>PRPE_PRO_MOD</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>12</td>
+<td>Profil&nbsp;modificateur</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 12)">
+<td>PRPE_COL_COM</td>
+<td>VARCHAR2(80&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>13</td>
+<td>Colonne&nbsp;communication</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 13)">
+<td>PRPE_IND_AFF_CYCLE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>14</td>
+<td>Indique&nbsp;si&nbsp;l'on&nbsp;doit&nbsp;ou&nbsp;non&nbsp;afficher&nbsp;la&nbsp;période&nbsp;au&nbsp;niveau&nbsp;de&nbsp;la&nbsp;liste&nbsp;des&nbsp;éléments&nbsp;de&nbsp;la&nbsp;prescription.&nbsp;Si&nbsp;cet&nbsp;indicateur&nbsp;vaut&nbsp;0,&nbsp;alors&nbsp;il&nbsp;a&nbsp;été&nbsp;auto-généré&nbsp;par&nbsp;la&nbsp;prescription&nbsp;via&nbsp;les&nbsp;cycles.&nbsp;Ces&nbsp;éléments&nbsp;auto-générés&nbsp;servent&nbsp;à&nbsp;générer&nbsp;le&nbsp;plan&nbsp;de&nbsp;soin,&nbsp;mais&nbsp;pas&nbsp;à&nbsp;l'affichage</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 14)">
+<td>PRPE_NBR_DEB_HEURE</td>
+<td>NUMBER(6,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>15</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;posologie&nbsp;(indice&nbsp;heure),</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 15)">
+<td>PRPE_NBR_DEB_JOUR</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>16</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;posologie&nbsp;(indice&nbsp;jour),</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 16)">
+<td>PRPE_NBR_DEB_MOIS</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>17</td>
+<td>Date&nbsp;de&nbsp;début&nbsp;de&nbsp;posologie&nbsp;(indice&nbsp;mois),</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 17)">
+<td>PRPE_NBR_FIN_HEURE</td>
+<td>NUMBER(6,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>18</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;posologie&nbsp;(indice&nbsp;heure),</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 18)">
+<td>PRPE_NBR_FIN_JOUR</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>19</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;posologie&nbsp;(indice&nbsp;jour),</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 19)">
+<td>PRPE_NBR_FIN_MOIS</td>
+<td>NUMBER(3,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>20</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;posologie&nbsp;(indice&nbsp;mois),</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 20)">
+<td>PRPE_IND_DEB_ANTERIEUR</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>21</td>
+<td>Indique&nbsp;si&nbsp;le&nbsp;démarrage&nbsp;de&nbsp;la&nbsp;prescription&nbsp;s'effectue&nbsp;n&nbsp;jours&nbsp;AVANT&nbsp;la&nbsp;date&nbsp;d'affectation&nbsp;(n&nbsp;=&nbsp;PRPE_NBR_DEB_HEURE,&nbsp;PRPE_NBR_DEB_JOUR,&nbsp;PRPE_NBR_DEB_MOIS),&nbsp;0&nbsp;=&nbsp;fonctionnement&nbsp;normal,&nbsp;début&nbsp;>=&nbsp;date&nbsp;d'affectation,&nbsp;1&nbsp;=&nbsp;Fonctionnement&nbsp;en&nbsp;négatif,&nbsp;début&nbsp;antérieur&nbsp;à&nbsp;la&nbsp;date&nbsp;d'affectation</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 21)">
+<td>PRPE_TYPE</td>
+<td>VARCHAR2(2&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>22</td>
+<td>Type&nbsp;de&nbsp;période&nbsp;:&nbsp;0&nbsp;=&nbsp;date,&nbsp;1=période</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 22)">
+<td>PRPE_IND_PLANIFIE</td>
+<td>VARCHAR2(1&nbsp;BYTE)</td>
+<td>Yes</td>
+<td>null</td>
+<td>23</td>
+<td>Indicateur&nbsp;de&nbsp;mise&nbsp;à&nbsp;jour&nbsp;du&nbsp;RDV&nbsp;prévu&nbsp;par&nbsp;la&nbsp;planification&nbsp;(utilisé&nbsp;pour&nbsp;la&nbsp;prescription&nbsp;d'actes&nbsp;et&nbsp;examens)</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 23)">
+<td>PRPE_DUR_GAZ</td>
+<td>NUMBER(2,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>24</td>
+<td>Donne&nbsp;la&nbsp;durée&nbsp;d'application&nbsp;du&nbsp;gaz,&nbsp;en&nbsp;mode&nbsp;continu&nbsp;il&nbsp;vaudra&nbsp;24,&nbsp;pour&nbsp;les&nbsp;autres&nbsp;valeurs&nbsp;rentrées&nbsp;par&nbsp;l'utilisateur,&nbsp;on&nbsp;mettra&nbsp;la&nbsp;saisie.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 24)">
+<td>PRPE_ID_CAGE_DEB_UNITE</td>
+<td>NUMBER(19,0)</td>
+<td>Yes</td>
+<td>null</td>
+<td>25</td>
+<td>Unité&nbsp;temporelle&nbsp;exprimant&nbsp;le&nbsp;décallage&nbsp;de&nbsp;la&nbsp;ligne&nbsp;par&nbsp;rapport&nbsp;au&nbsp;début&nbsp;de&nbsp;la&nbsp;prescription&nbsp;type,&nbsp;CAGE_ID_TYIN&nbsp;=&nbsp;1408</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 25)">
+<td>PRPE_DAT_FIN_POS_INIT</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>26</td>
+<td>Date&nbsp;de&nbsp;fin&nbsp;de&nbsp;posologie&nbsp;initiale&nbsp;,&nbsp;en&nbsp;cas&nbsp;de&nbsp;modification&nbsp;de&nbsp;traitement.&nbsp;Ceci&nbsp;permet&nbsp;d'afficher&nbsp;dans&nbsp;le&nbsp;plan&nbsp;de&nbsp;soins&nbsp;la&nbsp;ligne&nbsp;mère&nbsp;en&nbsp;phase&nbsp;transitoire&nbsp;(avant&nbsp;arrêt&nbsp;de&nbsp;l'IDE)&nbsp;jusqu'à&nbsp;sa&nbsp;fin&nbsp;initialement&nbsp;saisie.&nbsp;Le&nbsp;process&nbsp;de&nbsp;modification&nbsp;de&nbsp;traitement&nbsp;HM&nbsp;ne&nbsp;permet&nbsp;pas&nbsp;de&nbsp;chevauchement&nbsp;entre&nbsp;ligne&nbsp;initiale&nbsp;et&nbsp;ligne&nbsp;modifiée.&nbsp;Ce&nbsp;champ&nbsp;permet&nbsp;de&nbsp;conserver&nbsp;l'information.</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 26)">
+<td>PRPE_DAT_DEB_AVT_ARRET</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>27</td>
+<td>Dans&nbsp;le&nbsp;cas&nbsp;d'une&nbsp;ligne&nbsp;arrêtée,&nbsp;contient&nbsp;la&nbsp;date&nbsp;de&nbsp;début&nbsp;initiale&nbsp;(PRPE_DAT_DEB_POS)&nbsp;avant&nbsp;l'arrêt&nbsp;(manuel&nbsp;ou&nbsp;par&nbsp;batch).</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 27)">
+<td>PRPE_DAT_FIN_AVT_ARRET</td>
+<td>DATE</td>
+<td>Yes</td>
+<td>null</td>
+<td>28</td>
+<td>Dans&nbsp;le&nbsp;cas&nbsp;d'une&nbsp;ligne&nbsp;arrêtée,&nbsp;contient&nbsp;la&nbsp;date&nbsp;de&nbsp;fin&nbsp;initiale&nbsp;(PRPE_DAT_FIN_POS)&nbsp;avant&nbsp;l'arrêt&nbsp;(manuel&nbsp;ou&nbsp;par&nbsp;batch)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.1">
+<div class="masterreport">
+<table id="Table.1" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>CONSTRAINT_NAME</th>
+<th>CONSTRAINT_TYPE</th>
+<th>SEARCH_CONDITION</th>
+<th>R_OWNER</th>
+<th>R_TABLE_NAME</th>
+<th>R_CONSTRAINT_NAME</th>
+<th>DELETE_RULE</th>
+<th>STATUS</th>
+<th>DEFERRABLE</th>
+<th>VALIDATED</th>
+<th>GENERATED</th>
+<th>BAD</th>
+<th>RELY</th>
+<th>LAST_CHANGE</th>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>INVALID</th>
+<th>VIEW_RELATED</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
+<td class="currentcell">FK_PRE_PRESCRIPTION_PERIODE_PR</td>
+<td class="currentcell">Foreign_Key</td>
+<td class="currentcell">null</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PRESCRIPTION_LIGNE</td>
+<td class="currentcell">PK_PRE_PRESCRIPTION_LIGNE</td>
+<td class="currentcell">NO&nbsp;ACTION</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NOT&nbsp;DEFERRABLE</td>
+<td class="currentcell">NOT&nbsp;VALIDATED</td>
+<td class="currentcell">USER&nbsp;NAME</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">18/07/17</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>FK_PRPE_ID_CAGE_DEB_UNITE</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>PCAP_XROUGE</td>
+<td>BAS_CATALOGUE_GEN</td>
+<td>PK_BAS_CATALOGUE_GEN</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>NOT&nbsp;VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>PK_PRE_PRESCRIPTION_PERIODE</td>
+<td>Primary_Key</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>17/07/17</td>
+<td>PCAP_XROUGE</td>
+<td>PK_PRE_PRESCRIPTION_PERIODE</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>SYS_C004651074</td>
+<td>Check</td>
+<td>"PRPE_ID_PRPE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>SYS_C004651075</td>
+<td>Check</td>
+<td>"PRPE_ID_PRPL"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>SYS_C004651076</td>
+<td>Check</td>
+<td>"PRPE_DAT_DEB_POS"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>SYS_C004651077</td>
+<td>Check</td>
+<td>"PRPE_DAT_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>SYS_C004651078</td>
+<td>Check</td>
+<td>"PRPE_DAT_MOD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>SYS_C004651079</td>
+<td>Check</td>
+<td>"PRPE_NMAJ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>SYS_C004651080</td>
+<td>Check</td>
+<td>"PRPE_UTI_CRE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>13/07/17</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.1">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Colonnes</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.1">
+<div id="Child.0.0.1">
+<div class="currentchildreport"><table id="Table.2" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 2)" class="currentrow">
+<td class="currentcell">PRPE_ID_PRPL</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.1">
+<div class="childreport"><table id="Table.3" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 3)" class="currentrow">
+<td class="currentcell">PRPE_ID_CAGE_DEB_UNITE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.1">
+<div class="childreport"><table id="Table.4" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 4)" class="currentrow">
+<td class="currentcell">PRPE_ID_PRPE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.1">
+<div class="childreport"><table id="Table.5" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 5)" class="currentrow">
+<td class="currentcell">PRPE_ID_PRPE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.1">
+<div class="childreport"><table id="Table.6" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 6)" class="currentrow">
+<td class="currentcell">PRPE_ID_PRPL</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.1">
+<div class="childreport"><table id="Table.7" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 7)" class="currentrow">
+<td class="currentcell">PRPE_DAT_DEB_POS</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">PRPE_DAT_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">PRPE_DAT_MOD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">PRPE_NMAJ</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">PRPE_UTI_CRE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.2">
+<div class="masterreport">
+<table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PRIVILEGE</th>
+<th>GRANTEE</th>
+<th>GRANTABLE</th>
+<th>GRANTOR</th>
+<th>OBJECT_NAME</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.3">
+<div class="masterreport">
+<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>1863291</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26546</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>108</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>1863291</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>27/11/17</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED_SINCE</td>
+<td>27/11/17</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.3">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Statistiques de colonne</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.3">
+</div>
+</div>
+</div>
+<div id="Master.4">
+<div class="masterreport">
+<table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>TRIGGER_NAME</th>
+<th>TRIGGER_TYPE</th>
+<th>TRIGGER_OWNER</th>
+<th>TRIGGERING_EVENT</th>
+<th>STATUS</th>
+<th>TABLE_NAME</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 14, 0)" class="currentrow">
+<td class="currentcell">T_EVT_PRESCRIPTION_PERIODE_CM</td>
+<td class="currentcell">AFTER&nbsp;EACH&nbsp;ROW</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">INSERT&nbsp;OR&nbsp;UPDATE</td>
+<td class="currentcell">DISABLED</td>
+<td class="currentcell">PRE_PRESCRIPTION_PERIODE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.4">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.4">
+<div id="Child.0.0.4">
+<div class="currentchildreport"><pre>
+TRIGGER "PCAP_XROUGE".T_EVT_PRESCRIPTION_PERIODE_CM
+AFTER INSERT or UPDATE
+ON PRE_PRESCRIPTION_PERIODE
+FOR EACH ROW
+DECLARE
+	Periode				PRE_PRESCRIPTION_PERIODE%RowType;
+	Ligne				PRE_PRESCRIPTION_LIGNE%RowType;
+	TypeLigne			BAS_CATALOGUE_GEN%RowType;
+	Prescription		PRE_PRESCRIPTION_LISTE%RowType;
+	Patient				IDE_PATIENT%RowType;
+	Sejour				IDE_SEJOUR%RowType;
+	v_action			SCL_EVT.EVNT_ACTION%Type;
+	v_libAction			Varchar2(200);
+	v_xml				SCL_EVT_DATA.EVND_VAL%Type;
+	n_IdEvnt			SCL_EVT.EVNT_ID_EVNT%TYPE;
+	n_IdEvnd			SCL_EVT_DATA.EVND_ID_EVND%TYPE;
+	idLigDebSeq			PRE_PRESCRIPTION_LIGNE.PRPL_ID_PRPL%Type;
+
+BEGIN
+	-- #Version# 1.16 du 16/09/2016 #Version#
+
+	Periode.PRPE_ID_PRPE := :new.PRPE_ID_PRPE;
+
+	Periode.PRPE_ID_PRPL := :new.PRPE_ID_PRPL;
+	Periode.PRPE_DAT_DEB_POS := :new.PRPE_DAT_DEB_POS;
+	Periode.PRPE_DAT_FIN_POS := :new.PRPE_DAT_FIN_POS;
+	Periode.PRPE_DAT_FIN_GENERATION := :new.PRPE_DAT_FIN_GENERATION;
+	Periode.PRPE_TYPE := :new.PRPE_TYPE;
+	Periode.PRPE_IND_AFF_CYCLE := :new.PRPE_IND_AFF_CYCLE;
+	Periode.PRPE_NBR_DEB_HEURE := :new.PRPE_NBR_DEB_HEURE;
+	Periode.PRPE_NBR_DEB_JOUR := :new.PRPE_NBR_DEB_JOUR;
+	Periode.PRPE_NBR_DEB_MOIS := :new.PRPE_NBR_DEB_MOIS;
+	Periode.PRPE_NBR_FIN_HEURE := :new.PRPE_NBR_FIN_HEURE;
+	Periode.PRPE_NBR_FIN_JOUR := :new.PRPE_NBR_FIN_JOUR;
+	Periode.PRPE_NBR_FIN_MOIS := :new.PRPE_NBR_FIN_MOIS;
+	Periode.PRPE_IND_DEB_ANTERIEUR := :new.PRPE_IND_DEB_ANTERIEUR;
+	Periode.PRPE_DUR_GAZ := :new.PRPE_DUR_GAZ;
+	Periode.PRPE_UTI_CRE := :new.PRPE_UTI_CRE;
+	Periode.PRPE_UTI_MOD := :new.PRPE_UTI_MOD;
+	Periode.PRPE_PRO_CRE := :new.PRPE_PRO_CRE;
+	Periode.PRPE_PRO_MOD := :new.PRPE_PRO_MOD;
+	Periode.PRPE_COL_COM := :new.PRPE_COL_COM;
+
+	if Periode.PRPE_ID_PRPL is not null then
+		select /* T_EVT_PRESCRIPTION_PERIODE_CM */ *
+		  into Ligne
+		  From PRE_PRESCRIPTION_LIGNE
+		 Where PRPL_ID_PRPL=Periode.PRPE_ID_PRPL;
+
+		Prescription.PRME_ID_PRME := Ligne.PRPL_ID_PRME;
+	end if;
+
+	-- Oui si
+	-- 2228 Fiche produit
+	-- 1419 Médicament
+	-- 1420 Perfusion
+	-- 1421 Aérosol
+	-- 1422 Préparations
+	-- 2536 Perfusion en Y
+	-- 2537 Perfusion en injection
+	-- 6304 PSE
+	-- 6305 PCA
+	-- 6416 PCEA
+	-- 6417 PCPA
+	-- 7184 Patch
+	-- 11372 Perfusion par gravite
+	-- 11373 PSE par injectable
+	-- 11374 PCA par injectable
+	--
+	-- Non si
+	-- 5324 Dialyse
+	-- 7081 Gaz
+	If Ligne.PRPL_ID_CAGE_TYPE is null or Ligne.PRPL_ID_CAGE_TYPE not in (2228, 1419, 1420, 1421, 1422, 2536, 2537, 6304, 6305, 6416, 6417, 7184 ,11372, 11373, 11374) then
+		Return;
+	End If;
+
+	If Prescription.PRME_ID_PRME is not null Then
+		Select /* T_EVT_PRESCRIPTION_PERIODE_CM */ *
+		  Into Prescription
+		  From PRE_PRESCRIPTION_LISTE
+		 Where PRME_ID_PRME=Prescription.PRME_ID_PRME;
+	End If;
+
+	-- On ne trace que les prescriptions médicamenteuses
+	if nvl(Prescription.PRME_ID_CAGE_TYP_PRESCRIPT,0) &lt;> 1424 then
+		return;
+	end if;
+
+	-- On ne trace que les Traitement en hospitalisation et les Traitement en séance
+	if nvl(Prescription.PRME_ID_CAGE_TYP_TRT,0) not in (1412, 1414) then
+		return;
+	end if;
+
+	Patient.PATI_ID_PATI := Prescription.PRME_ID_PATI;
+	Sejour.SEJO_ID_SEJO := Prescription.PRME_ID_SEJO;
+
+	-- On ne trace pas une prescription non encore associée à un séjour
+	if Sejour.SEJO_ID_SEJO is null then
+		return;
+	end if;
+
+
+	-- En insertion : Oui Seulement si on est sur des cycles indéfinis, avec génération des périodes suivantes au fil de l'administration
+	If inserting Then
+		If Ligne.PRPL_NBR_CYCLES is null or Ligne.PRPL_NBR_CYCLES &lt;> -1 Then
+			Return;
+		End If;
+
+		-- Nb : pour les séquences, on ne va traquer que la validation de la prpl mère pour éviter la multiplication des évènements
+		-- => seule la maman nous interesse
+		if (Ligne.PRPL_ID_PRPL_DEB_SEQUENCE is not null) and (Ligne.PRPL_ID_PRPL_DEB_SEQUENCE &lt;> Ligne.PRPL_ID_PRPL) then
+			return;
+		end if;
+
+	else
+		-- En mise à jour : Oui seulement si on a planifié un "arrêt" dans le futur (modification de la date de fin de prescription).
+		If Ligne.PRPL_MED_VAL_STATUT = '2' And Ligne.PRPL_IND_ALE_PRI_COMPTE = '2' then
+			If (:new.PRPE_DAT_FIN_AVT_ARRET = :old.PRPE_DAT_FIN_AVT_ARRET or (:new.PRPE_DAT_FIN_AVT_ARRET is null and :old.PRPE_DAT_FIN_AVT_ARRET is null)) And
+			   (:new.PRPE_DAT_FIN_POS = :old.PRPE_DAT_FIN_POS or (:new.PRPE_DAT_FIN_POS is null and :old.PRPE_DAT_FIN_POS is null))
+			Then
+				return;
+			End If;
+		Else
+			return;
+		end if;
+
+		-- Nb : pour les séquences, on ne simuler systématiquement une suppression de la prpl mère pour éviter la multiplication des évènements
+		-- => seule la maman nous interesse
+		if (Ligne.PRPL_ID_PRPL_DEB_SEQUENCE is not null) and (Ligne.PRPL_ID_PRPL_DEB_SEQUENCE &lt;> Ligne.PRPL_ID_PRPL) then
+			idLigDebSeq := Ligne.PRPL_ID_PRPL_DEB_SEQUENCE;
+			select /* T_EVT_PRESCRIPTION_PERIODE_CM */ *
+			  into Ligne
+			  From PRE_PRESCRIPTION_LIGNE
+			 Where PRPL_ID_PRPL=idLigDebSeq;
+		end if;
+	End If;
+
+	-- Nb : pour les perfusions en Y, on ne va traquer que la validation ou suppression de la prpl mère pour éviter la multiplication des évènements
+	-- => seule la maman nous interesse
+	if (Ligne.PRPL_ID_PRPL_PERFUSION is not null) then
+		return;
+	end if;
+
+	If Ligne.PRPL_ID_CAGE_TYPE is not null Then
+		Select /* T_EVT_PRESCRIPTION_PERIODE_CM */ *
+		  into TypeLigne
+		  From BAS_CATALOGUE_GEN
+		 Where CAGE_ID_CAGE=Ligne.PRPL_ID_CAGE_TYPE;
+	End If;
+
+	if Patient.PATI_ID_PATI is not null then
+		select /* T_EVT_PRESCRIPTION_PERIODE_CM */ *
+		  into Patient
+		  From IDE_PATIENT
+		 Where PATI_ID_PATI=Patient.PATI_ID_PATI;
+	end if;
+
+	if Sejour.SEJO_ID_SEJO is not null then
+		select /* T_EVT_PRESCRIPTION_PERIODE_CM */ *
+		  into Sejour
+		  From IDE_SEJOUR
+		 Where SEJO_ID_SEJO=Sejour.SEJO_ID_SEJO;
+	end if;
+
+	v_action := null;
+	-- Les etats possibles, donnant lieu à émission seront :
+	--
+	-- VALMEDTMP	Validation médicale temporaire
+	-- MODMEDTMP	Arrêt d'une prescription validée médicale temporaire dans le futur
+	-- ARRMEDTMP	Arrêt d'une prescription validée médicale temporaire
+	-- VALMED		Validation médicale
+	-- MODVALMED	Arrêt d'une prescription validée médicalement dans le futur
+	-- ARRVALMED	Arrêt d'une prescription validée médicalement
+	-- VALPHATMP	Validation pharmacie temporaire
+	-- MODPHATMP	Arrêt d'une prescription validée pharmacie temporaire dans le futur
+	-- ARRPHATMP	Arrêt d'une prescription validée pharmacie temporaire
+	-- VALPHAALT    Validation pharmacie avec Alerte
+	-- MODPHAALT	Arrêt d'une prescription validée pharmacie avec Alerte dans le futur
+	-- ARRPHAALT	Arrêt d'une prescription validée pharmacie avec Alerte
+	-- VALPHA    	Validation pharmacie
+	-- MODVALPHA	Arrêt d'une prescription validée pharmacie dans le futur
+	-- ARRVALPHA	Arrêt d'une prescription validée pharmacie
+	--
+	--
+	-- PRME_IND_PRE_VAL 	0=en attente de validation, 1=validé par le médecin, 2=Prescription annulée
+	-- PRME_PHA_VAL_STATUT  0=non validée, 1=validée, 3=en attente de prise en compte, 4=Prescription éligible, 5=validée temporairement,
+	--						6=validation pharma hétérogène,7=validation pharma hétérogène avec réserves
+	--
+	-- PRPL_MED_VAL_STATUT 	0=arrêté, 1=en attente de validation, 2=validé par le medecin
+	-- PRPL_PHA_VAL_STATUT	0=non validé, 1=validé, 2=validé avec remarque, 3=validé en alerte, 6=validé et alerte prise en compte
+	-- PRPL_ALE_PRI_COMPTE
+	If Ligne.PRPL_MED_VAL_STATUT = '2' And Ligne.PRPL_IND_ALE_PRI_COMPTE = '2' Then
+		If Ligne.PRPL_IND_TMP_MED_VAL = '1' Then
+			If inserting Then
+				-- Validation médicale temporaire
+				v_action := 'VALMEDTMP';
+				v_libAction := 'Validation médicale temporaire';
+			Else
+				-- Modification(Arrêt), Validation médicale temporaire
+				v_action := 'MODMEDTMP';
+				v_libAction := 'Modification (Validée médicale temporaire)';
+			End if;
+		Else
+			If inserting Then
+				-- Validation médicale
+				v_action := 'VALMED';
+				v_libAction := 'Validation médicale';
+			Else
+				-- Modification (Arrêt), Validation médicale
+				v_action := 'MODVALMED';
+				v_libAction := 'Modification (Validée  médicale)';
+			End if;
+		End If;
+		If Ligne.PRPL_PHA_VAL_STATUT = '3' Then
+			If inserting Then
+				-- Validation pharmacie avec Alerte
+				v_action := 'VALPHAALT';
+				v_libAction := 'Validation pharmacie avec Alerte';
+			Else
+				-- Modification (Arrêt), Validation pharmacie avec Alerte
+				v_action := 'MODPHAALT';
+				v_libAction := 'Modification (Validée pharmacie avec Alerte)';
+			End If;
+		End If;
+		If Ligne.PRPL_PHA_VAL_STATUT = '1' Then
+			If (Ligne.PRPL_IND_TMP_PHA_VAL = '1') then
+				If inserting Then
+					-- Validation pharmacie temporaire
+					v_action := 'VALPHATMP';
+					v_libAction := 'Validation pharmacie temporaire';
+				Else
+					-- Modification (Arrêt), Validation pharmacie temporaire
+					v_action := 'MODPHATMP';
+					v_libAction := 'Modification (Validée pharmacie temporaire)';
+				End If;
+			Else
+				If inserting Then
+					-- Validation pharmacie
+					v_action := 'VALPHA';
+					v_libAction := 'Validation pharmacie';
+				Else
+					-- Modification (Arrêt), Validation pharmacie
+					v_action := 'MODVALPHA';
+					v_libAction := 'Modification (Validée pharmacie)';
+				End If;
+			End If;
+		End If;
+	End If;
+	If Ligne.PRPL_MED_VAL_STATUT = '0' Then
+		-- Création d'une ligne Arrêtée : aucun sens : on dégage
+		return;
+	End If;
+
+	-- Si pas d'action remarquable, on ne poste pas d'évènement et on quitte
+	If v_action is null Then
+		return;
+	End If;
+
+	Select /* T_EVT_PRESCRIPTION_PERIODE_CM */ SEQ_SCL_EVT.nextval Into n_IdEvnt From Dual;
+
+	If inserting Then
+		-- Cycles infinis : on poste sur la période elle même
+		Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+		Into scl_Evt (evnt_id_evnt, evnt_date, evnt_version, evnt_id_etab
+						   , evnt_code_evt, evnt_id_obj, evnt_code_pere, evnt_id_pere
+						   , evnt_id_patient, evnt_nip, evnt_id_sejour, evnt_num_sej, evnt_num_rss
+						   , evnt_action, evnt_id_apli, evnt_id_evt_externe
+						   , EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM, EVNT_EVTHL7)
+					Values (n_IdEvnt, current_date, '0', Prescription.PRME_ID_ETAB
+						  , 'PRESCMEDICPERIODE', Periode.PRPE_ID_PRPE, null, Ligne.PRPL_ID_PRPL
+						  , Patient.PATI_ID_PATI, Patient.PATI_NIP, Sejour.SEJO_ID_SEJO, Sejour.SEJO_NUM_SEJ_COMM, null
+						  , v_action, null, null
+						  , current_date, current_date, 0, Periode.PRPE_UTI_CRE, Periode.PRPE_UTI_MOD, Periode.PRPE_PRO_CRE, Periode.PRPE_PRO_MOD, Periode.PRPE_COL_COM, null);
+
+	Else
+		-- Autres cas (Arrêt dans le futurà : on poste sur la ligne de prescription
+		Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+		Into scl_Evt (evnt_id_evnt, evnt_date, evnt_version, evnt_id_etab
+						   , evnt_code_evt, evnt_id_obj, evnt_code_pere, evnt_id_pere
+						   , evnt_id_patient, evnt_nip, evnt_id_sejour, evnt_num_sej, evnt_num_rss
+						   , evnt_action, evnt_id_apli, evnt_id_evt_externe
+						   , EVNT_DAT_CRE, EVNT_DAT_MOD, EVNT_NMAJ, EVNT_UTI_CRE, EVNT_UTI_MOD, EVNT_PRO_CRE, EVNT_PRO_MOD, EVNT_COL_COM, EVNT_EVTHL7)
+					Values (n_IdEvnt, current_date, '0', Prescription.PRME_ID_ETAB
+						  , 'PRESCRIPTIONMEDIC', Ligne.PRPL_ID_PRPL, null, Prescription.PRME_ID_PRME
+						  , Patient.PATI_ID_PATI, Patient.PATI_NIP, Sejour.SEJO_ID_SEJO, Sejour.SEJO_NUM_SEJ_COMM, null
+						  , v_action, null, null
+						  , current_date, current_date, 0, Periode.PRPE_UTI_CRE, Periode.PRPE_UTI_MOD, Periode.PRPE_PRO_CRE, Periode.PRPE_PRO_MOD, Periode.PRPE_COL_COM, null);
+	End If;
+
+	-- Segment Action
+	v_xml := null;
+	v_xml := v_xml || '&lt;ACTION>';
+	v_xml := v_xml || pckPfiHmM.val2xml('CODE', v_action);
+	v_xml := v_xml || pckPfiHmM.val2xml('LIBELLE', v_libAction);
+	v_xml := v_xml || '&lt;/ACTION>';
+
+	Select /* T_EVT_PRESCRIPTION_PERIODE_CM */ SEQ_SCL_EVT_DATA.nextval Into n_IdEvnd From Dual;
+
+	Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd, n_IdEvnt, 0, 'ACTION', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+
+	-- Segment Patient
+	v_xml := null;
+	v_xml := v_xml || '&lt;PATIENT>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PATI', Patient.PATI_ID_PATI);
+	v_xml := v_xml || pckPfiHmM.val2xml('NOM_USU', Patient.PATI_NOM_USU);
+	v_xml := v_xml || pckPfiHmM.val2xml('NOM_NAI', Patient.PATI_NOM_NAI);
+	v_xml := v_xml || pckPfiHmM.val2xml('PRENOM', Patient.PATI_PRENOM);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_NAI', Patient.PATI_DAT_NAI);
+	v_xml := v_xml || pckPfiHmM.val2xml('SEXE', Patient.PATI_SEXE);
+	v_xml := v_xml || pckPfiHmM.val2xml('NIP', Patient.PATI_NIP);
+	v_xml := v_xml || '&lt;/PATIENT>';
+
+	Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+1, n_IdEvnt, 1, 'PATIENT', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	-- Segment Séjour
+	v_xml := null;
+	v_xml := v_xml || '&lt;SEJOUR>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_SEJO', Sejour.SEJO_ID_SEJO);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_UNFO', Sejour.SEJO_ID_UNFO);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB', Sejour.SEJO_DAT_DEB);
+	v_xml := v_xml || pckPfiHmM.val2xml('NUM_SEJ', Sejour.SEJO_NUM_SEJ_COMM);
+	v_xml := v_xml || pckPfiHmM.val2xml('STATUT', Sejour.SEJO_STATUT);
+	v_xml := v_xml || '&lt;/SEJOUR>';
+
+	Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+2, n_IdEvnt, 2, 'SEJOUR', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	-- Segment Prescription
+	v_xml := null;
+	v_xml := v_xml || '&lt;PRESC>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRME', Prescription.PRME_ID_PRME);
+	If Prescription.PRME_IND_PRE_VAL = '0' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('IND_PRE_VAL', '0=en attente de validation');
+	ElsIf Prescription.PRME_IND_PRE_VAL = '1' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('IND_PRE_VAL', '1=validé par le médecin');
+	ElsIf Prescription.PRME_IND_PRE_VAL = '2' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('IND_PRE_VAL', '2=Prescription annulée');
+	Else
+		If Prescription.PRME_IND_PRE_VAL is not null Then
+			v_xml := v_xml || pckPfiHmM.val2xml('IND_PRE_VAL', Prescription.PRME_IND_PRE_VAL);
+		End If;
+	End If;
+	If Prescription.PRME_PHA_VAL_STATUT = '0' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '0=non validée');
+	ElsIf Prescription.PRME_PHA_VAL_STATUT = '1' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '1=validée');
+	ElsIf Prescription.PRME_PHA_VAL_STATUT = '3' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '3=en attente de prise en compte');
+	ElsIf Prescription.PRME_PHA_VAL_STATUT = '4' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '4=Prescription éligible');
+	ElsIf Prescription.PRME_PHA_VAL_STATUT = '5' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '5=validée temporairement');
+	ElsIf Prescription.PRME_PHA_VAL_STATUT = '6' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '5=validation pharma hétérogène');
+	ElsIf Prescription.PRME_PHA_VAL_STATUT = '7' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '7=validation pharma hétérogène avec réserves');
+	Else
+		If Prescription.PRME_PHA_VAL_STATUT is not null Then
+			v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', Prescription.PRME_PHA_VAL_STATUT);
+		End If;
+	End If;
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB_PRE', Prescription.PRME_DAT_DEB_PRE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_FIN_PRE', Prescription.PRME_DAT_FIN_PRE);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_PRE_VAL_TEMP', Prescription.PRME_IND_PRE_VAL_TEMP);
+	v_xml := v_xml || pckPfiHmM.val2xml('NUM_CYCLE', Prescription.PRME_NUM_CYCLE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ALE_NIV', Prescription.PRME_ALE_NIV);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_A_VERIFIER', Prescription.PRME_IND_A_VERIFIER);
+
+	v_xml := v_xml || '&lt;/PRESC>';
+	Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+3, n_IdEvnt, 3, 'PRESCRIPTION', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+	-- Segment Ligne
+	v_xml := null;
+	v_xml := v_xml || '&lt;LIGNE>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL', Ligne.PRPL_ID_PRPL);
+	v_xml := v_xml || pckPfiHmM.val2xml('LIB_CIP', Ligne.PRPL_LIB_CIP);
+	If Ligne.PRPL_MED_VAL_STATUT = '0' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('MED_VAL_STATUT', '0=arrêté');
+	ElsIf Ligne.PRPL_MED_VAL_STATUT = '1' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('MED_VAL_STATUT', '1=en attente de validation');
+	ElsIf Ligne.PRPL_MED_VAL_STATUT = '2' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('MED_VAL_STATUT', '2=validé par le medecin');
+	Else
+		If Ligne.PRPL_MED_VAL_STATUT is not null Then
+			v_xml := v_xml || pckPfiHmM.val2xml('MED_VAL_STATUT', Ligne.PRPL_MED_VAL_STATUT);
+		End If;
+	End If;
+	If Ligne.PRPL_PHA_VAL_STATUT = '0' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '0=non validé');
+	ElsIf Ligne.PRPL_PHA_VAL_STATUT = '1' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '1=validé');
+	ElsIf Ligne.PRPL_PHA_VAL_STATUT = '2' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '2=validé avec remarque');
+	ElsIf Ligne.PRPL_PHA_VAL_STATUT = '3' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '3=validé en alerte');
+	ElsIf Ligne.PRPL_PHA_VAL_STATUT = '6' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('PHA_VAL_STATUT', '6=validé et alerte prise en compte');
+	Else
+		If Ligne.PRPL_PHA_VAL_STATUT is not null Then
+			v_xml := v_xml || pckPfiHmM.val2xml('PRPL_PHA_VAL_STATUT', Ligne.PRPL_PHA_VAL_STATUT);
+		End if;
+	End If;
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_ALE_PRI_COMPTE', Ligne.PRPL_IND_ALE_PRI_COMPTE);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_TMP_MED_VAL', Ligne.PRPL_IND_TMP_MED_VAL);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_TMP_PHA_VAL', Ligne.PRPL_IND_TMP_PHA_VAL);
+	v_xml := v_xml || pckPfiHmM.val2xml('CAGE_TYPE', TypeLigne.CAGE_CODE);
+	v_xml := v_xml || pckPfiHmM.val2xml('COD_BCB_MOMENT', Ligne.PRPL_COD_BCB_MOMENT);
+	v_xml := v_xml || pckPfiHmM.val2xml('NBR_CYCLE', Ligne.PRPL_NBR_CYCLES);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_ARRET', Ligne.PRPL_DAT_ARRET);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB_SUSPENSION', Ligne.PRPL_DAT_DEB_SUSPENSION);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_FIN_REMPLACEMENT', Ligne.PRPL_DAT_FIN_REMPLACEMENT);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_REPRISE', Ligne.PRPL_DAT_REPRISE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_OBJET', Ligne.PRPL_ID_OBJET);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL_DEB_SEQUENCE', Ligne.PRPL_ID_PRPL_DEB_SEQUENCE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL_DUPLIQUE', Ligne.PRPL_ID_PRPL_DUPLIQUE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL_PERE', Ligne.PRPL_ID_PRPL_PERE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL_PERFUSION', Ligne.PRPL_ID_PRPL_PERFUSION);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL_REMPLACE', Ligne.PRPL_ID_PRPL_REMPLACE);
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPL_SUBSTITUTION', Ligne.PRPL_ID_PRPL_SUBSTITUTION);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_REM_TEMP', Ligne.PRPL_IND_REM_TEMP);
+	v_xml := v_xml || pckPfiHmM.val2xml('NUM_ORDRE', Ligne.PRPL_NUM_ORDRE);
+	v_xml := v_xml || pckPfiHmM.val2xml('SEQ_NIV', Ligne.PRPL_SEQ_NIV);
+	v_xml := v_xml || '&lt;/LIGNE>';
+
+	Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+4, n_IdEvnt, 4, 'LIGNE', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+
+	-- Segment Période
+	v_xml := null;
+	v_xml := v_xml || '&lt;PERIODE>';
+	v_xml := v_xml || pckPfiHmM.val2xml('ID_PRPE', Periode.PRPE_ID_PRPE);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_DEB_POS', Periode.PRPE_DAT_DEB_POS);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_FIN_POS', Periode.PRPE_DAT_FIN_POS);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_FIN_AVT_ARRET', Periode.PRPE_DAT_FIN_AVT_ARRET);
+	v_xml := v_xml || pckPfiHmM.val2xml('DAT_FIN_GENERATION', Periode.PRPE_DAT_FIN_GENERATION);
+	If Periode.PRPE_TYPE = '0' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('TYPE', '0=date');
+	ElsIf Periode.PRPE_TYPE = '1' Then
+		v_xml := v_xml || pckPfiHmM.val2xml('TYPE', '1=période');
+	End If;
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_AFF_CYCLE', Periode.PRPE_IND_AFF_CYCLE);
+	v_xml := v_xml || pckPfiHmM.val2xml('NBR_DEB_HEURE', Periode.PRPE_NBR_DEB_HEURE);
+	v_xml := v_xml || pckPfiHmM.val2xml('NBR_DEB_JOUR', Periode.PRPE_NBR_DEB_JOUR);
+	v_xml := v_xml || pckPfiHmM.val2xml('NBR_DEB_MOIS', Periode.PRPE_NBR_DEB_MOIS);
+	v_xml := v_xml || pckPfiHmM.val2xml('NBR_FIN_HEURE', Periode.PRPE_NBR_FIN_HEURE);
+	v_xml := v_xml || pckPfiHmM.val2xml('NBR_FIN_JOUR', Periode.PRPE_NBR_FIN_JOUR);
+	v_xml := v_xml || pckPfiHmM.val2xml('NBR_FIN_MOIS', Periode.PRPE_NBR_FIN_MOIS);
+	v_xml := v_xml || pckPfiHmM.val2xml('IND_DEB_ANTERIEUR', Periode.PRPE_IND_DEB_ANTERIEUR);
+	v_xml := v_xml || pckPfiHmM.val2xml('DUR_GAZ', Periode.PRPE_DUR_GAZ);
+	v_xml := v_xml || '&lt;/PERIODE>';
+
+	Insert /* T_EVT_PRESCRIPTION_PERIODE_CM */
+	Into scl_evt_data (evnd_id_evnd, evnd_id_evnt, evnd_index, evnd_type, evnd_action, evnd_val
+							, EVND_DAT_CRE, EVND_DAT_MOD, EVND_NMAJ, EVND_UTI_CRE, EVND_UTI_MOD, EVND_PRO_CRE, EVND_PRO_MOD, EVND_COL_COM)
+			Values (n_IdEvnd+5, n_IdEvnt, 5, 'PERIODE', 'I', v_xml
+				  , current_date, current_date, 0, 3, 3, 2, 2, NULL);
+
+EXCEPTION
+	WHEN OTHERS THEN
+		Begin
+			pckTrigPfiHmM.PRO_traceScl(Patient.PATI_NIP, Sejour.SEJO_NUM_SEJ_COMM, Sejour.SEJO_ID_ETAB_CON, 'Evt Presc', 'T_EVT_PRESCRIPTION_PERIODE_CM', '0', SUBSTR(SQLERRM,1,2000));
+		Exception
+			When Others Then
+				return;
+		End;
+END;</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.5">
+<div class="masterreport">
+<table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 15, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">T_EVTHM_PLAN_SOINS_BIO_CMS</td>
+<td class="currentcell">TRIGGER</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PRESCRIPTION_PERIODE</td>
+<td class="currentcell">TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 15, 1)">
+<td>PCAP_XROUGE</td>
+<td>T_EVTHM_PLAN_SOINS_ACTE_CS</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PRESCRIPTION_PERIODE</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 15, 2)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCRIPTION_PERIODE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PRESCRIPTION_PERIODE</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 15, 3)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCLISTE_BIO_M</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PRESCRIPTION_PERIODE</td>
+<td>TABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 15, 4)">
+<td>PCAP_XROUGE</td>
+<td>T_EVT_PRESCLISTE_CM</td>
+<td>TRIGGER</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PRESCRIPTION_PERIODE</td>
+<td>TABLE</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.5">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p>Références</p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.5">
+<div id="Child.0.0.5">
+<div class="currentchildreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.5">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.5">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.5">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.5">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>OWNER</th>
+<th>NAME</th>
+<th>TYPE</th>
+<th>REFERENCED_OWNER</th>
+<th>REFERENCED_NAME</th>
+<th>REFERENCED_TYPE</th>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Master.6">
+<div class="masterreport">
+<table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<th>NAME</th>
+<th>VALUE</th>
+</tr>
+<tr>
+<td>CREATED</td>
+<td>13/07/17</td>
+</tr>
+<tr>
+<td>LAST_DDL_TIME</td>
+<td>10/01/18</td>
+</tr>
+<tr>
+<td>OWNER</td>
+<td>PCAP_XROUGE</td>
+</tr>
+<tr>
+<td>TABLE_NAME</td>
+<td>PRE_PRESCRIPTION_PERIODE</td>
+</tr>
+<tr>
+<td>TABLESPACE_NAME</td>
+<td>PCAP_XROUGE_DATPCAP1</td>
+</tr>
+<tr>
+<td>CLUSTER_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>IOT_NAME</td>
+<td>null</td>
+</tr>
+<tr>
+<td>STATUS</td>
+<td>VALID</td>
+</tr>
+<tr>
+<td>PCT_FREE</td>
+<td>10</td>
+</tr>
+<tr>
+<td>PCT_USED</td>
+<td>null</td>
+</tr>
+<tr>
+<td>INI_TRANS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_TRANS</td>
+<td>255</td>
+</tr>
+<tr>
+<td>INITIAL_EXTENT</td>
+<td>65536</td>
+</tr>
+<tr>
+<td>NEXT_EXTENT</td>
+<td>524288</td>
+</tr>
+<tr>
+<td>MIN_EXTENTS</td>
+<td>1</td>
+</tr>
+<tr>
+<td>MAX_EXTENTS</td>
+<td>2147483645</td>
+</tr>
+<tr>
+<td>PCT_INCREASE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>FREELISTS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>FREELIST_GROUPS</td>
+<td>null</td>
+</tr>
+<tr>
+<td>LOGGING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>BACKED_UP</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NUM_ROWS</td>
+<td>1863291</td>
+</tr>
+<tr>
+<td>BLOCKS</td>
+<td>26546</td>
+</tr>
+<tr>
+<td>EMPTY_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_SPACE</td>
+<td>0</td>
+</tr>
+<tr>
+<td>CHAIN_CNT</td>
+<td>0</td>
+</tr>
+<tr>
+<td>AVG_ROW_LEN</td>
+<td>108</td>
+</tr>
+<tr>
+<td>AVG_SPACE_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>NUM_FREELIST_BLOCKS</td>
+<td>0</td>
+</tr>
+<tr>
+<td>DEGREE</td>
+<td>1</td>
+</tr>
+<tr>
+<td>INSTANCES</td>
+<td>1</td>
+</tr>
+<tr>
+<td>CACHE</td>
+<td>N</td>
+</tr>
+<tr>
+<td>TABLE_LOCK</td>
+<td>ENABLED</td>
+</tr>
+<tr>
+<td>SAMPLE_SIZE</td>
+<td>1863291</td>
+</tr>
+<tr>
+<td>LAST_ANALYZED</td>
+<td>27/11/17</td>
+</tr>
+<tr>
+<td>PARTITIONED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>IOT_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>OBJECT_ID_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TABLE_TYPE</td>
+<td>null</td>
+</tr>
+<tr>
+<td>TEMPORARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SECONDARY</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NESTED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>BUFFER_POOL</td>
+<td>DEFAULT</td>
+</tr>
+<tr>
+<td>ROW_MOVEMENT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>GLOBAL_STATS</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>USER_STATS</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>DURATION</td>
+<td>null</td>
+</tr>
+<tr>
+<td>SKIP_CORRUPT</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>MONITORING</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>CLUSTER_OWNER</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DEPENDENCIES</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESSION</td>
+<td>DISABLED</td>
+</tr>
+<tr>
+<td>COMPRESS_FOR</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DROPPED</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>COMMENTS</td>
+<td>Table&nbsp;de&nbsp;gestion&nbsp;des&nbsp;périodes&nbsp;de&nbsp;prescription</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Master.7">
+<div class="masterreport">
+<table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>PARTITION_NAME</th>
+<th>LAST_ANALYZED</th>
+<th>NUM_ROWS</th>
+<th>BLOCKS</th>
+<th>SAMPLE_SIZE</th>
+<th>HIGH_VALUE</th>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.7">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.7">
+</div>
+</div>
+</div>
+<div id="Master.8">
+<div class="masterreport">
+<table id="Table.23" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>UNIQUENESS</th>
+<th>STATUS</th>
+<th>INDEX_TYPE</th>
+<th>TEMPORARY</th>
+<th>PARTITIONED</th>
+<th>FUNCIDX_STATUS</th>
+<th>JOIN_INDEX</th>
+<th>COLUMNS</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 23, 0)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PRPE_I3</td>
+<td class="currentcell">NONUNIQUE</td>
+<td class="currentcell">VALID</td>
+<td class="currentcell">FUNCTION-BASED&nbsp;NORMAL</td>
+<td class="currentcell">N</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">ENABLED</td>
+<td class="currentcell">NO</td>
+<td class="currentcell">SYS_NC00029$</td>
+<td class="currentcell">COALESCE("PRPE_DAT_FIN_POS","PCAP_XROUGE"."PCKCOMMONHM"."FUN_MAXDATE"())</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 23, 1)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PRE_PRESCRIPTION_PER_I1</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PRPE_DAT_FIN_POS,&nbsp;PRPE_ID_PRPE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 23, 2)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PRPE_ID_CAGE_DEB_UNITE</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PRPE_ID_CAGE_DEB_UNITE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 23, 3)">
+<td>PCAP_XROUGE</td>
+<td>PK_PRE_PRESCRIPTION_PERIODE</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PRPE_ID_PRPE</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 23, 4)">
+<td>PCAP_XROUGE</td>
+<td>I_FK_PRE_PRESCRIPTION_PERIODE_</td>
+<td>NONUNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PRPE_ID_PRPL</td>
+<td>null</td>
+</tr>
+</table>
+<br/>
+<hr/>
+<br/><div id="ChildTabs.8">
+<div class="currentchildtab" onclick="onSelectChildTab(this, 0)">
+<div>
+<p></p>
+</div>
+</div>
+</div>
+<br/>
+<div id="ChildReports.8">
+<div id="Child.0.0.8">
+<div class="currentchildreport"><table id="Table.24" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 24)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PRPE_I3</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PRESCRIPTION_PERIODE</td>
+<td class="currentcell">SYS_NC00029$</td>
+<td class="currentcell">1</td>
+<td class="currentcell">7</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.1.8">
+<div class="childreport"><table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 25)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">IDX_PRE_PRESCRIPTION_PER_I1</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PRESCRIPTION_PERIODE</td>
+<td class="currentcell">PRPE_DAT_FIN_POS</td>
+<td class="currentcell">1</td>
+<td class="currentcell">7</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+<tr onclick="table_onSelectRow(this, 25)">
+<td>PCAP_XROUGE</td>
+<td>IDX_PRE_PRESCRIPTION_PER_I1</td>
+<td>PCAP_XROUGE</td>
+<td>PRE_PRESCRIPTION_PERIODE</td>
+<td>PRPE_ID_PRPE</td>
+<td>2</td>
+<td>22</td>
+<td>0</td>
+<td>ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.26" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 26)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PRPE_ID_CAGE_DEB_UNITE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PRESCRIPTION_PERIODE</td>
+<td class="currentcell">PRPE_ID_CAGE_DEB_UNITE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.27" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 27)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PK_PRE_PRESCRIPTION_PERIODE</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PRESCRIPTION_PERIODE</td>
+<td class="currentcell">PRPE_ID_PRPE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.28" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 28)" class="currentrow">
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">I_FK_PRE_PRESCRIPTION_PERIODE_</td>
+<td class="currentcell">PCAP_XROUGE</td>
+<td class="currentcell">PRE_PRESCRIPTION_PERIODE</td>
+<td class="currentcell">PRPE_ID_PRPL</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
