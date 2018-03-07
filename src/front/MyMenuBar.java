@@ -11,12 +11,20 @@ import java.util.Iterator;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Menu;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.SeparatorMenuItem;
+import javafx.scene.control.TextArea;
+import javafx.scene.layout.VBox;
+import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.FileChooser.ExtensionFilter;
+import javafx.stage.Modality;
+import javafx.stage.Popup;
+import javafx.stage.Stage;
 import main.Instance;
 
 public class MyMenuBar extends MenuBar{
@@ -99,9 +107,26 @@ public class MyMenuBar extends MenuBar{
 				getScene().getWindow().hide();
 			}
 		});;
-		menuFichier.getItems().addAll(fichierNouveau,fichierOuvrir,fichierEnregistrer,new SeparatorMenuItem(),fichierQuitter);
 		
-		this.getMenus().addAll(menuFichier);
+		Menu menuAutre = new Menu("?");
+		
+		MenuItem autreAPropos = new MenuItem("A propos de HQL Editor");
+		autreAPropos.setOnAction(new EventHandler<ActionEvent>() {
+			public void handle(ActionEvent event) {
+				final Stage popup = new Stage();
+				popup.initModality(Modality.APPLICATION_MODAL);
+				VBox popupBox = new VBox(5);
+				popupBox.getChildren().add(new Text("Auteur : Guillaume Tricaud"));
+				popupBox.setAlignment(Pos.CENTER);;
+				Scene popupScene = new Scene(popupBox,200,100);
+				popup.setScene(popupScene);
+				popup.show();
+			}
+		});;
+		
+		menuFichier.getItems().addAll(fichierNouveau,fichierOuvrir,fichierEnregistrer,new SeparatorMenuItem(),fichierQuitter);
+		menuAutre.getItems().add(autreAPropos);
+		this.getMenus().addAll(menuFichier,menuAutre);
 		this.setWidth(width);
 	}
 }
