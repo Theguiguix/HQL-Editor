@@ -14,6 +14,8 @@ import javafx.stage.*;
 
 public class Instance extends Application{
 	
+	private static TextArea editor;
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -24,7 +26,7 @@ public class Instance extends Application{
 		stage.setMaximized(true);
 		
 		// create & fill vbox
-		TextArea editor = new TextArea();
+		editor = new TextArea();
 		HBox hbox = new HBox(5,editor);
 		TableView table = new TableView<>();
 		hbox.getChildren().add(table);
@@ -46,4 +48,8 @@ public class Instance extends Application{
         
         stage.show();
     }
+	
+	public static TextArea getTextArea() {
+		return editor;
+	}
 }
