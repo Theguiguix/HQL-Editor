@@ -1,5 +1,6 @@
 package main;
 
+import front.Explorateur;
 import front.MyMenuBar;
 import javafx.application.*;
 import javafx.geometry.Insets;
@@ -28,12 +29,11 @@ public class Instance extends Application{
 		// create & fill vbox
 		editor = new TextArea();
 		HBox hbox = new HBox(5,editor);
-		TableView table = new TableView<>();
-		hbox.getChildren().add(table);
+		hbox.getChildren().add(Explorateur.getInstance());
 		
 		// set property of HBox
 		HBox.setHgrow(editor, Priority.ALWAYS);
-		HBox.setHgrow(table, Priority.ALWAYS);
+		HBox.setHgrow(Explorateur.getInstance(), Priority.ALWAYS);
 		hbox.setPadding(new Insets(0,10,10,10));
 		
 		// create, fill & set property of Vbox
